@@ -1,0 +1,17 @@
+.form-label {
+  background-color: white !important;
+}
+
+.contactpage {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(70, 70, 70, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 20px;
+}

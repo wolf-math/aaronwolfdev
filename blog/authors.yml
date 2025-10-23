@@ -1,0 +1,10 @@
+wolf:
+  name: Aaron wolf
+  title: Lead writer and developer
+  url: https://aaronwolf.dev
+  image_url: https://avatars.githubusercontent.com/u/29966332?v=4
+  page: true
+  socials:
+    linkedin: wolf-math
+    github: wolf-math
+    
