@@ -69,7 +69,7 @@ export default function About () {
             <li><FaCloud /> AWS / Supabase / Firebase</li>
             <li><FaDatabase /> SQL / PostgreSQL</li>
             <li><FaLinux /> Linux / Bash</li>
-            <li><FaMicrochip />AI / ChatGPT</li>
+            <li><FaMicrochip /> AI / ChatGPT</li>
           </ul>
         </div>
 

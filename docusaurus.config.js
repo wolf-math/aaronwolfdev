@@ -26,31 +26,11 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  plugins: [
-    'docusaurus-plugin-sass'
-    // [
-    //   '@docusaurus/plugin-content-docs',
-    //   {
-    //     id: 'python',
-    //     path: 'python-docs', // folder with MD/MDX
-    //     routeBasePath: 'docs/python', // URL base
-    //     sidebarPath: './sidebarsPython.js'
-    //   }
-    // ],
-    // [
-    //   '@docusaurus/plugin-content-docs',
-    //   {
-    //     id: 'javascript',
-    //     path: 'javascript-docs',
-    //     routeBasePath: 'docs/javascript',
-    //     sidebarPath: './sidebarsJavascript.js'
-    //   }
-    // ]
-  ],
+  plugins: ['docusaurus-plugin-sass'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'WolfMath', // Usually your GitHub org/user name.
+  organizationName: 'wolf-math', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -141,7 +121,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Python Docs',
+                label: 'Docs',
                 to: 'docs/category/python-documentation'
               },
               {

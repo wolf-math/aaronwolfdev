@@ -18,7 +18,7 @@ const Homepage = () => {
             <img id={styles.logo} src={logo} alt="Logo" />
             <div className={styles.title}>
               <h1>Aaron Wolf</h1>
-              <h3>Web Developer.<br/>
+              <h3>Communicator.<br/>
               Teacher.<br/>
               Nerd.</h3>
             </div>
@@ -28,7 +28,7 @@ const Homepage = () => {
 
         <div id={styles.pages} ref={pages}>
           {pages.map((page, i) => (
-            <a className={styles.page} id={page.name} href={`/${page.name}`} key={i}>
+            <a className={styles.page} id={page.name} href={page.url} key={i}>
               <img className={styles.linkLogo} src={page.logo} alt={page.name} />
               <h3 className={[styles.description, styles.typewriter]}>{page.text}</h3>
             </a>

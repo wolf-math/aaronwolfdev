@@ -6,10 +6,15 @@ import robot_wolf from '../../static/images/robot_logo.png';
 import hardhat from '../../static/images/hardhat_logo.png';
 
 export const pages = [
-  { name: 'about', logo: robot_wolf, text: 'About.' },
-  { name: 'docs', logo: hardhat, text: 'Docs.' },
-  { name: 'blog', logo: glasses, text: 'Blog.' },
-  { name: 'contact', logo: pixel, text: 'Contact.' }
+  { name: 'about', logo: robot_wolf, text: 'About.', url: '/about' },
+  {
+    name: 'docs',
+    logo: hardhat,
+    text: 'Docs.',
+    url: '/docs/category/coding-documentation'
+  },
+  { name: 'blog', logo: glasses, text: 'Blog.', url: '/blog' },
+  { name: 'contact', logo: pixel, text: 'Contact.', url: '/contact' }
 ];
 
 export const links = [
