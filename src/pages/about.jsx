@@ -43,8 +43,9 @@ export default function About () {
       {/* </Container> */}
 
       <div className="content">
-        <p>I'm a software developer, teacher, and lifelong nerd who loves building things, writing about how they work, and help others learn to do the same. My career has taken me from inner-city classrooms to high-tech companies, always exploring the space where education and technology meet. I’m passionate about open source and the idea that knowledge should be shared. Most of my projects (and even some of my old lesson plans) live on GitHub.</p>
-        <p>Are you looking for a colaborator? <Link to="/contact">Reach out</Link>!</p>
+        <p>I'm a technical communicator, software developer, teacher, and lifelong nerd who loves building things, writing about how they work, and help others learn to do the same. My career has taken me from inner-city classrooms to high-tech companies, always exploring the space where education and technology meet. I’m passionate about open source and the idea that knowledge should be shared. Most of my projects (and even some of my old lesson plans) live on GitHub.</p>
+        <p>Are you looking for a colaborator? <Link to="/contact">Reach out!</Link></p>
+        <p>Are you looking for coding documentation? <Link to="/docs/category/coding-documentation">It's right here!</Link></p>
       </div>
 
       <hr className={about.divider} />
