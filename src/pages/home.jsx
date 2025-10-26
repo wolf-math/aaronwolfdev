@@ -11,7 +11,6 @@ const Homepage = () => {
   }
 
   return (
-    // <div className={styles.home-background}>
       <div className={styles.homepage}>
         <div id={styles.greeting}>
           <div id={styles.mainlogo}>
@@ -25,6 +24,8 @@ const Homepage = () => {
           </div>
           <FaAngleDoubleDown id={styles.more} onClick={scroll} /> 
         </div>
+
+        <div id={styles.empty}></div>
 
         <div id={styles.pages} ref={pages}>
           {pages.map((page, i) => (
@@ -53,7 +54,6 @@ const Homepage = () => {
           </Link>
         </div>
       </div>
-    // </div>
   )
 }
 

@@ -25,6 +25,9 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Code+Pro:wght@500&display=swap'
+  ],
 
   plugins: ['docusaurus-plugin-sass'],
 
@@ -157,7 +160,8 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aaron Wolf dev, Inc. Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} Aaron Wolf. 
+        \n Built with Docusaurus.`
       },
       prism: {
         theme: prismThemes.github,

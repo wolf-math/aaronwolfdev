@@ -12,6 +12,7 @@ import {
   FaCloud, 
   FaDatabase, 
   FaLinux,
+  FaNodeJs,
   FaTerminal,
   FaDesktop,
   FaCodeBranch,
@@ -44,7 +45,10 @@ export default function About () {
       <div className="content">
         <p>I'm a software developer, teacher, and lifelong nerd who loves building things, writing about how they work, and help others learn to do the same. My career has taken me from inner-city classrooms to high-tech companies, always exploring the space where education and technology meet. I’m passionate about open source and the idea that knowledge should be shared. Most of my projects (and even some of my old lesson plans) live on GitHub.</p>
         <p>Are you looking for a colaborator? <Link to="/contact">Reach out</Link>!</p>
-      </div>            
+      </div>
+
+      <hr className={about.divider} />
+
 
       <h1><FaTerminal /> Coding <span className="highlight">Languages</span></h1>
         <div className={about.languages}>
@@ -55,7 +59,7 @@ export default function About () {
             <li><FaReact /> React</li>
             {/* <li>Next.js</li> */}
             <li><FaPython /> Django / REST Framework</li>
-            <li>Node.js</li>
+            <li><FaNodeJs /> Node.js</li>
             <li><FaHtml5 /> HTML5</li>
             <li><FaCss3 /> CSS3 / SASS</li>
           </ul>

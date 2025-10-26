@@ -6,7 +6,6 @@ import robot_wolf from '../../static/images/robot_logo.png';
 import hardhat from '../../static/images/hardhat_logo.png';
 
 export const pages = [
-  { name: 'about', logo: robot_wolf, text: 'About.', url: '/about' },
   {
     name: 'docs',
     logo: hardhat,
@@ -14,6 +13,7 @@ export const pages = [
     url: '/docs/category/coding-documentation'
   },
   { name: 'blog', logo: glasses, text: 'Blog.', url: '/blog' },
+  { name: 'about', logo: robot_wolf, text: 'About.', url: '/about' },
   { name: 'contact', logo: pixel, text: 'Contact.', url: '/contact' }
 ];
 

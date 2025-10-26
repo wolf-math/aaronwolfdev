@@ -34,6 +34,16 @@
   }
 }
 
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -62,9 +72,10 @@
         height: auto;
         filter: drop-shadow(3px 3px 10px rgba(37, 194, 160));
         padding: 15px;
-        border-right-style: solid;
-        border-right-width: 3px;
-        border-right-color: white;
+
+        &:hover {
+          animation: spinning 1s forwards;
+        }
       }
 
       .title {
@@ -96,19 +107,20 @@
     }
   }
 
+  #empty {
+    height: 35vh;
+  }
+
   #pages {
-    display: grid;
-    width: 95%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding-bottom: 10vh;
-    padding-top: 35vh;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-column-gap: 20px;
+    padding-top: 10vh;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    justify-items: center;
-    justify-content: space-evenly;
-    grid-auto-flow: row;
-    background: none;
+    column-gap: 20px;
 
     .page {
       display: flex;
@@ -123,9 +135,10 @@
 
       &:hover {
         filter: drop-shadow(2px 2px 2px grey);
-        transform: scale(1.1);
+        transform: scale(2);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         filter: blur(0px);
+        z-index: 10;
       }
 
       .linkLogo {
