@@ -1,5 +1,6 @@
 ---
-title: Numbers
+title: number (int, float, complex)
+sidebar_position: 2
 ---
 
 ## Number types

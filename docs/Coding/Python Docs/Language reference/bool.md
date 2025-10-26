@@ -1,5 +1,6 @@
 ---
-title: Booleans
+title: bool
+sidebar_position: 3
 ---
 
 ```python

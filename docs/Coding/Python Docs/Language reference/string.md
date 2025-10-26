@@ -1,5 +1,6 @@
 ---
-title: strings
+title: string
+sidebar_position: 1
 ---
 
 ## Definition
