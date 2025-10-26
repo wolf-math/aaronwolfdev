@@ -78,7 +78,8 @@ const config = {
     ({
       image: 'images/wolf-logo_D5.png',
       colorMode: {
-        respectPrefersColorScheme: true
+        defaultMode: 'dark',
+        disableSwitch: true
       },
       navbar: {
         title: 'Aaron Wolf dev',
@@ -97,8 +98,13 @@ const config = {
           { to: '/about', label: 'About', position: 'left' },
           { to: '/contact', label: 'Contact', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/wolf-math',
             label: 'GitHub',
+            position: 'right'
+          },
+          {
+            href: 'https://www.linkedin.com/in/wolf-math',
+            label: 'LinkedIn',
             position: 'right'
           }
         ]

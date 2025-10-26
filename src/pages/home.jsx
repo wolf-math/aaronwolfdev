@@ -18,7 +18,7 @@ const Homepage = () => {
             <div className={styles.title}>
               <h1>Aaron Wolf</h1>
               <h3>Communicator.<br/>
-              Teacher.<br/>
+              Developer.<br/>
               Nerd.</h3>
             </div>
           </div>
