@@ -24,7 +24,9 @@ import {
   FaLightbulb,
   FaBolt,
   FaRegLightbulb,
-  FaRobot
+  FaRobot,
+  FaFile,
+  FaMarker
 } from 'react-icons/fa';
 import about from './about.module.scss';
 import head from '../../static/images/headshot.jpg';
@@ -71,7 +73,7 @@ export default function About () {
           <ul className={`${about.skills} nobullet`}>
             <li><FaDocker /> Docker / Docker Compose</li>
             <li><FaGithub /> Git / GitHub</li>
-            <li><FaCloud /> AWS / Supabase / Firebase</li>
+            <li><FaCloud /> Supabase / Firebase</li>
             <li><FaDatabase /> SQL / PostgreSQL</li>
             <li><FaLinux /> Linux / Bash</li>
             <li><FaMicrochip /> AI / ChatGPT</li>
@@ -84,7 +86,9 @@ export default function About () {
             <li><FaBook /> Technical Writing / Documentation</li>
             <li><FaLaptopCode /> Jupyter Notebook</li>
             <li><FaCode /> API Design & Integration</li>
-            <li><FaLightbulb /> Curriculum Design / EdTech Projects</li>
+            <li><FaLightbulb /> Curriculum Design / EdTech </li>
+            <li><FaMarker /> Markdown</li>
+            <li><FaFile /> MkDocs / Docusaurus</li>
           </ul>
         </div>
 

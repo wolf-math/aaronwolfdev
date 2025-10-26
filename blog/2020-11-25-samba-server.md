@@ -2,7 +2,7 @@
 slug: samba-server-setup
 title: "Set up a Samba server on Ubuntu Linux"
 authors: wolf
-tags: [samba, linux, ubuntu]
+tags: [linux, ubuntu]
 ---
 
 :::note

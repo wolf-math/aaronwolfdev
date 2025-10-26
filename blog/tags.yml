@@ -1,28 +1,12 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
-
-
 javascript:
   label: javascript
   permalink: /javascript
   description: javascript articles
+
+react:
+  label: react
+  permalink: /react
+  description: react articles
 
 python:
   label: python
@@ -33,3 +17,13 @@ encryption:
   label: encryption
   permalink: /encryption
   description: encryption articles
+
+linux:
+  label: linux
+  permalink: /linux
+  description: linux articles
+
+ubuntu:
+  label: ubuntu
+  permalink: /ubuntu
+  description: ubuntu articles
