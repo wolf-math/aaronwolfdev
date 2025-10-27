@@ -1,4 +1,4 @@
-import {links, pages} from './links'
+import {links, pages} from '../../static/js/links'
 import { Link } from 'react-router-dom';
 import { FaAngleDoubleDown, FaEnvelope } from 'react-icons/fa';
 import styles from './home.module.scss';

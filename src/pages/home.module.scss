@@ -195,8 +195,81 @@
   }
 }
 
-// @media all and (min-width: 2000px) {
-//     .homepage {
-//         width: 1500px;
-//     }
-// }
+@media all and (max-width: 750px) {
+  .homepage {
+    width: 95%;
+    text-align: center;
+
+    #greeting {
+      height: auto;
+      padding-top: 5vh;
+
+      #mainlogo {
+        flex-direction: column;
+        width: 100%;
+
+        #logo {
+          width: 150px;
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .title {
+          margin-left: 0;
+
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 0.3em;
+          }
+
+          h3 {
+            font-size: 1.2rem;
+            line-height: 1.3em;
+          }
+        }
+      }
+
+      #more {
+        font-size: 2.5rem;
+        margin-top: 1em;
+      }
+    }
+
+    #pages {
+      flex-direction: column;
+      row-gap: 40px;
+      padding: 5vh 0;
+
+      .page {
+        filter: blur(0);
+        transform: none !important;
+
+        &:hover {
+          transform: none;
+          filter: none;
+        }
+
+        .linkLogo {
+          height: 120px;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          margin-top: 0.5em;
+        }
+      }
+    }
+
+    #icons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 2.5rem;
+      padding-bottom: 5vh;
+
+      .icon {
+        padding: 10px;
+      }
+    }
+  }
+}
