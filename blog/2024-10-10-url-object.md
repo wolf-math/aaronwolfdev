@@ -37,7 +37,7 @@ openWeatherUrl.searchParams.set('lon', lon);
 openWeatherUrl.searchParams.set('appid', apiKey);
 ```
 
-## Basic Usage
+## Basic usage
 You can create a new URL object by passing a URL string to its constructor.
 
 In this case (as opposed to above) the entire URL is passed in with various parts:
@@ -109,26 +109,25 @@ The URL object also has some methods to help modify and interact with the URL.
 
 For instance a _URL search parameter_ is a key and value pair that informs the API server details to serve a user.
 
-`url.searchParams`: Returns a `URLSearchParams` object, which provides methods to work with query string parameters. You can:
+`url.searchParams`: Returns a `URLSearchParams` object, which provides methods to work with query string parameters. 
 
-Get a query parameter: `url.searchParams.get('query')`
-Set a query parameter: `url.searchParams.set('query', '456')`
-Delete a query parameter: `url.searchParams.delete('query')`
+You can:
 
-Iterate over query parameters:
-```javascript
-url.searchParams.forEach((value, key) => {
-  console.log(key, value);
-});
-```
+- Get a query parameter: `url.searchParams.get('query')`
+- Set a query parameter: `url.searchParams.set('query', '456')`
+- Delete a query parameter: `url.searchParams.delete('query')`
+- Iterate over query parameters:
+  ```javascript
+  url.searchParams.forEach((value, key) => {
+    console.log(key, value);
+  });
+  ```
 
-`toString()`: Returns the full URL as a string, reflecting any changes made to the properties or query parameters.
+The `toString()` method can be used to return the full URL as a string, reflecting any changes made to the properties or query parameters.
 
 ## Example with Open Weather Map API
 
-Here are the docs for OpenWeatherMap: https://openweathermap.org/api/one-call-3
-
-Here’s a simple example showing how to create a URL object and manipulate its parts:
+The OpenWeatherMap API documentation can be found [here](https://openweathermap.org/api/one-call-3), although they use a template string let’s use this example with a URL object to build and modify an API request.
 
 ```javascript
 // get values to interpolate to URL

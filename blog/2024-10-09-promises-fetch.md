@@ -24,6 +24,8 @@ A promise is a specific type of object. All promises begin in a pending state. T
 
 ### Creating a promise:
 
+Here, we’re creating a new promise called order. If the promise is fulfilled, it resolves with the message "eat food". If it’s rejected, it returns "find another restaurant" instead.
+
 ```javascript
 const order = new Promise((resolve, reject) => {
   if ( foodDelivered) {
@@ -33,6 +35,8 @@ const order = new Promise((resolve, reject) => {
   }
 })
 ```
+
+Once the promise is created, you can use .then() and .catch() to decide what should happen depending on the outcome.
 
 ### Using a promise
 
@@ -56,7 +60,7 @@ fetch('url')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.log(error))
-  .finally(() => console.log('all done');
+  .finally(() => console.log('all done'));
 ```
 
 # The Call Stack and Event Loop

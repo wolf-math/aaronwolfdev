@@ -18,15 +18,17 @@ In the decades following WWII the US was in a cold war with the USSR. Computers 
 
 <!-- truncate -->
 
-## Diffie Hellman
+## Diffie-Hellman
 
 In 1976 Whitfield Diffie and Martin Hellman developed a method of key exchange where two parties could share **public keys** for encryption and decryption but nobody else would be able to see any messages because each party would also have a **private keys**
 
 The Diffie-Hellman key exchange was the first ever devised _asymmetric cipher_. This means that a secret message can be sent from one party to another without the need to share the keys.
 
-**IMPORTANT NOTE:** The basics of this methodology are still used today in many forms of communication, including SSH. Never **EVER** share your private key with anybody!
+:::note
+The basics of this methodology are still used today in many forms of communication, including SSH. Never **EVER** share your private key with anybody!
+:::
 
-## How Does It Work Conceptually?
+## How does it work conceptually?
 
 Up until Diffie-Hellman all encryption was done with a _symmetric_ key exchange. This means that the sender and receiver had to share an agreed upon key before they can send messages to one another. But what if the 2 parties have never met? Or what if they're far away?
 
@@ -39,7 +41,7 @@ It's confusing- I know.
 But when the public keys are exchanged the individuals can calculate their private keys raised to the power of their partner's public key and everything unravels to decrypt itself!
 
 
-## How Does the Math Work?
+## How does the math work?
 
 The Diffie-Hellman key exchange algorithm is based on the difficulty of the discrete logarithm problem in modular arithmetic. The basic steps of the protocol involve:
 
@@ -59,7 +61,7 @@ This is a MarkDown version of a Jupyter Notebook that I created for this demonst
 
 
 
-### Helper Functions
+### Helper functions
 
 These are not the most performant functions but that's not their intention. They are here so that the user can gain an understanding of how the encryption takes place.
 
@@ -191,7 +193,7 @@ p1 = input("Person 1's name: ")
 p2 = input("Person 2's name: ")
 ```
 
-### Choose Numbers
+### Choose numbers
 
 We need to do is choose a **publicly known prime number**, and a **generator** of that prime. In the video the prime was 17 and the generator was 3.
 
@@ -242,7 +244,7 @@ print(f"{p1}'s private key {p1private_key}")
 print(f"{p2}'s private key {p2private_key}")
 ```
 
-### The Super Key
+### The `super` key
 
 The super key is the super-secret key that both parties calculate on their own but with different numbers. They should be equal otherwise this won't work. In the video the super key was 10
 

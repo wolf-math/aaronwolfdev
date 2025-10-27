@@ -58,7 +58,7 @@ Don't use it unless you're just passing notes in class (even then it may not be 
 
 Another way is to just do a brute force attack. You could write a program that tries all 26 shifts and see which one isn't gibberish.
 
-## Symmetric Ciphers & Asymmetric Ciphers
+## Symmetric ciphers & asymmetric ciphers
 
 A Caesar Cipher is known as a symmetric cipher because the key to unlocking it is the same as the key to unlocking it. Also, both parties need to know the key before using it. There are plenty of other examples of Symmetric Ciphers-- the most famous (infamous?) of which was the enigma machine that the Germans used during WWII and was cracked by Alan Turing. 
 

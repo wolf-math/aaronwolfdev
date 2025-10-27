@@ -19,15 +19,15 @@ At the moment (no pun intended), Temporal is still in stage 3 (out of 4) of deve
 
 The reason why I'm writing this- despite there being a plethora of other tutorials- is because I haven't seen others showcase how Temporal might be used in the real world. However, this is not a comprehensive overview of the entire API. 
 
-# The Paradigm Shift
+# The paradigm shift
 
 In order to understand Temporal dates one must think about dates differently. In Legacy JavaScript dates are ultimately wrappers for epoch milliseconds. While Temporal dates _can_ do this, they are not necessarily this. This means that you can have a Temporal Date object (or a time object) that is completely divorced from epoch milliseconds. 
 
-# Most Common Use Cases (for me at least)
+# Most common use cases (for me at least)
 
 As far as I understand the naming convention, anything that begins with `Plain` is disconnected from epoch milliseconds.
 
-### PlainDate
+### `PlainDate`
 One can create a plain date like so:
 
 input:
@@ -64,7 +64,7 @@ const temporalToday = Temporal.PlainDate.from(today)
 
 You can see that this provides a lot more information that simply the year, month, and date. Also, it's implied that the preferred calendar is iso8601, but there are other calendars that can be used, such as the Jewish or Chinese calendars.
 
-### PlainTime
+### `PlainTime`
 
 Similar to `PlainDate` if the following is instantiated:
 
@@ -88,7 +88,7 @@ The following object will be returned:
 }
 ```
 
-### PlainDateTime
+### `PlainDateTime`
 
 Like `PlainDate` and `PlainTime`, this returns an object, but with the attributes of both of them together. Remember that the input must be in ISO format or an object.
 
@@ -135,7 +135,7 @@ const dateTimeNow = Temporal.PlainDateTime.from(dateTime)
 
 This is pretty self explanatory once the previous 2 sections are understood.
 
-### ZonedDateTime
+### `ZonedDateTime`
 
 Notice that `ZonedDateTime` isn't preceded by the work "plain". This is because there is a full time _and_ location, and therefore epoch milliseconds can be calculated. 
 
@@ -194,9 +194,9 @@ Look at all those attributes available to us! Notice that the `epochMilliseconds
 
 This makes saving this information to the database extremely easy.
 
-### Instant
+### `Instant`
 
-Instant can be instantiated from _either_ a date string, or a number. The number can be epoch milliseconds, nanoseconds, or microseconds. Since I work with epoch milliseconds, that's what I'll show. Assume my timezone is UTC right now.
+`Instant` can be instantiated from _either_ a date string, or a number. The number can be epoch milliseconds, nanoseconds, or microseconds. Since I work with epoch milliseconds, that's what I'll show. Assume my timezone is UTC right now.
 
 ```javascript
 const todayString = '2022-09-10T13:55Z'
