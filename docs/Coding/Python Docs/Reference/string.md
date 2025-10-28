@@ -1,16 +1,18 @@
 ---
 title: string
-sidebar_position: 1
+sidebar_position: 0
+date: 28 October 2025
 ---
-
-## Definition
-
-A string is any series of characters between a set of quotation marks- double `"` or single `'`. Strings must be terminated with the same type of quotation mark that they were started with.
 
 ```python
 >>> dir(str)
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
+
+## Definition
+
+A string is any series of characters between a set of quotation marks- double `"` or single `'`. Strings must be terminated with the same type of quotation mark that they were started with. Strings are immutable and cannot be changed in place. Only new strings can be created.  
+
 
 ### Basic strings
 
@@ -41,6 +43,8 @@ the backslash `\` can "escape" a quotation mark. When escaped, Python will inter
 'The cow says "moo"'
 ```
 
+
+
 A new line can be created within a string with `\n`. 
 
 ```python
@@ -49,6 +53,12 @@ This string will print
 on 2 lines
 ```
 
+If a string is preceeded by a `r` the escape characters are not treated as escape characters. This is called a `raw string`.
+
+```python
+>>> print(r"This string will print\non 1 line")
+This string will print\non 1 line
+```
 ### Basic operations on strings
 
 Two or more strings can be added with a `+` operator or a string can be multipled by an `integer` with a `*` operator. 
@@ -60,6 +70,10 @@ Two or more strings can be added with a `+` operator or a string can be multiple
 >>> "hello" + "world"
 "helloworld'
 ```
+
+### Operations with non-strings
+
+
 
 ### f-strings
 
@@ -78,6 +92,69 @@ Expressions can be executed inside of an f-string:
 >>> print(f"For computers, time began in the year {2000 - 30}")
 "For computers, time began in the year 1970'
 ```
+
+### Slicing strings
+
+A substring can be extracted from string by _slicing_ using the syntax:
+
+```python
+string[start:stop]
+```
+
+The `start` is the index of the first character of the slice. The slice continues up to but not including the index `stop`. If no index is specified the respective beginning or end of the string is considered.
+
+```python
+>>> "chicken-nuggets"[0:7]
+'chicken'
+
+>>> "chicken-nuggets"[:7]
+'chicken'
+
+>>> "chicken-nuggets"[3:9]
+'cken-n'
+
+>>> "chicken-nuggets"[8:]
+'nuggets'
+```
+
+#### Step slicing
+
+```python
+string[start:stop:step]
+```
+
+This will return every 2nd letter of the original string:
+
+```python
+>>> "chicken-nuggets"[::2]
+'ciknnges'
+```
+
+Or every 3rd letter of just "chicken":
+
+```python
+>>> "chicken-nuggets"[0:7:3]
+'ccn'
+```
+
+### `in` and `not in`
+
+Existince of a substring within a string can be checked with `in` or `not in`.
+
+```python
+>>> "gg" in "chicken nuggets"
+True
+
+>>> "potatoes" in "chicken nuggets"
+False
+
+>>> "potatoes" not in "chicken nuggets"
+True
+
+>>> "gg" not in "chicken nuggets"
+False
+```
+
 
 ## Operations on strings
 
