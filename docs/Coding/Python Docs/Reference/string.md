@@ -1,6 +1,6 @@
 ---
 title: string
-sidebar_position: 0
+sidebar_position: 1
 date: 28 October 2025
 ---
 
@@ -72,8 +72,6 @@ Two or more strings can be added with a `+` operator or a string can be multiple
 ```
 
 ### Operations with non-strings
-
-
 
 ### f-strings
 

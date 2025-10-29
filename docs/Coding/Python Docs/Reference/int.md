@@ -274,7 +274,7 @@ Returns the denominator of the integer. While integers always have a denominator
 
 ### `from_bytes`
 
-Returns an interger froma  sequence of bytes. It is the inverse of [`to_bytes`](#to_bytes).
+Returns an interger from a sequence of bytes. It is the inverse of [`to_bytes`](#to_bytes).
 
 syntax:
 ```python

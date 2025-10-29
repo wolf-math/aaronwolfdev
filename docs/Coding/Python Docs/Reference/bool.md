@@ -1,6 +1,6 @@
 ---
 title: bool
-# sidebar_position: 3
+sidebar_position: 4
 ---
 
 ```python
@@ -8,7 +8,111 @@ title: bool
 ['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
 ```
 
-## Operations
+## Definition
+
+A Boolean value (bool) is a logical value: `True` or `False`.
+It answers questions like “Is this statement correct?”
+For instance, `1 == 2` is `False`.
+
+`bool` is a subclass of `int`, so in many circumstances booleans are evaulated like numbers.
+
+## Using booleans
+
+If a statement is true then it will evaluate to `True`. Conversely, if a statement is false then it will evaluate to `False`.
+
+```python
+>>> 1 == 1
+True
+
+>>> 1 == 2
+False
+
+>>> "Hello" == "World"
+False
+
+>>> "Hello" == "Hello"
+True
+```
+
+### Types with falsy values
+
+The boolean value of an empty type will always be `False`.
+
+| Type                      | Example          | Notes                      |
+| ------------------------- | ---------------- | -------------------------- |
+| `bool`                    | `False`          | The literal `False` itself |
+| `NoneType`                | `None`           | Represents “no value”      |
+| `int`, `float`, `complex` | `0`, `0.0`, `0j` | Any numeric zero           |
+| `str`                     | `""`             | Empty string               |
+| `list`                    | `[]`             | Empty list                 |
+| `tuple`                   | `()`             | Empty tuple                |
+| `dict`                    | `{}`             | Empty dictionary           |
+| `set`                     | `set()`          | Empty set                  |
+| `frozenset`               | `frozenset()`    | Empty frozen set           |
+| `range`                   | `range(0)`       | Empty range object         |
+
+Likewise a custom class that ony returns `0` or `False` will be falsy.
+
+### Types with truthy values
+
+The boolean value of a non-empty type will always be `True`.
+
+| Type                      | Example              | Notes |
+| ------------------------- | -------------------- | ---- |
+| `bool`                    | `True`               | The literal `True` |
+| `int`, `float`, `complex` | `1`, `3.14`, `-2+0j` | Any nonzero |
+| `str`                     | `"Hello"`            | Any non-empty string |
+| `list`                    | `[1, 2, 3]`          | Any non-empty list |
+| `tuple`                   | `(1, 2)`             | Any non-empty tuple |
+| `dict`                    | `{"a": 1}`           | Any non-empty dictionary |
+| `set`                     | `{"x", "y"}`         | Any non-empty set |
+| `frozenset`               | `frozenset({1})`     | Any non-empty frozen set |
+| `range`                   | `range(1, 5)`        | Any range with at least one value |
+
+
+### Checking for truthiness
+
+The boolean value of a type can be checked by using the [`bool()`](./built-in.md#bool) function.
+
+```python
+>>> bool("")
+False
+
+>>> bool(0)
+False
+
+>>> bool("99 problems but a bool aint one")
+True
+```
+
+
+## Operations: Truth tables
+
+### The `and` operator
+
+| Expression        | Result  | Explanation          |
+| ----------------- | ------- | -------------------- |
+| `True and True`   | `True`  | Both values are true |
+| `True and False`  | `False` | One is false         |
+| `False and True`  | `False` | One is false         |
+| `False and False` | `False` | Both are false       |
+
+### The `or` operator
+
+| Expression       | Result  | Explanation          |
+| ---------------- | ------- | -------------------- |
+| `True or True`   | `True`  | At least one is true |
+| `True or False`  | `True`  | First value is true  |
+| `False or True`  | `True`  | Second value is true |
+| `False or False` | `False` | Both are false       |
+
+
+### The `not` operator
+
+| Expression  | Result  | Explanation       |
+| ----------- | ------- | ----------------- |
+| `not True`  | `False` | Negates the value |
+| `not False` | `True`  | Negates the value |
 
 
 ## Dunder methods
@@ -34,3 +138,103 @@ title: bool
 | `__str__`     | String conversion  | `str(True)` → `'True'`    | `True.__str__()`      |
 | `__repr__`    | Representation     | `repr(True)` → `'True'`   | `True.__repr__()`     |
 | `__hash__`    | Hash value  | `hash(True)` → `1` | `True.__hash__()`     |
+
+---
+
+## Boolean methods
+
+All boolean methods are inherited from [`int`](./int.md).
+
+<!-- ### `as_integer_ratio`
+
+Returns a touple (numerator, denominator) representing the boolean as a fraction.
+
+```python
+>>> True.as_integer_ratio()
+(1, 1)
+
+>>> False.as_integer_ratio()
+(0, 1)
+```
+
+---
+
+### `bit_count`
+
+Returns the number of `1` bits in the boolean value.
+
+```python
+>>> True.bit_count()
+1
+
+>>> False.bit_count()
+0
+```
+
+---
+
+### `bit_length`
+
+Returns the number of bits taken to represent the boolean value.
+
+```python
+>>> True.bit_length()
+1
+
+>>> False.bit_length()
+0
+```
+
+---
+
+### `conjugate`
+
+Returns the complex conjugate of the boolean value. Since booleans have no complex portion, only the real portion is returned.
+
+```python
+>>> True.conjugate()
+1
+
+>>> False.conjugate()
+0
+```
+
+---
+
+### `denominator`
+
+Returns the denominator value of a boolean. It will always be `1`.
+
+```python
+>>> True.denominator
+1
+
+>>> False.denominator
+1
+```
+
+---
+
+### `from_bytes`
+
+Returns an boolean from a sequence of bytes. It is the inverse of [`to_bytes`](#to_bytes).
+
+
+---
+
+### `imag`
+
+
+---
+
+### `numerator`
+
+
+---
+
+### `real`
+
+
+---
+
+### `to_bytes` -->
