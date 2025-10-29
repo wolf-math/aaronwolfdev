@@ -257,7 +257,7 @@ Returns the complex conjugate of a number. While integers don't have an complex 
 
 ### `denominator`
 
-Returns the denominator of the integer. While integers always have a denominator of 1 the attribute exists for all number types.
+Returns the denominator of the integer. While integers always have a denominator of 1 the attribute exists for multiple number types.
 
 ```python
 >>> (5).denominator
@@ -274,25 +274,48 @@ Returns the denominator of the integer. While integers always have a denominator
 
 ### `from_bytes`
 
+Returns an interger froma  sequence of bytes. It is the inverse of [`to_bytes`](#to_bytes).
 
+syntax:
+```python
+int.from_bytes(bytes, byteorder, signed=False)
+```
 
 ---
 
 ### `imag`
 
+Returns the complex (imaginary) portion of an integer. While integers don't have an complex portion the method exists for all number types.
 
+```python
+>>> (5).imag
+0
+```
 
 ---
 
 ### `numerator`
 
+Returns the numerator of the integer. While integers always have a numerator of the number itself the attribute exists for multiple number types.
 
+```python
+>>> (5).numerator
+5
+
+>>> (-19).numerator
+-19
+```
 
 ---
 
 ### `real`
 
+Returns the real portion of an integer. While integers don't have an complex portion the method exists for all number types.
 
+```python
+>>> (55).real
+55
+```
 
 ---
 
