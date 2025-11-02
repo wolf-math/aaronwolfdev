@@ -8,14 +8,14 @@ title: frozenset
 ```
 
 
-| Dunder Method  | Operation            | Example (normal syntax) | Example (dunder call) |               |
-| -------------- | -------------------- | ----------------------- | --------------------- | ------------- |
-| `__contains__` | Membership           | `2 in a`                | `a.__contains__(2)`   |               |
-| `__len__`      | Length               | `len(a)`                | `a.__len__()`         |               |
-| `__iter__`     | Iterate              | `for x in a`            | `a.__iter__()`        |               |
-| `__and__`      | Intersection         | `a & b`                 | `a.__and__(b)`        |               |
-| `__or__`       | Union                | `a                      | b`                    | `a.__or__(b)` |
-| `__sub__`      | Difference           | `a - b`                 | `a.__sub__(b)`        |               |
-| `__xor__`      | Symmetric difference | `a ^ b`                 | `a.__xor__(b)`        |               |
-| `__eq__`       | Equality             | `a == b`                | `a.__eq__(b)`         |               |
-| `__hash__`     | Hash                 | `hash(a)`               | `a.__hash__()`        |               |
+| Dunder Method  | Operation            | Example (normal syntax) | Example (dunder call) |
+| -------------- | -------------------- | ----------------------- | --------------------- |
+| `__contains__` | Membership           | `2 in a`                | `a.__contains__(2)`   |
+| `__len__`      | Length               | `len(a)`                | `a.__len__()`         |
+| `__iter__`     | Iterate              | `for x in a`            | `a.__iter__()`        |
+| `__and__`      | Intersection         | `a & b`                 | `a.__and__(b)`        |
+| `__or__`       | Union                | `a \| b`                | `a.__or__(b)`         |
+| `__sub__`      | Difference           | `a - b`                 | `a.__sub__(b)`        |
+| `__xor__`      | Symmetric difference | `a ^ b`                 | `a.__xor__(b)`        |
+| `__eq__`       | Equality             | `a == b`                | `a.__eq__(b)`         |
+| `__hash__`     | Hash                 | `hash(a)`               | `a.__hash__()`        |
