@@ -114,6 +114,18 @@ Modifies the original list by adding the specified element to the end.
 
 Modifies the original list by empyting it of all elements.
 
+```python
+>>> my_list = [1,2,3,4]
+
+>>> print(my_list)
+[1,2,3,4]
+
+>>> my_list.clear()
+
+>>> print(my_list)
+[]
+```
+
 ---
 
 ### `copy`
@@ -175,37 +187,153 @@ Returns the number of occurances of an element within a list.
 
 ### `extend`
 
+Adds elements from an iterable to a list.
+
+Iterables that can be used with `extend` include:
+* list
+* tuple
+* range
+* str (each character)
+* bytes (each byte as an int)
+* bytearray
+* set
+* frozenset
+* dict (keys will be appended)
+* compressions/generator
+
+```python
+>>> my_list = []
+
+>>> my_list.extend([1, 2])                  # list
+>>> my_list.extend((3, 4))                  # tuple
+>>> my_list.extend(range(2))                # range
+>>> my_list.extend("hi")                    # string -> 'h', 'i'
+>>> my_list.extend({7, 8})                  # set (unordered)
+>>> my_list.extend({'x': 1, 'y': 2})        # dict -> 'x', 'y'
+>>> my_list.extend((x*x for x in range(3))) # generator
+>>> my_list.extend(open("file.txt"))        # file lines
+
+```
+
 
 ---
 
 ### `index`
 
+Returns the index of the first occurance of an element in an array. 
+
+```python
+>>> my_list = ['a', 'b', 'c', 'b']
+
+>>> my_list.index('a')
+0
+
+>>> my_list.index('b')
+1
+```
 
 ---
 
 ### `insert`
 
+Adds an element to an array to a specific location. The first argument is the index at which the new element will be, and the second argument is the element itself. The existing elements are shifted one position to the right.
+
+```python
+>>> my_list = ['a', 'b', 'c', 'b']
+
+>>> my_list.insert(2, 'd')
+
+>>> print(my_list)
+['a', 'b', 'd', 'c', 'b']
+```
 
 ---
 
 ### `pop`
+
+Removes and returns the last element of a list. 
+
+```python
+>>> my_list = ['a', 'b', 'c']
+
+>>> item = my_list.pop()
+
+>>> print(item)
+'c'
+
+>>> print(my_list)
+['a', 'b']
+
+>>> my_list.pop(0)
+
+>>> print(my_list)
+['b']
+```
 
 
 ---
 
 ### `remove`
 
+Removes an element from an array by its _value_.
+
+```python
+>>> my_list = [1,2,3,4]
+
+>>> my_list.remove(2)
+
+>>> print(my_list)
+[1, 3, 4]
+```
 
 ---
 
 ### `reverse`
 
-Returns the gien list in reverse order.
+Returns the list in reverse order.
 
+```python
+>>> my_list = [1, 2, 3, 4]
+
+>>> my_list.reverse()
+
+>>> print(my_list)
+[4, 3, 2, 1]
+```
 
 ---
 
 ### `sort`
 
+Sorts the list either in ascending numerical order or alphabetical order. A list with multiple types cannot be sorted.
 
----
+
+numbers:
+```python
+>>> my_nums = [-99, 10, math.pi]
+
+>>> my_nums.sort()
+
+>>> print(my_nums)
+[-99, 3.141592653589793, 10]
+```
+
+
+strings:
+```python
+>>> my_strings = ['one', 'two', 'three', 'four']
+
+>>> my_strings.sort()
+
+>>> print(my_strings)
+['four', 'one', 'three', 'two']
+```
+
+strings and numbers:
+```python
+>>> my_list = [-99, 10, 'wolf', 'python', math.pi]
+>>> my_list.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+```
