@@ -19,8 +19,10 @@ A `list` is a collection of items defined with square brackets `[]`. These items
 A list can be instantiated using the _literal_ syntax or with the `list` constructor:
 
 ```python
+# literal syntax
 >>> my_list = ['apple', 2, True, 'string cheese']
 
+# constuctor
 >>> my_list = list(['apple', 2, True, 'string cheese'])
 ```
 
@@ -74,6 +76,22 @@ Omitting `start` begins the slice at the first element, and omitting `end` exten
 ['apple', 2]
 ```
 
+### Membership testing
+
+The existence of a value within a list can be checked with the `in` keyword. Returns `True` if the element is in the list and `False` if the element is _not_ in the list.
+
+```python
+>>> my_list = ['apple', 2, True, 'string cheese']
+
+>>> 'apple' in my_list
+True
+
+>>> 2 in my_list
+True
+
+>>> 'chicken' in my_list
+False
+```
 
 ## Dunder methods
 
