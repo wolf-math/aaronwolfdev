@@ -141,6 +141,8 @@ Removes all elements from a dictionary.
 {}
 ```
 
+---
+
 ### copy
 
 Returns a copy (or clone) of a dictionary
@@ -170,6 +172,7 @@ my_other = my_dict
 
 will only create another variable that referrs to the same dictionary. In such a scenario altering `my_dict` would also alter `my_other`.
 :::
+---
 
 ### fromkeys
 
@@ -185,6 +188,7 @@ Returns a new dictionary from keys from the given list or tuple, and values from
 >>> print(student_grades)
 {'Aaron': 75, 'Max': 75, 'Ryan': 75, 'Betty': 75}
 ```
+---
 
 ### get
 
@@ -219,6 +223,7 @@ Can also be used with default value if the value is not found.
 >>> my_dict.get('color', 'purple')
 'purple'
 ```
+---
 
 ### items
 
@@ -230,6 +235,7 @@ Returns a view object of a list of tuples as the key-value pairs.
 >>> my_dict.items()
 dict_items([('fruit', 'apple'), ('count', 2), ('is_good', True), ('snack', 'string cheese')])
 ```
+---
 
 ### keys
 
@@ -244,6 +250,7 @@ Returns a view object of a list of the keys of a dictionary.
 >>> my_dict.keys()
 dict_keys(['fruit', 'count', 'is_good', 'snack'])
 ```
+---
 
 ### pop
 
@@ -260,6 +267,7 @@ Returns and removes the given key-value pair.
 >>> print(snizzack)
 string cheese
 ```
+---
 
 ### popitem
 
@@ -276,11 +284,89 @@ Removes the last key-value pair in a dictionary and returns it as a tuple.
 >>> print(snizzack)
 ('snack', 'string cheese')
 ```
+---
 
 ### setdefault
 
+If the key exists in the dictionary, returns the value of the given key (just like get) and does not change the dictionary.
+
+If the key does not exist in the dictionary, returns the default value and inserts the key with the provided default value.
+
+#### Key exists:
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> result = my_dict.setdefault('fruit', 'orange')
+>>> print(result)
+'apple'
+
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese'}
+```
+
+#### Key does not exist:
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> result = my_dict.setdefault('color', 'red')
+>>> print(result)
+'red'
+
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese', 'color': 'red'}
+```
+
+---
 
 ### update
 
+If a key exists in the dictionary, overwrites the value at that key.
+
+If a key does not exist in the dictionary, creates a new key value pair.
+
+#### Key exists
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.update({'fruit': 'banana'})
+>>> print(my_dict)
+{'fruit': 'banana', 'count': 2, 'is_good': True, 'snack': 'string cheese'}
+```
+
+#### Key does not exist
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.update({'color': 'red'})
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese', 'color': 'red'}
+```
+
+#### Updating multiple values
+
+```python
+>>> my_dict.update({'fruit': 'grape', 'count': 5})
+>>> print(my_dict)
+{'fruit': 'grape', 'count': 5, 'is_good': True, 'snack': 'string cheese'}
+```
+
+---
 
 ### values
+
+
+Returns a view object of a list of the values of a dictionary.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.values
+<built-in method values of dict object at 0x1043b8100>
+
+>>> my_dict.values()
+dict_values(['apple', 2, True, 'string cheese'])
+```
