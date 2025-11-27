@@ -60,11 +60,42 @@ Dot notation is not supported in Python
 
 ### Modifying elements
 
+Modify elements using bracket notation.
 
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict['fruit': 'banana']
+
+>>> print(my_dict)
+{ 'fruit': 'banana', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+```
 
 ### Adding elements
 
+Add a new element by using bracket notation
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict['person'] = 'Wolf'
+
+>>> print(my_dict)
+{ 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese', 'person': 'Wolf' }
+```
+
 ### Removing elements
+
+Remove an element with the `del` command.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> del my_dict['count']
+
+>>> print(my_dict)
+{ 'fruit': 'apple', 'is_good': True, 'snack': 'string cheese' }
+```
 
 ### Membership testing
 
@@ -99,28 +130,152 @@ False
 
 ### clear
 
+Removes all elements from a dictionary.
 
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.clear()
+
+>>> print(my_dict)
+{}
+```
 
 ### copy
 
+Returns a copy (or clone) of a dictionary
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_other_dict  = my_dict.copy()
+
+>>> my_other_dict['editor'] = 'vs code'
+
+>>> del my_dict['snack']
+
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True}
+
+>>> print(my_other_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese', 'editor': 'vs code'}
+```
+
+:::note
+altering making a copy of a dictionary like this:
+
+```python
+my_other = my_dict
+```
+
+will only create another variable that referrs to the same dictionary. In such a scenario altering `my_dict` would also alter `my_other`.
+:::
 
 ### fromkeys
 
+Returns a new dictionary from keys from the given list or tuple, and values from the second parameter. The default value for the second parameter is `None`.
+
+```python
+>>> student_list = ['Aaron', 'Max', 'Ryan', 'Betty']
+
+>>> grades = 75
+
+>>> student_grades = dict.fromkeys(student_scores, grades)
+
+>>> print(student_grades)
+{'Aaron': 75, 'Max': 75, 'Ryan': 75, 'Betty': 75}
+```
 
 ### get
 
+Returns the value of the specified key.
+
+Is there a difference in python between 
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> fav_fruit = my_dict.get('fruit')
+
+>>> print(fav_fruit)
+'apple'
+```
+
+Unlike accessing with bracket notation, `get` does not raise a key error if the key is not found.
+
+```python
+>>> my_dict['color']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'color'
+
+>>> my_dict.get('color')
+
+```
+
+Can also be used with default value if the value is not found.
+
+```python
+>>> my_dict.get('color', 'purple')
+'purple'
+```
 
 ### items
 
+Returns a view object of a list of tuples as the key-value pairs.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.items()
+dict_items([('fruit', 'apple'), ('count', 2), ('is_good', True), ('snack', 'string cheese')])
+```
 
 ### keys
 
+Returns a view object of a list of the keys of a dictionary.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> my_dict.keys
+<built-in method keys of dict object at 0x1043b8100>
+
+>>> my_dict.keys()
+dict_keys(['fruit', 'count', 'is_good', 'snack'])
+```
 
 ### pop
 
+Returns and removes the given key-value pair.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> snizzack= my_dict.pop('snack')
+
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True}
+
+>>> print(snizzack)
+string cheese
+```
 
 ### popitem
 
+Removes the last key-value pair in a dictionary and returns it as a tuple.
+
+```python
+>>> my_dict = { 'fruit': 'apple', 'count': 2, 'is_good': True, 'snack': 'string cheese' }
+
+>>> snizzack = my_dict.popitem()
+
+>>> print(my_dict)
+{'fruit': 'apple', 'count': 2, 'is_good': True}
+
+>>> print(snizzack)
+('snack', 'string cheese')
+```
 
 ### setdefault
 
