@@ -41,19 +41,199 @@ Returns the absolute value of an [`int`](./int.md), [`float`](./float.md), or [`
 
 The number that's returned for complex numbers is the result of calculating $\sqrt{a^2 + b^2}$. In the above example it is the result of $\sqrt{3^2 + 7^2}$.
 
+---
+
 ### `aiter`
 
-`aiter` is used with `asyncio` for asynchronous iteration.
+Returns an **asynchronous iterator** for an async iterable.
+Used inside `async` functions, often with `async for`.
+
+```python
+async def main():
+    async for x in aiter([1, 2, 3]):
+        print(x)
+```
+
+Most built-in collections are not async-iterable, so this is primarily used with objects that implement `__aiter__`.
+
+---
 
 ### `all`
+
+Returns `True` if **every element** in an iterable is truthy.
+Returns `True` for an empty iterable.
+
+```python
+>>> all([True, 1, 'x'])
+True
+>>> all([True, 0, 'x'])
+False
+>>> all([])
+True
+```
+
+---
+
 ### `anext`
+
+Retrieves the **next item** from an async iterator.
+Async version of `next()`.
+
+```python
+async def main():
+    it = aiter([1, 2, 3])
+    first = await anext(it)
+    print(first)
+```
+
+You can also provide a default:
+
+```python
+await anext(it, default_value)
+```
+
+---
+
 ### `any`
+
+Returns `True` if **at least one** element in an iterable is truthy.
+
+```python
+>>> any([0, 0, 5])
+True
+>>> any([0, False, None])
+False
+```
+
+Useful for condition checks over lists or generator expressions.
+
+---
+
 ### `ascii`
+
+Returns a string containing only ASCII characters.
+Non-ASCII characters are escaped using `\x`, `\u`, or `\U`.
+
+```python
+>>> ascii("café")
+"'caf\\xe9'"
+>>> ascii(["α", "β", "γ"])
+"['\\u03b1', '\\u03b2', '\\u03b3']"
+```
+
+Helpful for debugging or logging where only ASCII output is expected.
+
+---
+
 ### `bin`
+
+Converts an integer into its **binary string representation**.
+
+```python
+>>> bin(10)
+'0b1010'
+>>> bin(-3)
+'-0b11'
+```
+
+The returned value is always a string beginning with `'0b'`.
+
+---
+
 ### `bool`
+
+Converts a value to its boolean form (`True` or `False`).
+Follows Python’s truthiness rules:
+
+Falsy values include:
+
+* `0`
+* `0.0`
+* `''` (empty string)
+* `[]`, `{}`, `set()`, `tuple()`
+* `None`
+* objects that define `__bool__` or `__len__` returning `False`/`0`
+
+Examples:
+
+```python
+>>> bool(1)
+True
+>>> bool(0)
+False
+>>> bool("hello")
+True
+>>> bool("")
+False
+```
+
+---
+
 ### `breakpoint`
+
+Enters the Python debugger at the current line.
+
+```python
+def add(a, b):
+    breakpoint()   # pauses here
+    return a + b
+```
+
+By default this launches `pdb`, but it can be customized via the `PYTHONBREAKPOINT` environment variable (e.g. to use `ipdb`).
+
+---
+
 ### `bytearray`
+
+Mutable sequence of bytes (0–255).
+Often used for binary data manipulation, network buffers, or file processing.
+
+```python
+>>> data = bytearray([65, 66, 67])
+>>> data[0] = 97
+>>> data
+bytearray(b'abc')
+```
+
+You can create one from:
+
+* a sequence of integers
+* a string + encoding
+* an existing bytes object
+
+```python
+>>> bytearray("hello", "utf-8")
+bytearray(b'hello')
+```
+
+---
+
 ### `bytes`
+
+Immutable version of `bytearray`.
+Represents raw binary data.
+
+```python
+>>> b = bytes([65, 66, 67])
+>>> b
+b'ABC'
+```
+
+Common uses:
+
+* reading files in binary mode
+* working with network packets
+* hashing and cryptographic functions
+
+You must reassign to modify:
+
+```python
+>>> b = b'hello'
+>>> b = b.replace(b'h', b'H')
+>>> b
+b'Hello'
+```
+
 ### `callable`
 ### `chr`
 ### `classmethod`
