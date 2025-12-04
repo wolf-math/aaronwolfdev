@@ -16,7 +16,7 @@ date: 28 October 2025
 A string is any series of characters between a set of quotation marks- double `"` or single `'`. Strings must be terminated with the same type of quotation mark that they were started with. Strings are immutable and cannot be changed in place. Only new strings can be created.  
 
 
-### Basic strings
+## Using strings
 
 If a string does not have quotation marks it will be interpreted as a variable.
 
