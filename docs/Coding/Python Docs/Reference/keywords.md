@@ -3,6 +3,8 @@ title: Keywords
 sidebar_position: 0.5
 ---
 
+## Properties
+
 ```python
 >>> import keyword
 >>> keyword.kwlist
