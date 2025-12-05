@@ -11,7 +11,7 @@ title: bytearray
 
 ## Definition
 
-A `bytearray` object is a mutable sequence of bytes (integers in the range 0-255). Bytearrays are used to represent binary data that needs to be modified, such as network buffers, file processing, or binary protocol manipulation. Unlike [`bytes`](./bytes.md), bytearrays can be modified in place. Bytearrays share many methods with bytes but also include mutable operations like `append`, `extend`, `insert`, `pop`, `remove`, and `clear`.
+A `bytearray` object is a mutable sequence of bytes (integers in the range 0-255). Bytearrays are used to represent binary data that needs to be modified, such as network buffers, file processing, or binary protocol manipulation. Unlike [`bytes`](./byte.md), bytearrays can be modified in place. Bytearrays share many methods with bytes but also include mutable operations like `append`, `extend`, `insert`, `pop`, `remove`, and `clear`.
 
 ## Using bytearray
 
