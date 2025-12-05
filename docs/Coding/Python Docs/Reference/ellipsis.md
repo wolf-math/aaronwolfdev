@@ -23,34 +23,89 @@ class MyClass:
         ...
 ```
 
-## Usage
+## Using ellipsis
 
 ### Placeholder for incomplete code
 
 `...` is often used instead of `pass` when you want to clearly signal that something is intentionally left unfinished.
 
-### In libraries (e.g., NumPy)
-
-Some libraries interpret `...` in slicing operations to mean “all remaining dimensions”:
-
 ```python
-arr[..., 0]
+def future_function():
+    ...
+
+class MyClass:
+    def method(self):
+        ...
 ```
 
-### Type stubs and typing
+### In type hints
 
-In `.pyi` stub files or abstract methods, `...` can stand in for unimplemented bodies or unspecified return types.
+Ellipsis can be used in type hints to indicate variadic arguments or incomplete type information:
 
 ```python
-def connect(self) -> ...:
+from typing import Tuple
+
+def process(*args: int) -> Tuple[int, ...]:
+    ...
+
+# In function signatures
+def func(x: int, ...) -> None:
     ...
 ```
 
-### Type
+### In slicing operations (NumPy and other libraries)
+
+Some libraries, particularly NumPy, interpret `...` in slicing operations to mean "all remaining dimensions":
+
+```python
+import numpy as np
+
+arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+arr[..., 0]  # Selects the first element along the last dimension
+```
+
+### Singleton behavior
+
+Every occurrence of `...` refers to the same singleton object:
 
 ```python
 >>> ... is Ellipsis
 True
+
+>>> ... is ...
+True
+
 >>> type(...)
 <class 'ellipsis'>
+
+>>> id(...) == id(Ellipsis)
+True
 ```
+
+### Boolean value
+
+Ellipsis is truthy:
+
+```python
+>>> bool(...)
+True
+
+>>> if ...:
+...     print("Ellipsis is truthy")
+Ellipsis is truthy
+```
+
+## Dunder methods
+
+| Dunder Method | Operation | Example (normal syntax) | Example (dunder call) |
+| --- | --- | --- | --- |
+| `__repr__` | Object representation | `repr(...)` → `'Ellipsis'` | `....__repr__()` |
+| `__str__` | String conversion | `str(...)` → `'Ellipsis'` | `....__str__()` |
+| `__bool__` | Truth value | `bool(...)` → `True` | `....__bool__()` |
+| `__eq__` | Equality comparison | `... == Ellipsis` → `True` | `....__eq__(Ellipsis)` |
+| `__ne__` | Inequality comparison | `... != None` → `True` | `....__ne__(None)` |
+| `__hash__` | Hash value | `hash(...)` | `....__hash__()` |
+| `__lt__` | Less than | `... < Ellipsis` → `False` | `....__lt__(Ellipsis)` |
+| `__le__` | Less than or equal | `... <= Ellipsis` → `True` | `....__le__(Ellipsis)` |
+| `__gt__` | Greater than | `... > Ellipsis` → `False` | `....__gt__(Ellipsis)` |
+| `__ge__` | Greater than or equal | `... >= Ellipsis` → `True` | `....__ge__(Ellipsis)` |
