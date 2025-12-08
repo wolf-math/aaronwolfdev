@@ -1,6 +1,6 @@
 ---
 title: Lists
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 Lists are one of Python's most versatile data structures. They let you store and organize multiple items in a single variable, making it easy to work with collections of data.
