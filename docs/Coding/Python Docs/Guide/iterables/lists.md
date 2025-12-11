@@ -40,7 +40,7 @@ scores = [95, 87, 92, 78]
 
 ### Using the list() constructor
 
-You can also create lists using the `list()` function:
+You can also create lists using the [`list()`](../../Reference/list) constructor:
 
 ```python
 numbers = list([1, 2, 3])
@@ -53,7 +53,7 @@ The literal syntax `[]` is more common and Pythonic than `list()`.
 
 ### Lists from other sequences
 
-Convert strings, tuples, or other sequences into lists:
+Convert strings, [tuples](./tuples), or other sequences into lists:
 
 ```python
 word_list = list("hello")  # ['h', 'e', 'l', 'l', 'o']
@@ -198,7 +198,7 @@ print(fruits)  # []
 
 ## Slicing
 
-**Slicing** lets you get a portion of a list using `[start:end]`:
+**Slicing the list** lets you get a portion of a list using `[start:end]`:
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5]
@@ -211,7 +211,7 @@ numbers[:]     # [0, 1, 2, 3, 4, 5] (copy of entire list)
 
 ### Step slicing
 
-Add a third number for the step:
+When slicing the list, add a third number for the step:
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5]
@@ -223,7 +223,7 @@ numbers[::-1]     # [5, 4, 3, 2, 1, 0] (reversed)
 
 ### Modifying slices
 
-You can also modify slices:
+You can also modify slices when slicing the list:
 
 ```python
 numbers = [0, 1, 2, 3, 4, 5]
@@ -235,7 +235,7 @@ print(numbers)  # [0, 10, 20, 30, 4, 5]
 
 ### Length
 
-Get the number of items with `len()`:
+Get the number of items with [`len()`](../../Reference/built-in#len):
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -277,7 +277,7 @@ print(repeated)  # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
 ### Iteration
 
-Loop through items with `for`:
+Loop through items with [`for`](./for_loops) loops:
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -286,7 +286,7 @@ for fruit in fruits:
     print(fruit)
 ```
 
-Get both index and value with `enumerate()`:
+Get both index and value with [`enumerate()`](../../Reference/built-in#enumerate):
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -366,7 +366,7 @@ Use `.copy()` or `[:]` to create a copy.
 
 ## List comprehensions
 
-**List comprehensions** provide a concise way to create lists:
+**List comprehensions** provide a concise way to create lists. Learn more in the [comprehensions guide](./comprehensions):
 
 ```python
 # Create a list of squares
@@ -443,7 +443,7 @@ if 'banana' in fruits:
 - **Prefer list comprehensions** for simple transformations
 - **Be careful with mutability**: Remember that modifying a list affects all references to it
 - **Use `in` for membership checks**: It's more readable than checking indices
-- **Consider alternatives**: For fixed-size collections, tuples might be better; for unique items, sets might be better
+- **Consider alternatives**: For fixed-size collections, [tuples](./tuples) might be better; for unique items, [sets](./sets) might be better
 
 ## Summary
 
