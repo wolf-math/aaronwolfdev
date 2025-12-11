@@ -1,6 +1,6 @@
 ---
 title: Ranges
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Ranges represent an immutable sequence of evenly spaced integers. They're memory-efficient sequences that generate values on demand. Unlike lists, ranges don't store all values in memory, making them perfect for working with large sequences of numbers.
@@ -12,7 +12,7 @@ A **range** is an immutable sequence of integers that follows a pattern defined 
 - **Memory efficient**: Don't store all values in memory
 - **Lazy**: Generate values as needed
 - **Indexed**: Can access values by position
-- **Sequence-like**: Support indexing, slicing, and membership testing
+- **Sequence-like**: Support indexing, slicing the range, and membership testing
 
 ```python
 # Range from 0 to 4 (not including 5)
@@ -24,7 +24,7 @@ print(list(numbers))  # [0, 1, 2, 3, 4]
 
 ### Basic syntax
 
-Ranges use the `range()` function with three possible forms:
+Ranges use the [`range()`](../../Reference/range) function with three possible forms:
 
 ```python
 range(stop)           # Start at 0, go up to (but not including) stop
@@ -89,7 +89,7 @@ print(r[-2])  # 6 (second to last)
 
 ### Slicing
 
-Slice ranges to create new ranges:
+Slice the range to create new ranges:
 
 ```python
 r = range(0, 10, 2)
@@ -151,7 +151,7 @@ print(r1.step)   # 1 (default)
 
 ### To lists
 
-Convert ranges to lists when you need all values at once:
+Convert ranges to [lists](./lists) when you need all values at once:
 
 ```python
 numbers = list(range(5))           # [0, 1, 2, 3, 4]
@@ -161,7 +161,7 @@ backwards = list(range(10, 0, -1)) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 ### To tuples
 
-Convert ranges to tuples:
+Convert ranges to [tuples](./tuples):
 
 ```python
 numbers = tuple(range(5))  # (0, 1, 2, 3, 4)
@@ -311,7 +311,7 @@ If you need non-integer sequences, you'll need to create them differently (we'll
 
 ## Using ranges with loops
 
-Ranges are commonly used with `for` loops to repeat actions a specific number of times or to iterate through sequences. We'll explore loops in detail in the next section, but here's a brief preview:
+Ranges are commonly used with [for loops](./for_loops) to repeat actions a specific number of times or to iterate through sequences. We'll explore loops in detail in the next section, but here's a brief preview:
 
 ```python
 # Ranges work perfectly with for loops
@@ -347,7 +347,7 @@ if 500 in range(1000):
 Ranges are efficient sequences of integers:
 - Memory-efficient (don't store all values)
 - Perfect for loops and counting (we'll see in the next section)
-- Support indexing, slicing, and membership testing
+- Support indexing, slicing the range, and membership testing
 - Immutable and fast
 - Perfect for representing large numeric sequences
 

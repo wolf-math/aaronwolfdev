@@ -1,6 +1,6 @@
 ---
 title: Sets
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Sets are unordered collections of unique elements. Unlike lists and tuples, sets don't allow duplicates and don't maintain item order. They're perfect for tasks like removing duplicates, testing membership efficiently, and performing mathematical set operations.
@@ -43,7 +43,7 @@ numbers = {1, 2, 3, 4, 5}
 
 ### From other sequences
 
-Convert lists, tuples, or strings into sets:
+Convert [lists](./lists), [tuples](./tuples), or strings into sets:
 
 ```python
 # From a list
@@ -58,7 +58,7 @@ chars = set("hello")  # {'h', 'e', 'l', 'o'}
 
 ### Set comprehensions
 
-Create sets using set comprehensions (similar to list comprehensions):
+Create sets using set comprehensions (similar to [list comprehensions](./comprehensions)):
 
 ```python
 squares = {x**2 for x in range(5)}  # {0, 1, 4, 9, 16}
@@ -249,7 +249,7 @@ set1.symmetric_difference_update(set2)  # Symmetric difference
 
 ### Length
 
-Get the number of items with `len()`:
+Get the number of items with [`len()`](../../Reference/built-in#len):
 
 ```python
 fruits = {'apple', 'banana', 'orange'}
@@ -274,7 +274,7 @@ Membership testing with `in` is very efficient for sets (O(1) average case), muc
 
 ### Iteration
 
-Loop through items with `for`:
+Loop through items with [`for`](./for_loops) loops:
 
 ```python
 fruits = {'apple', 'banana', 'orange'}
@@ -381,6 +381,8 @@ has_all = required_skills.issubset(candidate_skills)  # True
 
 ## Sets vs lists vs tuples
 
+See the [lists guide](./lists) and [tuples guide](./tuples) for more details.
+
 | Feature | Sets | Lists | Tuples |
 |---------|------|-------|--------|
 | Order | No | Yes | Yes |
@@ -396,7 +398,7 @@ has_all = required_skills.issubset(candidate_skills)  # True
 - **Use sets for fast membership**: `in` checks are much faster than with lists
 - **Use sets for set operations**: Union, intersection, and difference are natural
 - **Don't rely on order**: Sets are unordered; if you need order, use a list
-- **Use frozensets for immutable sets**: If you need a set as a dictionary key, use `frozenset()`
+- **Use frozensets for immutable sets**: If you need a set as a dictionary key, use [`frozenset()`](../../Reference/frozenset)
 - **Be aware of hashability**: Only hashable types (immutable types) can be set elements
 
 ```python

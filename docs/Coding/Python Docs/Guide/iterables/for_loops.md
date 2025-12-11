@@ -1,9 +1,9 @@
 ---
 title: For loops
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like lists, tuples, strings, sets, and ranges—for loops work with all of them.
+For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like [lists](./lists), [tuples](./tuples), strings, [sets](./sets), and [ranges](./ranges)—for loops work with all of them.
 
 ## What are for loops?
 
@@ -22,7 +22,7 @@ The loop variable takes on each value from the iterable in turn, and the indente
 
 ## Iterating over lists
 
-Loop through each item in a list:
+Loop through each item in a [list](./lists):
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -78,7 +78,7 @@ Strings are sequences of characters, so loops process them character by characte
 
 ## Iterating over ranges
 
-As we saw in the ranges section, ranges are perfect for loops:
+As we saw in the [ranges](./ranges) section, ranges are perfect for loops:
 
 ```python
 # Count from 0 to 4
@@ -109,7 +109,7 @@ Ranges are memory-efficient and commonly used when you need to repeat code a spe
 
 ## Iterating over sets
 
-Loop through items in a set (order may vary):
+Loop through items in a [set](./sets) (order may vary):
 
 ```python
 colors = {'red', 'green', 'blue'}
@@ -124,7 +124,7 @@ Sets are unordered, so the iteration order may vary between runs. Don't rely on 
 
 ## Iterating over tuples
 
-Tuples work just like lists in loops:
+[Tuples](./tuples) work just like lists in loops:
 
 ```python
 coordinates = (3, 4)
@@ -144,7 +144,7 @@ for point in points:
 
 ## Getting indices with enumerate()
 
-Often you need both the index and the value. Use `enumerate()` instead of `range(len())`:
+Often you need both the index and the value. Use [`enumerate()`](../../Reference/built-in#enumerate) instead of `range(len())`:
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -178,7 +178,7 @@ for i in range(len(fruits)):
 
 ## Iterating over dictionaries
 
-Dictionaries have special iteration behavior. By default, you iterate over keys:
+[Dictionaries](./dictionaries) have special iteration behavior. By default, you iterate over keys:
 
 ```python
 person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
@@ -447,12 +447,12 @@ squares = [num ** 2 for num in range(5)]
 # [0, 1, 4, 9, 16]
 ```
 
-List comprehensions will be covered in more detail later, but they're a powerful way to transform and filter data.
+List comprehensions will be covered in more detail in the [comprehensions guide](./comprehensions), but they're a powerful way to transform and filter data.
 
 ## Best practices
 
 - **Use descriptive variable names**: `for fruit in fruits:` is better than `for x in fruits:`
-- **Use `enumerate()` instead of `range(len())`**: More Pythonic when you need indices
+- **Use [`enumerate()`](../../Reference/built-in#enumerate) instead of `range(len())`**: More Pythonic when you need indices
 - **Don't modify collections while iterating**: Create new collections instead
 - **Use `break` and `continue` judiciously**: They can make code harder to follow if overused
 - **Consider list comprehensions**: For simple transformations and filtering
@@ -481,7 +481,7 @@ fruits = [f for f in fruits if f != 'banana']
 ## Summary
 
 For loops are essential for processing collections:
-- Iterate over any iterable (lists, strings, ranges, sets, dictionaries)
+- Iterate over any iterable ([lists](./lists), strings, [ranges](./ranges), [sets](./sets), [dictionaries](./dictionaries))
 - Use `enumerate()` to get indices
 - Control flow with `break` and `continue`
 - Use `else` clauses for search patterns
