@@ -3,13 +3,19 @@ title: Variables
 sidebar_position: 2
 ---
 
-Variables are names that refer to values. Python doesn’t use type declarations; a name is bound to an object at runtime and can later be rebound to another.
+## What are variables?
+
+**Variables** are names that refer to values. They let you store data and give it meaningful labels, making your code readable and maintainable. Python doesn't use type declarations; a name is bound to an object at runtime and can later be rebound to another.
 
 ```python
 message = "hello"   # name -> string object
 count = 3           # name -> int object
 pi = 3.14159        # name -> float object
 ```
+
+## Why this matters
+
+Variables are essential for writing useful programs. Without variables, you'd have to repeat values throughout your code, making it hard to maintain and update. Variables let you store user input, intermediate calculations, and results that you'll use later. They also make your code self-documenting—a well-named variable like `user_age` is much clearer than just using the number `25` scattered throughout your code. Understanding how variables work—especially how they reference objects and how mutability affects them—is crucial for avoiding bugs and writing clean Python code.
 
 ## Naming rules and style
 

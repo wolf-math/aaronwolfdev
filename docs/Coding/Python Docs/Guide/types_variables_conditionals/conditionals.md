@@ -3,7 +3,13 @@ title: Conditionals
 sidebar_position: 3
 ---
 
-Conditional statements let your program make decisions based on values and conditions. Python uses `if`, `elif`, and `else` to control which code runs.
+## What are conditionals?
+
+**Conditionals** are statements that let your program make decisions based on values and conditions. Python uses `if`, `elif`, and `else` to control which code runs, allowing your program to respond differently to different situations.
+
+## Why this matters
+
+Conditionals are what make programs intelligent and interactive. Without them, your code would always execute the same way every time. With conditionals, you can check user input, validate data, handle different cases, and create programs that adapt to their environment. Almost every useful program uses conditionals—whether it's checking if a user is logged in, validating input, choosing which calculation to perform, or determining what message to display. Mastering conditionals is essential for writing programs that do more than just execute a fixed sequence of steps.
 
 ## Basic syntax
 

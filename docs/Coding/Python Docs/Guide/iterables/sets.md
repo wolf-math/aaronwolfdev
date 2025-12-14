@@ -18,6 +18,10 @@ unique_numbers = {1, 2, 3, 4, 5}
 colors = {'red', 'green', 'blue'}
 ```
 
+## Why this matters
+
+Sets are powerful tools for working with unique collections and performing set operations. They excel at tasks like removing duplicates from lists, testing membership efficiently, and finding common or unique elements between collections. Sets provide mathematical set operations (union, intersection, difference) that are natural and readable. Because membership testing in sets is extremely fast (O(1) average case), they're ideal when you need to check if items exist in a collection frequently. Understanding sets helps you write more efficient code and solve problems that involve uniqueness or set relationships elegantly.
+
 ## Creating sets
 
 ### Empty sets

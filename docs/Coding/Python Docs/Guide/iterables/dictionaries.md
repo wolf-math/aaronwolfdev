@@ -19,6 +19,10 @@ person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
 scores = {'Alice': 95, 'Bob': 87, 'Charlie': 92}
 ```
 
+## Why this matters
+
+Dictionaries are one of Python's most powerful and commonly used data structures. They're perfect for representing structured data where you need to access values by meaningful labels rather than numeric positions. Dictionaries excel at fast lookups, making them ideal for storing and retrieving data efficiently. You'll use dictionaries for configuration settings, user information, counting occurrences, grouping data, and mapping relationships. Their ability to associate keys with values makes code more readable and maintainable than using parallel lists or numeric indices. Understanding dictionaries is essential because they appear in nearly every Python application—from simple scripts to complex web frameworks and data processing pipelines.
+
 ## Creating dictionaries
 
 ### Empty dictionaries

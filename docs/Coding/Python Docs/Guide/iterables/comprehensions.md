@@ -9,6 +9,10 @@ Comprehensions provide a concise, readable way to create lists, dictionaries, an
 
 A **comprehension** is a compact way to create collections (lists, dictionaries, or sets) from iterables. Instead of writing a loop with `append()` or similar methods, comprehensions let you express the transformation in a single line.
 
+## Why this matters
+
+Comprehensions are a Pythonic and elegant way to create collections by transforming or filtering data. They make your code more concise and often faster than equivalent loops. Comprehensions reduce the amount of boilerplate code you need to write, making your intent clearer. They're widely used in Python codebases and are considered idiomatic Python. Understanding comprehensions helps you write more readable, efficient code and makes it easier to read and understand other Python programs. While they can seem complex at first, mastering comprehensions is a hallmark of proficient Python programming.
+
 ## List comprehensions
 
 List comprehensions create lists by transforming or filtering items from an iterable.

@@ -4,11 +4,9 @@ sidebar_position: 1
 
 ---
 
-This guide introduces Python’s built-in types for people new to programming. You’ll learn what types are, which core types you’ll use first, how to inspect them, and how to convert between them.
-
 ## What is a type?
 
-A **type** describes what a value is and which operations make sense for it. Python is **dynamically typed**, so you don’t declare types up front—Python tracks them at runtime.
+A **type** describes what a value is and which operations make sense for it. Python is **dynamically typed**, so you don't declare types up front—Python tracks them at runtime.
 
 ```python
 x = 3          # int
@@ -16,7 +14,7 @@ y = "hello"    # str
 z = [1, 2, 3]  # list
 ```
 
-Use `type(value)` to see a value’s type:
+Use `type(value)` to see a value's type:
 
 ```python
 >>> type(3)
@@ -25,7 +23,11 @@ Use `type(value)` to see a value’s type:
 <class 'str'>
 ```
 
-## Core built-in types you’ll meet first
+## Why this matters
+
+Understanding types is fundamental to Python programming. Every value has a type, and the type determines what you can do with that value. You can add numbers, concatenate strings, and append items to lists—but trying to add a string to a number or call list methods on a number will cause errors. Types help you write correct code by defining what operations are valid for each kind of data. As you learn Python, you'll constantly work with different types, so getting comfortable with the core types early will make everything else easier.
+
+## Core built-in types you'll meet first
 
 - Numbers: `int`, `float`, `complex`
 - Text: `str`

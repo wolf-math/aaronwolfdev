@@ -9,6 +9,10 @@ While loops repeat code as long as a condition remains true. Unlike [for loops](
 
 A **while loop** repeatedly executes a block of code as long as a condition is truthy. The condition is checked before each iteration, and the loop continues until the condition becomes falsy.
 
+## Why this matters
+
+While loops are essential when you need to repeat code an unknown number of times, continuing until a condition changes. They're perfect for situations where you don't know in advance how many iterations you'll need—like reading input until a valid value is entered, processing data until a certain state is reached, or running game loops until the game ends. While loops give you flexibility that for loops can't provide when the termination condition depends on runtime behavior rather than a fixed sequence. Understanding when to use while loops versus for loops helps you choose the right tool for each situation and write code that handles dynamic, condition-based repetition.
+
 ## Basic syntax
 
 The basic form of a while loop looks like this:

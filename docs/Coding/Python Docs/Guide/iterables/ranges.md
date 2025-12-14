@@ -20,6 +20,10 @@ numbers = range(5)
 print(list(numbers))  # [0, 1, 2, 3, 4]
 ```
 
+## Why this matters
+
+Ranges are essential for creating numeric sequences efficiently, especially when working with loops. They're incredibly memory-efficient because they don't store all values—they calculate them on demand. This makes ranges perfect for representing large sequences (even millions of numbers) without consuming excessive memory. Ranges are commonly used with for loops to repeat code a specific number of times or to generate indices for accessing other sequences. Understanding ranges helps you write cleaner loop code and work with numeric sequences without materializing large lists in memory.
+
 ## Creating ranges
 
 ### Basic syntax

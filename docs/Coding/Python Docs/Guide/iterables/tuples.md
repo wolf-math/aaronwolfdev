@@ -19,6 +19,10 @@ colors = ('red', 'green', 'blue')
 mixed = ('apple', 2, True, 3.14)  # Can mix types!
 ```
 
+## Why this matters
+
+Tuples are essential when you need fixed, unchangeable data. Their immutability makes them safe to use as dictionary keys and prevents accidental modifications. Tuples are perfect for representing fixed pairs or groups of related values—like coordinates, database records, or function return values. They're also slightly more memory-efficient than lists and can make your code's intent clearer: if you use a tuple, you're signaling that the data shouldn't change. Understanding when to use tuples versus lists helps you write more appropriate and efficient code.
+
 ## Creating tuples
 
 ### Tuples with items
