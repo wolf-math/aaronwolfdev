@@ -1,6 +1,6 @@
 ---
 title: Keywords
-sidebar_position: 0.5
+# sidebar_position: 0.5
 ---
 
 ## Properties
