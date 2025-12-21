@@ -95,6 +95,36 @@ True
 False
 ```
 
+### Unpacking
+
+Lists can be unpacked into multiple variables. The number of variables must match the number of items in the list.
+
+```python
+>>> my_list = [10, 20, 30]
+
+>>> a, b, c = my_list
+
+>>> a
+10
+
+>>> b
+20
+
+>>> c
+30
+```
+
+If the number of variables doesn't match, a `ValueError` is raised:
+
+```python
+>>> my_list = [10, 20, 30]
+
+>>> a, b = my_list
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: too many values to unpack (expected 2)
+```
+
 ## Dunder methods
 
 | Dunder Method  | Operation         | Example (normal syntax)       | Example (dunder call)               |

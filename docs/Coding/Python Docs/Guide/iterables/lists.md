@@ -299,6 +299,44 @@ for index, fruit in enumerate(fruits):
     print(f"{index}: {fruit}")
 ```
 
+### Unpacking
+
+**Unpacking** lets you assign list items to multiple variables at once. The number of variables must match the number of items:
+
+```python
+my_list = [10, 20, 30]
+a, b, c = my_list
+
+print(a)  # 10
+print(b)  # 20
+print(c)  # 30
+```
+
+This is especially useful when a function returns a list or when working with fixed-size lists:
+
+```python
+# Unpacking coordinates
+point = [3, 4]
+x, y = point
+print(f"x: {x}, y: {y}")  # x: 3, y: 4
+
+# Unpacking RGB values
+color = [255, 128, 64]
+red, green, blue = color
+print(f"RGB: ({red}, {green}, {blue})")  # RGB: (255, 128, 64)
+```
+
+:::warning
+The number of variables must exactly match the number of items in the list, otherwise you'll get a `ValueError`:
+
+```python
+my_list = [10, 20, 30]
+a, b = my_list  # ValueError: too many values to unpack (expected 2)
+```
+:::
+
+For unpacking lists with a variable number of items, see [extended unpacking with tuples](./tuples#extended-unpacking).
+
 ## Useful list methods
 
 ### count()
