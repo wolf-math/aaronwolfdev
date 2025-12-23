@@ -1,6 +1,6 @@
 ---
 title: Variables
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 ## What are variables?

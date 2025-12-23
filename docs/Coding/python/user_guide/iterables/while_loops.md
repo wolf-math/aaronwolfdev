@@ -1,6 +1,6 @@
 ---
 title: While loops
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 While loops repeat code as long as a condition remains true. Unlike [for loops](./for_loops) that iterate over a fixed collection, while loops continue until their condition becomes false, making them perfect for situations where you don't know in advance how many iterations you'll need.

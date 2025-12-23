@@ -1,6 +1,6 @@
 ---
 title: For loops
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like [lists](./lists), [tuples](./tuples), strings, [sets](./sets), and [ranges](./ranges)—for loops work with all of them.
@@ -56,7 +56,10 @@ for num in numbers:
 
 # Better: create a new list or iterate over a copy
 numbers = [1, 2, 3, 4, 5]
-filtered = [num for num in numbers if num != 2]
+filtered = []
+for num in numbers:
+    if num != 2:
+        filtered.append(num)
 ```
 
 ## Iterating over strings
@@ -417,7 +420,7 @@ for _ in range(5):
 # Hello!
 ```
 
-The `_` variable name is a convention meaning "I don't need this value"—we're just repeating the action.
+The `_` variable name is a convention meaning "I don't need this value, I just want to repeat this action".
 
 ### Processing multiple sequences together
 

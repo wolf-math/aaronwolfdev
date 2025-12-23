@@ -1,12 +1,12 @@
 ---
 title: Types
-sidebar_position: 1
+sidebar_position: 2
 
 ---
 
 ## What is a type?
 
-A **type** describes what a value is and which operations make sense for it. Python is **dynamically typed**, so you don't declare types up front—Python tracks them at runtime.
+A **type** describes what a value is and which operations make sense for it. Python is **dynamically typed**, so you don't declare types up front when you create a variable, Python tracks them at runtime.
 
 ```python
 x = 3          # int
@@ -76,7 +76,7 @@ True
 
 ### None
 
-`None` represents “no value” or “nothing here.” It’s a singleton—you never create another one.
+`None` represents “no value” or “nothing here.” It’s a singleton, which means only one instance exists in all of Python. Multiple representations of `None` all refer to the same object.
 
 ```python
 result = None
@@ -159,28 +159,5 @@ False
 - Use `set` when you need uniqueness or fast membership checks.
 - Use `bytes`/`bytearray` for binary data.
 
-## Quick practice
 
-Try in a REPL (e.g., `python`):
-
-```python
-# numbers and strings
-x = 10
-y = 3.5
-msg = f"x + y = {x + y}"
-
-# list and tuple
-colors = ["red", "green", "blue"]
-point = (3, 4)
-
-# dict and set
-person = {"name": "Ada", "lang": "Python"}
-unique = {1, 2, 2, 3}
-
-print(msg)
-print(colors)
-print(point)
-print(person)
-print(unique)
-```
 

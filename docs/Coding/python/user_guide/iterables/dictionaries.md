@@ -1,6 +1,6 @@
 ---
 title: Dictionaries
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 Dictionaries (dicts) are key-value stores that let you organize data by meaningful labels rather than numeric positions. Unlike [lists](./lists) and [tuples](./tuples) that use indexes, dictionaries use keys to access values, making them perfect for representing structured data like user information, configuration settings, or any data where names matter more than position.
@@ -260,6 +260,10 @@ for score in scores.values():
     total += score
 average = total / len(scores)
 print(f"Average score: {average}")
+
+# Output:
+# Alice has the highest score: 95
+# Average score: 91.33333333333333
 ```
 
 ## Modifying dictionaries

@@ -1,8 +1,8 @@
 {
-  "label": "Python file handling",
+  "label": "Python standard library",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Python file handling."
+    "description": "Python standard library."
   }
 }

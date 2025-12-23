@@ -1,6 +1,6 @@
 ---
 title: Reading and writing JSON
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## What is JSON?

@@ -1,6 +1,6 @@
 ---
 title: Sets
-sidebar_position: 4
+sidebar_position: 8
 ---
 
 Sets are unordered collections of unique elements. Unlike lists and tuples, sets don't allow duplicates and don't maintain item order. They're perfect for tasks like removing duplicates, testing membership efficiently, and performing mathematical set operations.
