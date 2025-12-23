@@ -147,9 +147,9 @@ True
 
 All boolean methods are inherited from [`int`](./int.md).
 
-<!-- ### `as_integer_ratio`
+### `as_integer_ratio`
 
-Returns a touple (numerator, denominator) representing the boolean as a fraction.
+Returns a tuple `(numerator, denominator)` representing the boolean as a fraction.
 
 ```python
 >>> True.as_integer_ratio()
@@ -163,7 +163,7 @@ Returns a touple (numerator, denominator) representing the boolean as a fraction
 
 ### `bit_count`
 
-Returns the number of `1` bits in the boolean value.
+Returns the number of `1` bits in the integer representation of the boolean.
 
 ```python
 >>> True.bit_count()
@@ -177,7 +177,7 @@ Returns the number of `1` bits in the boolean value.
 
 ### `bit_length`
 
-Returns the number of bits taken to represent the boolean value.
+Returns the number of bits required to represent the boolean as an integer, excluding the sign bit.
 
 ```python
 >>> True.bit_length()
@@ -191,7 +191,7 @@ Returns the number of bits taken to represent the boolean value.
 
 ### `conjugate`
 
-Returns the complex conjugate of the boolean value. Since booleans have no complex portion, only the real portion is returned.
+Returns the complex conjugate of the boolean value. Since booleans are real-valued, this just returns the same integer value (`1` or `0`).
 
 ```python
 >>> True.conjugate()
@@ -205,7 +205,7 @@ Returns the complex conjugate of the boolean value. Since booleans have no compl
 
 ### `denominator`
 
-Returns the denominator value of a boolean. It will always be `1`.
+Returns the denominator of the boolean when viewed as a rational number. It is always `1`.
 
 ```python
 >>> True.denominator
@@ -219,24 +219,65 @@ Returns the denominator value of a boolean. It will always be `1`.
 
 ### `from_bytes`
 
-Returns an boolean from a sequence of bytes. It is the inverse of [`to_bytes`](#to_bytes).
+Class method that returns a boolean created from a sequence of bytes. Any non-zero value becomes `True`; zero becomes `False`. It is the inverse of [`to_bytes`](#to_bytes).
 
+```python
+>>> int.from_bytes(b"\x01", "big") != 0
+True
+>>> bool(int.from_bytes(b"\x00", "big"))
+False
+```
+
+> Note: `from_bytes` is defined on `int`; booleans use the same implementation via inheritance.
 
 ---
 
 ### `imag`
 
+The imaginary part of the boolean when viewed as a complex number. Always `0`.
+
+```python
+>>> True.imag
+0
+>>> False.imag
+0
+```
 
 ---
 
 ### `numerator`
 
+The numerator of the boolean when viewed as a fraction. `True` has numerator `1`; `False` has numerator `0`.
+
+```python
+>>> True.numerator
+1
+>>> False.numerator
+0
+```
 
 ---
 
 ### `real`
 
+The real part of the boolean when viewed as a complex number. This is the same as its integer value (`1` or `0`).
+
+```python
+>>> True.real
+1
+>>> False.real
+0
+```
 
 ---
 
-### `to_bytes` -->
+### `to_bytes`
+
+Convert the boolean (as an integer) to a bytes object using a given length and byte order.
+
+```python
+>>> True.to_bytes(1, "big")
+b'\x01'
+>>> False.to_bytes(1, "big")
+b'\x00'
+```
