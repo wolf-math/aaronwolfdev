@@ -48,7 +48,7 @@ Each pair has a key (before the colon) and a value (after the colon).
 
 ### Using the dict() constructor
 
-Create dictionaries using the [`dict()`](../../Reference/dict) constructor:
+Create dictionaries using the [`dict()`](../../language_reference/dict) constructor:
 
 ```python
 # From key-value pairs
@@ -348,7 +348,7 @@ print(person)  # {}
 
 ### Length
 
-Get the number of key-value pairs with [`len()`](../../Reference/built-in#len):
+Get the number of key-value pairs with [`len()`](../../language_reference/built-in#len):
 
 ```python
 person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}

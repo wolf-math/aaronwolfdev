@@ -76,7 +76,7 @@ empty = tuple()
 
 ### Using the tuple() constructor
 
-Convert other sequences into tuples using the [`tuple()`](../../Reference/tuple) constructor:
+Convert other sequences into tuples using the [`tuple()`](../../language_reference/tuple) constructor:
 
 ```python
 numbers = tuple([1, 2, 3])  # (1, 2, 3)
@@ -163,7 +163,7 @@ Slicing the tuple creates a new tuple—it doesn't modify the original.
 
 ### Length
 
-Get the number of items with [`len()`](../../Reference/built-in#len):
+Get the number of items with [`len()`](../../language_reference/built-in#len):
 
 ```python
 fruits = ('apple', 'banana', 'orange')

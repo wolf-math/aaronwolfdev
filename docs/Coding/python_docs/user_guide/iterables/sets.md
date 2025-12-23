@@ -253,7 +253,7 @@ set1.symmetric_difference_update(set2)  # Symmetric difference
 
 ### Length
 
-Get the number of items with [`len()`](../../Reference/built-in#len):
+Get the number of items with [`len()`](../../language_reference/built-in#len):
 
 ```python
 fruits = {'apple', 'banana', 'orange'}
@@ -402,7 +402,7 @@ See the [lists guide](./lists) and [tuples guide](./tuples) for more details.
 - **Use sets for fast membership**: `in` checks are much faster than with lists
 - **Use sets for set operations**: Union, intersection, and difference are natural
 - **Don't rely on order**: Sets are unordered; if you need order, use a list
-- **Use frozensets for immutable sets**: If you need a set as a dictionary key, use [`frozenset()`](../../Reference/frozenset)
+- **Use frozensets for immutable sets**: If you need a set as a dictionary key, use [`frozenset()`](../../language_reference/frozenset)
 - **Be aware of hashability**: Only hashable types (immutable types) can be set elements
 
 ```python

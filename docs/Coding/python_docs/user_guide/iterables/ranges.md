@@ -28,7 +28,7 @@ Ranges are essential for creating numeric sequences efficiently, especially when
 
 ### Basic syntax
 
-Ranges use the [`range()`](../../Reference/range) function with three possible forms:
+Ranges use the [`range()`](../../language_reference/range) function with three possible forms:
 
 ```python
 range(stop)           # Start at 0, go up to (but not including) stop

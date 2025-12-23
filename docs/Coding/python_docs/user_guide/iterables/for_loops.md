@@ -148,7 +148,7 @@ for point in points:
 
 ## Getting indices with enumerate()
 
-Often you need both the index and the value. Use [`enumerate()`](../../Reference/built-in#enumerate) instead of `range(len())`:
+Often you need both the index and the value. Use [`enumerate()`](../../language_reference/built-in#enumerate) instead of `range(len())`:
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -456,7 +456,7 @@ List comprehensions will be covered in more detail in the [comprehensions guide]
 ## Best practices
 
 - **Use descriptive variable names**: `for fruit in fruits:` is better than `for x in fruits:`
-- **Use [`enumerate()`](../../Reference/built-in#enumerate) instead of `range(len())`**: More Pythonic when you need indices
+- **Use [`enumerate()`](../../language_reference/built-in#enumerate) instead of `range(len())`**: More Pythonic when you need indices
 - **Don't modify collections while iterating**: Create new collections instead
 - **Use `break` and `continue` judiciously**: They can make code harder to follow if overused
 - **Consider list comprehensions**: For simple transformations and filtering

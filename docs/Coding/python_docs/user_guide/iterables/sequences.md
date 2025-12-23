@@ -24,12 +24,12 @@ Think of a sequence like a numbered list where each item has a specific spot. Th
 
 Python includes several built-in sequence types that you'll learn about in detail:
 
-- **Lists** ([`list`](../../Reference/list)): Mutable, changeable collections—perfect when you need to add, remove, or modify items
-- **Tuples** ([`tuple`](../../Reference/tuple)): Immutable, unchangeable collections—ideal for fixed data that shouldn't change
-- **Strings** ([`str`](../../Reference/string)): Immutable sequences of characters—used for text data
-- **Ranges** ([`range`](../../Reference/range)): Immutable sequences of numbers—memory-efficient for numeric sequences
-- **Bytes** ([`bytes`](../../Reference/byte)): Immutable sequences of bytes—used for binary data
-- **Bytearrays** ([`bytearray`](../../Reference/bytearray)): Mutable sequences of bytes—for binary data that needs to change
+- **Lists** ([`list`](../../language_reference/list)): Mutable, changeable collections—perfect when you need to add, remove, or modify items
+- **Tuples** ([`tuple`](../../language_reference/tuple)): Immutable, unchangeable collections—ideal for fixed data that shouldn't change
+- **Strings** ([`str`](../../language_reference/string)): Immutable sequences of characters—used for text data
+- **Ranges** ([`range`](../../language_reference/range)): Immutable sequences of numbers—memory-efficient for numeric sequences
+- **Bytes** ([`bytes`](../../language_reference/byte)): Immutable sequences of bytes—used for binary data
+- **Bytearrays** ([`bytearray`](../../language_reference/bytearray)): Mutable sequences of bytes—for binary data that needs to change
 
 Each sequence type is optimized for specific purposes, but they all share the same fundamental operations. The following guides will explore each type in depth.
 
@@ -69,7 +69,7 @@ text[3:]     # 'hon' (from index 3 to end)
 
 ### Length and membership
 
-You can check how many items are in a sequence using [`len()`](../../Reference/built-in#len) and whether an item exists using `in`:
+You can check how many items are in a sequence using [`len()`](../../language_reference/built-in#len) and whether an item exists using `in`:
 
 ```python
 len("hello")        # 5

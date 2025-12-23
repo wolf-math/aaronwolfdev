@@ -44,7 +44,7 @@ scores = [95, 87, 92, 78]
 
 ### Using the list() constructor
 
-You can also create lists using the [`list()`](../../Reference/list) constructor:
+You can also create lists using the [`list()`](../../language_reference/list) constructor:
 
 ```python
 numbers = list([1, 2, 3])
@@ -239,7 +239,7 @@ print(numbers)  # [0, 10, 20, 30, 4, 5]
 
 ### Length
 
-Get the number of items with [`len()`](../../Reference/built-in#len):
+Get the number of items with [`len()`](../../language_reference/built-in#len):
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -290,7 +290,7 @@ for fruit in fruits:
     print(fruit)
 ```
 
-Get both index and value with [`enumerate()`](../../Reference/built-in#enumerate):
+Get both index and value with [`enumerate()`](../../language_reference/built-in#enumerate):
 
 ```python
 fruits = ['apple', 'banana', 'orange']
