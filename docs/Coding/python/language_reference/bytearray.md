@@ -1,5 +1,6 @@
 ---
 title: bytearray
+sidebar_position: 4
 ---
 
 ## Properties

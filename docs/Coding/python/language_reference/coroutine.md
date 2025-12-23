@@ -1,5 +1,6 @@
 ---
 title: coroutine
+sidebar_position: 24
 ---
 
 ## Properties

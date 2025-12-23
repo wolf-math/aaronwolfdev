@@ -1,6 +1,6 @@
 ---
 title: float
-# sidebar_position: 3
+sidebar_position: 8
 date: 28 October 2025
 ---
 

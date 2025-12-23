@@ -1,5 +1,6 @@
 ---
 title: frozenset
+sidebar_position: 9
 ---
 
 ## Properties

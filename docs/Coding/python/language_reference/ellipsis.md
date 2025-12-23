@@ -1,5 +1,6 @@
 ---
 title: ellipsis
+sidebar_position: 7
 ---
 
 ## Properties

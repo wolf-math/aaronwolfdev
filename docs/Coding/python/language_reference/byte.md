@@ -1,5 +1,6 @@
 ---
 title: byte
+sidebar_position: 3
 ---
 
 ## Properties

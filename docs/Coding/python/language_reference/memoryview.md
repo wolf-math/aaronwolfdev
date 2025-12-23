@@ -1,5 +1,6 @@
 ---
 title: memoryview
+sidebar_position: 12
 ---
 
 ## Properties

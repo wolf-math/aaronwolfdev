@@ -1,5 +1,6 @@
 ---
 title: slice
+sidebar_position: 17
 ---
 
 ## Properties
