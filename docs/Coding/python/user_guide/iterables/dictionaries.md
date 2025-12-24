@@ -63,20 +63,6 @@ person = dict(items)
 The literal syntax `{}` is more common and Pythonic than `dict()`.
 :::
 
-### Dictionary comprehensions
-
-Create dictionaries using comprehensions (similar to [list comprehensions](./comprehensions)):
-
-```python
-# Square each number
-squares = {x: x**2 for x in range(5)}  # See [ranges](./ranges) for more on range()
-# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
-
-# Filter and transform
-evens = {x: x*2 for x in range(5) if x % 2 == 0}
-# {0: 0, 2: 4, 4: 8}
-```
-
 ## Accessing values
 
 ### Bracket notation
@@ -121,6 +107,147 @@ person = {'name': 'Alice', 'age': 30}
 person.get('name')      # 'Alice'
 person.get('city')      # None (key doesn't exist, returns None)
 person.get('city', 'Unknown')  # 'Unknown' (default value if key missing)
+```
+
+## Modifying dictionaries
+
+### Adding or updating items
+
+Use bracket notation to add new items or update existing ones:
+
+```python
+person = {'name': 'Alice', 'age': 30}
+
+# Update existing key
+person['age'] = 31
+
+# Add new key-value pair
+person['city'] = 'Boston'
+
+print(person)  # {'name': 'Alice', 'age': 31, 'city': 'Boston'}
+```
+
+### update()
+
+Update multiple items at once:
+
+```python
+person = {'name': 'Alice', 'age': 30}
+person.update({'age': 31, 'city': 'Boston', 'job': 'Engineer'})
+print(person)  # {'name': 'Alice', 'age': 31, 'city': 'Boston', 'job': 'Engineer'}
+```
+
+You can also pass keyword arguments:
+
+```python
+person = {'name': 'Alice', 'age': 30}
+person.update(age=31, city='Boston')
+```
+
+### Removing items
+
+#### del statement
+
+Remove a key-value pair using `del`:
+
+```python
+person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
+del person['city']
+print(person)  # {'name': 'Alice', 'age': 30}
+```
+
+#### pop()
+
+Remove and return a value:
+
+```python
+person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
+city = person.pop('city')
+print(city)    # 'Boston'
+print(person)  # {'name': 'Alice', 'age': 30}
+
+# With default value if key doesn't exist
+city = person.pop('city', 'Unknown')  # Returns 'Unknown' if 'city' not found
+```
+
+#### popitem()
+
+Remove and return the last key-value pair (as a tuple):
+
+```python
+person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
+item = person.popitem()
+print(item)    # ('city', 'Boston')
+print(person)  # {'name': 'Alice', 'age': 30}
+```
+
+#### clear()
+
+Remove all items:
+
+```python
+person = {'name': 'Alice', 'age': 30}
+person.clear()
+print(person)  # {}
+```
+
+## Nested dictionaries
+
+Dictionaries can contain other dictionaries:
+
+```python
+students = {
+    'Alice': {'age': 20, 'grade': 'A'},
+    'Bob': {'age': 21, 'grade': 'B'},
+    'Charlie': {'age': 19, 'grade': 'A'}
+}
+
+# Access nested values
+print(students['Alice']['age'])     # 20
+print(students['Bob']['grade'])     # 'B'
+
+# Modify nested values
+students['Alice']['age'] = 21
+
+# Add nested dictionary
+students['Diana'] = {'age': 20, 'grade': 'A'}
+```
+
+## Dictionary keys and values
+
+### Valid keys
+
+Keys must be **hashable** (immutable) types:
+- Strings, numbers, tuples (with hashable elements), booleans, `None`
+- Lists, dictionaries, and sets cannot be keys
+
+```python
+# Valid keys
+valid = {
+    'string': 1,
+    42: 'number',
+    (1, 2): 'tuple',
+    True: 'boolean',
+    None: 'none'
+}
+
+# Invalid keys
+# invalid = {[1, 2]: 'list'}  # TypeError: unhashable type: 'list'
+# invalid = {{'a': 1}: 'dict'}  # TypeError: unhashable type: 'dict'
+```
+
+### Any values
+
+Values can be any type, including mutable types:
+
+```python
+mixed = {
+    'string': 'text',
+    'number': 42,
+    'list': [1, 2, 3],
+    'dict': {'nested': 'value'},
+    'tuple': (1, 2, 3)
+}
 ```
 
 ## Getting keys and values
@@ -264,88 +391,6 @@ print(f"Average score: {average}")
 # Output:
 # Alice has the highest score: 95
 # Average score: 91.33333333333333
-```
-
-## Modifying dictionaries
-
-### Adding or updating items
-
-Use bracket notation to add new items or update existing ones:
-
-```python
-person = {'name': 'Alice', 'age': 30}
-
-# Update existing key
-person['age'] = 31
-
-# Add new key-value pair
-person['city'] = 'Boston'
-
-print(person)  # {'name': 'Alice', 'age': 31, 'city': 'Boston'}
-```
-
-### update()
-
-Update multiple items at once:
-
-```python
-person = {'name': 'Alice', 'age': 30}
-person.update({'age': 31, 'city': 'Boston', 'job': 'Engineer'})
-print(person)  # {'name': 'Alice', 'age': 31, 'city': 'Boston', 'job': 'Engineer'}
-```
-
-You can also pass keyword arguments:
-
-```python
-person = {'name': 'Alice', 'age': 30}
-person.update(age=31, city='Boston')
-```
-
-### Removing items
-
-#### del statement
-
-Remove a key-value pair using `del`:
-
-```python
-person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
-del person['city']
-print(person)  # {'name': 'Alice', 'age': 30}
-```
-
-#### pop()
-
-Remove and return a value:
-
-```python
-person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
-city = person.pop('city')
-print(city)    # 'Boston'
-print(person)  # {'name': 'Alice', 'age': 30}
-
-# With default value if key doesn't exist
-city = person.pop('city', 'Unknown')  # Returns 'Unknown' if 'city' not found
-```
-
-#### popitem()
-
-Remove and return the last key-value pair (as a tuple):
-
-```python
-person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
-item = person.popitem()
-print(item)    # ('city', 'Boston')
-print(person)  # {'name': 'Alice', 'age': 30}
-```
-
-#### clear()
-
-Remove all items:
-
-```python
-person = {'name': 'Alice', 'age': 30}
-person.clear()
-print(person)  # {}
 ```
 
 ## Common operations
@@ -530,63 +575,18 @@ grade = 'B'
 print(grades.get(grade, 'Unknown'))  # 'Good'
 ```
 
-## Nested dictionaries
+### Dictionary comprehensions
 
-Dictionaries can contain other dictionaries:
-
-```python
-students = {
-    'Alice': {'age': 20, 'grade': 'A'},
-    'Bob': {'age': 21, 'grade': 'B'},
-    'Charlie': {'age': 19, 'grade': 'A'}
-}
-
-# Access nested values
-print(students['Alice']['age'])     # 20
-print(students['Bob']['grade'])     # 'B'
-
-# Modify nested values
-students['Alice']['age'] = 21
-
-# Add nested dictionary
-students['Diana'] = {'age': 20, 'grade': 'A'}
-```
-
-## Dictionary keys and values
-
-### Valid keys
-
-Keys must be **hashable** (immutable) types:
-- Strings, numbers, tuples (with hashable elements), booleans, `None`
-- Lists, dictionaries, and sets cannot be keys
+Create dictionaries using comprehensions (similar to [list comprehensions](./comprehensions)):
 
 ```python
-# Valid keys
-valid = {
-    'string': 1,
-    42: 'number',
-    (1, 2): 'tuple',
-    True: 'boolean',
-    None: 'none'
-}
+# Square each number
+squares = {x: x**2 for x in range(5)}  # See [ranges](./ranges) for more on range()
+# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 
-# Invalid keys
-# invalid = {[1, 2]: 'list'}  # TypeError: unhashable type: 'list'
-# invalid = {{'a': 1}: 'dict'}  # TypeError: unhashable type: 'dict'
-```
-
-### Any values
-
-Values can be any type, including mutable types:
-
-```python
-mixed = {
-    'string': 'text',
-    'number': 42,
-    'list': [1, 2, 3],
-    'dict': {'nested': 'value'},
-    'tuple': (1, 2, 3)
-}
+# Filter and transform
+evens = {x: x*2 for x in range(5) if x % 2 == 0}
+# {0: 0, 2: 4, 4: 8}
 ```
 
 ## Best practices
