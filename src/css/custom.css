@@ -118,3 +118,7 @@ a {
 p {
   font-size: 1.15rem;
 }
+
+.table-of-contents__link {
+  font-size: 1rem;
+}
