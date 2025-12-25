@@ -25,7 +25,7 @@ print(greet("Bob"))    # "Hello, Bob!"
 
 ## Why this matters
 
-Functions are fundamental to writing good Python code. Without functions, you'd repeat the same code over and over, making your programs longer, harder to maintain, and more error-prone. Functions let you break complex problems into smaller, manageable pieces. They make your code more readable—a well-named function like `calculate_total()` is clearer than seeing the calculation code repeated everywhere. Functions also make testing easier since you can test each function independently. Understanding how to create and use functions is essential because almost all Python programs use them—from simple scripts to large applications.
+Functions are fundamental to writing good Python code. Without functions, you'd repeat the same code over and over, making your programs longer, harder to maintain, and more error-prone. Functions let you break complex problems into smaller, manageable pieces. They make your code more readable. A well-named function like `calculate_total()` is clearer than seeing the calculation code repeated everywhere. Functions also make testing easier since you can test each function independently. Understanding how to create and use functions is essential because almost all Python programs use them, from simple scripts to large applications.
 
 ## Defining functions
 
