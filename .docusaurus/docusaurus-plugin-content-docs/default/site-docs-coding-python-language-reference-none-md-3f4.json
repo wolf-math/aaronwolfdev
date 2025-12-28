@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/none",
+  "title": "None",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/none.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/none",
+  "permalink": "/docs/coding/python/language_reference/none",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/none.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "None",
+    "sidebar_position": 13
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "memoryview",
+    "permalink": "/docs/coding/python/language_reference/memoryview"
+  },
+  "next": {
+    "title": "object",
+    "permalink": "/docs/coding/python/language_reference/object"
+  }
+}

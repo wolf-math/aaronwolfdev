@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/function",
+  "title": "function",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/function.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/function",
+  "permalink": "/docs/coding/python/language_reference/function",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/function.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 22,
+  "frontMatter": {
+    "title": "function",
+    "sidebar_position": 22
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "type",
+    "permalink": "/docs/coding/python/language_reference/type"
+  },
+  "next": {
+    "title": "method",
+    "permalink": "/docs/coding/python/language_reference/method"
+  }
+}

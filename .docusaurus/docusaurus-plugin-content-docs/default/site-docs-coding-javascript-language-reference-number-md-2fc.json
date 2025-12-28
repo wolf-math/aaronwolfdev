@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/number",
+  "title": "Number",
+  "description": "Properties",
+  "source": "@site/docs/coding/javascript/language_reference/number.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/number",
+  "permalink": "/docs/coding/javascript/language_reference/number",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/number.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Number",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "built-in functions",
+    "permalink": "/docs/coding/javascript/language_reference/built-in"
+  },
+  "next": {
+    "title": "String",
+    "permalink": "/docs/coding/javascript/language_reference/string"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/exceptions",
+  "title": "exceptions",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/exceptions.md",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/exceptions",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/exceptions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/exceptions.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "encapsulation",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/encapsulation"
+  },
+  "next": {
+    "title": "inheritance",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/inheritance"
+  }
+}

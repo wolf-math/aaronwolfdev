@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/regexp",
+  "title": "RegExp",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/regexp.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/regexp",
+  "permalink": "/docs/coding/javascript/language_reference/regexp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/regexp.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "RegExp",
+    "sidebar_position": 13
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Date",
+    "permalink": "/docs/coding/javascript/language_reference/date"
+  },
+  "next": {
+    "title": "Map",
+    "permalink": "/docs/coding/javascript/language_reference/map"
+  }
+}

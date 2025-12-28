@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/none",
+  "title": "None",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/none.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/none",
+  "permalink": "/docs/Coding/Python Docs/Reference/none",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/none.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "None"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "method",
+    "permalink": "/docs/Coding/Python Docs/Reference/method"
+  },
+  "next": {
+    "title": "object",
+    "permalink": "/docs/Coding/Python Docs/Reference/object"
+  }
+}

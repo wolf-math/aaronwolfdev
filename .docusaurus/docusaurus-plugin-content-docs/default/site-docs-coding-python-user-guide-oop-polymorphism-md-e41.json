@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/polymorphism",
+  "title": "Polymorphism",
+  "description": "What is polymorphism?",
+  "source": "@site/docs/coding/python/user_guide/oop/polymorphism.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/polymorphism",
+  "permalink": "/docs/coding/python/user_guide/oop/polymorphism",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/polymorphism.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Polymorphism",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Inheritance",
+    "permalink": "/docs/coding/python/user_guide/oop/inheritance"
+  },
+  "next": {
+    "title": "Dunder methods",
+    "permalink": "/docs/coding/python/user_guide/oop/dunder_methods"
+  }
+}

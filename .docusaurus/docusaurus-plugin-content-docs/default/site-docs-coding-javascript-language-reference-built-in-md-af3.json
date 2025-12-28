@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/built-in",
+  "title": "built-in functions",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/built-in.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/built-in",
+  "permalink": "/docs/coding/javascript/language_reference/built-in",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/built-in.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "built-in functions",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Language reference",
+    "permalink": "/docs/coding/javascript/language_reference/"
+  },
+  "next": {
+    "title": "Number",
+    "permalink": "/docs/coding/javascript/language_reference/number"
+  }
+}

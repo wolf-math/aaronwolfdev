@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/function",
+  "title": "function",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/function.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/function",
+  "permalink": "/docs/Coding/Python Docs/Reference/function",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/function.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "function"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "frozenset",
+    "permalink": "/docs/Coding/Python Docs/Reference/frozenset"
+  },
+  "next": {
+    "title": "generator",
+    "permalink": "/docs/Coding/Python Docs/Reference/generator"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "coding/python/language_reference/float",
+  "title": "float",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/float.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/float",
+  "permalink": "/docs/coding/python/language_reference/float",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/float.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "float",
+    "sidebar_position": 8,
+    "date": "28 October 2025"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ellipsis",
+    "permalink": "/docs/coding/python/language_reference/ellipsis"
+  },
+  "next": {
+    "title": "frozenset",
+    "permalink": "/docs/coding/python/language_reference/frozenset"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "Coding/Python Docs/Reference/type",
+  "title": "type",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/type.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/type",
+  "permalink": "/docs/Coding/Python Docs/Reference/type",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/type.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "type"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "tuple",
+    "permalink": "/docs/Coding/Python Docs/Reference/tuple"
+  }
+}

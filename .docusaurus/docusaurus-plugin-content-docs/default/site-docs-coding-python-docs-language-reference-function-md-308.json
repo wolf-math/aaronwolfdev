@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/function",
+  "title": "function",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/function.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/function",
+  "permalink": "/docs/coding/python_docs/language_reference/function",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/function.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "function"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "frozenset",
+    "permalink": "/docs/coding/python_docs/language_reference/frozenset"
+  },
+  "next": {
+    "title": "generator",
+    "permalink": "/docs/coding/python_docs/language_reference/generator"
+  }
+}

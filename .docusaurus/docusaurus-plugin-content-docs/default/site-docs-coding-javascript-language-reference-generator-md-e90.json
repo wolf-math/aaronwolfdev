@@ -1,0 +1,24 @@
+{
+  "id": "coding/javascript/language_reference/generator",
+  "title": "generator",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/generator.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/generator",
+  "permalink": "/docs/coding/javascript/language_reference/generator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/generator.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 22,
+  "frontMatter": {
+    "title": "generator",
+    "sidebar_position": 22
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "async/await",
+    "permalink": "/docs/coding/javascript/language_reference/async"
+  }
+}

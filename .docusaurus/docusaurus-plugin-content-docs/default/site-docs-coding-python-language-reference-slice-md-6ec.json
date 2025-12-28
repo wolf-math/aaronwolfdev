@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/slice",
+  "title": "slice",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/slice.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/slice",
+  "permalink": "/docs/coding/python/language_reference/slice",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/slice.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "slice",
+    "sidebar_position": 17
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "set",
+    "permalink": "/docs/coding/python/language_reference/set"
+  },
+  "next": {
+    "title": "string",
+    "permalink": "/docs/coding/python/language_reference/string"
+  }
+}

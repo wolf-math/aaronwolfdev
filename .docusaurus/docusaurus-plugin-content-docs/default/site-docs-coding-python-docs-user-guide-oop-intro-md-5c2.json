@@ -1,0 +1,24 @@
+{
+  "id": "coding/python_docs/user_guide/oop/intro",
+  "title": "intro",
+  "description": "",
+  "source": "@site/docs/coding/python_docs/user_guide/oop/intro.md",
+  "sourceDirName": "coding/python_docs/user_guide/oop",
+  "slug": "/coding/python_docs/user_guide/oop/intro",
+  "permalink": "/docs/coding/python_docs/user_guide/oop/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/oop/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "instances",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/instances"
+  },
+  "next": {
+    "title": "modules",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/modules"
+  }
+}

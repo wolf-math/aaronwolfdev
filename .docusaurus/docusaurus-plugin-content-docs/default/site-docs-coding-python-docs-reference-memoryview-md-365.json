@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/memoryview",
+  "title": "memoryview",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/memoryview.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/memoryview",
+  "permalink": "/docs/Coding/Python Docs/Reference/memoryview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/memoryview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "memoryview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "list",
+    "permalink": "/docs/Coding/Python Docs/Reference/list"
+  },
+  "next": {
+    "title": "method",
+    "permalink": "/docs/Coding/Python Docs/Reference/method"
+  }
+}

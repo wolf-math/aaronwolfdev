@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/promise",
+  "title": "Promise",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/promise.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/promise",
+  "permalink": "/docs/coding/javascript/language_reference/promise",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/promise.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "Promise",
+    "sidebar_position": 18
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "WeakSet",
+    "permalink": "/docs/coding/javascript/language_reference/weakset"
+  },
+  "next": {
+    "title": "Keywords",
+    "permalink": "/docs/coding/javascript/language_reference/keywords"
+  }
+}

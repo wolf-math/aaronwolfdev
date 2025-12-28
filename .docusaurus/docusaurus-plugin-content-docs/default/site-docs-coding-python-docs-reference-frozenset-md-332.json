@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/frozenset",
+  "title": "frozenset",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/frozenset.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/frozenset",
+  "permalink": "/docs/Coding/Python Docs/Reference/frozenset",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/frozenset.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "frozenset"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "float",
+    "permalink": "/docs/Coding/Python Docs/Reference/float"
+  },
+  "next": {
+    "title": "function",
+    "permalink": "/docs/Coding/Python Docs/Reference/function"
+  }
+}

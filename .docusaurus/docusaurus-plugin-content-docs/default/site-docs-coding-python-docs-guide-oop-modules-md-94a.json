@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/modules",
+  "title": "modules",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/modules.md",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/modules",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/modules",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/modules.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "intro",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/intro"
+  },
+  "next": {
+    "title": "polymorphism",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/polymorphism"
+  }
+}

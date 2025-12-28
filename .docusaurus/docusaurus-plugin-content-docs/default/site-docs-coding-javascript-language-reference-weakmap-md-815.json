@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/weakmap",
+  "title": "WeakMap",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/weakmap.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/weakmap",
+  "permalink": "/docs/coding/javascript/language_reference/weakmap",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/weakmap.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "WeakMap",
+    "sidebar_position": 16
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Set",
+    "permalink": "/docs/coding/javascript/language_reference/set"
+  },
+  "next": {
+    "title": "WeakSet",
+    "permalink": "/docs/coding/javascript/language_reference/weakset"
+  }
+}

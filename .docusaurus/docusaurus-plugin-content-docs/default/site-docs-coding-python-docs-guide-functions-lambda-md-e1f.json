@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/functions/lambda",
+  "title": "Lambda functions",
+  "description": "What are lambda functions?",
+  "source": "@site/docs/Coding/Python Docs/Guide/functions/lambda.md",
+  "sourceDirName": "Coding/Python Docs/Guide/functions",
+  "slug": "/Coding/Python Docs/Guide/functions/lambda",
+  "permalink": "/docs/Coding/Python Docs/Guide/functions/lambda",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/functions/lambda.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Lambda functions",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Parameters",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/args_and_kwargs"
+  },
+  "next": {
+    "title": "Higher-order functions",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/higher_order_functions"
+  }
+}

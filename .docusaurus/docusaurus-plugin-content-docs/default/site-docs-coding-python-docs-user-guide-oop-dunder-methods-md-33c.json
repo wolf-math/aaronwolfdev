@@ -1,0 +1,24 @@
+{
+  "id": "coding/python_docs/user_guide/oop/dunder_methods",
+  "title": "dunder_methods",
+  "description": "",
+  "source": "@site/docs/coding/python_docs/user_guide/oop/dunder_methods.md",
+  "sourceDirName": "coding/python_docs/user_guide/oop",
+  "slug": "/coding/python_docs/user_guide/oop/dunder_methods",
+  "permalink": "/docs/coding/python_docs/user_guide/oop/dunder_methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/oop/dunder_methods.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "datetime",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/datetime"
+  },
+  "next": {
+    "title": "encapsulation",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/encapsulation"
+  }
+}

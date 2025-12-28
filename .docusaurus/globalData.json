@@ -1,0 +1,348 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "coding/python/language_reference/index",
+          "docs": [
+            {
+              "id": "coding/python/language_reference/bool",
+              "path": "/docs/coding/python/language_reference/bool",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/built-in",
+              "path": "/docs/coding/python/language_reference/built-in",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/byte",
+              "path": "/docs/coding/python/language_reference/byte",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/bytearray",
+              "path": "/docs/coding/python/language_reference/bytearray",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/complex",
+              "path": "/docs/coding/python/language_reference/complex",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/coroutine",
+              "path": "/docs/coding/python/language_reference/coroutine",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/dict",
+              "path": "/docs/coding/python/language_reference/dict",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/ellipsis",
+              "path": "/docs/coding/python/language_reference/ellipsis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/float",
+              "path": "/docs/coding/python/language_reference/float",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/frozenset",
+              "path": "/docs/coding/python/language_reference/frozenset",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/function",
+              "path": "/docs/coding/python/language_reference/function",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/generator",
+              "path": "/docs/coding/python/language_reference/generator",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/index",
+              "path": "/docs/coding/python/language_reference/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/int",
+              "path": "/docs/coding/python/language_reference/int",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/keywords",
+              "path": "/docs/coding/python/language_reference/keywords",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/list",
+              "path": "/docs/coding/python/language_reference/list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/memoryview",
+              "path": "/docs/coding/python/language_reference/memoryview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/method",
+              "path": "/docs/coding/python/language_reference/method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/none",
+              "path": "/docs/coding/python/language_reference/none",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/object",
+              "path": "/docs/coding/python/language_reference/object",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/range",
+              "path": "/docs/coding/python/language_reference/range",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/set",
+              "path": "/docs/coding/python/language_reference/set",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/slice",
+              "path": "/docs/coding/python/language_reference/slice",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/string",
+              "path": "/docs/coding/python/language_reference/string",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/tuple",
+              "path": "/docs/coding/python/language_reference/tuple",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/language_reference/type",
+              "path": "/docs/coding/python/language_reference/type",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/functions/args_and_kwargs",
+              "path": "/docs/coding/python/user_guide/functions/args_and_kwargs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/functions/basic_functions",
+              "path": "/docs/coding/python/user_guide/functions/basic_functions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/functions/decorators",
+              "path": "/docs/coding/python/user_guide/functions/decorators",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/functions/higher_order_functions",
+              "path": "/docs/coding/python/user_guide/functions/higher_order_functions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/functions/lambda",
+              "path": "/docs/coding/python/user_guide/functions/lambda",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/index",
+              "path": "/docs/coding/python/user_guide/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/comprehensions",
+              "path": "/docs/coding/python/user_guide/iterables/comprehensions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/dictionaries",
+              "path": "/docs/coding/python/user_guide/iterables/dictionaries",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/for_loops",
+              "path": "/docs/coding/python/user_guide/iterables/for_loops",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/lists",
+              "path": "/docs/coding/python/user_guide/iterables/lists",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/ranges",
+              "path": "/docs/coding/python/user_guide/iterables/ranges",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/sequences",
+              "path": "/docs/coding/python/user_guide/iterables/sequences",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/sets",
+              "path": "/docs/coding/python/user_guide/iterables/sets",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/tuples",
+              "path": "/docs/coding/python/user_guide/iterables/tuples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/iterables/while_loops",
+              "path": "/docs/coding/python/user_guide/iterables/while_loops",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/class_attributes",
+              "path": "/docs/coding/python/user_guide/oop/class_attributes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/dunder_methods",
+              "path": "/docs/coding/python/user_guide/oop/dunder_methods",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/encapsulation",
+              "path": "/docs/coding/python/user_guide/oop/encapsulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/inheritance",
+              "path": "/docs/coding/python/user_guide/oop/inheritance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/instance_methods",
+              "path": "/docs/coding/python/user_guide/oop/instance_methods",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/instances",
+              "path": "/docs/coding/python/user_guide/oop/instances",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/intro",
+              "path": "/docs/coding/python/user_guide/oop/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/oop/polymorphism",
+              "path": "/docs/coding/python/user_guide/oop/polymorphism",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/standard_library/datetime",
+              "path": "/docs/coding/python/user_guide/standard_library/datetime",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/standard_library/exceptions",
+              "path": "/docs/coding/python/user_guide/standard_library/exceptions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/standard_library/file_handling",
+              "path": "/docs/coding/python/user_guide/standard_library/file_handling",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/standard_library/json",
+              "path": "/docs/coding/python/user_guide/standard_library/json",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/standard_library/modules",
+              "path": "/docs/coding/python/user_guide/standard_library/modules",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/types_variables_conditionals/conditionals",
+              "path": "/docs/coding/python/user_guide/types_variables_conditionals/conditionals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/types_variables_conditionals/types",
+              "path": "/docs/coding/python/user_guide/types_variables_conditionals/types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "coding/python/user_guide/types_variables_conditionals/variables",
+              "path": "/docs/coding/python/user_guide/types_variables_conditionals/variables",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/coding-documentation",
+              "path": "/docs/category/coding-documentation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/python-documentation",
+              "path": "/docs/category/python-documentation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/types-variables-and-conditionals",
+              "path": "/docs/category/types-variables-and-conditionals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/iterables",
+              "path": "/docs/category/iterables",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/functions",
+              "path": "/docs/category/functions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/object-oriented-programming",
+              "path": "/docs/category/object-oriented-programming",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/python-standard-library",
+              "path": "/docs/category/python-standard-library",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/coding-documentation",
+                "label": "Coding documentation"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

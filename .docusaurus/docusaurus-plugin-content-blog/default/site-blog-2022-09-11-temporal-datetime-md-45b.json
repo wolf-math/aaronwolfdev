@@ -1,0 +1,51 @@
+{
+  "permalink": "/blog/temporal-datetime",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2022-09-11-temporal-datetime.md",
+  "source": "@site/blog/2022-09-11-temporal-datetime.md",
+  "title": "Temporal Date API",
+  "description": "This blog post was originally published on dev.to",
+  "date": "2022-09-11T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "javascript",
+      "permalink": "/blog/tags/javascript",
+      "description": "javascript articles"
+    }
+  ],
+  "readingTime": 5.13,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "temporal-datetime",
+    "title": "Temporal Date API",
+    "authors": "wolf",
+    "tags": [
+      "javascript"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Encryption Part 1: Overview",
+    "permalink": "/blog/encryption1"
+  },
+  "nextItem": {
+    "title": "Drag and drop from scratch with React",
+    "permalink": "/blog/react-dnd"
+  }
+}

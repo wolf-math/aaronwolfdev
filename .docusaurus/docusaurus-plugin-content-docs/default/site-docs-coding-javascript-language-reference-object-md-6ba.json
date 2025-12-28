@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/object",
+  "title": "Object",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/object.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/object",
+  "permalink": "/docs/coding/javascript/language_reference/object",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/object.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Object",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Boolean",
+    "permalink": "/docs/coding/javascript/language_reference/boolean"
+  },
+  "next": {
+    "title": "Array",
+    "permalink": "/docs/coding/javascript/language_reference/array"
+  }
+}

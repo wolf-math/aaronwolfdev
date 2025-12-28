@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/dunder_methods",
+  "title": "Dunder methods",
+  "description": "What are dunder methods?",
+  "source": "@site/docs/coding/python/user_guide/oop/dunder_methods.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/dunder_methods",
+  "permalink": "/docs/coding/python/user_guide/oop/dunder_methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/dunder_methods.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Dunder methods",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Polymorphism",
+    "permalink": "/docs/coding/python/user_guide/oop/polymorphism"
+  },
+  "next": {
+    "title": "Class attributes",
+    "permalink": "/docs/coding/python/user_guide/oop/class_attributes"
+  }
+}

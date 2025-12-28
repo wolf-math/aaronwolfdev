@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/functions/args_and_kwargs",
+  "title": "Parameters",
+  "description": "What are args and *kwargs?",
+  "source": "@site/docs/coding/python_docs/user_guide/functions/args_and_kwargs.md",
+  "sourceDirName": "coding/python_docs/user_guide/functions",
+  "slug": "/coding/python_docs/user_guide/functions/args_and_kwargs",
+  "permalink": "/docs/coding/python_docs/user_guide/functions/args_and_kwargs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/functions/args_and_kwargs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Parameters",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Function basics",
+    "permalink": "/docs/coding/python_docs/user_guide/functions/basic_functions"
+  },
+  "next": {
+    "title": "Lambda functions",
+    "permalink": "/docs/coding/python_docs/user_guide/functions/lambda"
+  }
+}

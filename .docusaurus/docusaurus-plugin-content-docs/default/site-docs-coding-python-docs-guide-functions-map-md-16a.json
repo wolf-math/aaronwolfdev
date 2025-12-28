@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/functions/map",
+  "title": "map",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/functions/map.md",
+  "sourceDirName": "Coding/Python Docs/Guide/functions",
+  "slug": "/Coding/Python Docs/Guide/functions/map",
+  "permalink": "/docs/Coding/Python Docs/Guide/functions/map",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/functions/map.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "lambda",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/lambda"
+  },
+  "next": {
+    "title": "Object-Oriented Programming",
+    "permalink": "/docs/category/object-oriented-programming"
+  }
+}

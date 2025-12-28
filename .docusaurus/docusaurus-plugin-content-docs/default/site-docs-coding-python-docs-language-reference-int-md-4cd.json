@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/int",
+  "title": "int",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/int.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/int",
+  "permalink": "/docs/coding/python_docs/language_reference/int",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/int.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "int"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "generator",
+    "permalink": "/docs/coding/python_docs/language_reference/generator"
+  },
+  "next": {
+    "title": "list",
+    "permalink": "/docs/coding/python_docs/language_reference/list"
+  }
+}

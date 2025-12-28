@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/byte",
+  "title": "byte",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/byte.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/byte",
+  "permalink": "/docs/Coding/Python Docs/Reference/byte",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/byte.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "byte"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bool",
+    "permalink": "/docs/Coding/Python Docs/Reference/bool"
+  },
+  "next": {
+    "title": "bytearray",
+    "permalink": "/docs/Coding/Python Docs/Reference/bytearray"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/array",
+  "title": "Array",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/array.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/array",
+  "permalink": "/docs/coding/javascript/language_reference/array",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/array.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Array",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Object",
+    "permalink": "/docs/coding/javascript/language_reference/object"
+  },
+  "next": {
+    "title": "null",
+    "permalink": "/docs/coding/javascript/language_reference/null"
+  }
+}

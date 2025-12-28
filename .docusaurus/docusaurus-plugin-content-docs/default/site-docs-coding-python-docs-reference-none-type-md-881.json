@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/NoneType",
+  "title": "None",
+  "description": "Definition",
+  "source": "@site/docs/Coding/Python Docs/Reference/NoneType.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/NoneType",
+  "permalink": "/docs/Coding/Python Docs/Reference/NoneType",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/NoneType.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "None"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bool",
+    "permalink": "/docs/Coding/Python Docs/Reference/bool"
+  },
+  "next": {
+    "title": "bytearray",
+    "permalink": "/docs/Coding/Python Docs/Reference/bytearray"
+  }
+}

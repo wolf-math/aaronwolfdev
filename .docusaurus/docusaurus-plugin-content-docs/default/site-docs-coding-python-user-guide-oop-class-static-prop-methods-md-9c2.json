@@ -1,0 +1,24 @@
+{
+  "id": "coding/python/user_guide/oop/class_static_prop_methods",
+  "title": "class_static_prop_methods",
+  "description": "",
+  "source": "@site/docs/coding/python/user_guide/oop/class_static_prop_methods.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/class_static_prop_methods",
+  "permalink": "/docs/coding/python/user_guide/oop/class_static_prop_methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/class_static_prop_methods.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "class_attributes",
+    "permalink": "/docs/coding/python/user_guide/oop/class_attributes"
+  },
+  "next": {
+    "title": "polymorphism",
+    "permalink": "/docs/coding/python/user_guide/oop/polymorphism"
+  }
+}

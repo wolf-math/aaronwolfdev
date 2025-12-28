@@ -1,0 +1,27 @@
+{
+  "id": "coding/python/user_guide/index",
+  "title": "Python user guide",
+  "description": "Welcome to the Python User Guide. This guide provides comprehensive documentation for learning Python programming, from the basics to advanced concepts.",
+  "source": "@site/docs/coding/python/user_guide/index.mdx",
+  "sourceDirName": "coding/python/user_guide",
+  "slug": "/coding/python/user_guide/",
+  "permalink": "/docs/coding/python/user_guide/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Python user guide",
+    "sidebar_label": "User guide"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "generator",
+    "permalink": "/docs/coding/python/language_reference/generator"
+  },
+  "next": {
+    "title": "Types, variables, and conditionals",
+    "permalink": "/docs/category/types-variables-and-conditionals"
+  }
+}

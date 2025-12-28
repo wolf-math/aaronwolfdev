@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/complex",
+  "title": "complex",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/complex.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/complex",
+  "permalink": "/docs/Coding/Python Docs/Reference/complex",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/complex.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "complex"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bytearray",
+    "permalink": "/docs/Coding/Python Docs/Reference/bytearray"
+  },
+  "next": {
+    "title": "coroutine",
+    "permalink": "/docs/Coding/Python Docs/Reference/coroutine"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "permalink": "/blog/encryption3",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2024-01-24-encryption-part-3.md",
+  "source": "@site/blog/2024-01-24-encryption-part-3.md",
+  "title": "Encryption Part 3: RSA",
+  "description": "You can clone this repo and use it on your own machine.",
+  "date": "2024-01-24T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "encryption",
+      "permalink": "/blog/tags/encryption",
+      "description": "encryption articles"
+    },
+    {
+      "inline": false,
+      "label": "python",
+      "permalink": "/blog/tags/python",
+      "description": "python articles"
+    }
+  ],
+  "readingTime": 7.5,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "encryption3",
+    "title": "Encryption Part 3: RSA",
+    "authors": "wolf",
+    "tags": [
+      "encryption",
+      "python"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Encryption Part 4: Hashes",
+    "permalink": "/blog/encryption4"
+  },
+  "nextItem": {
+    "title": "Encryption Part 2: Diffie-Hellman",
+    "permalink": "/blog/encryption2"
+  }
+}

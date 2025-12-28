@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Guide/functions/functions",
+  "title": "functions",
+  "description": "Hey!!",
+  "source": "@site/docs/Coding/Python Docs/Guide/functions/functions.md",
+  "sourceDirName": "Coding/Python Docs/Guide/functions",
+  "slug": "/Coding/Python Docs/Guide/functions/",
+  "permalink": "/docs/Coding/Python Docs/Guide/functions/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/functions/functions.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "functions"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "User guide",
+    "permalink": "/docs/Coding/Python Docs/Guide/"
+  },
+  "next": {
+    "title": "args_and_kwargs",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/args_and_kwargs"
+  }
+}

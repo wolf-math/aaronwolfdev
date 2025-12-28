@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/types_variables_conditionals/variables",
+  "title": "Variables",
+  "description": "What are variables?",
+  "source": "@site/docs/coding/python_docs/user_guide/types_variables_conditionals/variables.md",
+  "sourceDirName": "coding/python_docs/user_guide/types_variables_conditionals",
+  "slug": "/coding/python_docs/user_guide/types_variables_conditionals/variables",
+  "permalink": "/docs/coding/python_docs/user_guide/types_variables_conditionals/variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/types_variables_conditionals/variables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Variables",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Types",
+    "permalink": "/docs/coding/python_docs/user_guide/types_variables_conditionals/types"
+  },
+  "next": {
+    "title": "Conditionals",
+    "permalink": "/docs/coding/python_docs/user_guide/types_variables_conditionals/conditionals"
+  }
+}

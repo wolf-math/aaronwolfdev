@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/method",
+  "title": "method",
+  "description": "Definition",
+  "source": "@site/docs/coding/python/language_reference/method.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/method",
+  "permalink": "/docs/coding/python/language_reference/method",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/method.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 23,
+  "frontMatter": {
+    "title": "method",
+    "sidebar_position": 23
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "function",
+    "permalink": "/docs/coding/python/language_reference/function"
+  },
+  "next": {
+    "title": "coroutine",
+    "permalink": "/docs/coding/python/language_reference/coroutine"
+  }
+}

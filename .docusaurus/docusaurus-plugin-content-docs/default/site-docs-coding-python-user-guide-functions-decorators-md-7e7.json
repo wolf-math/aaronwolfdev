@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/functions/decorators",
+  "title": "Decorators",
+  "description": "What are decorators?",
+  "source": "@site/docs/coding/python/user_guide/functions/decorators.md",
+  "sourceDirName": "coding/python/user_guide/functions",
+  "slug": "/coding/python/user_guide/functions/decorators",
+  "permalink": "/docs/coding/python/user_guide/functions/decorators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/functions/decorators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Decorators",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lambda functions",
+    "permalink": "/docs/coding/python/user_guide/functions/lambda"
+  },
+  "next": {
+    "title": "Higher-order functions",
+    "permalink": "/docs/coding/python/user_guide/functions/higher_order_functions"
+  }
+}

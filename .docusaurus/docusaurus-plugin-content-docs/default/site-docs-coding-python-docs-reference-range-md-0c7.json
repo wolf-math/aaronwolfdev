@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/range",
+  "title": "range",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/range.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/range",
+  "permalink": "/docs/Coding/Python Docs/Reference/range",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/range.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "range"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "object",
+    "permalink": "/docs/Coding/Python Docs/Reference/object"
+  },
+  "next": {
+    "title": "set",
+    "permalink": "/docs/Coding/Python Docs/Reference/set"
+  }
+}

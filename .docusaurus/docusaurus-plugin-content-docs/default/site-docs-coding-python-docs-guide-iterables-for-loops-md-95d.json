@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/for_loops",
+  "title": "For loops",
+  "description": "For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like lists, tuples, strings, sets, and ranges—for loops work with all of them.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/for_loops.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/for_loops",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/for_loops",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/for_loops.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "For loops",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ranges",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/ranges"
+  },
+  "next": {
+    "title": "While loops",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/while_loops"
+  }
+}

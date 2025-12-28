@@ -1,0 +1,27 @@
+{
+  "id": "coding/python_docs/language_reference/index",
+  "title": "Python language reference",
+  "description": "Welcome to the Python Language Reference. This reference provides detailed documentation for Python's built-in types, keywords, functions, and language constructs. Use this as a comprehensive lookup for Python's core language features.",
+  "source": "@site/docs/coding/python_docs/language_reference/index.mdx",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/",
+  "permalink": "/docs/coding/python_docs/language_reference/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Python language reference",
+    "sidebar_label": "Language reference"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python documentation",
+    "permalink": "/docs/category/python-documentation"
+  },
+  "next": {
+    "title": "Keywords",
+    "permalink": "/docs/coding/python_docs/language_reference/keywords"
+  }
+}

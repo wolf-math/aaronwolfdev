@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/getting_started/types",
+  "title": "Python types",
+  "description": "This guide introduces Python’s built-in types for people new to programming. You’ll learn what types are, which core types you’ll use first, how to inspect them, and how to convert between them.",
+  "source": "@site/docs/Coding/Python Docs/Guide/getting_started/types.md",
+  "sourceDirName": "Coding/Python Docs/Guide/getting_started",
+  "slug": "/Coding/Python Docs/Guide/getting_started/types",
+  "permalink": "/docs/Coding/Python Docs/Guide/getting_started/types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/getting_started/types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Python types",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Types, variables, and control flow",
+    "permalink": "/docs/category/types-variables-and-control-flow"
+  },
+  "next": {
+    "title": "Variables",
+    "permalink": "/docs/Coding/Python Docs/Guide/getting_started/variables"
+  }
+}

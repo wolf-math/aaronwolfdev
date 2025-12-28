@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/iterables/while_loops",
+  "title": "While loops",
+  "description": "While loops repeat code as long as a condition remains true. Unlike for loops that iterate over a fixed collection, while loops continue until their condition becomes false, making them perfect for situations where you don't know in advance how many iterations you'll need.",
+  "source": "@site/docs/coding/python_docs/user_guide/iterables/while_loops.md",
+  "sourceDirName": "coding/python_docs/user_guide/iterables",
+  "slug": "/coding/python_docs/user_guide/iterables/while_loops",
+  "permalink": "/docs/coding/python_docs/user_guide/iterables/while_loops",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/iterables/while_loops.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "While loops",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For loops",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/for_loops"
+  },
+  "next": {
+    "title": "Dictionaries",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/dictionaries"
+  }
+}

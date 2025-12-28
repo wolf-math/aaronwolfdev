@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/types_variables_control/control_flow",
+  "title": "Control flow",
+  "description": "Control flow statements let you make decisions, repeat work, and handle exceptional cases. This section covers the essentials: if, for, while, break/continue, and try/except.",
+  "source": "@site/docs/Coding/Python Docs/Guide/types_variables_control/control_flow.md",
+  "sourceDirName": "Coding/Python Docs/Guide/types_variables_control",
+  "slug": "/Coding/Python Docs/Guide/types_variables_control/control_flow",
+  "permalink": "/docs/Coding/Python Docs/Guide/types_variables_control/control_flow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/types_variables_control/control_flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Control flow",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_control/variables"
+  },
+  "next": {
+    "title": "functions",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/"
+  }
+}

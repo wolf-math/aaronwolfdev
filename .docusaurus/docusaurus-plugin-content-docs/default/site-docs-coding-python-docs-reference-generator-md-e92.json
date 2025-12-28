@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/generator",
+  "title": "generator",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/generator.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/generator",
+  "permalink": "/docs/Coding/Python Docs/Reference/generator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/generator.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "generator"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "function",
+    "permalink": "/docs/Coding/Python Docs/Reference/function"
+  },
+  "next": {
+    "title": "int",
+    "permalink": "/docs/Coding/Python Docs/Reference/int"
+  }
+}

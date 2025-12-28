@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/int",
+  "title": "int",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/int.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/int",
+  "permalink": "/docs/Coding/Python Docs/Reference/int",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/int.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "int"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "generator",
+    "permalink": "/docs/Coding/Python Docs/Reference/generator"
+  },
+  "next": {
+    "title": "list",
+    "permalink": "/docs/Coding/Python Docs/Reference/list"
+  }
+}

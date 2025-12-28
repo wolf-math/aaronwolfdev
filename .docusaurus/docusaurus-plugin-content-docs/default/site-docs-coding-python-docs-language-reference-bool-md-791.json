@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/language_reference/bool",
+  "title": "bool",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/bool.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/bool",
+  "permalink": "/docs/coding/python_docs/language_reference/bool",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/bool.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "bool",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "built-in functions",
+    "permalink": "/docs/coding/python_docs/language_reference/built-in"
+  },
+  "next": {
+    "title": "byte",
+    "permalink": "/docs/coding/python_docs/language_reference/byte"
+  }
+}

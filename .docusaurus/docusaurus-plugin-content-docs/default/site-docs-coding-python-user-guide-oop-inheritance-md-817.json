@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/inheritance",
+  "title": "Inheritance",
+  "description": "What is inheritance?",
+  "source": "@site/docs/coding/python/user_guide/oop/inheritance.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/inheritance",
+  "permalink": "/docs/coding/python/user_guide/oop/inheritance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/inheritance.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Inheritance",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Encapsulation",
+    "permalink": "/docs/coding/python/user_guide/oop/encapsulation"
+  },
+  "next": {
+    "title": "Polymorphism",
+    "permalink": "/docs/coding/python/user_guide/oop/polymorphism"
+  }
+}

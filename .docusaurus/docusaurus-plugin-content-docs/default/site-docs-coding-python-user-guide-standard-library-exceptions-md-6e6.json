@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/standard_library/exceptions",
+  "title": "Exception handling with try/except",
+  "description": "What is exception handling?",
+  "source": "@site/docs/coding/python/user_guide/standard_library/exceptions.md",
+  "sourceDirName": "coding/python/user_guide/standard_library",
+  "slug": "/coding/python/user_guide/standard_library/exceptions",
+  "permalink": "/docs/coding/python/user_guide/standard_library/exceptions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/standard_library/exceptions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Exception handling with try/except",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python standard library",
+    "permalink": "/docs/category/python-standard-library"
+  },
+  "next": {
+    "title": "File handling basics",
+    "permalink": "/docs/coding/python/user_guide/standard_library/file_handling"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/memoryview",
+  "title": "memoryview",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/memoryview.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/memoryview",
+  "permalink": "/docs/coding/python/language_reference/memoryview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/memoryview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "memoryview",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "list",
+    "permalink": "/docs/coding/python/language_reference/list"
+  },
+  "next": {
+    "title": "None",
+    "permalink": "/docs/coding/python/language_reference/none"
+  }
+}

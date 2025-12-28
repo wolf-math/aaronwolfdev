@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/types_variables_conditionals/types",
+  "title": "Types",
+  "description": "What is a type?",
+  "source": "@site/docs/Coding/Python Docs/Guide/types_variables_conditionals/types.md",
+  "sourceDirName": "Coding/Python Docs/Guide/types_variables_conditionals",
+  "slug": "/Coding/Python Docs/Guide/types_variables_conditionals/types",
+  "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/types_variables_conditionals/types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Types",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Types, variables, and conditionals",
+    "permalink": "/docs/category/types-variables-and-conditionals"
+  },
+  "next": {
+    "title": "Variables",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/variables"
+  }
+}

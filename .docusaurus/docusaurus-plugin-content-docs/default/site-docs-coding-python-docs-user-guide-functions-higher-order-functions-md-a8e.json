@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/functions/higher_order_functions",
+  "title": "Higher-order functions",
+  "description": "What are higher-order functions?",
+  "source": "@site/docs/coding/python_docs/user_guide/functions/higher_order_functions.md",
+  "sourceDirName": "coding/python_docs/user_guide/functions",
+  "slug": "/coding/python_docs/user_guide/functions/higher_order_functions",
+  "permalink": "/docs/coding/python_docs/user_guide/functions/higher_order_functions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/functions/higher_order_functions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Higher-order functions",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lambda functions",
+    "permalink": "/docs/coding/python_docs/user_guide/functions/lambda"
+  },
+  "next": {
+    "title": "Object-Oriented Programming",
+    "permalink": "/docs/category/object-oriented-programming"
+  }
+}

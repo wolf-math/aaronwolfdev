@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/keywords",
+  "title": "Keywords",
+  "description": "Properties",
+  "source": "@site/docs/coding/javascript/language_reference/keywords.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/keywords",
+  "permalink": "/docs/coding/javascript/language_reference/keywords",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/keywords.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "title": "Keywords",
+    "sidebar_position": 19
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Promise",
+    "permalink": "/docs/coding/javascript/language_reference/promise"
+  },
+  "next": {
+    "title": "class",
+    "permalink": "/docs/coding/javascript/language_reference/class"
+  }
+}

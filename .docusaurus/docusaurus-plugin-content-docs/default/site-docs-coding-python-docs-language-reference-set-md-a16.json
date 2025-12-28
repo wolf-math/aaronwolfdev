@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/set",
+  "title": "set",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/set.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/set",
+  "permalink": "/docs/coding/python_docs/language_reference/set",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/set.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "set"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "range",
+    "permalink": "/docs/coding/python_docs/language_reference/range"
+  },
+  "next": {
+    "title": "slice",
+    "permalink": "/docs/coding/python_docs/language_reference/slice"
+  }
+}

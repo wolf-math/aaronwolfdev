@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/iterables/ranges",
+  "title": "Ranges",
+  "description": "Ranges represent an immutable sequence of evenly spaced integers. They're memory-efficient sequences that generate values on demand. Unlike lists, ranges don't store all values in memory, making them perfect for working with large sequences of numbers.",
+  "source": "@site/docs/coding/python_docs/user_guide/iterables/ranges.md",
+  "sourceDirName": "coding/python_docs/user_guide/iterables",
+  "slug": "/coding/python_docs/user_guide/iterables/ranges",
+  "permalink": "/docs/coding/python_docs/user_guide/iterables/ranges",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/iterables/ranges.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Ranges",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sets",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/sets"
+  },
+  "next": {
+    "title": "For loops",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/for_loops"
+  }
+}

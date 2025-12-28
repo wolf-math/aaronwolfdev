@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/ellipsis",
+  "title": "ellipsis",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/ellipsis.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/ellipsis",
+  "permalink": "/docs/Coding/Python Docs/Reference/ellipsis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/ellipsis.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "ellipsis"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dict",
+    "permalink": "/docs/Coding/Python Docs/Reference/dict"
+  },
+  "next": {
+    "title": "float",
+    "permalink": "/docs/Coding/Python Docs/Reference/float"
+  }
+}

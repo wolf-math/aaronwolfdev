@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/lists",
+  "title": "Lists",
+  "description": "What are lists?",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/lists.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/lists",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/lists",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/lists.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Lists",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sequences",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/sequences"
+  },
+  "next": {
+    "title": "Tuples",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/tuples"
+  }
+}

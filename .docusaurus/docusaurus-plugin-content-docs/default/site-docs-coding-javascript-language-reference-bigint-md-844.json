@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/bigint",
+  "title": "BigInt",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/bigint.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/bigint",
+  "permalink": "/docs/coding/javascript/language_reference/bigint",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/bigint.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "BigInt",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Symbol",
+    "permalink": "/docs/coding/javascript/language_reference/symbol"
+  },
+  "next": {
+    "title": "Function",
+    "permalink": "/docs/coding/javascript/language_reference/function"
+  }
+}

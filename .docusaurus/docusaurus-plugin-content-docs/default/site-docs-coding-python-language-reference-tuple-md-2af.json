@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/tuple",
+  "title": "tuple",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/tuple.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/tuple",
+  "permalink": "/docs/coding/python/language_reference/tuple",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/tuple.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "title": "tuple",
+    "sidebar_position": 19
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "string",
+    "permalink": "/docs/coding/python/language_reference/string"
+  },
+  "next": {
+    "title": "Keywords",
+    "permalink": "/docs/coding/python/language_reference/keywords"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "coding/python/user_guide/oop/exceptions",
+  "title": "exceptions",
+  "description": "",
+  "source": "@site/docs/coding/python/user_guide/oop/exceptions.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/exceptions",
+  "permalink": "/docs/coding/python/user_guide/oop/exceptions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/exceptions.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "datetime",
+    "permalink": "/docs/coding/python/user_guide/oop/datetime"
+  },
+  "next": {
+    "title": "modules",
+    "permalink": "/docs/coding/python/user_guide/oop/modules"
+  }
+}

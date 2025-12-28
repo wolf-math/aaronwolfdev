@@ -1,0 +1,24 @@
+{
+  "id": "coding/python_docs/user_guide/oop/inheritance",
+  "title": "inheritance",
+  "description": "",
+  "source": "@site/docs/coding/python_docs/user_guide/oop/inheritance.md",
+  "sourceDirName": "coding/python_docs/user_guide/oop",
+  "slug": "/coding/python_docs/user_guide/oop/inheritance",
+  "permalink": "/docs/coding/python_docs/user_guide/oop/inheritance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/oop/inheritance.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "exceptions",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/exceptions"
+  },
+  "next": {
+    "title": "instance_methods",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/instance_methods"
+  }
+}

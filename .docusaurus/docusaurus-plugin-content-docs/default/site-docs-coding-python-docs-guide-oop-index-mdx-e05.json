@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/index",
+  "title": "Object-Oriented Programming",
+  "description": "Learn how to create classes, work with instances, and use inheritance and encapsulation to build robust programs.",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/index.mdx",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Object-Oriented Programming"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "List comprehensions",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/comprehensions"
+  },
+  "next": {
+    "title": "class_attributes",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/class_attributes"
+  }
+}

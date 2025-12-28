@@ -1,0 +1,41 @@
+{
+  "permalink": "/blog/new-site",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2025-10-27-new-site.md",
+  "source": "@site/blog/2025-10-27-new-site.md",
+  "title": "My New Website",
+  "description": "Hey everyone! It’s been a while since I’ve updated my website!",
+  "date": "2025-10-27T00:00:00.000Z",
+  "tags": [],
+  "readingTime": 0.87,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "new-site",
+    "title": "My New Website",
+    "authors": "wolf"
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "async/await",
+    "permalink": "/blog/async-await"
+  },
+  "nextItem": {
+    "title": "The URL Object",
+    "permalink": "/blog/the-url-object"
+  }
+}

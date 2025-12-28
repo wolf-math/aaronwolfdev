@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/symbol",
+  "title": "Symbol",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/symbol.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/symbol",
+  "permalink": "/docs/coding/javascript/language_reference/symbol",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/symbol.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Symbol",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "undefined",
+    "permalink": "/docs/coding/javascript/language_reference/undefined"
+  },
+  "next": {
+    "title": "BigInt",
+    "permalink": "/docs/coding/javascript/language_reference/bigint"
+  }
+}

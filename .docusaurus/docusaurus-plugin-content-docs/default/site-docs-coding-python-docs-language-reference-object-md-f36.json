@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/object",
+  "title": "object",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/object.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/object",
+  "permalink": "/docs/coding/python_docs/language_reference/object",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/object.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "object"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "None",
+    "permalink": "/docs/coding/python_docs/language_reference/none"
+  },
+  "next": {
+    "title": "range",
+    "permalink": "/docs/coding/python_docs/language_reference/range"
+  }
+}

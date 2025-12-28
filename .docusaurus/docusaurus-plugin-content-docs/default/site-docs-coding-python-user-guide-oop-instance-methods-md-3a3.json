@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/instance_methods",
+  "title": "Instance methods",
+  "description": "What is an instance method?",
+  "source": "@site/docs/coding/python/user_guide/oop/instance_methods.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/instance_methods",
+  "permalink": "/docs/coding/python/user_guide/oop/instance_methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/instance_methods.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Instance methods",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Instances",
+    "permalink": "/docs/coding/python/user_guide/oop/instances"
+  },
+  "next": {
+    "title": "Encapsulation",
+    "permalink": "/docs/coding/python/user_guide/oop/encapsulation"
+  }
+}

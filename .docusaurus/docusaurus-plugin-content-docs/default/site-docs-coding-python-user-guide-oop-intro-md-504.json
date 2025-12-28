@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/intro",
+  "title": "OOP introduction",
+  "description": "What is Object-Oriented Programming?",
+  "source": "@site/docs/coding/python/user_guide/oop/intro.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/intro",
+  "permalink": "/docs/coding/python/user_guide/oop/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "OOP introduction",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Object-Oriented Programming",
+    "permalink": "/docs/category/object-oriented-programming"
+  },
+  "next": {
+    "title": "Instances",
+    "permalink": "/docs/coding/python/user_guide/oop/instances"
+  }
+}

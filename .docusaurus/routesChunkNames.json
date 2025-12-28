@@ -1,0 +1,732 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/about-bfe": {
+    "__comp": "__comp---site-src-pages-about-jsx-989-9fd",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
+  "/blog-d2d": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-361-707"
+      },
+      {
+        "content": "content---blog-2-a-4-e8d"
+      },
+      {
+        "content": "content---blog-711-39b"
+      },
+      {
+        "content": "content---blogdbb-c29"
+      },
+      {
+        "content": "content---bloge-4-d-a22"
+      },
+      {
+        "content": "content---blog-01-f-1c0"
+      },
+      {
+        "content": "content---blog-90-b-831"
+      },
+      {
+        "content": "content---blogb-86-e56"
+      },
+      {
+        "content": "content---blogb-26-4bb"
+      },
+      {
+        "content": "content---blogb-97-2e6"
+      }
+    ],
+    "__props": "__props---blogc-15-573"
+  },
+  "/blog/adding-stoarge-linux-89c": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-adding-stoarge-linux-3-ad-8d5"
+  },
+  "/blog/archive-182": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "__props": "__props---blog-archivef-81-229"
+  },
+  "/blog/async-await-eec": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-async-await-85-c-7ca"
+  },
+  "/blog/authors-0b7": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authorsef-8-44f"
+  },
+  "/blog/authors/wolf-1d7": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "items": [
+      {
+        "content": "content---blog-361-707"
+      },
+      {
+        "content": "content---blog-2-a-4-e8d"
+      },
+      {
+        "content": "content---blog-711-39b"
+      },
+      {
+        "content": "content---blogdbb-c29"
+      },
+      {
+        "content": "content---bloge-4-d-a22"
+      },
+      {
+        "content": "content---blog-01-f-1c0"
+      },
+      {
+        "content": "content---blog-90-b-831"
+      },
+      {
+        "content": "content---blogb-86-e56"
+      },
+      {
+        "content": "content---blogb-26-4bb"
+      },
+      {
+        "content": "content---blogb-97-2e6"
+      }
+    ],
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-wolf-86-a-130"
+  },
+  "/blog/authors/wolf/authors/2-ea8": {
+    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "items": [
+      {
+        "content": "content---blog-authors-wolf-authors-2284-7c2"
+      },
+      {
+        "content": "content---blog-authors-wolf-authors-2116-bbf"
+      }
+    ],
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-wolf-authors-2-ead-230"
+  },
+  "/blog/encryption1-f0a": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-encryption-1635-7fe"
+  },
+  "/blog/encryption2-750": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-encryption-20-e-3-aa2"
+  },
+  "/blog/encryption3-115": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-encryption-3-c-5-e-99a"
+  },
+  "/blog/encryption4-36f": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-encryption-4-d-55-4b9"
+  },
+  "/blog/new-site-0e7": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-new-sited-0-f-2cc"
+  },
+  "/blog/page/2-815": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-authors-wolf-authors-2284-7c2"
+      },
+      {
+        "content": "content---blog-authors-wolf-authors-2116-bbf"
+      }
+    ],
+    "__props": "__props---blog-page-28-ea-cf7"
+  },
+  "/blog/promises-fetch-13f": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-promises-fetch-3-e-0-2f9"
+  },
+  "/blog/react-dnd-ab6": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-react-dnd-9-d-3-98d"
+  },
+  "/blog/samba-server-setup-a3a": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-samba-server-setup-6-ad-eb3"
+  },
+  "/blog/tags-287": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-tags-3-a-2-fa2"
+  },
+  "/blog/tags/encryption-3d2": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---bloge-4-d-a22"
+      },
+      {
+        "content": "content---blog-01-f-1c0"
+      },
+      {
+        "content": "content---blog-90-b-831"
+      },
+      {
+        "content": "content---blogb-86-e56"
+      }
+    ],
+    "__props": "__props---blog-tags-encryptionc-62-d0c"
+  },
+  "/blog/tags/javascript-4f4": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-361-707"
+      },
+      {
+        "content": "content---blog-711-39b"
+      },
+      {
+        "content": "content---blogdbb-c29"
+      },
+      {
+        "content": "content---blogb-26-4bb"
+      },
+      {
+        "content": "content---blogb-97-2e6"
+      }
+    ],
+    "__props": "__props---blog-tags-javascript-17-b-644"
+  },
+  "/blog/tags/linux-afa": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-authors-wolf-authors-2284-7c2"
+      },
+      {
+        "content": "content---blog-authors-wolf-authors-2116-bbf"
+      }
+    ],
+    "__props": "__props---blog-tags-linux-5-da-7d7"
+  },
+  "/blog/tags/python-adc": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---bloge-4-d-a22"
+      },
+      {
+        "content": "content---blog-01-f-1c0"
+      },
+      {
+        "content": "content---blog-90-b-831"
+      },
+      {
+        "content": "content---blogb-86-e56"
+      }
+    ],
+    "__props": "__props---blog-tags-pythonae-3-319"
+  },
+  "/blog/tags/react-5fb": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogb-97-2e6"
+      }
+    ],
+    "__props": "__props---blog-tags-react-8-a-4-89d"
+  },
+  "/blog/tags/ubuntu-6ef": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-authors-wolf-authors-2284-7c2"
+      },
+      {
+        "content": "content---blog-authors-wolf-authors-2116-bbf"
+      }
+    ],
+    "__props": "__props---blog-tags-ubuntu-1-ca-b2e"
+  },
+  "/blog/temporal-datetime-e42": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-temporal-datetime-45-b-956"
+  },
+  "/blog/the-url-object-234": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---blog-adding-stoarge-linuxace-7f4"
+      },
+      "plugin": "plugin---blog-369-22e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-the-url-object-24-a-d02"
+  },
+  "/contact-7ad": {
+    "__comp": "__comp---site-src-pages-contact-jsxa-1-a-0d4",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
+  "/home-d87": {
+    "__comp": "__comp---site-src-pages-home-jsx-609-886",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  },
+  "/docs-bda": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-634": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-46b": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/coding-documentation-847": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-coding-documentation-42-c-1cc"
+  },
+  "/docs/category/functions-a6e": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-functions-5-a-8-c46"
+  },
+  "/docs/category/iterables-dcd": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-iterables-1-fd-78d"
+  },
+  "/docs/category/object-oriented-programming-102": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-object-oriented-programminge-82-059"
+  },
+  "/docs/category/python-documentation-066": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-python-documentation-723-12e"
+  },
+  "/docs/category/python-standard-library-71b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-python-standard-library-574-637"
+  },
+  "/docs/category/types-variables-and-conditionals-97d": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-types-variables-and-conditionals-969-078"
+  },
+  "/docs/coding/python/language_reference/-269": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-c-6-c-790"
+  },
+  "/docs/coding/python/language_reference/bool-cc0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-bool-154-b20"
+  },
+  "/docs/coding/python/language_reference/built-in-a76": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-built-inb-41-fab"
+  },
+  "/docs/coding/python/language_reference/byte-c1a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-byte-220-195"
+  },
+  "/docs/coding/python/language_reference/bytearray-126": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-bytearrayf-34-42a"
+  },
+  "/docs/coding/python/language_reference/complex-67e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-complex-1-d-6-bdd"
+  },
+  "/docs/coding/python/language_reference/coroutine-206": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-coroutineb-01-351"
+  },
+  "/docs/coding/python/language_reference/dict-b94": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-dictaa-8-a7b"
+  },
+  "/docs/coding/python/language_reference/ellipsis-b7b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-ellipsisd-66-8cc"
+  },
+  "/docs/coding/python/language_reference/float-3fc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-floatb-6-c-c43"
+  },
+  "/docs/coding/python/language_reference/frozenset-63e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-frozenset-484-3f2"
+  },
+  "/docs/coding/python/language_reference/function-aec": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-functionb-7-d-eab"
+  },
+  "/docs/coding/python/language_reference/generator-9cd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-generatord-02-46f"
+  },
+  "/docs/coding/python/language_reference/int-3a0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-intfe-0-b5b"
+  },
+  "/docs/coding/python/language_reference/keywords-18b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-keywordsb-39-c21"
+  },
+  "/docs/coding/python/language_reference/list-ba6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-list-48-f-2bc"
+  },
+  "/docs/coding/python/language_reference/memoryview-058": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-memoryview-778-510"
+  },
+  "/docs/coding/python/language_reference/method-38f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-method-1-f-1-1cb"
+  },
+  "/docs/coding/python/language_reference/none-b7c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-none-3-f-4-332"
+  },
+  "/docs/coding/python/language_reference/object-659": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-object-8-a-1-338"
+  },
+  "/docs/coding/python/language_reference/range-e2f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-rangef-5-f-af4"
+  },
+  "/docs/coding/python/language_reference/set-f31": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-set-1-e-3-cc4"
+  },
+  "/docs/coding/python/language_reference/slice-772": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-slice-6-ec-2ac"
+  },
+  "/docs/coding/python/language_reference/string-005": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-stringbe-0-94b"
+  },
+  "/docs/coding/python/language_reference/tuple-938": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-tuple-2-af-b2a"
+  },
+  "/docs/coding/python/language_reference/type-4d3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-language-reference-typebb-6-ed5"
+  },
+  "/docs/coding/python/user_guide/-150": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-6-d-0-930"
+  },
+  "/docs/coding/python/user_guide/functions/args_and_kwargs-4db": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-functions-args-and-kwargs-4-b-4-8a1"
+  },
+  "/docs/coding/python/user_guide/functions/basic_functions-a3f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-functions-basic-functionsb-26-7ae"
+  },
+  "/docs/coding/python/user_guide/functions/decorators-5b1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-functions-decorators-7-e-7-92e"
+  },
+  "/docs/coding/python/user_guide/functions/higher_order_functions-008": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-functions-higher-order-functionsb-66-1e5"
+  },
+  "/docs/coding/python/user_guide/functions/lambda-667": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-functions-lambda-56-e-2a7"
+  },
+  "/docs/coding/python/user_guide/iterables/comprehensions-462": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-comprehensions-755-0e9"
+  },
+  "/docs/coding/python/user_guide/iterables/dictionaries-041": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-dictionaries-48-c-46b"
+  },
+  "/docs/coding/python/user_guide/iterables/for_loops-6d9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-for-loops-965-0a8"
+  },
+  "/docs/coding/python/user_guide/iterables/lists-495": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-lists-33-f-efc"
+  },
+  "/docs/coding/python/user_guide/iterables/ranges-106": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-rangesd-6-f-b3b"
+  },
+  "/docs/coding/python/user_guide/iterables/sequences-c36": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-sequences-5-d-2-e5f"
+  },
+  "/docs/coding/python/user_guide/iterables/sets-f8d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-sets-3-a-5-c59"
+  },
+  "/docs/coding/python/user_guide/iterables/tuples-f33": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-tuplesbc-3-98d"
+  },
+  "/docs/coding/python/user_guide/iterables/while_loops-dea": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-iterables-while-loops-8-f-5-a53"
+  },
+  "/docs/coding/python/user_guide/oop/class_attributes-a8c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-class-attributes-7-d-2-8d2"
+  },
+  "/docs/coding/python/user_guide/oop/dunder_methods-16a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-dunder-methodsd-23-783"
+  },
+  "/docs/coding/python/user_guide/oop/encapsulation-3c7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-encapsulation-1-c-6-e24"
+  },
+  "/docs/coding/python/user_guide/oop/inheritance-d1e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-inheritance-817-24c"
+  },
+  "/docs/coding/python/user_guide/oop/instance_methods-5a1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-instance-methods-3-a-3-2fa"
+  },
+  "/docs/coding/python/user_guide/oop/instances-823": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-instancesf-46-c74"
+  },
+  "/docs/coding/python/user_guide/oop/intro-668": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-intro-504-353"
+  },
+  "/docs/coding/python/user_guide/oop/polymorphism-495": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-oop-polymorphisme-41-deb"
+  },
+  "/docs/coding/python/user_guide/standard_library/datetime-fa4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-standard-library-datetime-964-c4d"
+  },
+  "/docs/coding/python/user_guide/standard_library/exceptions-f38": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-standard-library-exceptions-6-e-6-28e"
+  },
+  "/docs/coding/python/user_guide/standard_library/file_handling-b82": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-standard-library-file-handlingfc-9-431"
+  },
+  "/docs/coding/python/user_guide/standard_library/json-ad1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-standard-library-json-184-e87"
+  },
+  "/docs/coding/python/user_guide/standard_library/modules-afb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-standard-library-modules-89-a-123"
+  },
+  "/docs/coding/python/user_guide/types_variables_conditionals/conditionals-1d2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-types-variables-conditionals-conditionalsc-18-67b"
+  },
+  "/docs/coding/python/user_guide/types_variables_conditionals/types-069": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-types-variables-conditionals-types-11-b-4ed"
+  },
+  "/docs/coding/python/user_guide/types_variables_conditionals/variables-d6c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-coding-python-user-guide-types-variables-conditionals-variables-76-d-7f3"
+  },
+  "/-2e1": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---abouta-74-d48"
+    },
+    "config": "config---about-5-e-9-bcb"
+  }
+}

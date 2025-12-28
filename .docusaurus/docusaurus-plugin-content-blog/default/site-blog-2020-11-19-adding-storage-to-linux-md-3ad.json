@@ -1,0 +1,54 @@
+{
+  "permalink": "/blog/adding-stoarge-linux",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2020-11-19-adding-storage-to-linux.md",
+  "source": "@site/blog/2020-11-19-adding-storage-to-linux.md",
+  "title": "Adding storage to Linux",
+  "description": "This blog post was originally published on dev.to",
+  "date": "2020-11-19T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "linux",
+      "permalink": "/blog/tags/linux",
+      "description": "linux articles"
+    },
+    {
+      "inline": false,
+      "label": "ubuntu",
+      "permalink": "/blog/tags/ubuntu",
+      "description": "ubuntu articles"
+    }
+  ],
+  "readingTime": 4.63,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "adding-stoarge-linux",
+    "title": "Adding storage to Linux",
+    "authors": "wolf",
+    "tags": [
+      "linux",
+      "ubuntu"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Set up a Samba server on Ubuntu Linux",
+    "permalink": "/blog/samba-server-setup"
+  }
+}

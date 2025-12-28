@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/async",
+  "title": "async/await",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/async.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/async",
+  "permalink": "/docs/coding/javascript/language_reference/async",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/async.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {
+    "title": "async/await",
+    "sidebar_position": 21
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "class",
+    "permalink": "/docs/coding/javascript/language_reference/class"
+  },
+  "next": {
+    "title": "generator",
+    "permalink": "/docs/coding/javascript/language_reference/generator"
+  }
+}

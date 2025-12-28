@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/date",
+  "title": "Date",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/date.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/date",
+  "permalink": "/docs/coding/javascript/language_reference/date",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/date.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Date",
+    "sidebar_position": 12
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Function",
+    "permalink": "/docs/coding/javascript/language_reference/function"
+  },
+  "next": {
+    "title": "RegExp",
+    "permalink": "/docs/coding/javascript/language_reference/regexp"
+  }
+}

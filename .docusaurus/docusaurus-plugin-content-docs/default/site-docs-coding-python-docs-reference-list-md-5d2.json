@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/list",
+  "title": "list",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/list.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/list",
+  "permalink": "/docs/Coding/Python Docs/Reference/list",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/list.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "list"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "int",
+    "permalink": "/docs/Coding/Python Docs/Reference/int"
+  },
+  "next": {
+    "title": "memoryview",
+    "permalink": "/docs/Coding/Python Docs/Reference/memoryview"
+  }
+}

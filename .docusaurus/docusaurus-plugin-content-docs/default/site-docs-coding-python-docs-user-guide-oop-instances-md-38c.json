@@ -1,0 +1,24 @@
+{
+  "id": "coding/python_docs/user_guide/oop/instances",
+  "title": "instances",
+  "description": "",
+  "source": "@site/docs/coding/python_docs/user_guide/oop/instances.md",
+  "sourceDirName": "coding/python_docs/user_guide/oop",
+  "slug": "/coding/python_docs/user_guide/oop/instances",
+  "permalink": "/docs/coding/python_docs/user_guide/oop/instances",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/oop/instances.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "instance_methods",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/instance_methods"
+  },
+  "next": {
+    "title": "intro",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/intro"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "permalink": "/blog/async-await",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2024-10-09-async-await.md",
+  "source": "@site/blog/2024-10-09-async-await.md",
+  "title": "async/await",
+  "description": "This blog post was originally published on dev.to",
+  "date": "2024-10-09T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "javascript",
+      "permalink": "/blog/tags/javascript",
+      "description": "javascript articles"
+    }
+  ],
+  "readingTime": 1.81,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "async-await",
+    "title": "async/await",
+    "authors": "wolf",
+    "tags": [
+      "javascript"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "The URL Object",
+    "permalink": "/blog/the-url-object"
+  },
+  "nextItem": {
+    "title": "Promises and fetch",
+    "permalink": "/blog/promises-fetch"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/boolean",
+  "title": "Boolean",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/boolean.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/boolean",
+  "permalink": "/docs/coding/javascript/language_reference/boolean",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/boolean.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Boolean",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "String",
+    "permalink": "/docs/coding/javascript/language_reference/string"
+  },
+  "next": {
+    "title": "Object",
+    "permalink": "/docs/coding/javascript/language_reference/object"
+  }
+}

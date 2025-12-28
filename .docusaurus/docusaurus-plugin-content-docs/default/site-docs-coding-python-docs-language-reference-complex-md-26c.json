@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/complex",
+  "title": "complex",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/complex.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/complex",
+  "permalink": "/docs/coding/python_docs/language_reference/complex",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/complex.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "complex"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bytearray",
+    "permalink": "/docs/coding/python_docs/language_reference/bytearray"
+  },
+  "next": {
+    "title": "coroutine",
+    "permalink": "/docs/coding/python_docs/language_reference/coroutine"
+  }
+}

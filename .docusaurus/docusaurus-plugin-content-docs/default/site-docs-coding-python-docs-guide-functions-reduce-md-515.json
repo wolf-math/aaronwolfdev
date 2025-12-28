@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/functions/reduce",
+  "title": "reduce",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/functions/reduce.md",
+  "sourceDirName": "Coding/Python Docs/Guide/functions",
+  "slug": "/Coding/Python Docs/Guide/functions/reduce",
+  "permalink": "/docs/Coding/Python Docs/Guide/functions/reduce",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/functions/reduce.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "map",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/map"
+  },
+  "next": {
+    "title": "Object-Oriented Programming",
+    "permalink": "/docs/category/object-oriented-programming"
+  }
+}

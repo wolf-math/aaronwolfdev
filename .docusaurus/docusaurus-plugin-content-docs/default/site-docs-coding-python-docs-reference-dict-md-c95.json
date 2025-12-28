@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/dict",
+  "title": "dict",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/dict.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/dict",
+  "permalink": "/docs/Coding/Python Docs/Reference/dict",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/dict.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "dict"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "coroutine",
+    "permalink": "/docs/Coding/Python Docs/Reference/coroutine"
+  },
+  "next": {
+    "title": "ellipsis",
+    "permalink": "/docs/Coding/Python Docs/Reference/ellipsis"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/slice",
+  "title": "slice",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/slice.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/slice",
+  "permalink": "/docs/Coding/Python Docs/Reference/slice",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/slice.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "slice"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "set",
+    "permalink": "/docs/Coding/Python Docs/Reference/set"
+  },
+  "next": {
+    "title": "string",
+    "permalink": "/docs/Coding/Python Docs/Reference/string"
+  }
+}

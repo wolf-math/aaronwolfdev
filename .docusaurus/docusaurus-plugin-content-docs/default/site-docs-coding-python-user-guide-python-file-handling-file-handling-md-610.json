@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/python_file_handling/file_handling",
+  "title": "File handling basics",
+  "description": "What is file handling?",
+  "source": "@site/docs/coding/python/user_guide/python_file_handling/file_handling.md",
+  "sourceDirName": "coding/python/user_guide/python_file_handling",
+  "slug": "/coding/python/user_guide/python_file_handling/file_handling",
+  "permalink": "/docs/coding/python/user_guide/python_file_handling/file_handling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/python_file_handling/file_handling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "File handling basics",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python file handling",
+    "permalink": "/docs/category/python-file-handling"
+  },
+  "next": {
+    "title": "Reading and writing JSON",
+    "permalink": "/docs/coding/python/user_guide/python_file_handling/json"
+  }
+}

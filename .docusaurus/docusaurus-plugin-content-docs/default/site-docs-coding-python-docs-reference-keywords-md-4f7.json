@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Reference/keywords",
+  "title": "Keywords",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/keywords.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/keywords",
+  "permalink": "/docs/Coding/Python Docs/Reference/keywords",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/keywords.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Keywords",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Language reference",
+    "permalink": "/docs/Coding/Python Docs/Reference/"
+  },
+  "next": {
+    "title": "built-in functions",
+    "permalink": "/docs/Coding/Python Docs/Reference/built-in"
+  }
+}

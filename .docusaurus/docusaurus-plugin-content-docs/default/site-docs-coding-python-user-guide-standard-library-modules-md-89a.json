@@ -1,0 +1,20 @@
+{
+  "id": "coding/python/user_guide/standard_library/modules",
+  "title": "modules",
+  "description": "",
+  "source": "@site/docs/coding/python/user_guide/standard_library/modules.md",
+  "sourceDirName": "coding/python/user_guide/standard_library",
+  "slug": "/coding/python/user_guide/standard_library/modules",
+  "permalink": "/docs/coding/python/user_guide/standard_library/modules",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/standard_library/modules.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "datetime",
+    "permalink": "/docs/coding/python/user_guide/standard_library/datetime"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/datetime",
+  "title": "datetime",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/datetime.md",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/datetime",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/datetime",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/datetime.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "class_static_prop_methods",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/class_static_prop_methods"
+  },
+  "next": {
+    "title": "dunder_methods",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/dunder_methods"
+  }
+}

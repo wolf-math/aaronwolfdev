@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/bytes",
+  "title": "bytes",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Reference/bytes.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/bytes",
+  "permalink": "/docs/Coding/Python Docs/Reference/bytes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/bytes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "bytes"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bytearray",
+    "permalink": "/docs/Coding/Python Docs/Reference/bytearray"
+  },
+  "next": {
+    "title": "complex",
+    "permalink": "/docs/Coding/Python Docs/Reference/complex"
+  }
+}

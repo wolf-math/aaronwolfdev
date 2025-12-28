@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/dictionaries",
+  "title": "Dictionaries",
+  "description": "Dictionaries (dicts) are key-value stores that let you organize data by meaningful labels rather than numeric positions. Unlike lists and tuples that use indexes, dictionaries use keys to access values, making them perfect for representing structured data like user information, configuration settings, or any data where names matter more than position.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/dictionaries.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/dictionaries",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/dictionaries",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/dictionaries.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Dictionaries",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "While loops",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/while_loops"
+  },
+  "next": {
+    "title": "Comprehensions",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/comprehensions"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/types_variables_control/variables",
+  "title": "Variables",
+  "description": "Variables are names that refer to values. Python doesn’t use type declarations; a name is bound to an object at runtime and can later be rebound to another.",
+  "source": "@site/docs/Coding/Python Docs/Guide/types_variables_control/variables.md",
+  "sourceDirName": "Coding/Python Docs/Guide/types_variables_control",
+  "slug": "/Coding/Python Docs/Guide/types_variables_control/variables",
+  "permalink": "/docs/Coding/Python Docs/Guide/types_variables_control/variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/types_variables_control/variables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Variables",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python types",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_control/types"
+  },
+  "next": {
+    "title": "Control flow",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_control/control_flow"
+  }
+}

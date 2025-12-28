@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/map",
+  "title": "Map",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/map.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/map",
+  "permalink": "/docs/coding/javascript/language_reference/map",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/map.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Map",
+    "sidebar_position": 14
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RegExp",
+    "permalink": "/docs/coding/javascript/language_reference/regexp"
+  },
+  "next": {
+    "title": "Set",
+    "permalink": "/docs/coding/javascript/language_reference/set"
+  }
+}

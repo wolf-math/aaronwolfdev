@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/function",
+  "title": "Function",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/function.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/function",
+  "permalink": "/docs/coding/javascript/language_reference/function",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/function.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Function",
+    "sidebar_position": 11
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "BigInt",
+    "permalink": "/docs/coding/javascript/language_reference/bigint"
+  },
+  "next": {
+    "title": "Date",
+    "permalink": "/docs/coding/javascript/language_reference/date"
+  }
+}

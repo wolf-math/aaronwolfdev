@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/string",
+  "title": "String",
+  "description": "Properties",
+  "source": "@site/docs/coding/javascript/language_reference/string.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/string",
+  "permalink": "/docs/coding/javascript/language_reference/string",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/string.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "String",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Number",
+    "permalink": "/docs/coding/javascript/language_reference/number"
+  },
+  "next": {
+    "title": "Boolean",
+    "permalink": "/docs/coding/javascript/language_reference/boolean"
+  }
+}

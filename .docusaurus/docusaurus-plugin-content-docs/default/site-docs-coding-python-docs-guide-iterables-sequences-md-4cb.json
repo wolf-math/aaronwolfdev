@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/sequences",
+  "title": "Sequences",
+  "description": "Sequences are a fundamental concept in Python. They represent ordered collections of items that you can access by position. This guide introduces the concept of sequences and sets the foundation for understanding lists, tuples, ranges, and other ordered data structures covered in this section.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/sequences.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/sequences",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/sequences",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/sequences.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Sequences",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Iterables",
+    "permalink": "/docs/category/iterables"
+  },
+  "next": {
+    "title": "Lists",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/lists"
+  }
+}

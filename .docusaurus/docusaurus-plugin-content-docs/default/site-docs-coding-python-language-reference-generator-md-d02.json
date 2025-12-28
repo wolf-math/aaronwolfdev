@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/generator",
+  "title": "generator",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/generator.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/generator",
+  "permalink": "/docs/coding/python/language_reference/generator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/generator.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 25,
+  "frontMatter": {
+    "title": "generator",
+    "sidebar_position": 25
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "coroutine",
+    "permalink": "/docs/coding/python/language_reference/coroutine"
+  },
+  "next": {
+    "title": "User guide",
+    "permalink": "/docs/coding/python/user_guide/"
+  }
+}

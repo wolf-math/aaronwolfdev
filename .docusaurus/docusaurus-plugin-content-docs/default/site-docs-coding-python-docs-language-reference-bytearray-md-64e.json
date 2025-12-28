@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/bytearray",
+  "title": "bytearray",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/bytearray.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/bytearray",
+  "permalink": "/docs/coding/python_docs/language_reference/bytearray",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/bytearray.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "bytearray"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "byte",
+    "permalink": "/docs/coding/python_docs/language_reference/byte"
+  },
+  "next": {
+    "title": "complex",
+    "permalink": "/docs/coding/python_docs/language_reference/complex"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/built-in",
+  "title": "built-in functions",
+  "description": "Definition",
+  "source": "@site/docs/coding/python/language_reference/built-in.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/built-in",
+  "permalink": "/docs/coding/python/language_reference/built-in",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/built-in.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "built-in functions",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Language reference",
+    "permalink": "/docs/coding/python/language_reference/"
+  },
+  "next": {
+    "title": "bool",
+    "permalink": "/docs/coding/python/language_reference/bool"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/encapsulation",
+  "title": "encapsulation",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/encapsulation.md",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/encapsulation",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/encapsulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/encapsulation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dunder_methods",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/dunder_methods"
+  },
+  "next": {
+    "title": "exceptions",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/exceptions"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Coding/Python Docs/Reference/string",
+  "title": "string",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/string.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/string",
+  "permalink": "/docs/Coding/Python Docs/Reference/string",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/string.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "string",
+    "date": "28 October 2025"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "slice",
+    "permalink": "/docs/Coding/Python Docs/Reference/slice"
+  },
+  "next": {
+    "title": "tuple",
+    "permalink": "/docs/Coding/Python Docs/Reference/tuple"
+  }
+}

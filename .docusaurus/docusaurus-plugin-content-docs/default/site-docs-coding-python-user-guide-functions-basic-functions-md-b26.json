@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/functions/basic_functions",
+  "title": "Function basics",
+  "description": "What are functions?",
+  "source": "@site/docs/coding/python/user_guide/functions/basic_functions.md",
+  "sourceDirName": "coding/python/user_guide/functions",
+  "slug": "/coding/python/user_guide/functions/basic_functions",
+  "permalink": "/docs/coding/python/user_guide/functions/basic_functions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/functions/basic_functions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Function basics",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Functions",
+    "permalink": "/docs/category/functions"
+  },
+  "next": {
+    "title": "Parameters",
+    "permalink": "/docs/coding/python/user_guide/functions/args_and_kwargs"
+  }
+}

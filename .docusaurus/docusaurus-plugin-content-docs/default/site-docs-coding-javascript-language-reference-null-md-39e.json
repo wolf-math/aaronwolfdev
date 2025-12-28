@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/null",
+  "title": "null",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/null.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/null",
+  "permalink": "/docs/coding/javascript/language_reference/null",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/null.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "null",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Array",
+    "permalink": "/docs/coding/javascript/language_reference/array"
+  },
+  "next": {
+    "title": "undefined",
+    "permalink": "/docs/coding/javascript/language_reference/undefined"
+  }
+}

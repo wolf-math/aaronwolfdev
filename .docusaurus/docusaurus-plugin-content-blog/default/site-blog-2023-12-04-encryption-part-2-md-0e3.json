@@ -1,0 +1,60 @@
+{
+  "permalink": "/blog/encryption2",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2023-12-04-encryption-part-2.md",
+  "source": "@site/blog/2023-12-04-encryption-part-2.md",
+  "title": "Encryption Part 2: Diffie-Hellman",
+  "description": "This blog post was originally published on dev.to",
+  "date": "2023-12-04T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "encryption",
+      "permalink": "/blog/tags/encryption",
+      "description": "encryption articles"
+    },
+    {
+      "inline": false,
+      "label": "python",
+      "permalink": "/blog/tags/python",
+      "description": "python articles"
+    }
+  ],
+  "readingTime": 7.01,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "encryption2",
+    "title": "Encryption Part 2: Diffie-Hellman",
+    "authors": [
+      "wolf"
+    ],
+    "tags": [
+      "encryption",
+      "python"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Encryption Part 3: RSA",
+    "permalink": "/blog/encryption3"
+  },
+  "nextItem": {
+    "title": "Encryption Part 1: Overview",
+    "permalink": "/blog/encryption1"
+  }
+}

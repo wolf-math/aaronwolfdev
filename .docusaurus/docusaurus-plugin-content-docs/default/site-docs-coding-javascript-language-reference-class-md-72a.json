@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/class",
+  "title": "class",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/class.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/class",
+  "permalink": "/docs/coding/javascript/language_reference/class",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/class.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "title": "class",
+    "sidebar_position": 20
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Keywords",
+    "permalink": "/docs/coding/javascript/language_reference/keywords"
+  },
+  "next": {
+    "title": "async/await",
+    "permalink": "/docs/coding/javascript/language_reference/async"
+  }
+}

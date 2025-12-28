@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/object",
+  "title": "object",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/object.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/object",
+  "permalink": "/docs/Coding/Python Docs/Reference/object",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/object.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "object"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "None",
+    "permalink": "/docs/Coding/Python Docs/Reference/none"
+  },
+  "next": {
+    "title": "range",
+    "permalink": "/docs/Coding/Python Docs/Reference/range"
+  }
+}

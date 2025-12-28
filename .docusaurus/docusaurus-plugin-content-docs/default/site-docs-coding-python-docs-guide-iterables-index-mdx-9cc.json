@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/index",
+  "title": "Iterables",
+  "description": "Explore Python's collection types and how to work with sequences of data, including lists, sets, ranges, and more.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/index.mdx",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Iterables"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "reduce",
+    "permalink": "/docs/Coding/Python Docs/Guide/functions/reduce"
+  },
+  "next": {
+    "title": "Sequences",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/sequences"
+  }
+}

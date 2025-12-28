@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/tuples",
+  "title": "Tuples",
+  "description": "Tuples are immutable sequences of items, similar to lists but with one key difference: once created, tuples cannot be modified. This immutability makes them perfect for fixed data, returning multiple values from functions, and using as dictionary keys.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/tuples.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/tuples",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/tuples",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/tuples.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Tuples",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lists",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/lists"
+  },
+  "next": {
+    "title": "Sets",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/sets"
+  }
+}

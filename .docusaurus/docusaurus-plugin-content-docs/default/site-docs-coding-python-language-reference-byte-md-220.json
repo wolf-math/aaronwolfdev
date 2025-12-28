@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/byte",
+  "title": "byte",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/byte.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/byte",
+  "permalink": "/docs/coding/python/language_reference/byte",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/byte.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "byte",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bool",
+    "permalink": "/docs/coding/python/language_reference/bool"
+  },
+  "next": {
+    "title": "bytearray",
+    "permalink": "/docs/coding/python/language_reference/bytearray"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/set",
+  "title": "Set",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/set.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/set",
+  "permalink": "/docs/coding/javascript/language_reference/set",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/set.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Set",
+    "sidebar_position": 15
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Map",
+    "permalink": "/docs/coding/javascript/language_reference/map"
+  },
+  "next": {
+    "title": "WeakMap",
+    "permalink": "/docs/coding/javascript/language_reference/weakmap"
+  }
+}

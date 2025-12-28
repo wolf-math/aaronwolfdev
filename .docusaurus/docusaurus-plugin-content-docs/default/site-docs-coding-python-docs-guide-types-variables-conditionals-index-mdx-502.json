@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Guide/types_variables_conditionals/index",
+  "title": "Types, variables, and conditionals",
+  "description": "Learn about Python's fundamental building blocks: data types, variables, and how to control program flow with conditional statements.",
+  "source": "@site/docs/Coding/Python Docs/Guide/types_variables_conditionals/index.mdx",
+  "sourceDirName": "Coding/Python Docs/Guide/types_variables_conditionals",
+  "slug": "/Coding/Python Docs/Guide/types_variables_conditionals/",
+  "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/types_variables_conditionals/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Types, variables, and conditionals"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "polymorphism",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/polymorphism"
+  },
+  "next": {
+    "title": "Types",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/types"
+  }
+}

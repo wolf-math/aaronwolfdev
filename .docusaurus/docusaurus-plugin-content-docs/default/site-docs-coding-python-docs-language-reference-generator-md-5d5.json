@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/generator",
+  "title": "generator",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/generator.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/generator",
+  "permalink": "/docs/coding/python_docs/language_reference/generator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/generator.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "generator"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "function",
+    "permalink": "/docs/coding/python_docs/language_reference/function"
+  },
+  "next": {
+    "title": "int",
+    "permalink": "/docs/coding/python_docs/language_reference/int"
+  }
+}

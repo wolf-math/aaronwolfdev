@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/instances",
+  "title": "Instances",
+  "description": "What is an instance?",
+  "source": "@site/docs/coding/python/user_guide/oop/instances.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/instances",
+  "permalink": "/docs/coding/python/user_guide/oop/instances",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/instances.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Instances",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OOP introduction",
+    "permalink": "/docs/coding/python/user_guide/oop/intro"
+  },
+  "next": {
+    "title": "Instance methods",
+    "permalink": "/docs/coding/python/user_guide/oop/instance_methods"
+  }
+}

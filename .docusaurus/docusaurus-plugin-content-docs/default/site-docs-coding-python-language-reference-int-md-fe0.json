@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/language_reference/int",
+  "title": "int",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/int.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/int",
+  "permalink": "/docs/coding/python/language_reference/int",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/int.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "int",
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "frozenset",
+    "permalink": "/docs/coding/python/language_reference/frozenset"
+  },
+  "next": {
+    "title": "list",
+    "permalink": "/docs/coding/python/language_reference/list"
+  }
+}

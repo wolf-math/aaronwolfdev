@@ -1,0 +1,29 @@
+{
+  "id": "coding/python/language_reference/string",
+  "title": "string",
+  "description": "Properties",
+  "source": "@site/docs/coding/python/language_reference/string.md",
+  "sourceDirName": "coding/python/language_reference",
+  "slug": "/coding/python/language_reference/string",
+  "permalink": "/docs/coding/python/language_reference/string",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/language_reference/string.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "string",
+    "sidebar_position": 18,
+    "date": "28 October 2025"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "slice",
+    "permalink": "/docs/coding/python/language_reference/slice"
+  },
+  "next": {
+    "title": "tuple",
+    "permalink": "/docs/coding/python/language_reference/tuple"
+  }
+}

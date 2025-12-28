@@ -1,0 +1,58 @@
+{
+  "permalink": "/blog/encryption1",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2023-03-01-encryption-part-1.md",
+  "source": "@site/blog/2023-03-01-encryption-part-1.md",
+  "title": "Encryption Part 1: Overview",
+  "description": "This blog post was originally published on dev.to",
+  "date": "2023-03-01T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "encryption",
+      "permalink": "/blog/tags/encryption",
+      "description": "encryption articles"
+    },
+    {
+      "inline": false,
+      "label": "python",
+      "permalink": "/blog/tags/python",
+      "description": "python articles"
+    }
+  ],
+  "readingTime": 2.78,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "encryption1",
+    "title": "Encryption Part 1: Overview",
+    "authors": "wolf",
+    "tags": [
+      "encryption",
+      "python"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Encryption Part 2: Diffie-Hellman",
+    "permalink": "/blog/encryption2"
+  },
+  "nextItem": {
+    "title": "Temporal Date API",
+    "permalink": "/blog/temporal-datetime"
+  }
+}

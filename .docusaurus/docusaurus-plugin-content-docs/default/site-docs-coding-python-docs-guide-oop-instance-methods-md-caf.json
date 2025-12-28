@@ -1,0 +1,24 @@
+{
+  "id": "Coding/Python Docs/Guide/oop/instance_methods",
+  "title": "instance_methods",
+  "description": "",
+  "source": "@site/docs/Coding/Python Docs/Guide/oop/instance_methods.md",
+  "sourceDirName": "Coding/Python Docs/Guide/oop",
+  "slug": "/Coding/Python Docs/Guide/oop/instance_methods",
+  "permalink": "/docs/Coding/Python Docs/Guide/oop/instance_methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/oop/instance_methods.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "inheritance",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/inheritance"
+  },
+  "next": {
+    "title": "instances",
+    "permalink": "/docs/Coding/Python Docs/Guide/oop/instances"
+  }
+}

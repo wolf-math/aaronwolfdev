@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/types_variables_conditionals/conditionals",
+  "title": "Conditionals",
+  "description": "What are conditionals?",
+  "source": "@site/docs/Coding/Python Docs/Guide/types_variables_conditionals/conditionals.md",
+  "sourceDirName": "Coding/Python Docs/Guide/types_variables_conditionals",
+  "slug": "/Coding/Python Docs/Guide/types_variables_conditionals/conditionals",
+  "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/conditionals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/types_variables_conditionals/conditionals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Conditionals",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/Coding/Python Docs/Guide/types_variables_conditionals/variables"
+  },
+  "next": {
+    "title": "Iterables",
+    "permalink": "/docs/category/iterables"
+  }
+}

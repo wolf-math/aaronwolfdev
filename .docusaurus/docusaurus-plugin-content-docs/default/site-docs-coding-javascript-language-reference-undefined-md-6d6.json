@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/undefined",
+  "title": "undefined",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/undefined.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/undefined",
+  "permalink": "/docs/coding/javascript/language_reference/undefined",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/undefined.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "undefined",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "null",
+    "permalink": "/docs/coding/javascript/language_reference/null"
+  },
+  "next": {
+    "title": "Symbol",
+    "permalink": "/docs/coding/javascript/language_reference/symbol"
+  }
+}

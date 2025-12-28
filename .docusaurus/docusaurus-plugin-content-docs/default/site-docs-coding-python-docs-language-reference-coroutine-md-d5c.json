@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/coroutine",
+  "title": "coroutine",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/coroutine.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/coroutine",
+  "permalink": "/docs/coding/python_docs/language_reference/coroutine",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/coroutine.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "coroutine"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "complex",
+    "permalink": "/docs/coding/python_docs/language_reference/complex"
+  },
+  "next": {
+    "title": "dict",
+    "permalink": "/docs/coding/python_docs/language_reference/dict"
+  }
+}

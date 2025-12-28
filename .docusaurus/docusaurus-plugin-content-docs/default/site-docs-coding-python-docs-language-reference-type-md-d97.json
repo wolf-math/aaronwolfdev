@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/type",
+  "title": "type",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/type.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/type",
+  "permalink": "/docs/coding/python_docs/language_reference/type",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/type.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "type"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "tuple",
+    "permalink": "/docs/coding/python_docs/language_reference/tuple"
+  },
+  "next": {
+    "title": "User guide",
+    "permalink": "/docs/coding/python_docs/user_guide/"
+  }
+}

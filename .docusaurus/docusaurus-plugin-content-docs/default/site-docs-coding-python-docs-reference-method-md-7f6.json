@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/method",
+  "title": "method",
+  "description": "Definition",
+  "source": "@site/docs/Coding/Python Docs/Reference/method.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/method",
+  "permalink": "/docs/Coding/Python Docs/Reference/method",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/method.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "method"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "memoryview",
+    "permalink": "/docs/Coding/Python Docs/Reference/memoryview"
+  },
+  "next": {
+    "title": "None",
+    "permalink": "/docs/Coding/Python Docs/Reference/none"
+  }
+}

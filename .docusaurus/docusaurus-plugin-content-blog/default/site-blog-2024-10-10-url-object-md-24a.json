@@ -1,0 +1,51 @@
+{
+  "permalink": "/blog/the-url-object",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2024-10-10-url-object.md",
+  "source": "@site/blog/2024-10-10-url-object.md",
+  "title": "The URL Object",
+  "description": "This blog post was originally posted on dev.to",
+  "date": "2024-10-10T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "javascript",
+      "permalink": "/blog/tags/javascript",
+      "description": "javascript articles"
+    }
+  ],
+  "readingTime": 3.47,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "the-url-object",
+    "title": "The URL Object",
+    "authors": "wolf",
+    "tags": [
+      "javascript"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "My New Website",
+    "permalink": "/blog/new-site"
+  },
+  "nextItem": {
+    "title": "Promises and fetch",
+    "permalink": "/blog/promises-fetch"
+  }
+}

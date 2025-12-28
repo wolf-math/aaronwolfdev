@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Guide/iterables/comprehensions",
+  "title": "Comprehensions",
+  "description": "Comprehensions provide a concise, readable way to create lists, dictionaries, and sets by transforming or filtering data. They're a Pythonic alternative to loops when you're building collections, making your code more compact and often faster.",
+  "source": "@site/docs/Coding/Python Docs/Guide/iterables/comprehensions.md",
+  "sourceDirName": "Coding/Python Docs/Guide/iterables",
+  "slug": "/Coding/Python Docs/Guide/iterables/comprehensions",
+  "permalink": "/docs/Coding/Python Docs/Guide/iterables/comprehensions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Guide/iterables/comprehensions.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Comprehensions",
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dictionaries",
+    "permalink": "/docs/Coding/Python Docs/Guide/iterables/dictionaries"
+  },
+  "next": {
+    "title": "Functions",
+    "permalink": "/docs/category/functions"
+  }
+}

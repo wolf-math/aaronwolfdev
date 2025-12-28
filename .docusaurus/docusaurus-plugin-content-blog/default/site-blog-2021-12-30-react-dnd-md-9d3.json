@@ -1,0 +1,58 @@
+{
+  "permalink": "/blog/react-dnd",
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/blog/2021-12-30-react-dnd.md",
+  "source": "@site/blog/2021-12-30-react-dnd.md",
+  "title": "Drag and drop from scratch with React",
+  "description": "Intro",
+  "date": "2021-12-30T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "javascript",
+      "permalink": "/blog/tags/javascript",
+      "description": "javascript articles"
+    },
+    {
+      "inline": false,
+      "label": "react",
+      "permalink": "/blog/tags/react",
+      "description": "react articles"
+    }
+  ],
+  "readingTime": 4.7,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Aaron wolf",
+      "title": "Lead writer and developer",
+      "url": "https://aaronwolf.dev",
+      "page": {
+        "permalink": "/blog/authors/wolf"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/wolf-math/",
+        "github": "https://github.com/wolf-math"
+      },
+      "imageURL": "https://avatars.githubusercontent.com/u/29966332?v=4",
+      "key": "wolf"
+    }
+  ],
+  "frontMatter": {
+    "slug": "react-dnd",
+    "title": "Drag and drop from scratch with React",
+    "authors": "wolf",
+    "tags": [
+      "javascript",
+      "react"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "Temporal Date API",
+    "permalink": "/blog/temporal-datetime"
+  },
+  "nextItem": {
+    "title": "Set up a Samba server on Ubuntu Linux",
+    "permalink": "/blog/samba-server-setup"
+  }
+}

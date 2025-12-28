@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/encapsulation",
+  "title": "Encapsulation",
+  "description": "What is encapsulation?",
+  "source": "@site/docs/coding/python/user_guide/oop/encapsulation.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/encapsulation",
+  "permalink": "/docs/coding/python/user_guide/oop/encapsulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/encapsulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Encapsulation",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Instance methods",
+    "permalink": "/docs/coding/python/user_guide/oop/instance_methods"
+  },
+  "next": {
+    "title": "Inheritance",
+    "permalink": "/docs/coding/python/user_guide/oop/inheritance"
+  }
+}

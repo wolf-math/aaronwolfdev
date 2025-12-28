@@ -1,0 +1,28 @@
+{
+  "id": "coding/python_docs/user_guide/iterables/sets",
+  "title": "Sets",
+  "description": "Sets are unordered collections of unique elements. Unlike lists and tuples, sets don't allow duplicates and don't maintain item order. They're perfect for tasks like removing duplicates, testing membership efficiently, and performing mathematical set operations.",
+  "source": "@site/docs/coding/python_docs/user_guide/iterables/sets.md",
+  "sourceDirName": "coding/python_docs/user_guide/iterables",
+  "slug": "/coding/python_docs/user_guide/iterables/sets",
+  "permalink": "/docs/coding/python_docs/user_guide/iterables/sets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/iterables/sets.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Sets",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tuples",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/tuples"
+  },
+  "next": {
+    "title": "Ranges",
+    "permalink": "/docs/coding/python_docs/user_guide/iterables/ranges"
+  }
+}

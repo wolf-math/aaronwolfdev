@@ -1,0 +1,28 @@
+{
+  "id": "coding/javascript/language_reference/weakset",
+  "title": "WeakSet",
+  "description": "Definition",
+  "source": "@site/docs/coding/javascript/language_reference/weakset.md",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/weakset",
+  "permalink": "/docs/coding/javascript/language_reference/weakset",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/weakset.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "WeakSet",
+    "sidebar_position": 17
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "WeakMap",
+    "permalink": "/docs/coding/javascript/language_reference/weakmap"
+  },
+  "next": {
+    "title": "Promise",
+    "permalink": "/docs/coding/javascript/language_reference/promise"
+  }
+}

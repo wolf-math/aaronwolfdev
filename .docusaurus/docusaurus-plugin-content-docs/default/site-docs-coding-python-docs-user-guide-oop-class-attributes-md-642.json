@@ -1,0 +1,24 @@
+{
+  "id": "coding/python_docs/user_guide/oop/class_attributes",
+  "title": "class_attributes",
+  "description": "",
+  "source": "@site/docs/coding/python_docs/user_guide/oop/class_attributes.md",
+  "sourceDirName": "coding/python_docs/user_guide/oop",
+  "slug": "/coding/python_docs/user_guide/oop/class_attributes",
+  "permalink": "/docs/coding/python_docs/user_guide/oop/class_attributes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/user_guide/oop/class_attributes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Object-Oriented Programming",
+    "permalink": "/docs/category/object-oriented-programming"
+  },
+  "next": {
+    "title": "class_static_prop_methods",
+    "permalink": "/docs/coding/python_docs/user_guide/oop/class_static_prop_methods"
+  }
+}

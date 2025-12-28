@@ -1,0 +1,26 @@
+{
+  "id": "coding/python_docs/language_reference/range",
+  "title": "range",
+  "description": "Properties",
+  "source": "@site/docs/coding/python_docs/language_reference/range.md",
+  "sourceDirName": "coding/python_docs/language_reference",
+  "slug": "/coding/python_docs/language_reference/range",
+  "permalink": "/docs/coding/python_docs/language_reference/range",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python_docs/language_reference/range.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "range"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "object",
+    "permalink": "/docs/coding/python_docs/language_reference/object"
+  },
+  "next": {
+    "title": "set",
+    "permalink": "/docs/coding/python_docs/language_reference/set"
+  }
+}

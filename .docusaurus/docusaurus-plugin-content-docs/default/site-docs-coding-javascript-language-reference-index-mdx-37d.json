@@ -1,0 +1,27 @@
+{
+  "id": "coding/javascript/language_reference/index",
+  "title": "JavaScript language reference",
+  "description": "Welcome to the JavaScript Language Reference. This reference provides detailed documentation for JavaScript's built-in types, keywords, functions, and language constructs. Use this as a comprehensive lookup for JavaScript's core language features.",
+  "source": "@site/docs/coding/javascript/language_reference/index.mdx",
+  "sourceDirName": "coding/javascript/language_reference",
+  "slug": "/coding/javascript/language_reference/",
+  "permalink": "/docs/coding/javascript/language_reference/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/javascript/language_reference/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "JavaScript language reference",
+    "sidebar_label": "Language reference"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "JavaScript documentation",
+    "permalink": "/docs/category/javascript-documentation"
+  },
+  "next": {
+    "title": "built-in functions",
+    "permalink": "/docs/coding/javascript/language_reference/built-in"
+  }
+}

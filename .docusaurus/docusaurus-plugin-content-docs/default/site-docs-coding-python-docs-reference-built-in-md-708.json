@@ -1,0 +1,28 @@
+{
+  "id": "Coding/Python Docs/Reference/built-in",
+  "title": "built-in functions",
+  "description": "Definition",
+  "source": "@site/docs/Coding/Python Docs/Reference/built-in.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/built-in",
+  "permalink": "/docs/Coding/Python Docs/Reference/built-in",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/built-in.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "built-in functions",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Keywords",
+    "permalink": "/docs/Coding/Python Docs/Reference/keywords"
+  },
+  "next": {
+    "title": "bool",
+    "permalink": "/docs/Coding/Python Docs/Reference/bool"
+  }
+}

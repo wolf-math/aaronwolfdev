@@ -1,0 +1,26 @@
+{
+  "id": "Coding/Python Docs/Reference/set",
+  "title": "set",
+  "description": "Properties",
+  "source": "@site/docs/Coding/Python Docs/Reference/set.md",
+  "sourceDirName": "Coding/Python Docs/Reference",
+  "slug": "/Coding/Python Docs/Reference/set",
+  "permalink": "/docs/Coding/Python Docs/Reference/set",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/Coding/Python Docs/Reference/set.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "set"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "range",
+    "permalink": "/docs/Coding/Python Docs/Reference/range"
+  },
+  "next": {
+    "title": "slice",
+    "permalink": "/docs/Coding/Python Docs/Reference/slice"
+  }
+}

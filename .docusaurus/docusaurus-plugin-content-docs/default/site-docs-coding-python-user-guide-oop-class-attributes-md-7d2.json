@@ -1,0 +1,28 @@
+{
+  "id": "coding/python/user_guide/oop/class_attributes",
+  "title": "Class attributes",
+  "description": "What are class attributes?",
+  "source": "@site/docs/coding/python/user_guide/oop/class_attributes.md",
+  "sourceDirName": "coding/python/user_guide/oop",
+  "slug": "/coding/python/user_guide/oop/class_attributes",
+  "permalink": "/docs/coding/python/user_guide/oop/class_attributes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/wolf-math/aaronwolfdev/tree/main/docs/coding/python/user_guide/oop/class_attributes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Class attributes",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dunder methods",
+    "permalink": "/docs/coding/python/user_guide/oop/dunder_methods"
+  },
+  "next": {
+    "title": "Python standard library",
+    "permalink": "/docs/category/python-standard-library"
+  }
+}
