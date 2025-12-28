@@ -3,6 +3,13 @@ title: String
 sidebar_position: 3
 ---
 
+## Properties
+
+```javascript
+Object.getOwnPropertyNames(String.prototype)
+// ['length', 'constructor', 'anchor', 'big', 'blink', 'bold', 'charAt', 'charCodeAt', 'codePointAt', 'concat', 'endsWith', 'fontcolor', 'fontsize', 'includes', 'indexOf', 'italics', 'lastIndexOf', 'link', 'localeCompare', 'match', 'matchAll', 'normalize', 'padEnd', 'padStart', 'repeat', 'replace', 'replaceAll', 'search', 'slice', 'small', 'split', 'startsWith', 'strike', 'sub', 'substr', 'substring', 'sup', 'toLocaleLowerCase', 'toLocaleUpperCase', 'toLowerCase', 'toString', 'toUpperCase', 'trim', 'trimEnd', 'trimLeft', 'trimRight', 'trimStart', 'valueOf', 'at']
+```
+
 ## Definition
 
 A `String` is a sequence of characters used to represent text. Strings in JavaScript are immutable—once created, they cannot be changed. Only new strings can be created.
@@ -13,324 +20,582 @@ typeof 'world'   // "string"
 typeof `template` // "string"
 ```
 
-## Creating Strings
+## Using strings
 
-Strings can be created using single quotes, double quotes, or template literals:
+If a string does not have quotation marks it will be interpreted as a variable.
 
 ```javascript
-// Single quotes
-'Hello, world!'
+"this is a string"
+'this is also a string'
+this is not a string  // ReferenceError if not defined
+```
 
-// Double quotes
-"Hello, world!"
+A multiline string can be created with template literals (backticks) or by escaping newlines.
 
+```javascript
 // Template literals (ES6+)
-`Hello, world!`
+`multi
+line
+string`
 
-// String constructor
-new String('hello')  // String object (not recommended)
-String('hello')      // "hello" (primitive)
+// Escaped newlines
+"multi\nline\nstring"
 ```
 
-## Template Literals
+### Escape characters
 
-Template literals (backticks) allow for string interpolation and multi-line strings:
+The backslash `\` can "escape" a quotation mark. When escaped, JavaScript will interpret the quotation mark as a character instead of the termination of the string.
 
 ```javascript
-const name = 'Alice'
-const greeting = `Hello, ${name}!`  // "Hello, Alice!"
+"The cow says \"moo\""
+// "The cow says "moo""
 
-// Multi-line strings
-const multiLine = `
-  This is a
-  multi-line
-  string
-`
+'It\'s a string'
+// "It's a string"
 ```
 
-## Escape Characters
-
-Special characters can be escaped with a backslash:
+A new line can be created within a string with `\n`.
 
 ```javascript
-"Hello \"world\""      // Hello "world"
-'It\'s a string'        // It's a string
-"Line 1\nLine 2"       // Line 1
-                       // Line 2
+console.log("This string will print\non 2 lines")
+// This string will print
+// on 2 lines
+```
+
+Other common escape sequences:
+
+```javascript
 "Tab\tseparated"       // Tab    separated
 "Backslash\\"          // Backslash\
+"Carriage return\r"    // Carriage return
+"Single quote\'"       // Single quote'
+"Double quote\""      // Double quote"
 ```
 
-## Basic Operations
+### Template literals
 
-### Concatenation
-
-Strings can be concatenated with the `+` operator:
+Template literals (backticks) allow values to be interpolated into a string. They can be used with expressions inside curly braces.
 
 ```javascript
-"Hello" + " " + "world"  // "Hello world"
-"Hello" + 42             // "Hello42" (number coerced to string)
+const year = 1995
+console.log(`JavaScript was first released in ${year}`)
+// "JavaScript was first released in 1995"
 ```
 
-### Length
-
-Get the length of a string:
+Expressions can be executed inside of a template literal:
 
 ```javascript
-"hello".length           // 5
+console.log(`For computers, time began in the year ${2000 - 30}`)
+// "For computers, time began in the year 1970"
 ```
 
-### Accessing Characters
+### Basic operations on strings
 
-Access individual characters using bracket notation:
+Two or more strings can be added with a `+` operator or a string can be multiplied by a `number` with the `repeat()` method.
 
 ```javascript
-"hello"[0]              // "h"
-"hello"[1]              // "e"
-"hello"[10]             // undefined
+"hello" + "world"
+// "helloworld"
+
+"hello".repeat(3)
+// "hellohellohello"
 ```
 
-## String Methods
+### Accessing characters
 
-### `charAt()`
+String characters are accessed by their index. Indices start at `0`. A negative index can be used with the `at()` method (ES2022).
+
+```javascript
+const str = "hello"
+
+str[0]        // "h"
+str[1]        // "e"
+str[4]        // "o"
+str[10]       // undefined (out of bounds)
+
+// Using at() method (ES2022)
+str.at(-1)    // "o" (last character)
+str.at(-2)    // "l" (second from end)
+```
+
+### Slicing strings
+
+A substring can be extracted from a string by slicing using the syntax:
+
+```javascript
+string.slice(start, end)
+```
+
+The `start` is the index of the first character of the slice. The slice continues up to but not including the index `end`. If no index is specified the respective beginning or end of the string is considered.
+
+```javascript
+"chicken-nuggets".slice(0, 7)
+// "chicken"
+
+"chicken-nuggets".slice(0, 7)
+// "chicken"
+
+"chicken-nuggets".slice(3, 9)
+// "cken-n"
+
+"chicken-nuggets".slice(8)
+// "nuggets"
+
+"chicken-nuggets".slice(-7)
+// "nuggets" (from end)
+```
+
+### `includes()` and membership testing
+
+Existence of a substring within a string can be checked with `includes()`.
+
+```javascript
+"chicken nuggets".includes("gg")
+// true
+
+"chicken nuggets".includes("potatoes")
+// false
+
+"chicken nuggets".includes("chicken")
+// true
+```
+
+## Operations on strings
+
+JavaScript provides various operations that can be performed on strings through operators and built-in methods.
+
+| Operation | Syntax | Example | Result |
+| --- | --- | --- | --- |
+| Concatenation | `+` | `"cat" + "fish"` | `"catfish"` |
+| Repetition | `repeat()` | `"ha".repeat(3)` | `"hahaha"` |
+| Membership | `includes()` | `"cat".includes("a")` | `true` |
+| Index access | `[index]` | `"cat"[1]` | `"a"` |
+| Length | `.length` | `"hello".length` | `5` |
+| Equality | `===` | `"dog" === "dog"` | `true` |
+| Inequality | `!==` | `"dog" !== "cat"` | `true` |
+| Less than | `<` | `"ant" < "bat"` | `true` |
+| Less than or equal | `<=` | `"ant" <= "ant"` | `true` |
+| Greater than | `>` | `"bat" > "ant"` | `true` |
+| Greater than or equal | `>=` | `"bat" >= "bat"` | `true` |
+
+---
+
+## String methods
+
+### `at`
+
+Returns the character at a specified index. Accepts negative indices to count from the end.
+
+```javascript
+"hello".at(0)
+// "h"
+
+"hello".at(-1)
+// "o"
+
+"hello".at(10)
+// undefined
+```
+
+---
+
+### `charAt`
 
 Returns the character at a specified index.
 
 ```javascript
-"hello".charAt(0)       // "h"
-"hello".charAt(10)      // "" (empty string, not undefined)
+"hello".charAt(0)
+// "h"
+
+"hello".charAt(10)
+// "" (empty string, not undefined)
 ```
 
-### `charCodeAt()`
+---
+
+### `charCodeAt`
 
 Returns the Unicode value of the character at a specified index.
 
 ```javascript
-"hello".charCodeAt(0)   // 104 (Unicode for 'h')
+"hello".charCodeAt(0)
+// 104 (Unicode for 'h')
 ```
 
-### `concat()`
+---
+
+### `codePointAt`
+
+Returns the Unicode code point value at a specified index.
+
+```javascript
+"😊".codePointAt(0)
+// 128522
+```
+
+---
+
+### `concat`
 
 Combines two or more strings.
 
 ```javascript
-"Hello".concat(" ", "world")  // "Hello world"
-"Hello" + " " + "world"       // Same result (preferred)
+"Hello".concat(" ", "world")
+// "Hello world"
+
+"Hello" + " " + "world"
+// Same result (preferred)
 ```
 
-### `includes()`
+---
+
+### `endsWith`
+
+Returns `true` if a string terminates with a specified substring. Otherwise returns `false`.
+
+```javascript
+"friend".endsWith("end")
+// true
+
+"friend".endsWith("fri")
+// false
+```
+
+---
+
+### `includes`
 
 Determines whether a string contains a substring.
 
 ```javascript
-"hello".includes("ell")  // true
-"hello".includes("xyz")  // false
+"hello".includes("ell")
+// true
+
+"hello".includes("xyz")
+// false
 ```
 
-### `indexOf()`
+---
 
-Returns the index of the first occurrence of a substring.
+### `indexOf`
+
+Returns the index of the first occurrence of a substring within a string. Returns `-1` if not found.
 
 ```javascript
-"hello".indexOf("l")    // 2
-"hello".indexOf("x")    // -1 (not found)
+"Hello world".indexOf("wo")
+// 6
+
+"hello world".indexOf("o")
+// 4
+
+"hello world".indexOf("x")
+// -1
 ```
 
-### `lastIndexOf()`
+---
 
-Returns the index of the last occurrence of a substring.
+### `lastIndexOf`
+
+Returns the index of the last occurrence of a substring within a string. Returns `-1` if not found.
 
 ```javascript
-"hello".lastIndexOf("l") // 3
+"to be or not to be".lastIndexOf("be")
+// 16
+
+"to be or not to be".lastIndexOf("to")
+// 13
+
+"to be or not to be".lastIndexOf("42")
+// -1
 ```
 
-### `slice()`
+---
 
-Extracts a section of a string and returns it as a new string.
+### `localeCompare`
+
+Compares two strings in the current locale.
 
 ```javascript
-"hello".slice(1, 4)     // "ell"
-"hello".slice(1)        // "ello"
-"hello".slice(-3)       // "llo" (from end)
+"a".localeCompare("b")
+// -1 (a comes before b)
+
+"b".localeCompare("a")
+// 1 (b comes after a)
+
+"a".localeCompare("a")
+// 0 (equal)
 ```
 
-### `substring()`
+---
 
-Similar to `slice()`, but doesn't accept negative indices.
-
-```javascript
-"hello".substring(1, 4) // "ell"
-"hello".substring(1)    // "ello"
-```
-
-### `substr()` (deprecated)
-
-Extracts a substring starting at a specified position. **Deprecated**: Use `slice()` instead.
-
-### `split()`
-
-Splits a string into an array of substrings.
-
-```javascript
-"hello world".split(" ")     // ["hello", "world"]
-"a,b,c".split(",")           // ["a", "b", "c"]
-"hello".split("")            // ["h", "e", "l", "l", "o"]
-```
-
-### `toLowerCase()`
-
-Converts a string to lowercase.
-
-```javascript
-"Hello".toLowerCase()   // "hello"
-```
-
-### `toUpperCase()`
-
-Converts a string to uppercase.
-
-```javascript
-"Hello".toUpperCase()   // "HELLO"
-```
-
-### `trim()`
-
-Removes whitespace from both ends of a string.
-
-```javascript
-"  hello  ".trim()      // "hello"
-```
-
-### `trimStart()` / `trimLeft()`
-
-Removes whitespace from the start of a string.
-
-```javascript
-"  hello".trimStart()   // "hello"
-```
-
-### `trimEnd()` / `trimRight()`
-
-Removes whitespace from the end of a string.
-
-```javascript
-"hello  ".trimEnd()     // "hello"
-```
-
-### `replace()`
-
-Replaces the first occurrence of a substring or pattern.
-
-```javascript
-"hello world".replace("world", "JavaScript")  // "hello JavaScript"
-"hello hello".replace("hello", "hi")         // "hi hello" (only first)
-```
-
-### `replaceAll()`
-
-Replaces all occurrences of a substring or pattern.
-
-```javascript
-"hello hello".replaceAll("hello", "hi")  // "hi hi"
-```
-
-### `startsWith()`
-
-Determines whether a string begins with a substring.
-
-```javascript
-"hello".startsWith("he")  // true
-"hello".startsWith("lo")  // false
-```
-
-### `endsWith()`
-
-Determines whether a string ends with a substring.
-
-```javascript
-"hello".endsWith("lo")    // true
-"hello".endsWith("he")    // false
-```
-
-### `repeat()`
-
-Returns a new string with a specified number of copies.
-
-```javascript
-"hello".repeat(3)         // "hellohellohello"
-```
-
-### `padStart()`
-
-Pads the start of a string to a specified length.
-
-```javascript
-"42".padStart(5, "0")     // "00042"
-"42".padStart(5)          // "   42" (spaces by default)
-```
-
-### `padEnd()`
-
-Pads the end of a string to a specified length.
-
-```javascript
-"42".padEnd(5, "0")       // "42000"
-```
-
-### `match()`
+### `match`
 
 Matches a string against a regular expression.
 
 ```javascript
-"hello".match(/l/g)       // ["l", "l"]
-"hello".match(/x/)        // null
+"hello".match(/l/g)
+// ["l", "l"]
+
+"hello".match(/x/)
+// null
 ```
 
-### `search()`
+---
+
+### `matchAll`
+
+Returns an iterator of all matches of a regular expression.
+
+```javascript
+Array.from("hello hello".matchAll(/hello/g))
+// [["hello"], ["hello"]]
+```
+
+---
+
+### `normalize`
+
+Returns the Unicode Normalization Form of a string.
+
+```javascript
+"\u0041\u030A".normalize()
+// "Å"
+```
+
+---
+
+### `padEnd`
+
+Pads the end of a string to a specified length.
+
+```javascript
+"42".padEnd(5, "0")
+// "42000"
+
+"42".padEnd(5)
+// "42   " (spaces by default)
+```
+
+---
+
+### `padStart`
+
+Pads the start of a string to a specified length.
+
+```javascript
+"42".padStart(5, "0")
+// "00042"
+
+"42".padStart(5)
+// "   42" (spaces by default)
+```
+
+---
+
+### `repeat`
+
+Returns a new string with a specified number of copies.
+
+```javascript
+"hello".repeat(3)
+// "hellohellohello"
+```
+
+---
+
+### `replace`
+
+Replaces the first occurrence of a substring or pattern.
+
+```javascript
+"hello world".replace("world", "JavaScript")
+// "hello JavaScript"
+
+"hello hello".replace("hello", "hi")
+// "hi hello" (only first)
+```
+
+---
+
+### `replaceAll`
+
+Replaces all occurrences of a substring or pattern.
+
+```javascript
+"hello hello".replaceAll("hello", "hi")
+// "hi hi"
+```
+
+---
+
+### `search`
 
 Searches for a match between a regular expression and a string.
 
 ```javascript
-"hello".search(/l/)       // 2
-"hello".search(/x/)      // -1
+"hello".search(/l/)
+// 2
+
+"hello".search(/x/)
+// -1
 ```
 
-## String Comparison
+---
 
-Strings are compared lexicographically (alphabetically):
+### `slice`
+
+Extracts a section of a string and returns it as a new string.
 
 ```javascript
-"a" < "b"                // true
-"apple" < "banana"       // true
-"Z" < "a"                // true (uppercase comes before lowercase in ASCII)
+"hello".slice(1, 4)
+// "ell"
+
+"hello".slice(1)
+// "ello"
+
+"hello".slice(-3)
+// "llo" (from end)
 ```
 
-For case-insensitive comparison, convert to lowercase first:
+---
+
+### `split`
+
+Splits a string into an array of substrings.
 
 ```javascript
-"Apple".toLowerCase() < "banana".toLowerCase()  // true
+"hello world".split(" ")
+// ["hello", "world"]
+
+"a,b,c".split(",")
+// ["a", "b", "c"]
+
+"hello".split("")
+// ["h", "e", "l", "l", "o"]
 ```
 
-## String Immutability
+---
 
-Strings are immutable in JavaScript:
+### `startsWith`
+
+Returns `true` if the string begins with the indicated substring, otherwise returns `false`.
 
 ```javascript
-let str = "hello"
-str[0] = "H"            // Doesn't work
-console.log(str)        // "hello" (unchanged)
+"to be or not to be".startsWith("t")
+// true
 
-// To modify, create a new string
-str = "H" + str.slice(1)  // "Hello"
+"to be or not to be".startsWith("to")
+// true
+
+"to be or not to be".startsWith("be")
+// false
 ```
 
-## Type Coercion
+---
 
-JavaScript automatically converts values to strings in certain contexts:
+### `substring`
+
+Similar to `slice()`, but doesn't accept negative indices.
 
 ```javascript
-42 + ""                 // "42"
-String(42)              // "42"
-`Value: ${42}`          // "Value: 42"
+"hello".substring(1, 4)
+// "ell"
+
+"hello".substring(1)
+// "ello"
 ```
 
+---
+
+### `substr` (deprecated)
+
+Extracts a substring starting at a specified position. **Deprecated**: Use `slice()` instead.
+
+---
+
+### `toLowerCase`
+
+Returns a string converted to lowercase.
+
+```javascript
+"HeLlO wOrLd!".toLowerCase()
+// "hello world!"
+```
+
+---
+
+### `toLocaleLowerCase`
+
+Returns a string converted to lowercase according to locale-specific case mappings.
+
+```javascript
+"İ".toLocaleLowerCase("tr")
+// "i"
+```
+
+---
+
+### `toUpperCase`
+
+Returns a string converted to uppercase.
+
+```javascript
+"lowercase".toUpperCase()
+// "LOWERCASE"
+```
+
+---
+
+### `toLocaleUpperCase`
+
+Returns a string converted to uppercase according to locale-specific case mappings.
+
+```javascript
+"i".toLocaleUpperCase("tr")
+// "İ"
+```
+
+---
+
+### `trim`
+
+Returns the given string with leading and trailing whitespace removed.
+
+```javascript
+"         hello        there              ".trim()
+// "hello        there"
+```
+
+---
+
+### `trimEnd` / `trimRight`
+
+Returns the given string with trailing whitespace removed.
+
+```javascript
+"heehaw           ".trimEnd()
+// "heehaw"
+```
+
+---
+
+### `trimStart` / `trimLeft`
+
+Returns the given string with leading whitespace removed.
+
+```javascript
+"     Hello there!".trimStart()
+// "Hello there!"
+```
+
+---
+
+### `valueOf`
+
+Returns the primitive value of a string object.
+
+```javascript
+const str = new String("hello")
+str.valueOf()
+// "hello"
+```

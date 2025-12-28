@@ -14,9 +14,65 @@ Object.getOwnPropertyNames(globalThis)
 
 You will notice several groups in JavaScript's global namespace. This page focuses on the actual built-in functions of JavaScript that are not constructors or objects.
 
+### `decodeURI`
+
+Decodes a Uniform Resource Identifier (URI) previously created by `encodeURI()`.
+
+```javascript
+const encoded = encodeURI('https://example.com/hello world')
+// 'https://example.com/hello%20world'
+
+decodeURI(encoded)
+// 'https://example.com/hello world'
+```
+
+---
+
+### `decodeURIComponent`
+
+Decodes a Uniform Resource Identifier (URI) component previously created by `encodeURIComponent()`.
+
+```javascript
+const encoded = encodeURIComponent('hello world')
+// 'hello%20world'
+
+decodeURIComponent(encoded)
+// 'hello world'
+```
+
+---
+
+### `encodeURI`
+
+Encodes a URI by replacing each instance of certain characters with escape sequences.
+
+```javascript
+encodeURI('https://example.com/hello world')
+// 'https://example.com/hello%20world'
+```
+
+---
+
+### `encodeURIComponent`
+
+Encodes a URI component by replacing each instance of certain characters with escape sequences.
+
+```javascript
+encodeURIComponent('hello world')
+// 'hello%20world'
+```
+
+---
+
+### `escape` (deprecated)
+
+Creates a new string in which certain characters have been escaped. **Deprecated**: Use `encodeURI()` or `encodeURIComponent()` instead.
+
+---
+
 ### `eval`
 
-Evaluates JavaScript code represented as a string. **Warning**: Using `eval()` is dangerous and should be avoided. It can execute arbitrary code and is a security risk.
+Evaluates JavaScript code represented as a string. 
 
 ```javascript
 eval('2 + 2')  // 4
@@ -24,7 +80,7 @@ eval('let x = 5; x * 2')  // 10
 ```
 
 :::warning
-Avoid using `eval()`. It's a security risk and makes code harder to understand and optimize.
+Using `eval()` is dangerous and should be avoided. It can execute arbitrary code and is a security risk. It also makes code harder to understand and optimize.
 :::
 
 ---
@@ -89,61 +145,7 @@ parseInt('hello')      // NaN
 
 ---
 
-### `decodeURI`
 
-Decodes a Uniform Resource Identifier (URI) previously created by `encodeURI()`.
-
-```javascript
-const encoded = encodeURI('https://example.com/hello world')
-// 'https://example.com/hello%20world'
-
-decodeURI(encoded)
-// 'https://example.com/hello world'
-```
-
----
-
-### `decodeURIComponent`
-
-Decodes a Uniform Resource Identifier (URI) component previously created by `encodeURIComponent()`.
-
-```javascript
-const encoded = encodeURIComponent('hello world')
-// 'hello%20world'
-
-decodeURIComponent(encoded)
-// 'hello world'
-```
-
----
-
-### `encodeURI`
-
-Encodes a URI by replacing each instance of certain characters with escape sequences.
-
-```javascript
-encodeURI('https://example.com/hello world')
-// 'https://example.com/hello%20world'
-```
-
----
-
-### `encodeURIComponent`
-
-Encodes a URI component by replacing each instance of certain characters with escape sequences.
-
-```javascript
-encodeURIComponent('hello world')
-// 'hello%20world'
-```
-
----
-
-### `escape` (deprecated)
-
-Creates a new string in which certain characters have been escaped. **Deprecated**: Use `encodeURI()` or `encodeURIComponent()` instead.
-
----
 
 ### `unescape` (deprecated)
 
@@ -155,6 +157,68 @@ Computes a new string in which hexadecimal escape sequences are replaced with th
 
 While not functions, these global objects provide important functionality:
 
+### `Array`
+
+The `Array` constructor and its methods for working with arrays.
+
+```javascript
+Array.isArray([1, 2, 3])                 // true
+Array.from('hello')                      // ['h', 'e', 'l', 'l', 'o']
+Array.of(1, 2, 3)                        // [1, 2, 3]
+```
+
+---
+
+### `Boolean`
+
+The `Boolean` constructor for working with boolean values.
+
+```javascript
+Boolean(1)                               // true
+Boolean(0)                               // false
+Boolean('')                              // false
+```
+
+---
+
+### `console`
+
+The `console` object provides methods for logging and debugging.
+
+```javascript
+console.log('Hello')                     // Logs to console
+console.error('Error')                   // Logs error
+console.warn('Warning')                  // Logs warning
+console.info('Info')                     // Logs info
+```
+
+---
+
+### `Date`
+
+The `Date` constructor for working with dates and times.
+
+```javascript
+new Date()                               // Current date/time
+new Date('2023-01-01')                   // Specific date
+Date.now()                               // Current timestamp
+```
+
+---
+
+### `Error`, `TypeError`, `ReferenceError`, etc.
+
+Error constructors for creating error objects.
+
+```javascript
+new Error('Something went wrong')
+new TypeError('Invalid type')
+new ReferenceError('Variable not defined')
+```
+
+
+---
+
 ### `JSON`
 
 The `JSON` object provides methods for parsing and stringifying JSON data.
@@ -162,6 +226,20 @@ The `JSON` object provides methods for parsing and stringifying JSON data.
 ```javascript
 JSON.parse('{"name": "Alice"}')           // { name: 'Alice' }
 JSON.stringify({ name: 'Alice' })        // '{"name":"Alice"}'
+```
+
+---
+
+
+### `Map`, `Set`, `WeakMap`, `WeakSet`
+
+Constructors for collection types.
+
+```javascript
+new Map()                                // Empty Map
+new Set()                                // Empty Set
+new WeakMap()                            // Empty WeakMap
+new WeakSet()                            // Empty WeakSet
 ```
 
 ---
@@ -180,15 +258,15 @@ Math.random()                            // Random number between 0 and 1
 
 ---
 
-### `console`
+### `Number`
 
-The `console` object provides methods for logging and debugging.
+The `Number` constructor and its methods for working with numbers.
 
 ```javascript
-console.log('Hello')                     // Logs to console
-console.error('Error')                   // Logs error
-console.warn('Warning')                  // Logs warning
-console.info('Info')                     // Logs info
+Number.isNaN(NaN)                        // true
+Number.isFinite(42)                      // true
+Number.parseInt('42')                    // 42
+Number.parseFloat('3.14')                // 3.14
 ```
 
 ---
@@ -206,62 +284,15 @@ Object.assign({}, { a: 1 })             // { a: 1 }
 
 ---
 
-### `Array`
 
-The `Array` constructor and its methods for working with arrays.
+### `Promise`
 
-```javascript
-Array.isArray([1, 2, 3])                 // true
-Array.from('hello')                      // ['h', 'e', 'l', 'l', 'o']
-Array.of(1, 2, 3)                        // [1, 2, 3]
-```
-
----
-
-### `String`
-
-The `String` constructor and its methods for working with strings.
+The `Promise` constructor for working with asynchronous operations.
 
 ```javascript
-String.fromCharCode(65)                  // 'A'
-String.raw`Hello\nWorld`                 // 'Hello\\nWorld'
-```
-
----
-
-### `Number`
-
-The `Number` constructor and its methods for working with numbers.
-
-```javascript
-Number.isNaN(NaN)                        // true
-Number.isFinite(42)                      // true
-Number.parseInt('42')                    // 42
-Number.parseFloat('3.14')                // 3.14
-```
-
----
-
-### `Boolean`
-
-The `Boolean` constructor for working with boolean values.
-
-```javascript
-Boolean(1)                               // true
-Boolean(0)                               // false
-Boolean('')                              // false
-```
-
----
-
-### `Date`
-
-The `Date` constructor for working with dates and times.
-
-```javascript
-new Date()                               // Current date/time
-new Date('2023-01-01')                   // Specific date
-Date.now()                               // Current timestamp
+new Promise((resolve, reject) => {
+  resolve('Success')
+})
 ```
 
 ---
@@ -277,38 +308,14 @@ RegExp('hello', 'gi')                    // /hello/gi
 
 ---
 
-### `Map`, `Set`, `WeakMap`, `WeakSet`
+### `String`
 
-Constructors for collection types.
-
-```javascript
-new Map()                                // Empty Map
-new Set()                                // Empty Set
-new WeakMap()                            // Empty WeakMap
-new WeakSet()                            // Empty WeakSet
-```
-
----
-
-### `Promise`
-
-The `Promise` constructor for working with asynchronous operations.
+The `String` constructor and its methods for working with strings.
 
 ```javascript
-new Promise((resolve, reject) => {
-  resolve('Success')
-})
+String.fromCharCode(65)                  // 'A'
+String.raw`Hello\nWorld`                 // 'Hello\\nWorld'
 ```
 
----
 
-### `Error`, `TypeError`, `ReferenceError`, etc.
-
-Error constructors for creating error objects.
-
-```javascript
-new Error('Something went wrong')
-new TypeError('Invalid type')
-new ReferenceError('Variable not defined')
-```
 
