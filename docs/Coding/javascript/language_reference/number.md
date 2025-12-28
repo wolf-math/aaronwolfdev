@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## Definition
 
-A `Number` is a numeric data type in JavaScript. JavaScript uses the IEEE 754 double-precision floating-point format for all numbers, meaning there's no separate integer type. Numbers can be integers or floating-point values.
+A `Number` is a numeric data type in JavaScript. JavaScript uses the IEEE 754 double-precision floating-point format for all numbers, meaning **numbers can be integers or floating-point values**.
 
 ```javascript
 > typeof 42
@@ -147,24 +147,28 @@ Numbers can be incremented or decremented using the `++` and `--` operators. How
 > let a = 5
 undefined
 
+// execute then increment
 > a++
 5
 
 > a
 6
 
+// increment then execute
 > ++a
 7
 
 > a
 7
 
+// execute then decrement
 > a--
 7
 
 > a
 6
 
+// decrement then execute
 > --a
 5
 
@@ -193,6 +197,14 @@ Comparison operations return a boolean value.
 // Check equality
 > 5 == 8
 false
+
+// Check value and type (triple equals)
+> 5 === 5
+true
+
+// Check only value (double equals)
+> "5" == 5
+true
 
 > 5 === 8
 false
@@ -253,6 +265,78 @@ Underscores can be added to numbers to improve their readability. This does not 
 > 1_234_567 + 13
 1234580
 ```
+
+## The `Math` object
+
+The `Math` object provides mathematical constants and functions:
+
+```javascript
+> Math.PI
+3.141592653589793
+
+> Math.E
+2.718281828459045
+
+> Math.sqrt(16)
+4
+
+> Math.pow(2, 3)
+8
+
+> Math.abs(-5)
+5
+
+> Math.round(3.7)
+4
+
+> Math.floor(3.7)
+3
+
+> Math.ceil(3.2)
+4
+
+> Math.max(1, 2, 3)
+3
+
+> Math.min(1, 2, 3)
+1
+
+> Math.random()
+0.12345678901234567
+```
+
+## Type coercion
+
+JavaScript automatically converts values to numbers in certain contexts:
+
+```javascript
+> '42' * 2
+84
+
+> '42' + 2
+"422"
+
+> Number('42')
+42
+
+> +'42'
+42
+```
+
+## Precision and limitations
+
+JavaScript numbers are stored as 64-bit floating-point numbers, which can lead to precision issues:
+
+```javascript
+> 0.1 + 0.2
+0.30000000000000004
+
+> 0.1 + 0.2 === 0.3
+false
+```
+
+For precise decimal arithmetic, consider using a library or converting to integers.
+
 
 ## Operations on numbers
 
@@ -552,75 +636,3 @@ Same as `NaN`.
 NaN
 ```
 
----
-
-## Math object
-
-The `Math` object provides mathematical constants and functions:
-
-```javascript
-> Math.PI
-3.141592653589793
-
-> Math.E
-2.718281828459045
-
-> Math.sqrt(16)
-4
-
-> Math.pow(2, 3)
-8
-
-> Math.abs(-5)
-5
-
-> Math.round(3.7)
-4
-
-> Math.floor(3.7)
-3
-
-> Math.ceil(3.2)
-4
-
-> Math.max(1, 2, 3)
-3
-
-> Math.min(1, 2, 3)
-1
-
-> Math.random()
-0.12345678901234567
-```
-
-## Type coercion
-
-JavaScript automatically converts values to numbers in certain contexts:
-
-```javascript
-> '42' * 2
-84
-
-> '42' + 2
-"422"
-
-> Number('42')
-42
-
-> +'42'
-42
-```
-
-## Precision and limitations
-
-JavaScript numbers are stored as 64-bit floating-point numbers, which can lead to precision issues:
-
-```javascript
-> 0.1 + 0.2
-0.30000000000000004
-
-> 0.1 + 0.2 === 0.3
-false
-```
-
-For precise decimal arithmetic, consider using a library or converting to integers.
