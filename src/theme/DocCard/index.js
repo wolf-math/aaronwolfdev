@@ -46,14 +46,14 @@ function CardLayout({ className, href, icon, title, description }) {
       >
         {icon} {title}
       </Heading>
-      {description && (
+      {/* {description && (
         <p
           className={clsx('text--truncate', styles.cardDescription)}
           title={description}
         >
           {description}
         </p>
-      )}
+      )} */}
     </CardContainer>
   );
 }
@@ -70,7 +70,7 @@ function CardCategory({ item }) {
       href={href}
       icon='🗃️'
       title={item.label}
-      description={item?.description}
+      // description={item?.description}
     />
   );
 }
@@ -83,7 +83,7 @@ function CardLink({ item }) {
       href={item.href}
       icon={icon}
       title={item.label}
-      description={item.description ?? doc?.description}
+      // description={item.description ?? doc?.description}
     />
   );
 }
