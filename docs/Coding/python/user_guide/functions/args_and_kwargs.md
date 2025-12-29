@@ -3,7 +3,7 @@ title: Parameters
 sidebar_position: 2
 ---
 
-## What are *args and **kwargs?
+## What are `*args` and `**kwargs`?
 
 `*args` and `**kwargs` are special syntax in Python that allow functions to accept a variable number of arguments. The `*args` collects extra positional arguments into a tuple, while `**kwargs` collects extra keyword arguments into a dictionary. The names `args` and `kwargs` are just conventions—you can use any names you want, but the `*` and `**` operators are what make them work.
 
@@ -25,7 +25,7 @@ example(1, 2, 3, name="Alice", age=30)
 
 The `*args` syntax collects any number of positional arguments into a tuple. The `*` operator unpacks arguments when calling a function, and collects them when defining a function.
 
-### Basic *args example
+### Basic `*args` example
 
 ```python
 def sum_all(*args):
@@ -53,7 +53,7 @@ show_args(1, 2, 3)
 # Value: (1, 2, 3)
 ```
 
-### Combining regular parameters with *args
+### Combining regular parameters with `*args`
 
 You can mix regular parameters with `*args`. Regular parameters must come before `*args`:
 
@@ -69,7 +69,7 @@ greet("Hello", "Alice", "Bob", "Charlie")
 # Hello, Charlie!
 ```
 
-### Unpacking with *args
+### Unpacking with `*args`
 
 You can also use `*` to unpack a sequence when calling a function:
 
@@ -92,7 +92,7 @@ values = [2, 3, 4]
 result = multiply(*values)  # 24
 ```
 
-## **kwargs: Variable keyword arguments
+## `**kwargs`: Variable keyword arguments
 
 The `**kwargs` syntax collects any number of keyword arguments into a dictionary. The `**` operator unpacks keyword arguments when calling a function, and collects them when defining a function.
 
@@ -122,7 +122,7 @@ show_kwargs(a=1, b=2, c=3)
 # Value: {'a': 1, 'b': 2, 'c': 3}
 ```
 
-### Combining regular parameters with **kwargs
+### Combining regular parameters with `**kwargs`
 
 You can mix regular parameters with `**kwargs`. Regular parameters and `*args` must come before `**kwargs`:
 
@@ -138,7 +138,7 @@ print(user)
 # {'name': 'Alice', 'age': 30, 'city': 'NYC', 'role': 'Developer'}
 ```
 
-### Unpacking with **kwargs
+### Unpacking with `**kwargs`
 
 You can use `**` to unpack a dictionary when calling a function:
 
@@ -162,7 +162,7 @@ configure_app(**config)
 # Host: localhost, Port: 8000, Debug: True
 ```
 
-## Using *args and **kwargs together
+## Using *args and `**kwargs` together
 
 You can use both `*args` and `**kwargs` in the same function. The order must be: regular parameters, `*args`, then `**kwargs`:
 
@@ -346,7 +346,7 @@ numbers = [1, 2, 3]
 add(*numbers)  # 6
 ```
 
-### Keyword arguments in *args
+### Keyword arguments in `*args`
 
 Keyword arguments that don't match parameter names go to `**kwargs`, not `*args`:
 

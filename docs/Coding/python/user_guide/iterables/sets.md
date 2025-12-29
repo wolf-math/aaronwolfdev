@@ -33,7 +33,7 @@ my_set = set()
 ```
 
 :::warning
-`{}` creates an empty dictionary, not a set! Use `set()` for empty sets.
+`my_set = {}` creates an empty dictionary, not a set! Use `my_set = set()` for empty sets.
 :::
 
 ### Sets with items
