@@ -1,5 +1,5 @@
 ---
-title: built-in functions
+title: built-in functions and global objects
 sidebar_position: 1
 ---
 
@@ -155,7 +155,17 @@ Computes a new string in which hexadecimal escape sequences are replaced with th
 
 ## Global Objects
 
-While not functions, these global objects provide important functionality:
+Global objects are built-in objects that are available in the global scope of JavaScript. Unlike global functions (which are callable directly), global objects are constructors or utility objects that provide methods, properties, and functionality for working with specific data types or performing common operations.
+
+These objects are automatically available in any JavaScript environment (browser, Node.js, etc.) without needing to be imported or declared. They serve as the foundation for JavaScript's built-in functionality, providing constructors for creating instances of built-in types (like `Array`, `Date`, `Object`) as well as utility objects for common operations (like `Math`, `JSON`, `console`).
+
+Key characteristics of global objects:
+- **Constructors**: Many global objects (like `Array`, `Date`, `Object`) can be used with the `new` keyword to create instances
+- **Static methods**: Global objects often provide static methods that can be called directly on the object (like `Array.isArray()`, `Object.keys()`)
+- **Utility objects**: Some global objects (like `Math`, `JSON`) are utility objects that provide methods and constants but are not meant to be instantiated
+- **Always available**: These objects are part of the global scope and don't require any imports or declarations
+
+The following global objects provide important functionality:
 
 ### `Array`
 

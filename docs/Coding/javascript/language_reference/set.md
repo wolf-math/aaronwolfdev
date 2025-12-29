@@ -3,16 +3,26 @@ title: Set
 sidebar_position: 15
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Set.prototype)
+['constructor', 'size', 'add', 'clear', 'delete', 'entries', 'forEach', 'has', 'keys', 'values', Symbol.toStringTag, Symbol.iterator]
+```
+
 ## Definition
 
 A `Set` is a collection of unique values. Each value can occur only once in a Set. Sets maintain insertion order and provide efficient membership testing.
 
 ```javascript
-const set = new Set()
-set instanceof Set  // true
+> const set = new Set()
+undefined
+
+> set instanceof Set
+true
 ```
 
-## Creating Sets
+## Using sets
 
 ```javascript
 // Empty set
@@ -27,7 +37,9 @@ const set3 = new Set('hello')
 // Set { 'h', 'e', 'l', 'o' } (duplicates removed)
 ```
 
-## Set Methods
+## Operations on sets
+
+## Set methods
 
 ### Adding and Checking
 
@@ -65,7 +77,7 @@ set.clear()
 set.size  // 0
 ```
 
-## Iteration
+### Iteration
 
 ### for...of Loop
 
@@ -100,7 +112,7 @@ Array.from(set.keys())    // [1, 2, 3] (same as values)
 Array.from(set.entries()) // [[1, 1], [2, 2], [3, 3]]
 ```
 
-## Set Operations
+### Set operations
 
 ### Union
 

@@ -3,15 +3,23 @@ title: Symbol
 sidebar_position: 9
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Symbol.prototype)
+['constructor', 'toString', 'valueOf', 'description', Symbol.toPrimitive]
+```
+
 ## Definition
 
 A `Symbol` is a unique and immutable primitive value that may be used as the key of an object property. Symbols are guaranteed to be unique—even if you create two symbols with the same description, they are different values.
 
 ```javascript
-typeof Symbol()  // "symbol"
+> typeof Symbol()
+"symbol"
 ```
 
-## Creating Symbols
+## Using symbols
 
 Symbols are created using the `Symbol()` function:
 
@@ -29,9 +37,9 @@ const sym4 = Symbol("description")
 sym3 === sym4    // false (still unique, description is just metadata)
 ```
 
-## Symbol.for() and Symbol.keyFor()
+### Symbol.for() and Symbol.keyFor()
 
-### Symbol.for()
+#### Symbol.for()
 
 Creates a symbol in the global symbol registry. If a symbol with the given key already exists, it returns that symbol.
 
@@ -42,7 +50,7 @@ const sym2 = Symbol.for("key")
 sym1 === sym2    // true (same symbol from registry)
 ```
 
-### Symbol.keyFor()
+#### Symbol.keyFor()
 
 Retrieves the key for a symbol from the global symbol registry.
 
@@ -54,7 +62,7 @@ const localSym = Symbol("key")
 Symbol.keyFor(localSym)  // undefined (not in registry)
 ```
 
-## Using Symbols as Object Keys
+### Using symbols as object keys
 
 Symbols can be used as unique property keys:
 
@@ -69,7 +77,7 @@ console.log(obj[sym])   // 12345
 console.log(obj.name)   // "Alice"
 ```
 
-### Symbol Properties Are Hidden
+#### Symbol properties are hidden
 
 Symbol properties are not enumerable and won't appear in `for...in` loops or `Object.keys()`:
 
@@ -88,7 +96,11 @@ Object.keys(obj)        // ["name"]
 Object.getOwnPropertySymbols(obj)  // [Symbol(id)]
 ```
 
-## Well-Known Symbols
+## Operations on symbols
+
+### Well-known symbols
+
+JavaScript has several built-in symbols that control language behavior:
 
 JavaScript has several built-in symbols that control language behavior:
 
@@ -228,7 +240,7 @@ function getMetadata(obj) {
 }
 ```
 
-## Symbol Properties and Methods
+## Symbol methods
 
 ### Symbol.prototype.description
 

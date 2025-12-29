@@ -27,7 +27,7 @@ A `Number` is a numeric data type in JavaScript. JavaScript uses the IEEE 754 do
 
 ## Using numbers
 
-Numbers can be created using literals or the `Number` constructor:
+Numbers can be created using literals or the `Number` constructor (not recommended).
 
 ```javascript
 // Literal syntax
@@ -93,7 +93,9 @@ NaN
 NaN
 ```
 
-Note: `NaN` is the only value that is not equal to itself.
+:::note
+`NaN` is the only value that is not equal to itself.
+::: 
 
 ```javascript
 > NaN === NaN
@@ -106,9 +108,29 @@ true
 true
 ```
 
-### Basic operations on numbers
+## Operations on numbers
 
-#### Arithmetic operations
+JavaScript provides various operations that can be performed on numbers through operators and built-in methods.
+
+| Operation | Syntax | Example | Result |
+| --- | --- | --- | --- |
+| Addition | `+` | `3 + 4` | `7` |
+| Subtraction | `-` | `7 - 2` | `5` |
+| Multiplication | `*` | `3 * 2` | `6` |
+| Division | `/` | `7 / 2` | `3.5` |
+| Modulo | `%` | `7 % 2` | `1` |
+| Exponentiation | `**` | `2 ** 3` | `8` |
+| Negation | `-` | `-5` | `-5` |
+| Unary plus | `+` | `+5` | `5` |
+| Absolute value | `Math.abs()` | `Math.abs(-3)` | `3` |
+| Equality (strict) | `===` | `3 === 3` | `true` |
+| Equality (loose) | `==` | `3 == 3` | `true` |
+| Less than | `<` | `2 < 5` | `true` |
+| Greater than | `>` | `5 > 2` | `true` |
+| Convert to string | `toString()` | `(3).toString()` | `"3"` |
+| Convert to number | `Number()` | `Number("3")` | `3` |
+
+### Arithmetic operations
 
 ```javascript
 // Addition
@@ -139,7 +161,7 @@ true
 1000
 ```
 
-#### Incrementing and decrementing
+### Incrementing and decrementing
 
 Numbers can be incremented or decremented using the `++` and `--` operators. However, since numbers are immutable primitives, a variable must be used for these operations.
 
@@ -189,7 +211,7 @@ undefined
 0
 ```
 
-#### Comparison operations
+### Comparison operations
 
 Comparison operations return a boolean value.
 
@@ -233,7 +255,7 @@ false
 true
 ```
 
-#### Boolean values
+### Boolean values
 
 All numbers have truthy boolean values except for `0`, `-0`, and `NaN` which have falsy values.
 
@@ -254,7 +276,7 @@ false
 false
 ```
 
-#### Readability
+### Readability
 
 Underscores can be added to numbers to improve their readability. This does not affect the value of the number.
 
@@ -265,101 +287,6 @@ Underscores can be added to numbers to improve their readability. This does not 
 > 1_234_567 + 13
 1234580
 ```
-
-## The `Math` object
-
-The `Math` object provides mathematical constants and functions:
-
-```javascript
-> Math.PI
-3.141592653589793
-
-> Math.E
-2.718281828459045
-
-> Math.sqrt(16)
-4
-
-> Math.pow(2, 3)
-8
-
-> Math.abs(-5)
-5
-
-> Math.round(3.7)
-4
-
-> Math.floor(3.7)
-3
-
-> Math.ceil(3.2)
-4
-
-> Math.max(1, 2, 3)
-3
-
-> Math.min(1, 2, 3)
-1
-
-> Math.random()
-0.12345678901234567
-```
-
-## Type coercion
-
-JavaScript automatically converts values to numbers in certain contexts:
-
-```javascript
-> '42' * 2
-84
-
-> '42' + 2
-"422"
-
-> Number('42')
-42
-
-> +'42'
-42
-```
-
-## Precision and limitations
-
-JavaScript numbers are stored as 64-bit floating-point numbers, which can lead to precision issues:
-
-```javascript
-> 0.1 + 0.2
-0.30000000000000004
-
-> 0.1 + 0.2 === 0.3
-false
-```
-
-For precise decimal arithmetic, consider using a library or converting to integers.
-
-
-## Operations on numbers
-
-JavaScript provides various operations that can be performed on numbers through operators and built-in methods.
-
-| Operation | Syntax | Example | Result |
-| --- | --- | --- | --- |
-| Addition | `+` | `3 + 4` | `7` |
-| Subtraction | `-` | `7 - 2` | `5` |
-| Multiplication | `*` | `3 * 2` | `6` |
-| Division | `/` | `7 / 2` | `3.5` |
-| Modulo | `%` | `7 % 2` | `1` |
-| Exponentiation | `**` | `2 ** 3` | `8` |
-| Negation | `-` | `-5` | `-5` |
-| Unary plus | `+` | `+5` | `5` |
-| Absolute value | `Math.abs()` | `Math.abs(-3)` | `3` |
-| Equality | `===` | `3 === 3` | `true` |
-| Less than | `<` | `2 < 5` | `true` |
-| Greater than | `>` | `5 > 2` | `true` |
-| Convert to string | `toString()` | `(3).toString()` | `"3"` |
-| Convert to number | `Number()` | `Number("3")` | `3` |
-
----
 
 ## Number methods
 

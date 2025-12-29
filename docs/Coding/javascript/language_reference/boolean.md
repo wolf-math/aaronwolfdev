@@ -3,34 +3,50 @@ title: Boolean
 sidebar_position: 4
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Boolean.prototype)
+['constructor', 'toString', 'valueOf']
+```
+
 ## Definition
 
 A `Boolean` is a logical value: `true` or `false`. It answers questions like "Is this statement correct?"
 
 ```javascript
-typeof true      // "boolean"
-typeof false     // "boolean"
+> typeof true
+"boolean"
+
+> typeof false
+"boolean"
 ```
 
-## Creating Booleans
+## Using booleans
 
 Booleans can be created using literals or the `Boolean` constructor:
 
 ```javascript
 // Literal syntax
+> true
 true
+
+> false
 false
 
 // Boolean constructor
-new Boolean(true)   // Boolean object (not recommended)
-Boolean(true)       // true (primitive)
+> new Boolean(true)
+[Boolean: true]
+
+> Boolean(true)
+true
 ```
 
-## Truthy and Falsy Values
+### Truthy and falsy values
 
 In JavaScript, values are automatically converted to booleans in boolean contexts. Some values are "truthy" (convert to `true`) and others are "falsy" (convert to `false`).
 
-### Falsy Values
+#### Falsy Values
 
 These values evaluate to `false`:
 
@@ -45,156 +61,163 @@ These values evaluate to `false`:
 | `undefined`| `undefined` | Represents "not defined" |
 | `NaN`      | `number`    | Not-a-Number             |
 
-### Truthy Values
+#### Truthy Values
 
 Everything else is truthy, including:
 
-```javascript
-true                    // true
-1                       // true
--1                      // true
-"hello"                 // true
-"0"                     // true (string, not number)
-"false"                 // true (string, not boolean)
-[]                      // true (empty array)
-{}                      // true (empty object)
-function() {}           // true
-```
+| Value           | Type        | Notes                           |
+| --------------- | ----------- | ------------------------------- |
+| `true`          | `boolean`   | The literal `true`              |
+| `1`             | `number`    | Any non-zero number             |
+| `-1`            | `number`    | Negative numbers                |
+| `"hello"`       | `string`    | Any non-empty string            |
+| `"0"`           | `string`    | String "0" (string, not number) |
+| `"false"`       | `string`    | String "false" (string, not boolean) |
+| `[]`            | `array`     | Empty array                     |
+| `{}`            | `object`    | Empty object                    |
+| `function() {}` | `function`  | Functions                       |
 
-## Boolean Operations
+## Operations on booleans
 
-### Logical AND (`&&`)
+### Logical operators: Truth tables
+
+#### The `&&` operator
 
 Returns the first falsy value, or the last value if all are truthy.
 
-```javascript
-true && true            // true
-true && false           // false
-false && true           // false
-false && false          // false
+| Expression        | Result | Explanation                    |
+| ----------------- | ------ | ------------------------------ |
+| `true && true`    | `true` | Both values are true           |
+| `true && false`   | `false`| One is false                   |
+| `false && true`   | `false`| One is false                   |
+| `false && false`  | `false`| Both are false                 |
 
-"hello" && "world"      // "world" (returns last truthy)
-"" && "world"           // "" (returns first falsy)
-```
+When used with non-boolean values, `&&` returns the first falsy value or the last truthy value:
 
-### Logical OR (`||`)
+| Expression           | Result      | Explanation                    |
+| -------------------- | ----------- | ------------------------------ |
+| `"hello" && "world"` | `"world"`   | Returns last truthy            |
+| `"" && "world"`      | `""`        | Returns first falsy            |
+
+#### The `||` operator
 
 Returns the first truthy value, or the last value if all are falsy.
 
-```javascript
-true || true            // true
-true || false           // true
-false || true           // true
-false || false          // false
+| Expression       | Result | Explanation                    |
+| ---------------- | ------ | ------------------------------ |
+| `true || true`   | `true` | At least one is true           |
+| `true || false`  | `true` | First value is true            |
+| `false || true`  | `true` | Second value is true           |
+| `false || false` | `false`| Both are false                 |
 
-"hello" || "world"      // "hello" (returns first truthy)
-"" || "world"           // "world" (returns first truthy)
-```
+When used with non-boolean values, `||` returns the first truthy value or the last falsy value:
 
-### Logical NOT (`!`)
+| Expression          | Result    | Explanation                    |
+| ------------------- | --------- | ------------------------------ |
+| `"hello" || "world"`| `"hello"` | Returns first truthy           |
+| `"" || "world"`     | `"world"` | Returns first truthy           |
+
+#### The `!` operator
 
 Returns the opposite boolean value.
 
-```javascript
-!true                   // false
-!false                  // true
-!"hello"                // false
-!""                     // true
-```
+| Expression | Result  | Explanation       |
+| ---------- | ------- | ----------------- |
+| `!true`    | `false` | Negates the value |
+| `!false`   | `true`  | Negates the value |
 
-### Double NOT (`!!`)
+When used with non-boolean values, `!` converts to boolean first, then negates:
 
-Converts a value to a boolean.
+| Expression | Result  | Explanation                    |
+| ---------- | ------- | ------------------------------ |
+| `!"hello"` | `false` | String is truthy, negated to false |
+| `!""`      | `true`  | Empty string is falsy, negated to true |
+| `!0`       | `true`  | Zero is falsy, negated to true |
+| `!1`       | `false` | One is truthy, negated to false |
 
-```javascript
-!!"hello"               // true
-!!""                    // false
-!!0                     // false
-!!1                     // true
-```
+#### Double NOT (`!!`)
 
-## Comparison Operations
+Converts a value to a boolean by negating twice.
+
+| Expression  | Result | Explanation                    |
+| ----------- | ------ | ------------------------------ |
+| `!!"hello"` | `true` | Double negation converts to boolean |
+| `!!""`      | `false`| Double negation converts to boolean |
+| `!!0`       | `false`| Double negation converts to boolean |
+| `!!1`       | `true` | Double negation converts to boolean |
+
+### Comparison operations
 
 Comparison operations return boolean values:
 
 ```javascript
 // Equality
-5 == 8                  // false
-5 === 8                 // false (strict equality)
+> 5 == 8
+false
+
+> 5 === 8
+false
 
 // Inequality
-5 != 8                  // true
-5 !== 8                 // true (strict inequality)
+> 5 != 8
+true
+
+> 5 !== 8
+true
 
 // Greater than
-5 > 8                   // false
+> 5 > 8
+false
 
 // Less than
-5 < 8                   // true
+> 5 < 8
+true
 
 // Greater than or equal
-5 >= 8                  // false
+> 5 >= 8
+false
 
 // Less than or equal
-5 <= 8                  // true
+> 5 <= 8
+true
 ```
 
-## Boolean Constructor
+### Boolean conversion
 
 The `Boolean` constructor can convert values to booleans:
 
 ```javascript
-Boolean(1)              // true
-Boolean(0)              // false
-Boolean("hello")        // true
-Boolean("")             // false
-Boolean(null)           // false
-Boolean(undefined)      // false
+> Boolean(1)
+true
+
+> Boolean(0)
+false
+
+> Boolean("hello")
+true
+
+> Boolean("")
+false
+
+> Boolean(null)
+false
+
+> Boolean(undefined)
+false
 ```
 
-## Common Patterns
-
-### Conditional Statements
-
-```javascript
-if (value) {
-  // Executes if value is truthy
-}
-
-if (!value) {
-  // Executes if value is falsy
-}
-```
-
-### Default Values
-
-```javascript
-// Using logical OR for defaults
-const name = username || "Guest"
-
-// Using nullish coalescing (ES2020)
-const name = username ?? "Guest"
-```
-
-### Short-Circuit Evaluation
-
-```javascript
-// Only call function if condition is true
-condition && doSomething()
-
-// Only call function if condition is false
-condition || doSomething()
-```
-
-## Boolean Methods
+## Boolean methods
 
 ### `toString()`
 
 Converts a boolean to a string.
 
 ```javascript
-true.toString()         // "true"
-false.toString()        // "false"
+> true.toString()
+"true"
+
+> false.toString()
+"false"
 ```
 
 ### `valueOf()`
@@ -202,40 +225,9 @@ false.toString()        // "false"
 Returns the primitive value of a boolean object.
 
 ```javascript
-const bool = new Boolean(true)
-bool.valueOf()          // true
+> const bool = new Boolean(true)
+undefined
+
+> bool.valueOf()
+true
 ```
-
-## Type Coercion
-
-JavaScript automatically converts values to booleans in boolean contexts:
-
-```javascript
-if (1) {                // 1 is coerced to true
-  console.log("truthy")
-}
-
-const result = "hello" ? "yes" : "no"  // "yes" (string is truthy)
-```
-
-## Best Practices
-
-1. **Use strict equality** (`===`) instead of loose equality (`==`) to avoid unexpected type coercion.
-
-2. **Be explicit** with boolean conversions when clarity is important:
-
-```javascript
-// Explicit
-const isValid = Boolean(value)
-
-// Implicit (can be confusing)
-const isValid = !!value
-```
-
-3. **Use nullish coalescing** (`??`) instead of `||` when you only want to check for `null` or `undefined`:
-
-```javascript
-const value = input ?? "default"  // Only if null/undefined
-const value = input || "default"  // If any falsy value
-```
-

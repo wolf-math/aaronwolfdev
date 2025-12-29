@@ -3,6 +3,13 @@ title: BigInt
 sidebar_position: 10
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(BigInt.prototype)
+['constructor', 'toLocaleString', 'toString', 'valueOf', 'asIntN', 'asUintN']
+```
+
 ## Definition
 
 `BigInt` is a built-in object that provides a way to represent whole numbers larger than `Number.MAX_SAFE_INTEGER` (2^53 - 1). BigInt values are created by appending `n` to the end of an integer literal or by calling the `BigInt()` constructor.
@@ -12,40 +19,33 @@ typeof 42n       // "bigint"
 typeof BigInt(42) // "bigint"
 ```
 
-## Creating BigInt Values
+## Using BigInt
 
 BigInt values can be created in several ways:
 
 ```javascript
 // Literal syntax (append 'n')
-const big1 = 42n
-const big2 = 9007199254740991n
+> 42n
+42n
+
+> 9007199254740991n
+9007199254740991n
 
 // BigInt constructor
-const big3 = BigInt(42)
-const big4 = BigInt("9007199254740991")
+> BigInt(42)
+42n
+
+> BigInt("9007199254740991")
+9007199254740991n
 
 // From Number.MAX_SAFE_INTEGER
-const maxSafe = BigInt(Number.MAX_SAFE_INTEGER)  // 9007199254740991n
+> BigInt(Number.MAX_SAFE_INTEGER)
+9007199254740991n
 ```
 
-## Why BigInt?
+## Operations on BigInt
 
-JavaScript's `Number` type uses 64-bit floating-point format, which can only safely represent integers up to `Number.MAX_SAFE_INTEGER` (2^53 - 1). Beyond this, precision is lost:
-
-```javascript
-Number.MAX_SAFE_INTEGER  // 9007199254740991
-
-9007199254740991 + 1     // 9007199254740992 (correct)
-9007199254740992 + 1     // 9007199254740992 (incorrect! precision lost)
-
-// With BigInt
-9007199254740992n + 1n   // 9007199254740993n (correct)
-```
-
-## Operations with BigInt
-
-### Arithmetic Operations
+### Arithmetic operations
 
 ```javascript
 const a = 10n
@@ -59,7 +59,7 @@ a % b            // 10n
 a ** b           // 100000000000000000000n
 ```
 
-### Comparison Operations
+### Comparison operations
 
 ```javascript
 10n < 20n        // true
@@ -68,7 +68,7 @@ a ** b           // 100000000000000000000n
 10n === 10       // false (strict equality, different types)
 ```
 
-### Bitwise Operations
+### Bitwise operations
 
 ```javascript
 5n & 3n          // 1n (bitwise AND)
@@ -79,7 +79,7 @@ a ** b           // 100000000000000000000n
 5n >> 1n         // 2n (right shift)
 ```
 
-## Type Coercion
+### Type coercion
 
 BigInt cannot be mixed with Numbers in operations:
 
@@ -102,7 +102,7 @@ Comparisons between BigInt and Number work:
 10n === 10       // false (different types)
 ```
 
-## BigInt Methods
+## BigInt methods
 
 ### BigInt.asIntN()
 

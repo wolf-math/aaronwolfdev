@@ -3,16 +3,26 @@ title: Date
 sidebar_position: 12
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Date.prototype)
+['constructor', 'toString', 'toDateString', 'toTimeString', 'toISOString', 'toUTCString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toJSON']
+```
+
 ## Definition
 
 The `Date` object represents a single moment in time. JavaScript dates are based on the Unix Epoch (January 1, 1970, 00:00:00 UTC).
 
 ```javascript
-typeof new Date()  // "object"
-new Date() instanceof Date  // true
+> typeof new Date()
+"object"
+
+> new Date() instanceof Date
+true
 ```
 
-## Creating Dates
+## Using dates
 
 ### Current Date/Time
 
@@ -51,7 +61,7 @@ Returns the current timestamp in milliseconds:
 Date.now()  // 1609459200000 (example)
 ```
 
-## Date Methods
+## Operations on dates
 
 ### Getting Date Components
 
@@ -169,9 +179,9 @@ const formatted = date.toLocaleDateString('en-US', {
 // "January 15, 2023"
 ```
 
-## Date Arithmetic
+### Date arithmetic
 
-### Adding/Subtracting Time
+#### Adding/subtracting time
 
 ```javascript
 const date = new Date()
@@ -186,7 +196,7 @@ date.setHours(date.getHours() + 2)  // 2 hours later
 const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000)  // 24 hours later
 ```
 
-### Date Comparison
+#### Date comparison
 
 ```javascript
 const date1 = new Date(2023, 0, 1)

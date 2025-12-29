@@ -3,15 +3,23 @@ title: Function
 sidebar_position: 11
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Function.prototype)
+['constructor', 'apply', 'bind', 'call', 'toString', 'name', 'length', Symbol.hasInstance]
+```
+
 ## Definition
 
 A `Function` is a callable object that executes a block of code. Functions are first-class objects in JavaScript, meaning they can be assigned to variables, passed as arguments, and returned from other functions.
 
 ```javascript
-typeof function() {}  // "function"
+> typeof function() {}
+"function"
 ```
 
-## Creating Functions
+## Using functions
 
 ### Function Declaration
 
@@ -49,7 +57,7 @@ const square = x => x * x
 const greet = new Function('name', 'return `Hello, ${name}!`')
 ```
 
-## Function Parameters
+### Function parameters
 
 ### Default Parameters
 
@@ -82,7 +90,9 @@ function greet({ name, age }) {
 greet({ name: "Alice", age: 30 })  // "Hello, Alice, age 30!"
 ```
 
-## Function Methods
+## Operations on functions
+
+## Function methods
 
 ### `call()`
 
@@ -251,7 +261,7 @@ async function fetchData() {
 }
 ```
 
-## Function Properties
+### Function properties
 
 ### `name`
 

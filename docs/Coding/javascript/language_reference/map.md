@@ -3,16 +3,26 @@ title: Map
 sidebar_position: 14
 ---
 
+## Properties
+
+```javascript
+> Object.getOwnPropertyNames(Map.prototype)
+['constructor', 'size', 'clear', 'delete', 'entries', 'forEach', 'get', 'has', 'keys', 'set', 'values', Symbol.toStringTag, Symbol.iterator]
+```
+
 ## Definition
 
 A `Map` is a collection of key-value pairs where keys can be any type (unlike objects where keys must be strings or symbols). Maps maintain insertion order and provide efficient lookups.
 
 ```javascript
-const map = new Map()
-map instanceof Map  // true
+> const map = new Map()
+undefined
+
+> map instanceof Map
+true
 ```
 
-## Creating Maps
+## Using maps
 
 ```javascript
 // Empty map
@@ -28,7 +38,7 @@ const map2 = new Map([
 const map3 = new Map(map2)
 ```
 
-## Map Methods
+## Map methods
 
 ### Setting and Getting
 
@@ -70,7 +80,9 @@ map.clear()
 map.size  // 0
 ```
 
-## Iteration
+## Operations on maps
+
+### Iteration
 
 ### for...of Loop
 

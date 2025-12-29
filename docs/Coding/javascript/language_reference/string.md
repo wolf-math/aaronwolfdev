@@ -12,7 +12,7 @@ Object.getOwnPropertyNames(String.prototype)
 
 ## Definition
 
-A `String` is a sequence of characters used to represent text. Strings in JavaScript are immutable—once created, they cannot be changed. Only new strings can be created.
+A `String` is a sequence of characters used to represent text. Strings in JavaScript are immutable, meaning, once created, they cannot be changed. Only new strings can be created.
 
 ```javascript
 typeof "hello"   // "string"
@@ -69,7 +69,7 @@ Other common escape sequences:
 "Backslash\\"          // Backslash\
 "Carriage return\r"    // Carriage return
 "Single quote\'"       // Single quote'
-"Double quote\""      // Double quote"
+"Double quote\""       // Double quote"
 ```
 
 ### Template literals
@@ -132,9 +132,6 @@ The `start` is the index of the first character of the slice. The slice continue
 "chicken-nuggets".slice(0, 7)
 // "chicken"
 
-"chicken-nuggets".slice(0, 7)
-// "chicken"
-
 "chicken-nuggets".slice(3, 9)
 // "cken-n"
 
@@ -167,8 +164,6 @@ JavaScript provides various operations that can be performed on strings through 
 | Operation | Syntax | Example | Result |
 | --- | --- | --- | --- |
 | Concatenation | `+` | `"cat" + "fish"` | `"catfish"` |
-| Repetition | `repeat()` | `"ha".repeat(3)` | `"hahaha"` |
-| Membership | `includes()` | `"cat".includes("a")` | `true` |
 | Index access | `[index]` | `"cat"[1]` | `"a"` |
 | Length | `.length` | `"hello".length` | `5` |
 | Equality | `===` | `"dog" === "dog"` | `true` |
