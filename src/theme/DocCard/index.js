@@ -10,9 +10,7 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import { translate } from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import { FaPython } from 'react-icons/fa';
-import { FaJs } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import { FaJs, FaPython, FaGitHub, FaCompass, FaBook } from 'react-icons/fa';
 // function useCategoryItemsPlural() {
 //   const {selectMessage} = usePluralForm();
 //   return (count) =>
@@ -61,51 +59,35 @@ function CardLayout({ className, href, icon, title, description }) {
     </CardContainer>
   );
 }
+
 function CardCategory({ item }) {
   const href = findFirstSidebarItemLink(item);
-  // const categoryItemsPlural = useCategoryItemsPlural();
-  // Unexpected: categories that don't have a link have been filtered upfront
-  if (!href) {
-    return null;
-  }
+
+  if (!href) return null;
+
+  // compute icon based on the label
+  let icon = '🗃️';
   if (item.label === 'Python') {
-    return (
-      <CardLayout
-        className={item.className}
-        href={href}
-        icon={<FaPython />}
-        title={item.label}
-      />
-    );
+    icon = <FaPython />;
   } else if (item.label === 'JavaScript') {
-    return (
-      <CardLayout
-        className={item.className}
-        href={href}
-        icon={<FaJs />}
-        title={item.label}
-      />
-    );
+    icon = <FaJs />;
   } else if (item.label === 'GitHub') {
-    return (
-      <CardLayout
-        className={item.className}
-        href={href}
-        icon={<FaGithub />}
-        title={item.label}
-      />
-    );
-  } else {
-    return (
-      <CardLayout
-        className={item.className}
-        href={href}
-        icon='🗃️'
-        title={item.label}
-        // description={item?.description}
-      />
-    );
+    icon = <FaGithub />;
+  } else if (item.label === 'Language reference') {
+    icon = <FaBook />;
+  } else if (item.label === 'User guide') {
+    icon = <FaCompass />;
   }
+
+  return (
+    <CardLayout
+      className={item.className}
+      href={href}
+      icon={icon}
+      title={item.label}
+      // description={item?.description}
+    />
+  );
 }
 
 function CardLink({ item }) {
