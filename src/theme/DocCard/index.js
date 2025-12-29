@@ -10,6 +10,9 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import { translate } from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { FaPython } from 'react-icons/fa';
+import { FaJs } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 // function useCategoryItemsPlural() {
 //   const {selectMessage} = usePluralForm();
 //   return (count) =>
@@ -36,6 +39,7 @@ function CardContainer({ className, href, children }) {
     </Link>
   );
 }
+
 function CardLayout({ className, href, icon, title, description }) {
   return (
     <CardContainer href={href} className={className}>
@@ -64,16 +68,46 @@ function CardCategory({ item }) {
   if (!href) {
     return null;
   }
-  return (
-    <CardLayout
-      className={item.className}
-      href={href}
-      icon='🗃️'
-      title={item.label}
-      // description={item?.description}
-    />
-  );
+  if (item.label === 'Python') {
+    return (
+      <CardLayout
+        className={item.className}
+        href={href}
+        icon={<FaPython />}
+        title={item.label}
+      />
+    );
+  } else if (item.label === 'JavaScript') {
+    return (
+      <CardLayout
+        className={item.className}
+        href={href}
+        icon={<FaJs />}
+        title={item.label}
+      />
+    );
+  } else if (item.label === 'GitHub') {
+    return (
+      <CardLayout
+        className={item.className}
+        href={href}
+        icon={<FaGithub />}
+        title={item.label}
+      />
+    );
+  } else {
+    return (
+      <CardLayout
+        className={item.className}
+        href={href}
+        icon='🗃️'
+        title={item.label}
+        // description={item?.description}
+      />
+    );
+  }
 }
+
 function CardLink({ item }) {
   const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
   const doc = useDocById(item.docId ?? undefined);
@@ -87,6 +121,7 @@ function CardLink({ item }) {
     />
   );
 }
+
 export default function DocCard({ item }) {
   switch (item.type) {
     case 'link':

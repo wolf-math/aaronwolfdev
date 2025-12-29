@@ -109,12 +109,12 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: 'docs/category/python-documentation'
+                to: 'docs/category/python'
+              },
+              {
+                label: 'JavaScript Docs',
+                to: 'docs/category/javascript'
               }
-              // {
-              //   label: 'JavaScript Docs',
-              //   to: 'docs/category/javascript-documentation'
-              // }
             ]
           },
           {
