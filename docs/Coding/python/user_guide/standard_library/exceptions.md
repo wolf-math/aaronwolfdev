@@ -1,5 +1,5 @@
 ---
-title: Exception handling with try/except
+title: Exception handling - try/except
 sidebar_position: 1
 ---
 
