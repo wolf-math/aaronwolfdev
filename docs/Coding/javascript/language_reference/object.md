@@ -3,12 +3,12 @@ title: Object
 sidebar_position: 5
 ---
 
-## Properties
+<!-- ## Properties -->
 
-```javascript
+<!-- ```javascript
 > Object.getOwnPropertyNames(Object.prototype)
 ['constructor', '__defineGetter__', '__defineSetter__', 'hasOwnProperty', '__lookupGetter__', '__lookupSetter__', 'isPrototypeOf', 'propertyIsEnumerable', 'toString', 'valueOf', '__proto__', 'toLocaleString']
-```
+``` -->
 
 ## Definition
 
@@ -326,6 +326,31 @@ age 30
 ```
 
 ## Object methods
+
+JavaScript provides two types of object methods:
+
+- **Static methods** (`Object.methodName()`): Called directly on the `Object` constructor. These are utility functions that operate on objects but don't require an instance. Examples: `Object.keys()`, `Object.assign()`, `Object.freeze()`.
+- **Instance methods** (`Object.prototype.methodName()`): Available on all object instances. These are called on specific object instances. Examples: `obj.toString()`, `obj.hasOwnProperty()`, `obj.valueOf()`.
+
+The key difference: static methods are called on the `Object` constructor itself, while instance methods are called on individual object instances.
+
+```javascript
+// Static method - called on Object constructor
+> const obj = { name: "Alice", age: 30 }
+undefined
+
+> Object.keys(obj)
+["name", "age"]
+
+// Instance method - called on the object instance
+> obj.toString()
+"[object Object]"
+
+> obj.hasOwnProperty("name")
+true
+```
+
+---
 
 ### `Object.keys()`
 

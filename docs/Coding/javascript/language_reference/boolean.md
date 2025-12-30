@@ -5,10 +5,10 @@ sidebar_position: 4
 
 ## Properties
 
-```javascript
+<!-- ```javascript
 > Object.getOwnPropertyNames(Boolean.prototype)
 ['constructor', 'toString', 'valueOf']
-```
+``` -->
 
 ## Definition
 
@@ -105,17 +105,17 @@ Returns the first truthy value, or the last value if all are falsy.
 
 | Expression       | Result | Explanation                    |
 | ---------------- | ------ | ------------------------------ |
-| `true || true`   | `true` | At least one is true           |
-| `true || false`  | `true` | First value is true            |
-| `false || true`  | `true` | Second value is true           |
-| `false || false` | `false`| Both are false                 |
+| `true \|\| true`   | `true` | At least one is true           |
+| `true \|\| false`  | `true` | First value is true            |
+| `false \|\| true`  | `true` | Second value is true           |
+| `false \|\| false` | `false`| Both are false                 |
 
 When used with non-boolean values, `||` returns the first truthy value or the last falsy value:
 
 | Expression          | Result    | Explanation                    |
 | ------------------- | --------- | ------------------------------ |
-| `"hello" || "world"`| `"hello"` | Returns first truthy           |
-| `"" || "world"`     | `"world"` | Returns first truthy           |
+| `"hello" \|\| "world"`| `"hello"` | Returns first truthy           |
+| `"" \|\| "world"`     | `"world"` | Returns first truthy           |
 
 #### The `!` operator
 

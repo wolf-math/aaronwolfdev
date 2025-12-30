@@ -66,7 +66,7 @@ console.log(arr[1])      // undefined
 | **Default**   | Automatically assigned         | Must be explicitly set          |
 | **Usage**     | Uninitialized variables        | Explicitly set to "no value"    |
 
-```javascript
+<!-- ```javascript
 let x                    // undefined (not assigned)
 let y = null            // null (explicitly set)
 
@@ -76,7 +76,7 @@ function example(param) {
 
 example()               // undefined
 example(null)           // null
-```
+``` -->
 
 ## Checking for undefined
 
@@ -113,7 +113,7 @@ function isUndefined(value) {
 
 ## Common Patterns
 
-### Default Parameters
+<!-- ### Default Parameters
 
 ```javascript
 function greet(name = "Guest") {
@@ -122,24 +122,114 @@ function greet(name = "Guest") {
 
 greet()                 // "Hello, Guest!"
 greet("Alice")          // "Hello, Alice!"
-```
+``` -->
 
 ### Optional Chaining
 
+Optional chaining (`?.`) allows you to safely access nested object properties without throwing an error if any part of the chain is `null` or `undefined`. Instead of throwing an error, it returns `undefined`.
+
 ```javascript
-const user = { name: "Alice" }
-console.log(user.address?.city)  // undefined (safe access)
+> const user = { name: "Alice" }
+undefined
+
+> user.address?.city
+undefined
+
+// Without optional chaining, this would throw an error
+> user.address.city
+TypeError: Cannot read property 'city' of undefined
+
+// Works with multiple levels
+> const data = { user: { profile: { email: "alice@example.com" } } }
+undefined
+
+> data.user?.profile?.email
+"alice@example.com"
+
+> data.user?.profile?.phone
+undefined
+
+// Also works with method calls
+> const obj = { method() { return "hello" } }
+undefined
+
+> obj.method?.()
+"hello"
+
+> obj.nonexistent?.()
+undefined
+
+// Works with array access
+> const arr = [[1, 2, 3]]
+undefined
+
+> arr[0]?.[2]
+3
+
+> arr[1]?.[0]
+undefined
 ```
+
+Optional chaining is especially useful when working with data from APIs or user input where properties might not exist.
 
 ### Nullish Coalescing
 
+The nullish coalescing operator (`??`) provides a default value when a variable is `null` or `undefined`. Unlike the logical OR operator (`||`), it only checks for `null` and `undefined`, not other falsy values like `0`, `""`, or `false`.
+
 ```javascript
-const name = username ?? "Guest"  // "Guest" if username is undefined/null
+> const username = undefined
+undefined
+
+> const name = username ?? "Guest"
+undefined
+
+> name
+"Guest"
+
+// Only checks for null/undefined, not other falsy values
+> const count = 0
+undefined
+
+> count ?? 10
+0
+
+> count || 10
+10
+
+> const message = ""
+undefined
+
+> message ?? "No message"
+""
+
+> message || "No message"
+"No message"
+
+// Common pattern: combining with optional chaining
+> const user = { name: "Alice" }
+undefined
+
+> const displayName = user.name ?? user.email ?? "Anonymous"
+undefined
+
+> displayName
+"Alice"
+
+> const user2 = {}
+undefined
+
+> const displayName2 = user2.name ?? user2.email ?? "Anonymous"
+undefined
+
+> displayName2
+"Anonymous"
 ```
+
+The nullish coalescing operator is perfect when you want to provide defaults but preserve other falsy values like `0` or empty strings.
 
 ## JSON Serialization
 
-`undefined` is not preserved in JSON—properties with `undefined` values are omitted:
+`undefined` is not preserved in JSON. Properties with `undefined` values are omitted:
 
 ```javascript
 JSON.stringify({ name: undefined })  // '{}'

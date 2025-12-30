@@ -8,10 +8,10 @@ sidebar_position: 7
 `null` is a primitive value that represents the intentional absence of any object value. It is one of JavaScript's primitive values and is treated as falsy for boolean operations.
 
 ```javascript
-typeof null      // "object" (this is a bug/legacy behavior)
-null === null    // true
-null == undefined // true (loose equality)
-null === undefined // false (strict equality)
+typeof null         // "object" (this is a bug/legacy behavior)
+null === null       // true
+null == undefined   // true (loose equality)
+null === undefined  // false (strict equality)
 ```
 
 ## Using null
@@ -32,17 +32,17 @@ let data = null          // Data not loaded yet
 | **Default**   | Must be explicitly set          | Default for uninitialized vars  |
 | **Usage**     | Explicitly set to "no value"    | Automatically assigned          |
 
-```javascript
-let x                    // undefined (not assigned)
+<!-- ```javascript
+let x                   // undefined (not assigned)
 let y = null            // null (explicitly set)
 
 function example(param) {
   console.log(param)    // undefined if not passed
 }
 
-example()               // undefined
-example(null)           // null
-```
+example(x)              // undefined
+example(y)              // null
+``` -->
 
 ## Common Use Cases
 
