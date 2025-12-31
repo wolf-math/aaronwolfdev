@@ -12,7 +12,8 @@ export default function Contact() {
     // Honeypot check - if this field is filled, it's likely a bot
     const honeypot = e.target.website.value;
     if (honeypot) {
-      // Silently reject - don't send email and don't show success
+      // Show success message to trick bots, but don't actually send email
+      setSent(true);
       return;
     }
     
