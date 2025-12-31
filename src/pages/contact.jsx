@@ -8,6 +8,14 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    // Honeypot check - if this field is filled, it's likely a bot
+    const honeypot = e.target.website.value;
+    if (honeypot) {
+      // Silently reject - don't send email and don't show success
+      return;
+    }
+    
     emailjs
       .sendForm('service_ymr4mse', 'template_wv03f9o', e.target, 'user_5ckamWVH4TSVJJnehWuF3')
       .then(() => setSent(true))
@@ -26,6 +34,14 @@ export default function Contact() {
             <input type="email" name="email" placeholder="Email" required />
             <input type="text" name="subject" placeholder="Subject" />
             <textarea name="message" placeholder="Message" rows="5" required />
+            {/* Honeypot field - hidden from users but visible to bots */}
+            <input 
+              type="text" 
+              name="website" 
+              className={styles.honeypot}
+              tabIndex="-1"
+              autoComplete="off"
+            />
             <button type="submit">Send Message</button>
           </form>
         )}
