@@ -60,6 +60,10 @@ const config = {
         },
         theme: {
           customCss: ['./src/css/custom.css']
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5
         }
       })
     ]
@@ -108,7 +112,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
+                label: 'PythonDocs',
                 to: 'docs/category/python'
               },
               {
@@ -145,7 +149,7 @@ const config = {
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Aaron Wolf. 
-        \n Built with Docusaurus.`
+        <br> Built with Docusaurus.`
       },
       prism: {
         theme: prismThemes.github,
