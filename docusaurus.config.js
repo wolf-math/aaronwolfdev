@@ -112,7 +112,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'PythonDocs',
+                label: 'Python Docs',
                 to: 'docs/category/python'
               },
               {
