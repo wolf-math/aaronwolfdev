@@ -148,8 +148,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Aaron Wolf. 
-        <br> Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} Aaron Wolf`
       },
       prism: {
         theme: prismThemes.github,

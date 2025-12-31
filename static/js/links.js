@@ -10,7 +10,7 @@ export const pages = [
     name: 'docs',
     logo: hardhat,
     text: 'Docs.',
-    url: '/docs/category/coding-documentation'
+    url: '/docs/category/coding-docs'
   },
   { name: 'blog', logo: glasses, text: 'Blog.', url: '/blog' },
   { name: 'about', logo: robot_wolf, text: 'About.', url: '/about' },
