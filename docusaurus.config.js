@@ -153,6 +153,19 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'ZYJYPTZ1YL',
+
+        // Public API key: it is safe to commit it
+        apiKey: '13d59f9e96bc302c5acde2c81e5b1ed7',
+
+        // Index name - update this after applying for DocSearch and receiving your index name
+        indexName: 'Documentation website',
+
+        // Contextual search ensures results are relevant to current language and version
+        contextualSearch: true
       }
     })
 };
