@@ -3,12 +3,12 @@ title: Number
 sidebar_position: 2
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Number.prototype)
 ['constructor', 'toExponential', 'toFixed', 'toPrecision', 'toString', 'valueOf', 'toLocaleString']
-```
+``` -->
 
 ## Definition
 

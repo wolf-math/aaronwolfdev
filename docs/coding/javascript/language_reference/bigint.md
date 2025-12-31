@@ -3,12 +3,12 @@ title: BigInt
 sidebar_position: 10
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(BigInt.prototype)
 ['constructor', 'toLocaleString', 'toString', 'valueOf', 'asIntN', 'asUintN']
-```
+``` -->
 
 ## Definition
 

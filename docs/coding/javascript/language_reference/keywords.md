@@ -3,7 +3,7 @@ title: Keywords
 sidebar_position: 19
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 // JavaScript keywords (ES2023)
@@ -15,7 +15,7 @@ const keywords = [
   'while', 'with', 'yield', 'await', 'let', 'static', 'enum', 'implements',
   'interface', 'package', 'private', 'protected', 'public'
 ]
-```
+``` -->
 
 ## Definition
 

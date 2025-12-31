@@ -3,12 +3,12 @@ title: Set
 sidebar_position: 15
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Set.prototype)
 ['constructor', 'size', 'add', 'clear', 'delete', 'entries', 'forEach', 'has', 'keys', 'values', Symbol.toStringTag, Symbol.iterator]
-```
+``` -->
 
 ## Definition
 
