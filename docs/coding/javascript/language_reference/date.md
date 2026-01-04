@@ -3,12 +3,12 @@ title: Date
 sidebar_position: 12
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Date.prototype)
 ['constructor', 'toString', 'toDateString', 'toTimeString', 'toISOString', 'toUTCString', 'toLocaleString', 'toLocaleDateString', 'toLocaleTimeString', 'valueOf', 'getTime', 'getFullYear', 'getUTCFullYear', 'getMonth', 'getUTCMonth', 'getDate', 'getUTCDate', 'getDay', 'getUTCDay', 'getHours', 'getUTCHours', 'getMinutes', 'getUTCMinutes', 'getSeconds', 'getUTCSeconds', 'getMilliseconds', 'getUTCMilliseconds', 'getTimezoneOffset', 'setTime', 'setMilliseconds', 'setUTCMilliseconds', 'setSeconds', 'setUTCSeconds', 'setMinutes', 'setUTCMinutes', 'setHours', 'setUTCHours', 'setDate', 'setUTCDate', 'setMonth', 'setUTCMonth', 'setFullYear', 'setUTCFullYear', 'toJSON']
-```
+``` -->
 
 ## Definition
 

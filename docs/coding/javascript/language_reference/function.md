@@ -3,12 +3,12 @@ title: Function
 sidebar_position: 11
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Function.prototype)
 ['constructor', 'apply', 'bind', 'call', 'toString', 'name', 'length', Symbol.hasInstance]
-```
+``` -->
 
 ## Definition
 

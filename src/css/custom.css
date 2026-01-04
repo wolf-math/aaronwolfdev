@@ -122,3 +122,13 @@ p {
 .table-of-contents__link {
   font-size: 1rem;
 }
+
+.generatedIndexPage_vN6x {
+  min-height: calc(75vh - var(--ifm-navbar-height));
+  display: flex;
+  flex-direction: column;
+}
+
+.generatedIndexPage_vN6x > article {
+  flex-grow: 1;
+}

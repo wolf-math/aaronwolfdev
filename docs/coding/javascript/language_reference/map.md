@@ -3,12 +3,12 @@ title: Map
 sidebar_position: 14
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Map.prototype)
 ['constructor', 'size', 'clear', 'delete', 'entries', 'forEach', 'get', 'has', 'keys', 'set', 'values', Symbol.toStringTag, Symbol.iterator]
-```
+``` -->
 
 ## Definition
 
