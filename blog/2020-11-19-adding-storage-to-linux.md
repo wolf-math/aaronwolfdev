@@ -5,10 +5,6 @@ authors: wolf
 tags: [linux, ubuntu]
 ---
 
-:::note
-This blog post was originally published on [dev.to](https://dev.to/wolfmath/how-to-add-storage-to-a-linux-file-system-5b8b)
-:::
-
 Maybe you have a home server that you'd like to have some more storage space on. Maybe you have a desktop or laptop that needs more storage. In this tutorial I will show you how to add an HDD or SDD (or even a flash drive) to a Linux computer. 
 
 <!-- truncate -->
