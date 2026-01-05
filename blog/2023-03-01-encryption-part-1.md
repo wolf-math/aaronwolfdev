@@ -4,11 +4,6 @@ title: "Encryption Part 1: Overview"
 authors: wolf
 tags: [encryption, python]
 ---
-
-:::note
-This blog post was originally published on [dev.to](https://dev.to/wolfmath/series/22067)
-:::
-
 ## Intro
 
 This will be a series on Encryption.

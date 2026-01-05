@@ -4,11 +4,6 @@ title: "Encryption Part 3: RSA"
 authors: wolf
 tags: [encryption, python]
 ---
-
-:::note
-You can clone [this repo](https://github.com/wolf-math/encryption-demo/blob/main/RSA.ipynb) and use it on your own machine. 
-:::
-
 ## RSA Encryption overview
 
 RSA was invented by NORAD in the early 1970's but was deemed top secret. A few years later in 1977, Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman independantly invented the exact same process for encryption and called it RSA. RSA is the most used software in the world to date and every internet user has used RSA at some point whether they knew it or not. 

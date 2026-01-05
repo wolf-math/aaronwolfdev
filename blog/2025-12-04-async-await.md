@@ -5,9 +5,6 @@ authors: wolf
 tags: [javascript]
 ---
 
-:::note
-The original version of this blog post was published on [dev.to](https://dev.to/wolfmath/async-await-13bn)
-:::
 
 `async` / `await` is a newer way of writing asynchronous code compared to promises. The main advantages of `async`/`await` are improved readability and the avoidance of _promise chaining_. Promises can become long, hard to read, and may contain deeply nested callbacks that can be difficult to debug.
 

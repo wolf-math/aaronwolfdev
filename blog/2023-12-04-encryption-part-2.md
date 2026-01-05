@@ -4,12 +4,6 @@ title: "Encryption Part 2: Diffie-Hellman"
 authors: [wolf]
 tags: [encryption, python]
 ---
-
-:::note
-This blog post was originally published on [dev.to](https://dev.to/wolfmath/series/22067)
-:::
-
-
 ## History
 
 The most advanced method of encryption during WWII (the enigma machine) was broken by a guy who built a computer (Alan Turing). 
