@@ -71,8 +71,8 @@ function CardCategory({ item }) {
     icon = <FaPython />;
   } else if (item.label === 'JavaScript') {
     icon = <FaJs />;
-  } else if (item.label === 'GitHub') {
-    icon = <FaGithub />;
+    // } else if (item.label === 'GitHub') {
+    //   icon = <FaGitHub />;
   } else if (item.label === 'Language reference') {
     icon = <FaBook />;
   } else if (item.label === 'User guide') {
