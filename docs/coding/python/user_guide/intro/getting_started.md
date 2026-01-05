@@ -9,7 +9,7 @@ Python is a powerful, beginner-friendly programming language used for everything
 
 ## Why Python?
 
-Python is designed to be easy to learn and use. Unlike some languages that require lots of setup and complex syntax, Python lets you focus on solving problems rather than fighting with the language itself. It's also incredibly versatile—the same language you use to write a simple script can power major applications used by millions of people.
+Python is designed to be easy to learn and use. Unlike some languages that require lots of setup and complex syntax, Python lets you focus on solving problems rather than fighting with the language itself. It's also incredibly versatile, so the same language you use to write a simple script can power major applications used by millions of people.
 
 ## What you'll need
 
@@ -43,6 +43,8 @@ Let's start with the classic "Hello, World!" program. This is a tradition in pro
 
 You can run Python code directly in an interactive session. Open your terminal and type `python` (or `python3`):
 
+Use this for quick tests and experimentation. It's great for learning and trying out code snippets.
+
 ```python
 >>> print("Hello, World!")
 Hello, World!
@@ -53,6 +55,8 @@ That's it! You just ran your first Python program. The `print()` function displa
 ### Option 2: Creating a Python file
 
 For real programs, you'll write code in a file. Create a new file called `hello.py` and add this line:
+
+Use this for programs you want to save and run multiple times. This is how you'll write most of your Python code.
 
 ```python
 print("Hello, World!")
@@ -76,22 +80,22 @@ You should see:
 Hello, World!
 ```
 
-Congratulations! You've written and run your first Python program! 🎉
+Congratulations! You've written and run your first Python program!
 
 ## What just happened?
 
 Let's break down what you did:
 
 - **`print()`** is a built-in Python function that displays text (or other values) on the screen
-- **`"Hello, World!"`** is a string—a piece of text enclosed in quotes
+- **`"Hello, World!"`** is a [string](../types_variables_conditionals/types), which is a piece of text enclosed in quotes
 - When you ran the program, Python executed the `print()` function and displayed the message
 
 ## Next steps
 
 Now that you've run your first program, you're ready to learn more! The next lessons will teach you:
 
-- **Types**: Understanding different kinds of data (numbers, text, etc.)
 - **Variables**: Storing and using data in your programs
+- **Types**: Understanding different kinds of data (numbers, text, etc.)
 - **Conditionals**: Making decisions in your code
 
 But for now, take a moment to celebrate—you're officially a Python programmer! Try modifying your program to print different messages:

@@ -1,6 +1,6 @@
 ---
 title: Variables
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 ## What are variables?
@@ -15,13 +15,13 @@ pi = 3.14159        # name -> float object
 
 ## Why this matters
 
-Variables are essential for writing useful programs. Without variables, you'd have to repeat values throughout your code, making it hard to maintain and update. Variables let you store user input, intermediate calculations, and results that you'll use later. They also make your code self-documenting—a well-named variable like `user_age` is much clearer than just using the number `25` scattered throughout your code. Understanding how variables work—especially how they reference objects and how mutability affects them—is crucial for avoiding bugs and writing clean Python code.
+Variables are essential for writing useful programs. Without variables, you'd have to repeat values throughout your code, making it hard to maintain and update. Variables let you store user input, intermediate calculations, and results that you'll use later. They also make your code self-documenting. A well-named variable like `user_age` is much clearer than just using the number `25` scattered throughout your code. Understanding how variables work, especially how they reference objects and how mutability affects them, is crucial for avoiding bugs and writing clean Python code.
 
 ## Naming rules and style
 
-- Letters, digits, and underscores; cannot start with a digit.
+- Letters, digits, and underscores. Cannot start with a digit.
 - Case-sensitive: `name` and `Name` are different.
-- Avoid keywords like `for`, `if`, `class`.
+- Avoid [keywords](../../language_reference/keywords) like `for`, `if`, `class`.
 - Follow PEP 8: use `lower_snake_case` for variables.
 
 ```python
@@ -83,7 +83,7 @@ a is b    # False (different lists)
 a is c    # True  (same list)
 ```
 
-## Shadowing and scope (brief)
+<!-- ## Shadowing and scope (brief)
 
 - Names created inside a function are **local** to that function.
 - Names defined at the top level of a module are **global** to that module.
@@ -98,7 +98,7 @@ def demo():
 
 demo()      # 'local'
 value       # 'global'
-```
+``` -->
 
 ## Tips for beginners
 

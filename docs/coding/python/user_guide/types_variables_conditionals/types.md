@@ -1,12 +1,14 @@
 ---
 title: Types
-sidebar_position: 2
+sidebar_position: 1
 
 ---
 
 ## What is a type?
 
-A **type** describes what a value is and which operations make sense for it. Python is **dynamically typed**, so you don't declare types up front when you create a variable, Python tracks them at runtime.
+A **type** describes what a value is and which operations make sense for it. For example, you can add two numbers together, but you can't add a number to a word.
+
+Python is **dynamically typed**, which means you don't need to tell Python what type a value is when you create it—Python figures it out automatically. This makes Python easier to learn than languages where you must declare types ahead of time.
 
 ```python
 x = 3          # int
@@ -25,7 +27,7 @@ Use `type(value)` to see a value's type:
 
 ## Why this matters
 
-Understanding types is fundamental to Python programming. Every value has a type, and the type determines what you can do with that value. You can add numbers, concatenate strings, and append items to lists—but trying to add a string to a number or call list methods on a number will cause errors. Types help you write correct code by defining what operations are valid for each kind of data. As you learn Python, you'll constantly work with different types, so getting comfortable with the core types early will make everything else easier.
+Understanding types is fundamental to Python programming. Every value has a type, and the type determines what you can do with that value. You can add numbers, concatenate strings, and append items to lists, but trying to add a string to a number or call list methods on a number will cause errors. Types help you write correct code by defining what operations are valid for each kind of data. As you learn Python, you'll constantly work with different types, so getting comfortable with the core types early will make everything else easier.
 
 ## Core built-in types you'll meet first
 
@@ -41,15 +43,19 @@ Understanding types is fundamental to Python programming. Every value has a type
 
 ### Numbers
 
+Python has three types of numbers:
+
 ```python
->>> 42           # int (whole numbers)
->>> 3.14         # float (decimal numbers)
->>> 1 + 2j       # complex (real + imaginary)
+>>> 42           # int (whole numbers like 1, 2, 100, -5)
+>>> 3.14         # float (decimal numbers like 3.14, 2.5, -0.1)
+>>> 1 + 2j       # complex (for advanced math—you probably won't need this yet)
 ```
+
+For now, focus on `int` and `float`. You'll use `int` for counting things (1, 2, 3) and `float` for measurements and calculations with decimals (3.14, 2.5).
 
 ### Strings (`str`)
 
-Text is stored in strings, enclosed in quotes. Strings are **immutable**.
+Text is stored in strings, enclosed in quotes. Strings are **immutable**, which means once you create a string, you can't change individual characters in it. If you need to change a string, you create a new one instead.
 
 ```python
 >>> "hello"
@@ -60,74 +66,101 @@ Text is stored in strings, enclosed in quotes. Strings are **immutable**.
 'hahaha'
 ```
 
-### Booleans (`bool`) and truthiness
+### Booleans (`bool`)
 
-`True` and `False` are booleans. Many values evaluate to truthy or falsy in conditions:
-
-- Falsy: `0`, `0.0`, `''`, `[]`, `{}`, `set()`, `None`
-- Everything else is truthy.
+`True` and `False` are booleans—they represent yes/no or on/off states. You'll use these when you learn about conditionals (making decisions in your code).
 
 ```python
->>> bool(0)
+>>> True
+True
+>>> False
 False
->>> bool("text")
+>>> bool(0)      # 0 converts to False
+False
+>>> bool("text") # Non-empty strings convert to True
 True
 ```
 
+:::note
+You'll learn more about how Python treats different values as "truthy" or "falsy" in the [truthiness](../types_variables_conditionals/truthiness) guide. For now, just know that `True` and `False` are the boolean values.
+:::
+
 ### None
 
-`None` represents “no value” or “nothing here.” It’s a singleton, which means only one instance exists in all of Python. Multiple representations of `None` all refer to the same object.
+`None` represents "no value" or "nothing here." It's Python's way of saying "this doesn't have a value yet" or "this is empty."
 
 ```python
 result = None
-if result is None:
-    print("no result yet")
+print(result)  # None
 ```
+
+You'll use `None` when you want to indicate that a variable doesn't have a value yet, or when a function doesn't return anything. We'll see more examples of this as you learn more about Python.
 
 ### Collections (containers)
 
+Collections are types that can hold multiple values:
+
 ```python
->>> [1, 2, 3]                 # list (mutable)
->>> (1, 2, 3)                 # tuple (immutable)
->>> {"a": 1, "b": 2}          # dict (mapping)
->>> {1, 2, 3}                 # set (unique items)
+>>> [1, 2, 3]                 # list - ordered, can be changed
+>>> (1, 2, 3)                 # tuple - ordered, cannot be changed
+>>> {"a": 1, "b": 2}          # dict - stores key/value pairs
+>>> {1, 2, 3}                 # set - stores unique items
 ```
 
-- **Mutable** (can change in place): `list`, `dict`, `set`, `bytearray`
-- **Immutable** (can’t change in place): `tuple`, `str`, `bytes`, `frozenset`
+**Mutable vs Immutable**: 
+- **Mutable** types (like `list`) can be changed after you create them—you can add, remove, or modify items.
+- **Immutable** types (like `tuple` and `str`) cannot be changed after creation—if you need to change them, you create a new one.
+
+Don't worry if this seems abstract right now. You'll get lots of practice with these types in the coming sections: [lists](../iterables/lists), [dictionaries](../iterables/dictionaries), and [sets](../iterables/sets).
 
 ### Bytes (binary data)
 
-You’ll meet these when reading files or working with networks:
+Bytes are used for working with binary data (like reading files or network data). You probably won't need these until you're working on more advanced projects:
 
 ```python
 >>> b"hi"             # bytes (immutable)
 >>> bytearray(b"hi")  # bytearray (mutable)
 ```
 
+For now, you can skip this—you'll learn about it when you need it.
+
 ## Checking and converting types
 
+You can check what type a value is using `type()`:
+
 ```python
->>> type(3) is int
-True
->>> isinstance(3, (int, float))
-True
+>>> type(3)
+<class 'int'>
+>>> type("hello")
+<class 'str'>
 ```
 
-Conversions:
+You can also use `isinstance()` to check if a value is a specific type:
 
 ```python
->>> int("5")
+>>> isinstance(3, int)
+True
+>>> isinstance(3.5, int)
+False
+```
+
+## Converting between types
+
+Sometimes you need to convert a value from one type to another. Python provides functions for this:
+
+```python
+>>> int("5")        # Convert string to integer
 5
->>> float("3.14")
+>>> float("3.14")   # Convert string to decimal number
 3.14
->>> str(42)
+>>> str(42)         # Convert number to string
 '42'
->>> list("abc")
+>>> list("abc")     # Convert string to list of characters
 ['a', 'b', 'c']
 ```
 
-Be careful: converting invalid input raises errors.
+:::warning
+Be careful: converting invalid input will cause an error. For example, you can't convert the text "not a number" into a number:
 
 ```python
 >>> int("not a number")
@@ -135,20 +168,46 @@ Traceback (most recent call last):
   ...
 ValueError: invalid literal for int() with base 10: 'not a number'
 ```
+:::
 
 ## Identity vs equality
 
-- **Equality**: `==` checks if values are equivalent.
-- **Identity**: `is` checks if two references point to the same object.
+This is an important concept that confuses many beginners. There are two ways to compare values in Python:
+
+- **Equality (`==`)**: Checks if two values have the same **contents** or are equivalent.
+- **Identity (`is`)**: Checks if two names refer to the **exact same object** in memory.
+
+Think of it like this: equality asks "do these have the same value?" while identity asks "are these the exact same thing?"
 
 ```python
 >>> a = [1, 2, 3]
 >>> b = [1, 2, 3]
->>> a == b    # same contents
+>>> a == b    # Do they have the same contents? Yes!
 True
->>> a is b    # different objects
+>>> a is b    # Are they the same object? No—they're two different lists
 False
 ```
+
+Here's what's happening: `a` and `b` are two separate lists that happen to contain the same values. They're like two identical shopping lists written on different pieces of paper—same contents, but different objects.
+
+But if you assign one name to another:
+
+```python
+>>> a = [1, 2, 3]
+>>> b = a      # b now refers to the same list as a
+>>> a is b     # Are they the same object? Yes!
+True
+>>> a == b     # Do they have the same contents? Yes!
+True
+```
+
+Now both `a` and `b` point to the same list object.
+
+**When to use which?**
+- Use `==` when you want to check if values are the same (this is what you'll use most of the time).
+- Use `is` when you want to check if two names refer to the exact same object. The most common use is checking for `None`: `if value is None:` (not `if value == None:`).
+
+For numbers and strings, `==` and `is` often give the same result, but for lists, dictionaries, and other collections, they're different. Don't worry if this seems confusing—you'll get more comfortable with it as you practice!
 
 ## When to choose which type
 
