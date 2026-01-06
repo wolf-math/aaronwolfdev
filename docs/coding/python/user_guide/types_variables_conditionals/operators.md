@@ -223,7 +223,7 @@ You'll learn more about how these work with truthiness in the [truthiness guide]
 
 ## Operator precedence
 
-When Python evaluates an expression with multiple operators, it follows a specific order (called "precedence"). This is similar to math—multiplication happens before addition.
+When Python evaluates an expression with multiple operators, it follows a specific order (called "precedence"). This is similar to math order of operations.
 
 ```python
 >>> 2 + 3 * 4
@@ -283,11 +283,11 @@ print(total)  # 31.5
 
 1. **Use parentheses for clarity**: Even if you know the precedence rules, parentheses make your code easier to read:
    ```python
-   # Clear
-   result = (a + b) * (c - d)
+   # Clear - shows the intended grouping
+   result = (a * b) + (c * d)
    
-   # Less clear (but correct)
-   result = a + b * c - d
+   # Less clear (but correct) - same result due to operator precedence
+   result = a * b + c * d
    ```
 
 2. **Use augmented assignment when appropriate**: `x += 1` is clearer than `x = x + 1` when you're modifying a variable.

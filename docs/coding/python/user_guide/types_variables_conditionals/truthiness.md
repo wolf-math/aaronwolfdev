@@ -37,7 +37,7 @@ You'll see truthiness in action when you learn about [conditionals](./conditiona
 
 ## Falsy values
 
-These values are considered **falsy** in Python—they evaluate to `False` in boolean contexts:
+These values are considered **falsy** in Python. They evaluate to `False` in boolean contexts:
 
 ### The falsy values
 
@@ -104,7 +104,7 @@ All of these return `False` because they're falsy values.
 
 ## Truthy values
 
-Everything that's not falsy is **truthy**—it evaluates to `True` in boolean contexts:
+Everything that's not falsy is **truthy**. These will evaluate to `True` in boolean contexts:
 
 ```python
 # All of these are truthy

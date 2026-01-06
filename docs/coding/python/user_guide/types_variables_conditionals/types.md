@@ -8,7 +8,7 @@ sidebar_position: 1
 
 A **type** describes what a value is and which operations make sense for it. For example, you can add two numbers together, but you can't add a number to a word.
 
-Python is **dynamically typed**, which means you don't need to tell Python what type a value is when you create it—Python figures it out automatically. This makes Python easier to learn than languages where you must declare types ahead of time.
+Python is **dynamically typed**, which means you don't need to tell Python what type a value is when you create it. Python figures this out automatically. This makes Python easier to learn than languages where you must declare types ahead of time.
 
 ```python
 x = 3          # int
@@ -48,7 +48,7 @@ Python has three types of numbers:
 ```python
 >>> 42           # int (whole numbers like 1, 2, 100, -5)
 >>> 3.14         # float (decimal numbers like 3.14, 2.5, -0.1)
->>> 1 + 2j       # complex (for advanced math—you probably won't need this yet)
+>>> 1 + 2j       # complex (for advanced math)
 ```
 
 For now, focus on `int` and `float`. You'll use `int` for counting things (1, 2, 3) and `float` for measurements and calculations with decimals (3.14, 2.5).
@@ -108,21 +108,21 @@ Collections are types that can hold multiple values:
 ```
 
 **Mutable vs Immutable**: 
-- **Mutable** types (like `list`) can be changed after you create them—you can add, remove, or modify items.
-- **Immutable** types (like `tuple` and `str`) cannot be changed after creation—if you need to change them, you create a new one.
+- **Mutable** types (like `list`) can be changed after you create them. You can add, remove, or modify items.
+- **Immutable** types (like `tuple` and `str`) cannot be changed after creation. If you need to change them, you create a new one.
 
 Don't worry if this seems abstract right now. You'll get lots of practice with these types in the coming sections: [lists](../iterables/lists), [dictionaries](../iterables/dictionaries), and [sets](../iterables/sets).
 
 ### Bytes (binary data)
 
-Bytes are used for working with binary data (like reading files or network data). You probably won't need these until you're working on more advanced projects:
+Bytes are used for working with binary data (like reading files or network data). You probably won't need these until you're working on more advanced projects.
 
 ```python
 >>> b"hi"             # bytes (immutable)
 >>> bytearray(b"hi")  # bytearray (mutable)
 ```
 
-For now, you can skip this—you'll learn about it when you need it.
+For now, you can skip this, you'll learn about it when you need it.
 
 ## Checking and converting types
 
@@ -177,18 +177,18 @@ This is an important concept that confuses many beginners. There are two ways to
 - **Equality (`==`)**: Checks if two values have the same **contents** or are equivalent.
 - **Identity (`is`)**: Checks if two names refer to the **exact same object** in memory.
 
-Think of it like this: equality asks "do these have the same value?" while identity asks "are these the exact same thing?"
+Think of it like this, equality asks "do these have the same value?" while identity asks "are these the exact same thing?"
 
 ```python
 >>> a = [1, 2, 3]
 >>> b = [1, 2, 3]
 >>> a == b    # Do they have the same contents? Yes!
 True
->>> a is b    # Are they the same object? No—they're two different lists
+>>> a is b    # Are they the same object? No! They're two different lists
 False
 ```
 
-Here's what's happening: `a` and `b` are two separate lists that happen to contain the same values. They're like two identical shopping lists written on different pieces of paper—same contents, but different objects.
+Here's what's happening: `a` and `b` are two separate lists that happen to contain the same values. They're like two identical shopping lists written on different pieces of paper. They have the same contents, but they're different objects.
 
 But if you assign one name to another:
 

@@ -142,7 +142,7 @@ async function getPostActivity(postId) {
 }
 ```
 
-Parallelism is one of the biggest advantages of Promises — async/await lets you use it cleanly without chaining.
+Parallelism is one of the biggest advantages of Promises and async/await lets you use it cleanly without chaining.
 
 ---
 
