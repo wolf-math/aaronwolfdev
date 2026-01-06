@@ -1,8 +1,8 @@
 {
-  "label": "Iterables",
+  "label": "Iterables and collections",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Iterable objects in Python."
+    "description": "Iterable objects and collections in Python."
   }
 }
