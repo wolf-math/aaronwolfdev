@@ -16,10 +16,8 @@ const Homepage = () => {
           <div id={styles.mainlogo}>
             <img id={styles.logo} src={logo} alt="Logo" />
             <div className={styles.title}>
-              <h1>Aaron Wolf</h1>
-              <h3>Communicator.<br/>
-              Developer.<br/>
-              Nerd.</h3>
+              <h1>Wolf codes</h1>
+              <h3>Turning <br/> Complexity <br/> into <br/> Clarity.</h3>
             </div>
           </div>
           <FaAngleDoubleDown id={styles.more} onClick={scroll} /> 

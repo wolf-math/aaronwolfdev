@@ -17,7 +17,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Code+Pro:wght@500&display=swap'
+    'https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'
   ],
 
   plugins: ['docusaurus-plugin-sass'],
