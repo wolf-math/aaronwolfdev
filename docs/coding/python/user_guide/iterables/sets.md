@@ -20,7 +20,7 @@ colors = {'red', 'green', 'blue'}
 
 ## Why this matters
 
-Sets are powerful tools for working with unique collections and performing set operations. They excel at tasks like removing duplicates from lists, testing membership efficiently, and finding common or unique elements between collections. Sets provide mathematical set operations (union, intersection, difference) that are natural and readable. Because membership testing in sets is extremely fast (O(1) average case), they're ideal when you need to check if items exist in a collection frequently. Understanding sets helps you write more efficient code and solve problems that involve uniqueness or set relationships elegantly.
+Sets are powerful tools for working with unique collections and performing set operations. They excel at tasks like removing duplicates from lists, testing membership efficiently, and finding common or unique elements between collections. Sets provide mathematical set operations (union, intersection, difference) that are natural and readable. Because membership testing in sets is extremely fast (`O(1)` average case), they're ideal when you need to check if items exist in a collection frequently. Understanding sets helps you write more efficient code and solve problems that involve uniqueness or set relationships elegantly.
 
 ## Creating sets
 
@@ -62,7 +62,7 @@ chars = set("hello")  # {'h', 'e', 'l', 'o'}
 
 ### Set comprehensions
 
-Create sets using set comprehensions (similar to [list comprehensions](./comprehensions)):
+Create sets using set comprehensions (see [comprehensions](./comprehensions)):
 
 ```python
 squares = {x**2 for x in range(5)}  # {0, 1, 4, 9, 16}
@@ -93,7 +93,7 @@ unique_names = set(names)  # {'Alice', 'Bob', 'Charlie'}
 
 ### Adding items
 
-#### add()
+#### `add()`
 
 Add a single item:
 
@@ -107,7 +107,7 @@ fruits.add('apple')
 print(fruits)  # {'apple', 'banana', 'orange'} (unchanged)
 ```
 
-#### update()
+#### `update()`
 
 Add multiple items from another iterable:
 
@@ -122,7 +122,7 @@ fruits.update(['kiwi'], {'mango', 'papaya'})
 
 ### Removing items
 
-#### remove()
+#### `remove()`
 
 Remove a specific item (raises `KeyError` if not found):
 
@@ -134,7 +134,7 @@ print(fruits)  # {'apple', 'orange'}
 fruits.remove('grape')  # KeyError: 'grape'
 ```
 
-#### discard()
+#### `discard()`
 
 Remove a specific item (no error if not found):
 
@@ -146,7 +146,7 @@ print(fruits)  # {'apple', 'orange'}
 fruits.discard('grape')  # No error, just does nothing
 ```
 
-#### pop()
+#### `pop()`
 
 Remove and return an arbitrary item (raises `KeyError` if empty):
 
@@ -161,7 +161,7 @@ print(fruits)  # Remaining items
 Since sets are unordered, `pop()` removes an arbitrary element. The order may vary between Python versions.
 :::
 
-#### clear()
+#### `clear()`
 
 Remove all items:
 

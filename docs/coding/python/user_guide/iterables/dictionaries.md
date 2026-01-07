@@ -60,7 +60,7 @@ person = dict(items)
 ```
 
 :::tip
-The literal syntax `{}` is more common and Pythonic than `dict()`.
+The literal syntax `{}` is more common and Pythonic than using the `dict()` constructor.
 :::
 
 ## Accessing values
@@ -97,7 +97,7 @@ person = {'name': 'Alice', 'age': 30}
 person['city']  # KeyError: 'city'
 ```
 
-### get() method
+### `get()` method
 
 Use `get()` to safely access values without raising errors:
 
@@ -127,7 +127,7 @@ person['city'] = 'Boston'
 print(person)  # {'name': 'Alice', 'age': 31, 'city': 'Boston'}
 ```
 
-### update()
+### `update()`
 
 Update multiple items at once:
 
@@ -146,7 +146,7 @@ person.update(age=31, city='Boston')
 
 ### Removing items
 
-#### del statement
+#### `del` statement
 
 Remove a key-value pair using `del`:
 
@@ -156,9 +156,9 @@ del person['city']
 print(person)  # {'name': 'Alice', 'age': 30}
 ```
 
-#### pop()
+#### `pop()`
 
-Remove and return a value:
+Remove and returns a value:
 
 ```python
 person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
@@ -170,9 +170,9 @@ print(person)  # {'name': 'Alice', 'age': 30}
 city = person.pop('city', 'Unknown')  # Returns 'Unknown' if 'city' not found
 ```
 
-#### popitem()
+#### `popitem()`
 
-Remove and return the last key-value pair (as a tuple):
+Remove and returns the last key-value pair (as a tuple):
 
 ```python
 person = {'name': 'Alice', 'age': 30, 'city': 'Boston'}
@@ -181,7 +181,7 @@ print(item)    # ('city', 'Boston')
 print(person)  # {'name': 'Alice', 'age': 30}
 ```
 
-#### clear()
+#### `clear()`
 
 Remove all items:
 
@@ -252,7 +252,7 @@ mixed = {
 
 ## Getting keys and values
 
-### keys()
+### `keys()`
 
 Get all keys as a view object:
 
@@ -267,7 +267,7 @@ key_list = list(person.keys())
 print(key_list)  # ['name', 'age', 'city']
 ```
 
-### values()
+### `values()`
 
 Get all values as a view object:
 
@@ -282,7 +282,7 @@ value_list = list(person.values())
 print(value_list)  # ['Alice', 30, 'Boston']
 ```
 
-### items()
+### `items()`
 
 Get all key-value pairs as tuples:
 
@@ -364,7 +364,7 @@ for key, value in person.items():
 # city: Boston
 ```
 
-This uses tuple unpacking—each item from `.items()` is a `(key, value)` tuple.
+This uses tuple unpacking. Each item from `.items()` is a `(key, value)` tuple.
 
 ### Practical iteration examples
 
@@ -441,7 +441,7 @@ city = person.get('city', 'Unknown')
 
 ## Useful dictionary methods
 
-### copy()
+### `copy()`
 
 Create a copy of a dictionary:
 
@@ -455,7 +455,7 @@ print(copied)    # {'name': 'Alice', 'age': 31}
 ```
 
 :::warning
-Assigning a dictionary to another variable doesn't create a copy—both variables reference the same dictionary:
+Assigning a dictionary to another variable doesn't create a copy. Below both `original` and `reference` variables refer to the same dictionary:
 
 ```python
 original = {'name': 'Alice', 'age': 30}
@@ -467,7 +467,7 @@ print(original)  # {'name': 'Alice', 'age': 31} (also changed!)
 Use `.copy()` or `dict()` constructor to create a copy.
 :::
 
-### setdefault()
+### `setdefault()`
 
 Get a value, or set a default if the key doesn't exist:
 
@@ -485,7 +485,7 @@ print(city)     # 'Unknown'
 print(person)   # {'name': 'Alice', 'age': 30, 'city': 'Unknown'}
 ```
 
-### fromkeys()
+### `fromkeys()`
 
 Create a dictionary from keys with a default value:
 
@@ -504,6 +504,8 @@ person = dict.fromkeys(keys, 0)
 
 ### Building a dictionary incrementally
 
+Start with an empty dictionary and add key-value pairs one at a time:
+
 ```python
 data = {}
 data['name'] = 'Alice'
@@ -512,6 +514,8 @@ data['city'] = 'Boston'
 ```
 
 ### Counting occurrences
+
+Use a dictionary to count how many times each item appears in a sequence:
 
 ```python
 words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
@@ -524,6 +528,8 @@ print(counts)  # {'apple': 3, 'banana': 2, 'orange': 1}
 ```
 
 ### Grouping items
+
+Organize items into groups based on a shared characteristic:
 
 ```python
 students = [
@@ -545,6 +551,8 @@ print(by_subject)
 
 ### Merging dictionaries
 
+Combine multiple dictionaries into one using several different methods:
+
 ```python
 dict1 = {'a': 1, 'b': 2}
 dict2 = {'c': 3, 'd': 4}
@@ -562,6 +570,8 @@ merged = dict1 | dict2
 
 ### Dictionary as a lookup table
 
+Use dictionaries to map one value to another, like translating codes to descriptions:
+
 ```python
 grades = {
     'A': 'Excellent',
@@ -577,7 +587,7 @@ print(grades.get(grade, 'Unknown'))  # 'Good'
 
 ### Dictionary comprehensions
 
-Create dictionaries using comprehensions (similar to [list comprehensions](./comprehensions)):
+Create dictionaries using comprehensions (see [comprehensions](./comprehensions)):
 
 ```python
 # Square each number
