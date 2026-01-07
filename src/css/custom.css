@@ -69,16 +69,16 @@ body::before {
 }
 
 h1 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Cairo", sans-serif;
   color: white;
 }
 
 h3 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Cairo", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -89,13 +89,13 @@ code {
 }
 
 h1 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Cairo", sans-serif;
   color: white;
 }
 
 h2,
 h3 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Cairo", sans-serif;
   color: white;
 }
 

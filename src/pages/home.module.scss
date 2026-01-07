@@ -73,14 +73,14 @@
         filter: drop-shadow(3px 3px 10px rgba(37, 194, 160));
         padding: 15px;
 
-        &:hover {
-          animation: spinning 1s forwards;
-        }
+        // &:hover {
+        //   animation: spinning 1s forwards;
+        // }
       }
 
       .title {
         margin-left: 10px;
-        font-family: 'Source Code Pro';
+        font-family: 'Cairo';
 
         h1 {
           font-size: 72px;
@@ -128,14 +128,14 @@
       justify-content: center;
       align-items: center;
       color: white;
-      font-family: 'Source Code Pro';
+      font-family: 'Cairo';
       text-decoration: none;
       filter: blur(1px);
       transition: 0.5s;
 
       &:hover {
         filter: drop-shadow(2px 2px 2px grey);
-        transform: scale(2);
+        transform: scale(1.2);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         filter: blur(0px);
         z-index: 10;
@@ -165,7 +165,7 @@
 
       &:hover {
         color: whitesmoke;
-        transform: scale(1.5);
+        transform: scale(1.1);
         transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         filter: drop-shadow(0);
       }

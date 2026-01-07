@@ -53,14 +53,13 @@ export default function About () {
       <hr className={about.divider} />
 
 
-      <h1><FaTerminal /> Coding <span className="highlight">Languages</span></h1>
+      <h1><FaTerminal /> Technologies & Tools</h1>
         <div className={about.languages}>
         <div className={about.language}>
           <h3 className={about.skilltitle}><FaDesktop /> Full Stack Web</h3>
           <ul className={about.skills}>
             <li><FaJs /> JavaScript / TypeScript</li>
             <li><FaReact /> React</li>
-            {/* <li>Next.js</li> */}
             <li><FaPython /> Django / REST Framework</li>
             <li><FaNodeJs /> Node.js</li>
             <li><FaHtml5 /> HTML5</li>
@@ -76,14 +75,14 @@ export default function About () {
             <li><FaCloud /> Supabase / Firebase</li>
             <li><FaDatabase /> SQL / PostgreSQL</li>
             <li><FaLinux /> Linux / Bash</li>
-            <li><FaMicrochip /> AI / ChatGPT</li>
+            <li><FaMicrochip /> AI </li>
           </ul>
         </div>
 
         <div className={about.language}>
           <h3 className={about.skilltitle}><FaChalkboardTeacher /> Teaching & Docs</h3>
           <ul className={`${about.skills} nobullet`}>
-            <li><FaBook /> Technical Writing / Documentation</li>
+            <li><FaBook /> Technical Communication</li>
             <li><FaLaptopCode /> Jupyter Notebook</li>
             <li><FaCode /> API Design & Integration</li>
             <li><FaLightbulb /> Curriculum Design / EdTech </li>
@@ -92,14 +91,14 @@ export default function About () {
           </ul>
         </div>
 
-        <div className={about.language}>
+        {/* <div className={about.language}>
           <h3 className={about.skilltitle}><FaMicrochip /> Hardware & Hobby</h3>
           <ul className={`${about.skills} nobullet`}>
             <li><FaBolt /> Arduino / Raspberry Pi</li>
             <li><FaRegLightbulb /> Electronics / Soldering</li>
             <li><FaRobot /> Drone building and flying</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   </Layout>
