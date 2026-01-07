@@ -27,3 +27,8 @@ ubuntu:
   label: ubuntu
   permalink: /ubuntu
   description: ubuntu articles
+
+teaching:
+  label: teaching
+  permalink: /teaching
+  description: teaching articles
