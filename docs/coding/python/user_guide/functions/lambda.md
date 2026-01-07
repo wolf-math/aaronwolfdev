@@ -20,7 +20,7 @@ print(add(3, 5))  # 8
 
 ## Why this matters
 
-Lambda functions are incredibly useful when you need a small function for a specific task, especially when passing functions as arguments to other functions. They're commonly used with built-in functions like `map()`, `filter()`, and `sorted()`, as well as with libraries like pandas and data processing tools. Lambda functions make your code more concise and readable when the operation is simple and obvious. However, they should be used judiciously—if the logic is complex or you need multiple statements, a regular function is usually better. Understanding lambda functions is essential for writing Pythonic code and working with functional programming patterns.
+Lambda functions are incredibly useful when you need a small function for a specific task, especially when passing functions as arguments to other functions. They're commonly used with built-in functions like `map()`, `filter()`, and `sorted()`, as well as with libraries like pandas and data processing tools. Lambda functions make your code more concise and readable when the operation is simple and obvious. However, they should be used judiciously. If the logic is complex or you need multiple statements, a regular function is usually better. Understanding lambda functions is essential for writing Pythonic code and working with functional programming patterns.
 
 ## Basic lambda syntax
 
@@ -101,7 +101,11 @@ def calculate_discount(price, discount_rate, tax_rate):
 
 ## Common use cases
 
-### With map()
+:::note
+You'll learn about `map()`, `filter()`, and `sorted()` in detail in the [higher order functions](./higher_order_functions) section. These examples show how lambda functions work with them.
+:::
+
+### With `map()`
 
 `map()` applies a function to every item in an iterable:
 
@@ -118,7 +122,7 @@ def double(x):
 doubled = list(map(double, numbers))
 ```
 
-### With filter()
+### With `filter()`
 
 `filter()` keeps only items where the function returns `True`:
 
@@ -134,7 +138,7 @@ large_evens = list(filter(lambda x: x % 2 == 0 and x > 5, numbers))
 print(large_evens)  # [6, 8, 10]
 ```
 
-### With sorted()
+### With `sorted()`
 
 `sorted()` can use a lambda as the `key` parameter to determine sorting order:
 
@@ -176,7 +180,7 @@ evens = list(filter(lambda x: x % 2 == 0, numbers))
 evens = [x for x in numbers if x % 2 == 0]
 ```
 
-### With reduce()
+### With `reduce()`
 
 `reduce()` (from `functools`) applies a function cumulatively to items in a sequence:
 
@@ -243,7 +247,7 @@ print(classify(-3))  # "negative"
 print(classify(0))   # "zero"
 ```
 
-### Lambda with *args and **kwargs
+### Lambda with `*args` and `**kwargs`
 
 Lambda functions can accept variable arguments:
 
