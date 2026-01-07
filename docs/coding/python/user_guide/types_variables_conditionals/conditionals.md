@@ -9,7 +9,7 @@ sidebar_position: 4
 
 ## Why this matters
 
-Conditionals are what make programs intelligent and interactive. Without them, your code would always execute the same way every time. With conditionals, you can check user input, validate data, handle different cases, and create programs that adapt to their environment. Almost every useful program uses conditionals—whether it's checking if a user is logged in, validating input, choosing which calculation to perform, or determining what message to display. Mastering conditionals is essential for writing programs that do more than just execute a fixed sequence of steps.
+Conditionals are what make programs intelligent and interactive. Without them, your code would always execute the same way every time. With conditionals, you can check user input, validate data, handle different cases, and create programs that adapt to their environment. Almost every useful program uses conditionals, whether it's checking if a user is logged in, validating input, choosing which calculation to perform, or determining what message to display. Mastering conditionals is essential for writing programs that do more than just execute a fixed sequence of steps.
 
 ## Basic syntax
 
@@ -38,7 +38,7 @@ if age >= 18:
     print("You are an adult")
 ```
 
-This checks if `age` is greater than or equal to 18. If it is, Python prints the message. Notice the indentation—the `print()` statement is indented to show it belongs to the `if` statement.
+This checks if `age` is greater than or equal to 18. If it is, Python prints the message. Notice the indentation! The `print()` statement is indented to show it belongs to the `if` statement.
 
 If the condition is falsy, nothing happens—Python skips the indented block entirely:
 
@@ -90,9 +90,9 @@ else:
 In the example above, `score` is 85, so:
 - `score >= 90` is false (85 is not >= 90)
 - `score >= 80` is true (85 is >= 80)
-- Python prints "Grade: B" and stops—it doesn't check the remaining conditions.
+- Python prints "Grade: B" and stops. It skips over the remaining conditions.
 
-**Important:** Only one block runs, even if multiple conditions could be true. Python always uses the first matching condition.
+**Important:** Only one block runs, even if multiple conditions could be true. **Python always uses the first matching condition**.
 
 ## Truthiness in conditionals
 
@@ -120,7 +120,7 @@ else:
     print("List is empty")  # This runs instead
 ```
 
-This is why you can write `if name:` instead of `if name != "":`—it's shorter and more Pythonic!
+This is why you can write `if name:` instead of `if name != "":`. This makes your code shorter and more Pythonic!
 
 ## Comparison operators
 
@@ -138,13 +138,13 @@ Use comparison operators to build conditions that compare values:
 ```python
 x = 5
 
-if x == 5:   # Is x equal to 5? Yes
+if x == 5:   # Is x equal to 5? Yes!
     print("x is 5")
 
-if x != 3:   # Is x not equal to 3? Yes
+if x != 3:   # Is x not equal to 3? Yes!
     print("x is not 3")
 
-if x > 3:    # Is x greater than 3? Yes
+if x > 3:    # Is x greater than 3? Yes!
     print("x is greater than 3")
 ```
 
@@ -165,7 +165,7 @@ if age < 18 or not has_license:
     print("You cannot drive")
 ```
 
-### and
+### `and`
 
 Both conditions must be truthy for the whole expression to be truthy:
 
@@ -178,7 +178,7 @@ if x > 0 and x < 10:
 
 This only prints if **both** `x > 0` is true **and** `x < 10` is true. If either condition is false, nothing prints.
 
-### or
+### `or`
 
 At least one condition must be truthy for the whole expression to be truthy:
 
@@ -191,9 +191,9 @@ if day == "Saturday" or day == "Sunday":
 
 This prints if the day is Saturday **or** Sunday (or both, though a day can't be both). If neither condition is true, nothing prints.
 
-### not
+### `not`
 
-Inverts the truthiness—turns `True` into `False` and `False` into `True`:
+Inverts the truthiness. `True` converts to `False` and `False` to `True`:
 
 ```python
 is_raining = False
@@ -282,7 +282,7 @@ if color in ["red", "green", "blue"]:
 
 This checks if `color` is one of the values in the list. You'll learn more about lists and the `in` operator in the [iterables section](../iterables/lists.md).
 
-### Checking type (with isinstance)
+### Checking type (with `isinstance`)
 
 You can check what type a value is using `isinstance()`:
 
@@ -298,6 +298,8 @@ elif isinstance(value, str):
 `isinstance(value, int)` returns `True` if `value` is an integer, `False` otherwise. This is useful when you need to handle different types of data differently.
 
 ### Multiple conditions
+
+Sometimes you want to check more than one thing at a time and handle different combinations of conditions.
 
 ```python
 temperature = 75
@@ -354,4 +356,15 @@ Here are some tips for writing clear, readable conditionals:
                print("You can drive")
    ```
 
-4. **Use truthiness when it makes sense**: `if name:` is cleaner than `if name != ""`, but use explicit comparisons when the distinction matters (like checking for `None` specifically).
+4. **Use truthiness when it makes sense**: `if name:` is cleaner than `if name != ""`, but use explicit comparisons when the distinction matters (like checking for `None` specifically):
+   ```python
+    name = "Wolf"
+
+   # Good: uses truthiness
+   if name:
+       print("Hello,", name)
+
+   # Also good: explicit comparison to None
+   if user is not None:
+       print("User is set")
+   ```
