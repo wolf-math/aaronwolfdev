@@ -50,7 +50,7 @@ u = User("alice")
 ```
 
 - `User("alice")` → Python creates a new `User` instance, then calls `User.__init__(that_instance, "alice")`.
-- You don’t return anything from `__init__`—it must return `None`.
+- You don’t return anything from `__init__`. It must return `None`.
 
 ## String representation: `__repr__` and `__str__`
 
@@ -222,7 +222,7 @@ for n in Countdown(3):
 # 1
 ```
 
-Using `yield` inside `__iter__` is a simple way to create an iterator without writing a separate class.
+Using [`yield`](../../language_reference/keywords/#yield) inside `__iter__` is a simple way to create an iterator without writing a separate class.
 
 ## Context managers: `__enter__` and `__exit__`
 
@@ -260,18 +260,18 @@ with open("data.txt", "r", encoding="utf-8") as f:
 
 ## When (and when not) to use dunder methods
 
-Use dunder methods when:
+**Use dunder methods when:**
 
 - Your class naturally behaves like a **built-in type** (sequence, mapping, number, context manager).
 - You want to improve **debugging** and **logging** with a good `__repr__`/`__str__`.
 - You need your objects to work with Python’s built-in functions and syntax.
 
-Be cautious when:
+**Be cautious when:**
 
 - Overloading operators in ways that **surprise** other developers.
 - Implementing many dunder methods without a clear, consistent mental model.
 
-As a rule of thumb:
+**As a rule of thumb:**
 
 - Start with `__repr__` (and optionally `__str__`).
 - Add `__len__`, `__iter__`, `__getitem__`, or `__contains__` if your object is a collection.
@@ -279,12 +279,8 @@ As a rule of thumb:
 
 ## Summary
 
-In this guide you learned that:
-
 - Dunder methods are special hooks that connect your classes to Python’s built‑in behavior.
 - You usually interact with them via normal syntax (`len`, `[]`, `+`, `with`, etc.).
 - Implementing a few well-chosen dunder methods can make your classes feel like first‑class citizens in the language.
 
 As you build more complex classes, revisit this guide and add dunder methods when they clearly improve your code’s readability and ergonomics. You don’t need all of them—just the ones that make your objects easier to use and reason about.
-
-

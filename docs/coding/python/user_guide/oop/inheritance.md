@@ -1,14 +1,14 @@
 ---
 title: Inheritance
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 ## What is inheritance?
 
 **Inheritance** is an OOP feature that lets you create a **new class** that reuses and extends an **existing class**.
 
-- The existing class is the **base class** (or *parent* / *superclass*).
-- The new class is the **subclass** (or *child* / *derived class*).
+- The existing class is the **base class** (or parent / superclass / base class).
+- The new class is the **subclass** (or child / derived class).
 
 The subclass automatically gets:
 
@@ -33,7 +33,7 @@ Inheritance helps you:
 
 - **Avoid duplication** by putting shared behavior in a base class.
 - **Organize related classes** into a hierarchy (e.g., `Shape` → `Circle`, `Rectangle`).
-- Implement **polymorphism**—code that works with many subclasses through a common interface.
+- Implement [**polymorphism**](./polymorphism)—code that works with many subclasses through a common interface.
 
 Used well, inheritance makes code easier to reuse and extend. Used poorly, it can make code harder to understand, so it’s important to keep hierarchies simple and clear.
 
@@ -56,7 +56,7 @@ class Cat(Animal):
         return f"{self.name} says meow!"
 ```
 
-Usage:
+**Usage:**
 
 ```python
 pets = [Dog("Fido"), Cat("Whiskers")]
@@ -67,15 +67,14 @@ for pet in pets:
 # Whiskers says meow!
 ```
 
-Here:
+**Here:**
 
 - `Dog` and `Cat` **inherit from** `Animal`.
 - They override `speak` but still share the `name` attribute set up in `Animal.__init__`.
 
 ## Calling the base class with `super()`
 
-When you override `__init__` or other methods, you often want to call the base class implementation as part of the subclass’s work.  
-Use `super()` to do that:
+When you override `__init__` or other methods, you often want to call the base class implementation as part of the subclass’s work. Use `super()` to do that:
 
 ```python
 class Animal:
@@ -88,7 +87,7 @@ class Dog(Animal):
         self.breed = breed
 ```
 
-Usage:
+**Usage:**
 
 ```python
 d = Dog("Fido", "Labrador")
@@ -96,7 +95,61 @@ print(d.name)   # 'Fido'  (from Animal)
 print(d.breed)  # 'Labrador'  (defined in Dog)
 ```
 
-`super()` is especially important in multiple inheritance, but it’s a good habit even in simple hierarchies.
+`super()` is especially important in multiple inheritance, but it's a good habit even in simple hierarchies.
+
+## Multilevel inheritance
+
+You can create inheritance chains where a subclass inherits from another subclass, forming multiple levels:
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def move(self):
+        print("The animal moves")
+
+
+class Fish(Animal):
+    def __init__(self, name, water_type):
+        super().__init__(name)   # calls Animal.__init__
+        self.water_type = water_type
+
+    def move(self):
+        print("The fish swims")
+
+
+class Tuna(Fish):
+    def __init__(self, name, water_type, speed):
+        super().__init__(name, water_type)  # calls Fish.__init__
+        self.speed = speed
+
+    def move(self):
+        super().move()  # calls Fish.move
+        print(f"The tuna swims at {self.speed} mph")
+```
+
+**Usage:**
+
+```python
+tuna = Tuna("Bluefin", "saltwater", 45)
+print(tuna.name)        # "Bluefin" (from Animal)
+print(tuna.water_type)  # "saltwater" (from Fish)
+print(tuna.speed)       # 45 (from Tuna)
+
+tuna.move()
+# Output:
+# The fish swims
+# The tuna swims at 45 mph
+```
+
+**Here:**
+- `Tuna` inherits from `Fish`, which inherits from `Animal`
+- Each level calls `super()` to initialize the parent class
+- `Tuna.move()` calls `Fish.move()` using `super()`, then adds its own behavior
+- This creates a chain: `Tuna` → `Fish` → `Animal`
+
+Multilevel inheritance is useful when you have a natural hierarchy, but keep it shallow (2-3 levels) to avoid complexity.
 
 ## Overriding methods
 
@@ -124,16 +177,20 @@ class Circle(Shape):
         return math.pi * self.radius ** 2
 ```
 
-Usage:
+**Usage:**
 
 ```python
 shapes = [Rectangle(2, 3), Circle(1)]
 
 for s in shapes:
     print(s.area())  # calls the appropriate subclass method
+
+# Output:
+# 6
+# 3.141592653589793
 ```
 
-This is the foundation of **polymorphism**: different subclasses implement the same method interface in their own way.
+This is the foundation of [**polymorphism**](./polymorphism): different subclasses implement the same method interface in their own way.
 
 ## Extending behavior instead of replacing it
 
@@ -147,7 +204,7 @@ class Logger:
 class TimestampLogger(Logger):
     def log(self, message):
         import datetime
-        timestamp = datetime.datetime.now().isoformat(timespec="seconds")
+        timestamp = datetime.datetime.now().isoformat(timespec="seconds")  # Get current time as ISO string (e.g., "2025-01-01T12:00:00")
         super().log(f"{timestamp}: {message}")
 ```
 
@@ -163,8 +220,7 @@ l.log("System started")
 
 ## Inheritance vs composition
 
-Inheritance is not the only way to reuse code.  
-Another common pattern is **composition**—having one object hold a reference to another and delegate work to it.
+Inheritance is not the only way to reuse code. Another common pattern is **composition**, which means having one object hold a reference to another and delegate work to it.
 
 Use **inheritance** when:
 
@@ -178,7 +234,7 @@ Use **composition** when:
   - `Car` has an `Engine`
   - `Order` has a list of `LineItem`s
 
-Example of composition:
+**Example of composition:**
 
 ```python
 class Engine:
@@ -198,7 +254,7 @@ Keep hierarchies shallow and favor composition when inheritance doesn’t clearl
 
 ## Multiple inheritance (overview)
 
-Python supports **multiple inheritance**—a class can inherit from more than one base class:
+Python supports **multiple inheritance**. A class can inherit from more than one base class:
 
 ```python
 class Logger:
@@ -214,7 +270,7 @@ class LoggedSerializer(Logger, Serializer):
     pass
 ```
 
-Usage:
+**Usage:**
 
 ```python
 ls = LoggedSerializer()
@@ -225,7 +281,7 @@ print(ls.serialize({"x": 1}))
 Multiple inheritance can be powerful but also complex.  
 Python uses a *method resolution order* (MRO) to decide which base class method to call when there are conflicts.
 
-General advice:
+**General advice:**
 
 - Prefer **single inheritance + composition** for most designs.
 - Keep multiple inheritance hierarchies small and well‑documented.
@@ -249,14 +305,12 @@ isinstance(Dog("Fido"), Animal)  # True
 
 ## Summary
 
-In this guide you learned that:
-
 - Inheritance lets a subclass reuse and extend behavior from a base class.
 - You use `class Sub(Base):` to declare inheritance.
 - `super()` lets subclasses call base class implementations.
 - Overriding methods is key to implementing polymorphism.
 - Inheritance is best for clear “is‑a” relationships; composition is often a better choice otherwise.
 
-The **polymorphism** guide builds on this by showing how to write code that works with many different subclasses through a shared interface.
+The [**polymorphism**](./polymorphism) guide builds on this by showing how to write code that works with many different subclasses through a shared interface.
 
 

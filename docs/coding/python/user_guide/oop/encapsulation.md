@@ -1,6 +1,6 @@
 ---
 title: Encapsulation
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## What is encapsulation?
@@ -87,12 +87,21 @@ class Temperature:
 Usage:
 
 ```python
+# Create a temperature
 t = Temperature(25)
 print(t.celsius)      # 25  (getter)
 print(t.fahrenheit)   # 77.0 (computed property)
 
-t.celsius = 0         # uses setter (valid)
-t.celsius = -300      # raises ValueError
+# Update the temperature (uses setter with validation)
+t.celsius = 0
+print(t.celsius)      # 0
+print(t.fahrenheit)   # 32.0 (automatically recalculated)
+
+# Try to set an invalid temperature
+t.celsius = -300      # raises ValueError: Temperature below absolute zero!
+
+# Fahrenheit is read-only (computed from celsius)
+# t.fahrenheit = 100  # AttributeError: can't set attribute
 ```
 
 From the outside, `celsius` and `fahrenheit` look like **normal attributes**, but internally you can:
@@ -193,7 +202,7 @@ Name mangling is mainly useful when you’re building classes meant to be subcla
 
 ## Encapsulation at the module level
 
-Encapsulation isn’t just for classes—Python modules also use naming conventions:
+Encapsulation isn’t just for classes. Python modules also use naming conventions:
 
 - Names starting with `_` (e.g., `_helper_function`) are treated as **internal** to the module.
 - `from module import *` will skip names starting with `_` unless you define `__all__`.
@@ -215,7 +224,7 @@ Here, `_cache` is an internal detail; `public_api` is the public function other 
 
 ## When to use encapsulation tools
 
-Use:
+**Use:**
 
 - Leading underscores (`_name`) for **internal attributes and helpers**.
 - Properties (`@property` and setters) when you need:
@@ -224,14 +233,12 @@ Use:
   - The flexibility to change implementation later
 - Double underscores (`__name`) sparingly, mainly to prevent accidental subclass collisions.
 
-Avoid:
+**Avoid:**
 
 - Exposing every attribute as public without thinking about invariants.
 - Overusing `__double_underscore` when a single underscore and clear docs are enough.
 
 ## Summary
-
-In this guide you learned that:
 
 - Encapsulation is about hiding internal details and exposing a clean public interface.
 - Python uses **conventions** (`_name`, `__name`) instead of strict access modifiers.
