@@ -19,7 +19,7 @@ print(today)  # 2024-01-15
 
 ## Why this matters
 
-Dates and times are everywhere in programming—logging events, scheduling tasks, calculating durations, parsing user input, working with databases, and more. The `datetime` module gives you:
+Dates and times are everywhere in programming from logging events, scheduling tasks, calculating durations, parsing user input, working with databases, and more. The `datetime` module gives you:
 
 - **Precise date/time handling**: Work with dates, times, and combinations of both
 - **Timezone support**: Handle different timezones (with `timezone` and `timedelta`)
@@ -28,6 +28,87 @@ Dates and times are everywhere in programming—logging events, scheduling tasks
 - **Calendar operations**: Get weekdays, determine if dates fall on weekends, etc.
 
 Without proper date/time handling, you'd struggle with timezone conversions, leap years, daylight saving time, and other complexities. The `datetime` module handles all of this for you.
+
+## How dates and times are stored
+
+Understanding how computers store dates and times helps you work with the `datetime` module more effectively.
+
+### Unix epoch time
+
+Computers typically store dates and times as a number representing seconds (or milliseconds) since a fixed point in time called the **epoch**. The Unix epoch is January 1, 1970, 00:00:00 UTC.
+
+```python
+import time
+from datetime import datetime
+
+# Get current time as seconds since epoch
+epoch_seconds = time.time()
+print(epoch_seconds)  # 1705327845.123456 (example)
+
+# Convert epoch time to datetime
+dt = datetime.fromtimestamp(epoch_seconds)
+print(dt)  # 2024-01-15 14:30:45.123456
+
+# Convert datetime back to epoch time
+epoch_seconds = dt.timestamp()
+print(epoch_seconds)  # 1705327845.123456
+```
+
+### Why epoch time?
+
+Storing dates as numbers since the epoch makes it easy to:
+- **Calculate differences**: Subtract two epoch times to get the duration
+- **Compare dates**: Compare numbers directly
+- **Store efficiently**: A single number instead of multiple fields
+- **Handle timezones**: Convert to/from UTC consistently
+
+### Databases and epoch time
+
+Most databases store dates and times as epoch seconds or milliseconds. This is why you'll often need to convert between `datetime` objects and timestamps when working with databases:
+
+```python
+from datetime import datetime
+
+# When saving to database: convert datetime to timestamp
+dt = datetime.now()
+db_timestamp = int(dt.timestamp())  # Store as integer seconds
+# or
+db_timestamp_ms = int(dt.timestamp() * 1000)  # Store as milliseconds
+
+# When reading from database: convert timestamp to datetime
+stored_timestamp = 1705327845
+dt = datetime.fromtimestamp(stored_timestamp)
+print(dt)  # 2024-01-15 14:30:45
+```
+
+Different databases use different formats:
+- **PostgreSQL, MySQL**: Often store as `TIMESTAMP` (internally epoch seconds)
+- **SQLite**: Stores as text, integer (epoch seconds), or real (Julian day)
+- **MongoDB**: Uses BSON Date type (milliseconds since epoch)
+- **Redis**: Stores as integer (seconds) or string
+
+The `datetime` module's `timestamp()` and `fromtimestamp()` methods make it easy to convert between Python's `datetime` objects and the numeric formats databases use.
+
+### Internal representation
+
+Python's `datetime` objects store dates and times internally as separate components (year, month, day, hour, minute, second, microsecond), but they can easily convert to and from epoch time when needed:
+
+```python
+from datetime import datetime
+
+# Create a datetime
+dt = datetime(2024, 1, 15, 14, 30, 45)
+
+# Convert to timestamp (seconds since epoch)
+timestamp = dt.timestamp()
+print(timestamp)  # 1705327845.0
+
+# Create from timestamp
+dt2 = datetime.fromtimestamp(timestamp)
+print(dt2)  # 2024-01-15 14:30:45
+```
+
+The `datetime` module abstracts away the epoch time details, letting you work with human readable dates and times while handling the underlying representation automatically.
 
 ## The main classes
 
@@ -162,7 +243,7 @@ print(now.strftime("%Y-%m-%d %H:%M:%S"))  # 2024-01-15 14:30:45
 
 ### Using timedelta
 
-`timedelta` represents a duration—the difference between two dates or times:
+`timedelta` represents a duration, which is the difference between two dates or times:
 
 ```python
 from datetime import datetime, timedelta
@@ -344,17 +425,11 @@ print(time_ago(past_time))  # 2 hours ago
 ## Best practices
 
 1. **Use `datetime` for most cases**: Unless you only need a date or time, `datetime` is usually the most flexible choice.
-
 2. **Be aware of timezone issues**: If your application deals with multiple timezones, always use timezone-aware datetime objects. Store times in UTC and convert to local timezones for display.
-
 3. **Use `strftime` and `strptime` consistently**: Stick to a consistent date format throughout your application to avoid parsing errors.
-
 4. **Handle edge cases**: Be careful with date arithmetic around month boundaries, leap years, and daylight saving time transitions.
-
 5. **Use `date.today()` instead of `datetime.now().date()`**: When you only need the date, `date.today()` is clearer and slightly more efficient.
-
 6. **Prefer `timedelta` for date arithmetic**: It handles all the complexities of months, years, and leap years correctly.
-
 7. **Validate user input**: When parsing date strings from users, always use try/except to handle invalid formats gracefully.
 
 ```python

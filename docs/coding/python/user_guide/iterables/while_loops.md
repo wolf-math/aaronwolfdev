@@ -11,7 +11,7 @@ A **while loop** repeatedly executes a block of code as long as a condition is t
 
 ## Why this matters
 
-While loops are essential when you need to repeat code an unknown number of times, continuing until a condition changes. They're perfect for situations where you don't know in advance how many iterations you'll need—like reading input until a valid value is entered, processing data until a certain state is reached, or running game loops until the game ends. While loops give you flexibility that for loops can't provide when the termination condition depends on runtime behavior rather than a fixed sequence. Understanding when to use while loops versus for loops helps you choose the right tool for each situation and write code that handles dynamic, condition-based repetition.
+While loops are essential when you need to repeat code an unknown number of times, continuing until a condition changes. They're perfect for situations where you don't know in advance how many iterations you'll need, like reading input until a valid value is entered, processing data until a certain state is reached, or running game loops until the game ends. While loops give you flexibility that for loops can't provide when the termination condition depends on runtime behavior rather than a fixed sequence. Understanding when to use while loops versus for loops helps you choose the right tool for each situation and write code that handles dynamic, condition-based repetition.
 
 ## Basic syntax
 
@@ -41,7 +41,9 @@ while count < 5:
 # 4
 ```
 
-This loop runs as long as `count < 5` is `True`. Inside the loop, we increment `count`, so eventually the condition becomes `False` and the loop stops.
+This loop runs as long as `count < 5` is `True`. Inside the loop, we increment `count`, so eventually the condition becomes `False` and the loop stops. 
+
+If we don't increment `count`, the loop can run [infinitely](#infinite-loops).
 
 ## While vs for loops
 
@@ -51,15 +53,29 @@ Both loops repeat code, but they're used in different situations:
 - **While loops**: When you need to repeat until a condition changes, and you don't know the exact number of iterations
 
 ```python
-# For loop: iterate over a known sequence (see [for loops](./for_loops) and [ranges](./ranges))
+# For loop: iterate over a known sequence
 for i in range(5):
     print(i)
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
 
 # While loop: repeat until a condition is met
 count = 0
 while count < 5:
     print(count)
     count += 1
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
 ```
 
 Both achieve the same result, but for loops are generally preferred when you know the iteration count.
@@ -75,6 +91,18 @@ count = 0
 while count < 10:
     print(count)
     count += 1  # Increment the counter
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
 ```
 
 ### User input validation
@@ -90,7 +118,15 @@ while age is None:
         age = int(user_input)
     else:
         print("Please enter a valid number")
+
+# Example interaction:
+# Enter your age: abc
+# Please enter a valid number
+# Enter your age: 25
+# (loop exits, age is now 25)
 ```
+
+The [`isdigit`](../../language_reference/string#isdigit) method checks if a string can be cast into a number. If `user_input.isdigit()` returns `True`, then the user input a number, otherwise the loop repeats. 
 
 ### Processing until a value changes
 
@@ -105,6 +141,13 @@ while number != 0:
     total += number
 
 print(f"Total: {total}")
+
+# Example interaction:
+# Enter a number (0 to stop): 5
+# Enter a number (0 to stop): 10
+# Enter a number (0 to stop): 3
+# Enter a number (0 to stop): 0
+# Total: 18
 ```
 
 ### Menu systems
@@ -124,6 +167,22 @@ while choice != "quit":
         print("You chose option 1")
     elif choice == "2":
         print("You chose option 2")
+
+# Example interaction:
+# 1. Option 1
+# 2. Option 2
+# Type 'quit' to exit
+
+# Enter choice: 1
+
+# You chose option 1
+# 1. Option 1
+# 2. Option 2
+# Type 'quit' to exit
+
+# Enter choice: quit
+
+# (loop exits)
 ```
 
 ## Infinite loops
@@ -138,9 +197,19 @@ count = 0
 while count < 5:
     print(count)
     # Forgot to increment count!
+
+# Output (runs infinitely):
+# 0
+# 0
+# 0
+# ... (continues forever)
 ```
 
 The condition `count < 5` is always `True` because `count` never changes.
+
+:::note
+To stop an infinite loop type `ctrl + c` in the terminal. On Mac it's still `ctrl`, not `command`. 
+:::
 
 ### Intentional infinite loops
 
@@ -152,6 +221,17 @@ while True:  # Infinite loop
     if user_input == "quit":
         break  # Exit the loop
     print(f"You entered: {user_input}")
+
+# Example interaction:
+
+# Enter 'quit' to exit: hello
+# You entered: hello
+
+# Enter 'quit' to exit: world
+# You entered: world
+
+# Enter 'quit' to exit: quit
+# (loop exits)
 ```
 
 ### Breaking out of infinite loops
@@ -164,11 +244,19 @@ while True:
     if number < 0:
         break
     print(f"Square: {number ** 2}")
+
+# Example interaction:
+# Enter a number (negative to stop): 3
+# Square: 9
+# Enter a number (negative to stop): 5
+# Square: 25
+# Enter a number (negative to stop): -1
+# (loop exits)
 ```
 
 ## Loop control: break and continue
 
-### break
+### `break`
 
 Exit the loop immediately:
 
@@ -188,7 +276,7 @@ while count < 10:
 # 4
 ```
 
-### continue
+### `continue`
 
 Skip to the next iteration:
 
@@ -209,10 +297,10 @@ while count < 10:
 ```
 
 :::warning
-Be careful with `continue` in while loops—make sure you update any loop variables before using `continue`, or you might create an infinite loop!
+Be careful with `continue` in while loops. Make sure you update any loop variables before using `continue`, or you might create an infinite loop!
 :::
 
-## The else clause
+## The `else` clause
 
 A `while` loop can have an `else` clause that runs if the loop completes normally (without a `break`):
 
@@ -262,6 +350,9 @@ while index < len(numbers):
     index += 1
 else:
     print(f"{target} not found in list")
+
+# Output:
+# 4 not found in list
 ```
 
 ## Nested while loops
@@ -295,28 +386,53 @@ Many for loops can be rewritten as while loops, and vice versa:
 for i in range(5):
     print(i)
 
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+
 # Equivalent while loop
 i = 0
 while i < 5:
     print(i)
     i += 1
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
 ```
 
 ### While loop to for loop
 
 ```python
 # While loop
+items = ['apple', 'banana', 'orange']
 count = 0
 while count < len(items):
     print(items[count])
     count += 1
 
+# Output:
+# apple
+# banana
+# orange
+
 # Equivalent for loop
 for item in items:
     print(item)
+
+# Output:
+# apple
+# banana
+# orange
 ```
 
-Generally, use for loops when possible—they're more Pythonic and less error-prone.
+**Generally, use `for loops` when possible** because they're more Pythonic and less error-prone.
 
 ## Common use cases
 
@@ -331,6 +447,14 @@ while True:
         age = int(age)
         break
     print("Invalid age. Please try again.")
+
+# Example interaction:
+# Enter your age: -5
+# Invalid age. Please try again.
+# Enter your age: 150
+# Invalid age. Please try again.
+# Enter your age: 25
+# (loop exits, age is now 25)
 ```
 
 ### Game loops
@@ -351,6 +475,14 @@ while game_running:
         print(f"Score: {score}")
     else:
         score += 1
+
+# Example interaction:
+# What do you do? move
+# What do you do? jump
+# What do you do? score
+# Score: 2
+# What do you do? quit
+# (loop exits)
 ```
 
 ### Processing data until a condition
@@ -364,6 +496,13 @@ while True:
     numbers.append(int(num))
 
 print(f"Sum: {sum(numbers)}")
+
+# Example interaction:
+# Enter a number (or 'done' to finish): 5
+# Enter a number (or 'done' to finish): 10
+# Enter a number (or 'done' to finish): 3
+# Enter a number (or 'done' to finish): done
+# Sum: 18
 ```
 
 ### Retry logic
@@ -381,11 +520,17 @@ while attempts < max_attempts:
         print(f"Attempt {attempts} failed. Retrying...")
 else:
     print("All attempts failed")
+
+# Example output (if all attempts fail):
+# Attempt 1 failed. Retrying...
+# Attempt 2 failed. Retrying...
+# Attempt 3 failed. Retrying...
+# All attempts failed
 ```
 
 ## Best practices
 
-- **Prefer for loops when possible**: They're more readable and less error-prone
+- **Prefer `for loops` when possible**: They're more readable and less error-prone
 - **Always update loop variables**: Make sure the condition can become false, or you'll have an infinite loop
 - **Use descriptive variable names**: `count`, `running`, `done` are better than `x`, `y`, `z`
 - **Consider using `break` for infinite loops**: `while True:` with `break` can be clearer than complex conditions
@@ -399,6 +544,18 @@ while count < 10:
     print(count)
     count += 1
 
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+
 # Good: Using break for clearer control
 while True:
     user_input = input("Enter 'quit' to exit: ")
@@ -411,10 +568,23 @@ count = 0
 while count < 10:
     print(count)
     # Missing: count += 1  (infinite loop!)
+    # Output: prints 0 forever
 
 # Better: Use a for loop when you know the iteration count
 for i in range(10):
     print(i)
+
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
 ```
 
 ## Summary

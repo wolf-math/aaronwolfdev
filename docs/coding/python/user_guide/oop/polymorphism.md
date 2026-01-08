@@ -128,7 +128,7 @@ Here, `introduce()` is defined once in the base class but uses the polymorphic `
 
 ## Duck typing (Python's approach)
 
-Python doesn't require inheritance for polymorphism. If an object has the methods you need, it works—this is called **"duck typing."**
+Python doesn't require inheritance for polymorphism. If an object has the methods you need, it works. This is called **"duck typing."**
 
 ```python
 class Car:
@@ -156,7 +156,7 @@ for vehicle in vehicles:
 # Clip clop!
 ```
 
-Python doesn't care about the type—it only cares that each object has a `drive()` method.
+Python doesn't care about the type, it only cares that each object has a `drive()` method.
 
 ### Real-world example: file-like objects
 
@@ -185,11 +185,11 @@ reader = CustomReader()
 print(process_file(reader))  # "CUSTOM CONTENT"
 ```
 
-All three objects work with `process_file()` because they all implement `read()`—no inheritance required.
+All three objects work with `process_file()` because they all implement `read()` without requiring inheritance.
 
 ## Operator overloading (polymorphism with operators)
 
-Python's dunder methods let you define how operators work with your classes, enabling polymorphism for operators like `+`, `==`, `len()`, etc.
+Python's [dunder methods](./dunder_methods) let you define how operators work with your classes, enabling polymorphism for operators like `+`, `==`, `len()`, etc.
 
 ```python
 class Vector:
@@ -204,7 +204,7 @@ class Vector:
         return f"Vector({self.x}, {self.y})"
 ```
 
-Usage:
+**Usage:**
 
 ```python
 v1 = Vector(1, 2)
@@ -271,17 +271,15 @@ class Rectangle(Shape):
 rect = Rectangle(5, 10)  # OK
 ```
 
-ABCs make the interface explicit and prevent you from accidentally creating incomplete subclasses, but they're optional—duck typing works fine for most cases.
+ABCs make the interface explicit and prevent you from accidentally creating incomplete subclasses, but they're optional. Using duck typing works fine for most cases.
 
 ## When to use polymorphism
-
-Use polymorphism when:
 
 1. **You have multiple types that share an interface** — they all implement the same methods
 2. **You want to write generic code** that works with any of those types
 3. **You want to add new types easily** without changing existing code
 
-Avoid when:
+**Avoid when:**
 
 1. **Types are truly unrelated** — if there's no meaningful shared interface, forcing polymorphism adds complexity
 2. **You need type-specific behavior** that can't be abstracted — sometimes `isinstance()` checks are appropriate

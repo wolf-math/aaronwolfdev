@@ -1,6 +1,6 @@
 ---
 title: Encapsulation
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## What is encapsulation?
@@ -87,12 +87,21 @@ class Temperature:
 Usage:
 
 ```python
+# Create a temperature
 t = Temperature(25)
 print(t.celsius)      # 25  (getter)
 print(t.fahrenheit)   # 77.0 (computed property)
 
-t.celsius = 0         # uses setter (valid)
-t.celsius = -300      # raises ValueError
+# Update the temperature (uses setter with validation)
+t.celsius = 0
+print(t.celsius)      # 0
+print(t.fahrenheit)   # 32.0 (automatically recalculated)
+
+# Try to set an invalid temperature
+t.celsius = -300      # raises ValueError: Temperature below absolute zero!
+
+# Fahrenheit is read-only (computed from celsius)
+# t.fahrenheit = 100  # AttributeError: can't set attribute
 ```
 
 From the outside, `celsius` and `fahrenheit` look like **normal attributes**, but internally you can:
@@ -189,11 +198,44 @@ print(dir(b))  # contains '_Base__secret'
 print(dir(c))  # contains '_Base__secret' and '_Child__secret'
 ```
 
-Name mangling is mainly useful when you’re building classes meant to be subclassed and want to avoid accidental attribute clashes. For most day‑to‑day code, a single underscore is enough.
+Name mangling is mainly useful when you're building classes meant to be subclassed and want to avoid accidental attribute clashes. For most day‑to‑day code, a single underscore is enough.
+
+## Restricting attributes with `__slots__`
+
+The `__slots__` attribute lets you explicitly define which attributes an instance can have, preventing the creation of any other attributes. This provides both encapsulation (controlling what attributes exist) and memory optimization.
+
+```python
+class Point:
+    __slots__ = ['x', 'y']  # Only these attributes are allowed
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+p = Point(3, 4)
+print(p.x)  # 3
+print(p.y)  # 4
+
+p.z = 5  # AttributeError: 'Point' object has no attribute 'z'
+```
+
+**When to use `__slots__`:**
+
+- You want to prevent accidental attribute creation
+- You're creating many instances and want to save memory (each instance uses less memory)
+- You want to make it explicit which attributes a class supports
+
+**When not to use `__slots__`:**
+
+- You need dynamic attributes (adding attributes at runtime)
+- You're using multiple inheritance with classes that don't have `__slots__`
+- The memory savings aren't important for your use case
+
+For most code, the underscore naming conventions are sufficient. Use `__slots__` when you specifically need to prevent attribute creation or optimize memory usage.
 
 ## Encapsulation at the module level
 
-Encapsulation isn’t just for classes—Python modules also use naming conventions:
+Encapsulation isn’t just for classes. Python modules also use naming conventions:
 
 - Names starting with `_` (e.g., `_helper_function`) are treated as **internal** to the module.
 - `from module import *` will skip names starting with `_` unless you define `__all__`.
@@ -215,7 +257,7 @@ Here, `_cache` is an internal detail; `public_api` is the public function other 
 
 ## When to use encapsulation tools
 
-Use:
+**Use:**
 
 - Leading underscores (`_name`) for **internal attributes and helpers**.
 - Properties (`@property` and setters) when you need:
@@ -223,19 +265,19 @@ Use:
   - Computed values
   - The flexibility to change implementation later
 - Double underscores (`__name`) sparingly, mainly to prevent accidental subclass collisions.
+- `__slots__` when you need to prevent dynamic attribute creation or optimize memory for many instances.
 
-Avoid:
+**Avoid:**
 
 - Exposing every attribute as public without thinking about invariants.
 - Overusing `__double_underscore` when a single underscore and clear docs are enough.
 
 ## Summary
 
-In this guide you learned that:
-
 - Encapsulation is about hiding internal details and exposing a clean public interface.
 - Python uses **conventions** (`_name`, `__name`) instead of strict access modifiers.
 - Properties (`@property`) let you present attributes while still validating and controlling access.
+- `__slots__` can restrict which attributes are allowed and optimize memory usage.
 - Good encapsulation protects invariants and makes it easier to evolve your classes without breaking callers.
 
 As you design classes, think in terms of: *“What should other code be allowed to do with this object?”* Then use encapsulation tools to keep that contract clear and stable.

@@ -3,12 +3,12 @@ title: Symbol
 sidebar_position: 9
 ---
 
-## Properties
+<!-- ## Properties
 
 ```javascript
 > Object.getOwnPropertyNames(Symbol.prototype)
 ['constructor', 'toString', 'valueOf', 'description', Symbol.toPrimitive]
-```
+``` -->
 
 ## Definition
 

@@ -21,7 +21,7 @@ mixed = ('apple', 2, True, 3.14)  # Can mix types!
 
 ## Why this matters
 
-Tuples are essential when you need fixed, unchangeable data. Their immutability makes them safe to use as dictionary keys and prevents accidental modifications. Tuples are perfect for representing fixed pairs or groups of related values—like coordinates, database records, or function return values. They're also slightly more memory-efficient than lists and can make your code's intent clearer: if you use a tuple, you're signaling that the data shouldn't change. Understanding when to use tuples versus lists helps you write more appropriate and efficient code.
+Tuples are essential when you need fixed, unchangeable data. Their immutability makes them safe to use as dictionary keys and prevents accidental modifications. Tuples are perfect for representing fixed pairs or groups of related values, like coordinates, database records, or function return values. They're also slightly more memory-efficient than lists and can make your code's intent clearer. **If you use a tuple, you're signaling that the data shouldn't change**. Understanding when to use tuples versus lists helps you write more appropriate and efficient code.
 
 ## Creating tuples
 
@@ -157,7 +157,7 @@ fruits[2:]    # ('orange', 'grape') (to end)
 fruits[::2]   # ('apple', 'orange') (every 2nd item)
 ```
 
-Slicing the tuple creates a new tuple—it doesn't modify the original.
+Slicing the tuple creates a new tuple. It doesn't modify the original.
 
 ## Common operations
 
@@ -272,7 +272,7 @@ print(b)  # 5
 
 ## Tuple methods
 
-### count()
+### `count()`
 
 Count how many times an item appears:
 
@@ -282,7 +282,7 @@ print(numbers.count(2))  # 3
 print(numbers.count(5))  # 0
 ```
 
-### index()
+### `index()`
 
 Find the index of the first occurrence of a value:
 
@@ -298,6 +298,10 @@ fruits.index('grape')  # ValueError: tuple.index(x): x not in tuple
 ## Common use cases
 
 ### Returning multiple values from functions
+
+:::note
+You'll learn about functions in detail later, but here's a preview of how tuples can work with them.
+:::
 
 Tuples are perfect for returning multiple values:
 
@@ -355,13 +359,22 @@ blue = (0, 0, 255)
 
 ### Protecting data
 
-Use tuples to ensure data integrity:
+Use tuples to ensure data integrity when you want to prevent accidental modifications:
 
 ```python
 # Database record (shouldn't be modified)
 student_record = ('Alice', '12345', 'A')
-# Can't accidentally modify it
+# Can't accidentally modify it - this would raise an error:
+# student_record[0] = 'Bob'  # TypeError: 'tuple' object does not support item assignment
+
+# Configuration settings that shouldn't change
+app_config = ('localhost', 8080, True)  # host, port, debug_mode
+
+# Constants or fixed values
+PI_DIGITS = (3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5)
 ```
+
+If you used a list instead, you could accidentally modify these values, which might cause bugs. Tuples prevent such accidental changes.
 
 ## Tuples vs lists
 
@@ -437,7 +450,8 @@ print(matrix[0][1])  # 2 (first row, second column)
 
 # Can also contain lists (but the tuple itself is still immutable)
 mixed = (1, [2, 3], 4)
-# mixed[1].append(5)  # This works! The list inside is still mutable
+mixed[1].append(5)  # This works! The list inside is still mutable
+print(mixed)  # (1, [2, 3, 5], 4)
 ```
 
 ## Best practices

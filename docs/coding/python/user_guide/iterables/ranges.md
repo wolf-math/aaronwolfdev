@@ -192,7 +192,7 @@ reverse = list(range(10, 0, -1))
 
 ## Range methods
 
-### count()
+### `count()`
 
 Count how many times a value appears (always 0 or 1 for ranges):
 
@@ -203,7 +203,7 @@ print(r.count(5))  # 0
 print(r.count(0))  # 1
 ```
 
-### index()
+### `index()`
 
 Find the index of a value:
 

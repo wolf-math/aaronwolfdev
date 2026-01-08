@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## What are `*args` and `**kwargs`?
 
-`*args` and `**kwargs` are special syntax in Python that allow functions to accept a variable number of arguments. The `*args` collects extra positional arguments into a tuple, while `**kwargs` collects extra keyword arguments into a dictionary. The names `args` and `kwargs` are just conventions—you can use any names you want, but the `*` and `**` operators are what make them work.
+`*args` and `**kwargs` are special syntax in Python that allow functions to accept a variable number of arguments. The `*args` collects extra positional arguments into a tuple, while `**kwargs` collects extra keyword arguments into a dictionary. The names `args` and `kwargs` are just conventions, so you can use any names you want, but the `*` and `**` operators are what make them work.
 
 ```python
 def example(*args, **kwargs):
@@ -17,11 +17,24 @@ example(1, 2, 3, name="Alice", age=30)
 # Keyword arguments: {'name': 'Alice', 'age': 30}
 ```
 
+### Naming conventions
+
+While `args` and `kwargs` are just variable names, they're widely used conventions. You can use any names:
+
+```python
+def example(*numbers, **options):
+    # numbers is a tuple
+    # options is a dict
+    pass
+```
+
+However, using `args` and `kwargs` makes your code more readable to other Python developers.
+
 ## Why this matters
 
-`*args` and `**kwargs` give you flexibility when you don't know ahead of time how many arguments a function will receive. They're essential for writing functions that can handle different numbers of inputs, which is common in real-world programming. For example, a function that prints multiple values, a function that processes a variable number of items, or a wrapper function that needs to pass arguments to another function—all of these benefit from `*args` and `**kwargs`. Understanding these concepts opens up powerful patterns in Python, from decorators to function wrappers to APIs that need to accept flexible input.
+`*args` and `**kwargs` give you flexibility when you don't know ahead of time how many arguments a function will receive. They're essential for writing functions that can handle different numbers of inputs, which is common in real-world programming. For example, a function that prints multiple values, a function that processes a variable number of items, or a wrapper function that needs to pass arguments to another function all benefit from using `*args` and `**kwargs`. Understanding these concepts opens up powerful patterns in Python, from decorators to function wrappers to APIs that need to accept flexible input.
 
-## *args: Variable positional arguments
+## `*args`: Variable positional arguments
 
 The `*args` syntax collects any number of positional arguments into a tuple. The `*` operator unpacks arguments when calling a function, and collects them when defining a function.
 
@@ -35,10 +48,10 @@ def sum_all(*args):
         total += num
     return total
 
-print(sum_all(1, 2, 3))        # 6
+print(sum_all(1, 2, 3))         # 6
 print(sum_all(10, 20, 30, 40))  # 100
 print(sum_all(5))               # 5
-print(sum_all())                 # 0
+print(sum_all())                # 0
 ```
 
 Inside the function, `args` is a tuple containing all the positional arguments passed to the function:
@@ -96,7 +109,7 @@ result = multiply(*values)  # 24
 
 The `**kwargs` syntax collects any number of keyword arguments into a dictionary. The `**` operator unpacks keyword arguments when calling a function, and collects them when defining a function.
 
-### Basic **kwargs example
+### Basic `**kwargs` example
 
 ```python
 def print_info(**kwargs):
@@ -199,28 +212,39 @@ log("Processing started", 1, 2, 3, level="DEBUG", user="Alice", task="import")
 
 ### Function wrappers and decorators
 
+:::note
+You'll learn about decorators in depth in the coming sections. This example shows how `*args` and `**kwargs` are used with decorators to pass arguments through wrapper functions.
+:::
+
 `*args` and `**kwargs` are essential for creating wrapper functions that need to pass arguments to another function:
 
 ```python
-def timing_decorator(func):
-    """Decorator that times function execution."""
-    import time
+def log_calls(func):
+    """Decorator that logs function calls."""
     def wrapper(*args, **kwargs):
-        start = time.time()
+        print(f"Calling {func.__name__} with args={args}, kwargs={kwargs}")
         result = func(*args, **kwargs)
-        end = time.time()
-        print(f"{func.__name__} took {end - start:.4f} seconds")
+        print(f"{func.__name__} returned: {result}")
         return result
     return wrapper
 
-@timing_decorator
-def slow_function(n):
-    import time
-    time.sleep(n)
-    return "Done"
+@log_calls
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
 
-slow_function(1)  # slow_function took 1.0000 seconds
+greet("Alice")
+# Output:
+# Calling greet with args=('Alice',), kwargs={}
+# greet returned: Hello, Alice!
+# Hello, Alice!
+
+greet("Bob", greeting="Hi")
+# Output:
+# Calling greet with args=('Bob',), kwargs={'greeting': 'Hi'}
+# greet returned: Hi, Bob!
+# Hi, Bob!
 ```
+
 
 ### Flexible API functions
 
@@ -246,11 +270,14 @@ user = create_user(
     last_name="Smith",
     age=30
 )
+
 print(user)
 # {'username': 'alice', 'email': 'alice@example.com', 
 #  'roles': ['admin', 'editor'], 
 #  'profile': {'first_name': 'Alice', 'last_name': 'Smith', 'age': 30}}
 ```
+
+This function takes all the provided information—required username and email, any number of optional roles (via `*roles`), and any additional profile data (via `**profile`), and returns a structured dictionary containing all of that information about the person. The `*roles` collects any number of role strings into a list, while `**profile` collects any keyword arguments into a profile dictionary, allowing the function to accept flexible combinations of user data.
 
 ### Forwarding arguments
 
@@ -290,19 +317,6 @@ def correct(required, *args, keyword_only=None, **kwargs):
 # def wrong(required, **kwargs, *args):
 #     pass
 ```
-
-### Naming conventions
-
-While `args` and `kwargs` are just variable names, they're widely used conventions. You can use any names:
-
-```python
-def example(*numbers, **options):
-    # numbers is a tuple
-    # options is a dict
-    pass
-```
-
-However, using `args` and `kwargs` makes your code more readable to other Python developers.
 
 ### Empty *args and **kwargs
 
