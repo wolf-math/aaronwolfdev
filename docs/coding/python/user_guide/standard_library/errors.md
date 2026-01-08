@@ -31,7 +31,7 @@ Understanding errors is crucial because:
 - **User experience**: Custom errors provide clearer feedback than generic ones
 - **API design**: Well-designed error hierarchies make your code easier to use
 
-Errors aren't just problems to avoid—they're a communication mechanism. When used well, they tell you (and other developers) exactly what went wrong and why.
+Errors aren't just problems to avoid, they're a communication mechanism. When used well, they tell you (and other developers) exactly what went wrong and why.
 
 ## Common built-in exception types
 
@@ -366,7 +366,7 @@ Custom exceptions make it clear what went wrong. When you learn about exception 
 
 ## Best practices
 
-### 1. Use specific exception types
+1. **Use specific exception types**
 
 ```python
 # Good: Specific exception
@@ -378,7 +378,7 @@ if age < 0:
     raise Exception("Age cannot be negative")
 ```
 
-### 2. Include helpful error messages
+2. **Include helpful error messages**
 
 ```python
 # Good: Descriptive message
@@ -388,7 +388,7 @@ raise ValueError(f"Expected positive number, got {value}")
 raise ValueError("Invalid value")
 ```
 
-### 3. Don't raise generic Exception
+3. **Don't raise generic Exception**
 
 ```python
 # Avoid this
@@ -399,7 +399,7 @@ raise ValueError("Invalid input")
 raise TypeError("Expected string, got int")
 ```
 
-### 4. Document your exceptions
+4. **Document your exceptions**
 
 ```python
 class PaymentError(Exception):
@@ -415,7 +415,7 @@ class PaymentError(Exception):
         super().__init__(f"Payment of ${amount} failed: {reason}")
 ```
 
-### 5. Use exception chaining
+5. **Use exception chaining**
 
 When you catch one exception and raise another, you can use `from` to preserve the original exception. This creates a chain that shows both the original error and the new error:
 
@@ -476,5 +476,5 @@ Understanding errors and exceptions is essential for writing robust Python code:
 - **Exception hierarchy**: Understand how exceptions relate to catch related errors
 - **Best practices**: Use specific exceptions, helpful messages, and proper documentation
 
-Errors aren't failures—they're a way for your code to communicate problems clearly. Well-designed error handling makes your code more maintainable, debuggable, and user-friendly.
+Errors aren't failures, they communicate problems clearly to the user. Well designed error handling makes your code more maintainable, debuggable, and user friendly.
 

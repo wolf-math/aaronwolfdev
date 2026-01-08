@@ -186,7 +186,7 @@ This ensures everyone uses the same package versions.
 
 ## Virtual environment best practices
 
-### 1. One environment per project
+**1. One environment per project**
 
 Create a separate virtual environment for each project:
 
@@ -200,7 +200,7 @@ project2/
   app.py
 ```
 
-### 2. Don't commit the environment
+**2. Don't commit the environment**
 
 Add the virtual environment directory to `.gitignore`:
 
@@ -214,7 +214,7 @@ ENV/
 
 Commit `requirements.txt` instead, not the entire `venv/` directory.
 
-### 3. Use descriptive names
+**3. Use descriptive names**
 
 Name your environment clearly:
 
@@ -228,7 +228,7 @@ python -m venv env
 python -m venv test
 ```
 
-### 4. Keep requirements.txt updated
+**4. Keep requirements.txt updated**
 
 Update `requirements.txt` whenever you install new packages:
 
@@ -237,7 +237,7 @@ pip install new-package
 pip freeze > requirements.txt
 ```
 
-### 5. Use consistent Python versions
+**5. Use consistent Python versions**
 
 Specify the Python version in your project documentation:
 
