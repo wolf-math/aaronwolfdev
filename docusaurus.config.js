@@ -4,8 +4,8 @@ import katex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Aaron Wolf dev',
-  tagline: 'development for everyone',
+  title: 'Wolf Codes',
+  tagline: 'Turning Complexity into Clarity.',
   favicon: 'images/wolf-logo_D5.png',
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -78,7 +78,7 @@ const config = {
         disableSwitch: true
       },
       navbar: {
-        title: 'Aaron Wolf dev',
+        title: 'Wolf Codes',
         logo: {
           alt: 'Wolf Logo',
           src: 'images/wolf-logo_D5.png'
