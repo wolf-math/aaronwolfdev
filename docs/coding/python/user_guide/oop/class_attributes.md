@@ -1,6 +1,6 @@
 ---
 title: Class attributes
-sidebar_position: 8
+sidebar_position: 2
 ---
 
 ## What are class attributes?
@@ -256,15 +256,10 @@ print(rex.tricks)   # ['sit']
 ## Best practices
 
 1. **Use class attributes for constants and defaults** — values that should be the same across all instances
-
 2. **Use instance attributes for data that varies** — each instance should have its own copy
-
 3. **Avoid mutable class attributes** — if you need mutable data, make it an instance attribute
-
 4. **Access class attributes via the class name** — use `Class.attr` when you want to be explicit, especially when modifying them
-
 5. **Be careful with `+=` and similar operations** — they create instance attributes, not modify class attributes
-
 6. **Document class attributes** — use docstrings or comments to explain what they're for
 
 Class attributes are a simple but powerful feature. Use them for shared values and constants, but remember that mutable class attributes are shared by all instances—a common source of bugs if you're not careful.

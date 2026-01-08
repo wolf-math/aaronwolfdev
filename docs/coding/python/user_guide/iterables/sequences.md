@@ -13,7 +13,7 @@ A **sequence** is an ordered collection of items where each item has a specific 
 
 All sequences share these fundamental properties:
 
-- **Ordered**: Items maintain their position—the first item stays first, the second stays second, and so on
+- **Ordered**: Items maintain their position. So the first item stays first, the second stays second, and so on
 - **Indexed**: Each item has a numeric position (index) starting from 0
 - **Iterable**: You can loop through items in order (you'll learn about loops in detail later)
 - **Length**: You can count how many items are in the sequence
@@ -72,10 +72,12 @@ text[3:]     # 'hon' (from index 3 to end)
 You can check how many items are in a sequence using [`len()`](../../language_reference/built-in#len) and whether an item exists using `in`:
 
 ```python
-len("hello")        # 5
-3 in [1, 2, 3, 4]   # True
-'a' in "Python"     # False
+len("hello")        # 5 (there are 5 characters)
+3 in [1, 2, 3, 4]   # True (3 is one of the items in the list)
+'a' in "Python"     # False ('a' does not appear anywhere in the string)
 ```
+
+The `in` operator checks for the presence of a single element (like a number or a character), not a slice or pattern. It returns `True` only if that exact element is found in the sequence.
 
 ### Iteration
 
@@ -83,12 +85,20 @@ You can loop through sequences to process each item. You'll learn about [for loo
 
 ```python
 for char in "abc":
-    print(char)  # Prints: a, then b, then c
+    print(char)
+```
+
+Output:
+
+```text
+a
+b
+c
 ```
 
 ## Mutability: A key distinction
 
-One of the most important differences between sequence types is **mutability**—whether you can change the sequence after creating it.
+One of the most important differences between sequence types is **mutability**, meaning whether you can change the sequence after creating it.
 
 ### Immutable sequences
 
@@ -98,7 +108,7 @@ Cannot be changed after creation:
 - **Ranges**: `range(5)`
 - **Bytes**: `b"hello"`
 
-Once created, you cannot modify individual items. If you need to change them, you must create a new sequence.
+Once created, you cannot modify individual items. If you need to change them, you must create a new sequence. When you assign a "changed" string (or other immutable type) to a variable, you're actually creating a new object and overwriting what the variable points to. The original string itself remains unchanged.
 
 ### Mutable sequences
 

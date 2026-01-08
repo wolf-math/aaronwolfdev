@@ -1,8 +1,8 @@
 {
-  "label": "Types, variables, and conditionals",
+  "label": "Basic concepts",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Types, variables, and conditionals in Python."
+    "description": "Basic concepts in Python."
   }
 }

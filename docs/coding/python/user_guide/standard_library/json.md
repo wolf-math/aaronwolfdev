@@ -245,6 +245,11 @@ json.dumps(data)  # TypeError: Object of type datetime is not JSON serializable
 Use the `default` parameter to convert unsupported objects:
 
 ```python
+import json
+from datetime import datetime
+
+data = {"time": datetime.now()}
+
 def default_converter(obj):
     if isinstance(obj, datetime):
         return obj.isoformat()
@@ -252,9 +257,44 @@ def default_converter(obj):
 
 json_text = json.dumps(data, default=default_converter, indent=2)
 print(json_text)
+# Output:
+# {
+#   "time": "2024-01-15T14:30:45.123456"
+# }
 ```
 
-For reading, you can post-process fields after `json.load` (e.g., parse ISO strings back into `datetime` objects).
+The `default` function is called for any object that `json.dumps()` can't serialize. Here, it converts `datetime` objects to ISO format strings, which are JSON-compatible.
+
+To read the data back and convert the ISO string back to a `datetime` object:
+
+```python
+# Load the JSON
+loaded_data = json.loads(json_text)
+print(loaded_data)  # {'time': '2024-01-15T14:30:45.123456'}
+
+# Convert the ISO string back to datetime
+loaded_data['time'] = datetime.fromisoformat(loaded_data['time'])
+print(loaded_data['time'])  # 2024-01-15 14:30:45.123456
+print(type(loaded_data['time']))  # <class 'datetime.datetime'>
+```
+
+You can also create a helper function to automatically convert datetime strings when loading:
+
+```python
+def load_with_datetime(json_str):
+    """Load JSON and convert ISO datetime strings back to datetime objects."""
+    data = json.loads(json_str)
+    for key, value in data.items():
+        if isinstance(value, str):
+            try:
+                data[key] = datetime.fromisoformat(value)
+            except (ValueError, AttributeError):
+                pass  # Not a datetime string, leave as-is
+    return data
+
+loaded_data = load_with_datetime(json_text)
+print(loaded_data['time'])  # 2024-01-15 14:30:45.123456
+```
 
 ## Putting it all together: simple JSON config helper
 
@@ -283,8 +323,6 @@ save_json("settings.json", settings)
 
 ## Summary
 
-In this JSON-focused installment you learned how to:
-
 - Use the `json` module (`load`, `dump`, `loads`, `dumps`)
 - Read JSON from files into Python dictionaries and lists
 - Write Python objects back to disk as JSON
@@ -292,5 +330,5 @@ In this JSON-focused installment you learned how to:
 - Handle common errors like invalid JSON and missing files
 - Start dealing with custom types using the `default` argument
 
-A natural next step is to look at **CSV handling** (for tabular data) or to explore more advanced patterns with `pathlib`, context managers, and streaming large JSON files.***
+A natural next step is to look at **CSV handling** (for tabular data) or to explore more advanced patterns with `pathlib`, context managers, and streaming large JSON files.
 

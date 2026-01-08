@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## What are decorators?
 
-A **decorator** is a function that wraps another function to add or modify behavior—*without* changing the wrapped function’s code. In Python syntax, decorators are written with the `@decorator_name` line above a function definition.
+A **decorator** is a function that wraps another function to add or modify behavior *without* changing the wrapped function’s code. In Python syntax, decorators are written with the `@decorator_name` line above a function definition.
 
 Under the hood, this:
 

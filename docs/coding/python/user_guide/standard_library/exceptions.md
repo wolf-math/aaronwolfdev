@@ -1,5 +1,5 @@
 ---
-title: Exception handling - try/except
+title: Exception handling
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ except ZeroDivisionError:
 
 ## Why this matters
 
-Errors happen in real programs—files don't exist, networks fail, users enter invalid data, calculations go wrong. Without exception handling, your program would crash every time it encounters an error. Exception handling lets you:
+Errors happen in real programs. Sometimes files don't exist, networks fail, users enter invalid data, calculations go wrong. Without exception handling, your program would crash every time it encounters an error. Exception handling lets you:
 
 - **Prevent crashes**: Catch errors and handle them gracefully
 - **Provide better feedback**: Show users meaningful error messages instead of cryptic tracebacks
@@ -252,7 +252,7 @@ except Exception:        # General last
 
 ## Best practices
 
-### 1. Be specific
+**1. Be specific**
 
 Don't catch everything unless you have a good reason:
 
@@ -270,7 +270,7 @@ except ValueError:
     handle_value_error()
 ```
 
-### 2. Don't suppress errors silently
+**2. Don't suppress errors silently**
 
 At minimum, log the error:
 
@@ -288,7 +288,7 @@ except Exception as e:
     logger.error(f"Failed to process data: {e}")
 ```
 
-### 3. Use finally for cleanup
+**3. Use finally for cleanup**
 
 ```python
 # Good: ensures cleanup
@@ -299,7 +299,7 @@ finally:
     release_resource(resource)
 ```
 
-### 4. Let exceptions propagate when appropriate
+**4. Let exceptions propagate when appropriate**
 
 Not every error needs to be caught. Sometimes it's better to let the exception bubble up:
 
@@ -360,11 +360,11 @@ Exception handling with `try`/`except` is essential for writing robust Python pr
 - **`finally`**: Always run cleanup code
 - **`raise`**: Create your own exceptions
 
-Use exception handling to:
+**Use exception handling to:**
 - Prevent crashes
 - Provide better error messages
 - Clean up resources
 - Handle expected errors gracefully
 
-Remember: catch specific exceptions, don't suppress errors silently, and use `finally` for cleanup. With these tools, you can write programs that handle errors gracefully and continue running even when things go wrong.
+**Remember:** catch specific exceptions, don't suppress errors silently, and use `finally` for cleanup. With these tools, you can write programs that handle errors gracefully and continue running even when things go wrong.
 

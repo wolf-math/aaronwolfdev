@@ -71,7 +71,7 @@ def print_sum(a, b):
     print(a + b)
 
 result = print_sum(3, 5)  # Prints 8
-print(result)  # None
+print(result)  # None, because there is no return value
 ```
 
 ## Calling functions
@@ -87,7 +87,7 @@ message = greet("Alice")
 print(message)  # "Hello, Alice!"
 ```
 
-Functions can be called multiple times:
+One thing that makes functions great is that they can be called multiple times:
 
 ```python
 greet("Alice")  # "Hello, Alice!"
@@ -132,9 +132,9 @@ print(result1, result2, result3)  # 5.0 5.0 5.0
 Keyword arguments make function calls more readable, especially when functions have many parameters:
 
 ```python
-def create_user(name, age, email, is_active=True):
+def create_user(name, age, email):
     """Create a user with the given information."""
-    return {"name": name, "age": age, "email": email, "active": is_active}
+    return {"name": name, "age": age, "email": email}
 
 # Keyword arguments make this clearer
 user = create_user(name="Alice", age=30, email="alice@example.com")
@@ -145,20 +145,16 @@ user = create_user(name="Alice", age=30, email="alice@example.com")
 You can mix positional and keyword arguments, but positional arguments must come before keyword arguments:
 
 ```python
-def calculate(x, y, operation="add"):
-    """Calculate x and y using the specified operation."""
-    if operation == "add":
-        return x + y
-    elif operation == "multiply":
-        return x * y
-    return None
+def create_user(name, age, email):
+    """Create a user with the given information."""
+    return {"name": name, "age": age, "email": email}
 
 # Mix positional and keyword
-result1 = calculate(5, 3, operation="multiply")  # 15
-result2 = calculate(5, 3)  # Uses default "add", returns 8
+user1 = create_user("Alice", 30, email="alice@example.com")  # First two positional, last keyword
+user2 = create_user("Bob", age=25, email="bob@example.com")  # First positional, rest keyword
 
 # This would cause an error:
-# calculate(x=5, 3, operation="multiply")  # SyntaxError
+# create_user(name="Alice", 30, "alice@example.com")  # SyntaxError: positional follows keyword
 ```
 
 ## Default parameters
@@ -219,6 +215,10 @@ list1 = add_item_bad("apple")  # ['apple']
 list2 = add_item_bad("banana")  # ['apple', 'banana'] (unexpected!)
 ```
 
+The problem is that Python creates the default list `[]` only once when the function is defined, not each time you call it. This means all function calls share the same list object. When you call `add_item_bad("apple")`, it modifies that shared list. When you call `add_item_bad("banana")` later, it's still working with the same list that already contains "apple", so both items end up in `list2`. This is why `list2` unexpectedly contains both items instead of just "banana".
+
+Additionally, `list1` and `list2` reference the same object, so modifying one (like `list1.append("cherry")`) will also affect the other, which is rarely what you want.
+
 :::warning
 Use `None` as a default for mutable parameters (lists, dictionaries, etc.), then create a new one inside the function if needed. This prevents shared state between function calls.
 :::
@@ -263,7 +263,31 @@ Access a function's docstring with `.__doc__` or `help()`:
 
 ```python
 print(calculate_area.__doc__)
+
+# Output:
+#     Calculate the area of a rectangle.
+#     
+#     Args:
+#         length: The length of the rectangle
+#         width: The width of the rectangle
+#     
+#     Returns:
+#         The area (length * width)
+
 help(calculate_area)
+
+# Output):
+# Help on function calculate_area in module __main__:
+# 
+# calculate_area(length, width)
+#     Calculate the area of a rectangle.
+#     
+#     Args:
+#         length: The length of the rectangle
+#         width: The width of the rectangle
+#     
+#     Returns:
+#         The area (length * width)
 ```
 
 ## Common patterns
@@ -282,6 +306,10 @@ print_info("Alice", 30)
 # Output:
 # Name: Alice
 # Age: 30
+
+# Functions without a return statement return None
+result = print_info("Bob", 25)
+print(result)  # None
 ```
 
 ### Functions that return multiple values
@@ -356,4 +384,4 @@ def calc(p, d=10):
 
 ## Summary
 
-Functions let you organize code into reusable, well-named blocks. They accept parameters (with optional defaults) and can return values. Understanding how to define and call functions with positional and keyword arguments is essential for writing clean, maintainable Python code. Use default parameters to make functions more flexible, but be careful with mutable defaults—use `None` instead.
+Functions let you organize code into reusable, well-named blocks. They accept parameters (with optional defaults) and can return values. Understanding how to define and call functions with positional and keyword arguments is essential for writing clean, maintainable Python code. Use default parameters to make functions more flexible, but be careful with mutable defaults, use `None` instead.
