@@ -7,14 +7,14 @@ Python doesn't have variables. It has **names** that are **bound** to **objects*
 
 ## Names are not variables
 
-When you write `x = 5`, you're not storing `5` in a box labeled `x`. You're creating a **binding**—a name tag attached to the object `5`.
+When you write `x = 5`, you're not storing `5` in a box labeled `x`. Instead you're creating a **binding**, which is a name tag attached to the object `5`.
 
 ```python
 x = 5
 y = x
 ```
 
-What happened? Both `x` and `y` now point to the same object `5`. There's no copying, no storing. Just two names for the same thing.
+What happened? Both `x` and `y` now point to the same object `5`. There's no copying, and no storing. These are just two names for the same thing.
 
 ```python
 x = 5
@@ -23,16 +23,16 @@ x = 10
 print(y)  # Still 5
 ```
 
-Why? Because `x = 10` doesn't change the object `5`. It creates a new binding—`x` now points to `10` instead. The `5` object still exists, and `y` still points to it.
+Why? Because `x = 10` doesn't change the object `5`. It creates a new binding. `x` now points to `10`. The `5` object still exists, and `y` still points to it.
 
 This mental model explains everything that follows.
 
 ## Assignment is binding, not mutation
 
-Binding changes which object a name points to; mutation changes the object itself.
+Binding changes which object a name points to; mutation changes the object itself. In other words, binding moves a label from one box to another box, while mutation changes the contents inside the box while the label stays on the same box.
 
 ```python
-x = [1, 2, 3]
+x = [1, 2, 3]  # Binding
 x = [4, 5, 6]  # New binding
 x.append(7)    # Mutation
 ```

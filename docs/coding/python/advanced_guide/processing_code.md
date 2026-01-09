@@ -7,7 +7,7 @@ Python processes your code in two phases: **compilation** and **execution**. Und
 
 ## Compilation: What Python sees
 
-When Python first reads your code, it compiles it to bytecode. During compilation, Python analyzes the **structure** of your code—where names are assigned, which names are referenced, which are local.
+Python executes code in **two stages: compilation and execution**. When Python compiles a code block (such as a module or function body), it analyzes the structure of the code. This includes where names are assigned, which names are referenced, and how scopes are nested.
 
 ```python
 def func():
@@ -76,7 +76,7 @@ No assignment to `x` in `func()`, so Python doesn't mark it as local. It's a fre
 
 ## How Python decides: local or not?
 
-Python uses a simple rule: if a name is **assigned** anywhere in a function, it's local to that function. The assignment doesn't have to execute—it just has to exist in the code.
+Python uses a simple rule: if a name is **assigned** anywhere in a function, it's local to that function. The assignment doesn't have to execute, it just has to exist in the code.
 
 ```python
 def func():
@@ -96,6 +96,12 @@ def func():
     global x
     print(x)  # Works - global tells Python: x is not local
     x = 5     # Modifies global x
+
+func()
+print(x)  # 5 (global x was modified)
+# Output:
+# 10
+# 5
 ```
 
 `global` tells Python during compilation: "don't mark `x` as local, it's global."
