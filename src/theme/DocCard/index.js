@@ -13,7 +13,7 @@ import styles from './styles.module.css';
 import {
   FaJs,
   FaPython,
-  FaGitHub,
+  FaGithub,
   FaCompass,
   FaBook,
   FaRocket
