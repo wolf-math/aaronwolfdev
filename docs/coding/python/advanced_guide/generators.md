@@ -11,5 +11,3 @@ topics:
 - Generator state machines
 - `send()`, `throw()`, `close()`
 - Generator expressions vs list comprehensions
-
-This is Python’s equivalent of JS generators — very on-brand.

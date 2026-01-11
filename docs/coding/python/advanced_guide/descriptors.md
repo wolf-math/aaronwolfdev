@@ -10,5 +10,3 @@ Topics:
 - @property is just a descriptor
 - `__get__`, `__set__`, `__delete__`
 - How ORM fields and validators work
-
-This is where Python’s “magic” becomes understandable.

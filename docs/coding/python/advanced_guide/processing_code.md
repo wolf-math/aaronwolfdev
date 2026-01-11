@@ -5,6 +5,8 @@ sidebar_position: 0
 
 Python processes your code in two phases: **compilation** and **execution**. Understanding this split explains everything.
 
+![python process](./process.png)
+
 ## Compilation: What Python sees
 
 Python executes code in **two stages: compilation and execution**. When Python compiles a code block (such as a module or function body), it analyzes the structure of the code. This includes where names are assigned, which names are referenced, and how scopes are nested.

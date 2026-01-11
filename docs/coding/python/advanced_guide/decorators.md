@@ -13,6 +13,3 @@ Topics:
 - Stacking decorators
 - Decorators with arguments
 - Why functools.wraps matters
-
-This is a goldmine for “aha” moments.
-

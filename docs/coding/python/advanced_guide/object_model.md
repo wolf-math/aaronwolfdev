@@ -8,8 +8,8 @@ sidebar_position: 9
 
 Topics:
 
-_ Everything is an object (including classes)
-_ Classes are callable
-_ Instances are created via `__new__` + `__init__`
-_ Attribute lookup order
-_ This explains why Python OOP feels different from Java/C#.
+- Everything is an object (including classes)
+- Classes are callable
+- Instances are created via `__new__` + `__init__`
+- Attribute lookup order
+- This explains why Python OOP feels different from Java/C#.

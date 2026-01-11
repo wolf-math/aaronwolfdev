@@ -11,5 +11,3 @@ topics:
 - Type hints are optional metadata
 - Runtime vs static analysis
 - Duck typing vs nominal typing
-
-This mirrors JS’s TS vs JS confusion nicely.

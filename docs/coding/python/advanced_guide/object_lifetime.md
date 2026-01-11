@@ -1,5 +1,5 @@
 ---
-title: Object lifetime, references, and memory management
+title: Object lifetime
 sidebar_position: 0.5
 ---
 
@@ -397,20 +397,20 @@ Context managers (`with` statements) are syntactic sugar for this pattern, makin
 - **Never rely on `__del__`:** `__del__` is unreliable and should not be used for resource management
 - **Use context managers for cleanup:** Use `with` statements for files, locks, connections, and any resource that must be cleaned up at a specific time
 
-### Don't do this
+### Don't do this:
 
-- ❌ Rely on `__del__` for resource cleanup
-- ❌ Assume `del` destroys objects
-- ❌ Expect objects to be freed when names go out of scope
-- ❌ Write code that depends on cleanup timing
-- ❌ Assume reference counting behavior in all Python implementations
+- Rely on `__del__` for resource cleanup
+- Assume `del` destroys objects
+- Expect objects to be freed when names go out of scope
+- Write code that depends on cleanup timing
+- Assume reference counting behavior in all Python implementations
 
 ### Do this instead
 
-- ✅ Use context managers (`with` statements) for files, locks, connections
-- ✅ Use `del` to remove names when you want to make objects unreachable
-- ✅ Design with explicit resource lifetimes in mind
-- ✅ Let Python handle object cleanup automatically
+- Use context managers (`with` statements) for files, locks, connections
+- Use `del` to remove names when you want to make objects unreachable
+- Design with explicit resource lifetimes in mind
+- Let Python handle object cleanup automatically
 
 ### Common misconceptions
 

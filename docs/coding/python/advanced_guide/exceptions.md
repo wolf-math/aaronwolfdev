@@ -11,5 +11,3 @@ topics:
 - Cost of exceptions
 - Designing your own exception hierarchies
 - Anti-patterns
-
-This is surprisingly deep and very Pythonic.
