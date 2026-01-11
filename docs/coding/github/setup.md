@@ -2,6 +2,8 @@
 title: Setting up GitHub
 ---
 
+This guide requires using the **terminal** (also called command line or shell). All commands shown here should be run in your terminal application.
+
 ## Why use Git and GitHub?
 
 Git and GitHub provide essential tools for modern software development:
@@ -22,7 +24,27 @@ Git and GitHub provide essential tools for modern software development:
 
 ## Install `gh` (GitHub CLI)
 
-The GitHub CLI (`gh`) makes it easy to authenticate and work with GitHub from the command line.
+The GitHub CLI (`gh`) makes it easy to authenticate and work with GitHub from the command line. This requires using the terminal to install and run commands.
+
+### Open your terminal
+
+Before installing, open your terminal application:
+
+**macOS:**
+- Press `Cmd + Space` to open Spotlight
+- Type "Terminal" and press Enter
+- Or go to Applications → Utilities → Terminal
+
+**Linux:**
+- Press `Ctrl + Alt + T` (most distributions)
+- Or search for "Terminal" in your applications menu
+- Common names: Terminal, Konsole, GNOME Terminal
+
+**Windows:**
+- Press `Windows + X` and select "Windows PowerShell" or "Terminal"
+- Or press `Windows + R`, type `powershell`, and press Enter
+- Or search for "PowerShell" or "Command Prompt" in the Start menu
+- Windows Terminal (recommended) can be installed from the Microsoft Store
 
 ### macOS
 
