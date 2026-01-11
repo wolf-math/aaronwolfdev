@@ -31,6 +31,16 @@ This website provides comprehensive programming documentation and blog posts foc
   - Standard Library: modules, exceptions, file handling, datetime, JSON
   - Types, Variables, and Conditionals: types, variables, conditionals
 
+- Advanced Guide: https://aaronwolf.dev/docs/coding/python/advanced_guide
+  - How Python Works: code processing, names/binding/scope, mutability, call stack and execution
+  - Advanced Functions: first-class functions, decorators, lambdas
+  - Iteration and Generators: iteration protocol, generators, context managers
+  - Object Model & OOP: object model, method resolution order, descriptors
+  - Types and Annotations: type hints, typing module deep dive
+  - Concurrency: GIL explained, async under the hood
+  - Exceptions and Control Flow: exceptions as control flow
+  - Metaprogramming: metaprogramming concepts and practices
+
 #### JavaScript Documentation
 - Language Reference: https://aaronwolf.dev/docs/coding/javascript/language_reference
   - Comprehensive reference for JavaScript built-in types, functions, and keywords
@@ -53,6 +63,10 @@ Full sitemap available at: https://aaronwolf.dev/sitemap.xml
 - LinkedIn: https://www.linkedin.com/in/wolf-math
 - Dev.to: https://dev.to/wolfmath
 
+## GitHub
+- GitHub Profile: https://github.com/wolf-math
+- Most projects, code examples, and educational resources are available on GitHub
+
 ## Content License
 Content is provided for educational and reference purposes. Please respect copyright and attribution requirements.
 
@@ -63,4 +77,4 @@ Content is provided for educational and reference purposes. Please respect copyr
 - Responsive design
 
 ## Last Updated
-This file was last updated in 2025.
+This file was last updated in 2026.
