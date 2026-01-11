@@ -10,7 +10,14 @@ import isInternalUrl from '@docusaurus/isInternalUrl';
 import { translate } from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import { FaJs, FaPython, FaGithub, FaCompass, FaBook } from 'react-icons/fa';
+import {
+  FaJs,
+  FaPython,
+  FaGitHub,
+  FaCompass,
+  FaBook,
+  FaRocket
+} from 'react-icons/fa';
 // function useCategoryItemsPlural() {
 //   const {selectMessage} = usePluralForm();
 //   return (count) =>
@@ -77,6 +84,8 @@ function CardCategory({ item }) {
     icon = <FaBook />;
   } else if (item.label === 'User guide') {
     icon = <FaCompass />;
+  } else if (item.label === 'Advanced guide') {
+    icon = <FaRocket />;
   }
 
   return (

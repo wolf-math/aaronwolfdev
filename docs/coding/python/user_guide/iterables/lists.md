@@ -7,7 +7,9 @@ sidebar_position: 2
 
 Lists are one of Python's most versatile data structures. They let you store and organize multiple items in a single variable, making it easy to work with collections of data.
 
-A **list** is a collection of items enclosed in square brackets `[]`. Lists are:
+A **list** is a collection of items enclosed in square brackets `[]`. 
+
+Lists are:
 - **Ordered**: Items have a specific position (index)
 - **Mutable**: You can add, remove, or change items after creation
 - **Flexible**: Can contain items of different types
@@ -21,7 +23,7 @@ mixed = ['apple', 2, True, 3.14]  # Can mix types!
 
 ## Why this matters
 
-Lists are one of the most commonly used data structures in Python. They're versatile, easy to work with, and essential for handling collections of data that need to change over time. You'll use lists for storing user input, collecting results from loops, managing dynamic collections, and organizing data for processing. Since lists are mutable, they're perfect when you need to add, remove, or modify items. Understanding lists thoroughly is crucial because they appear in almost every Python program—from simple scripts to complex applications.
+Lists are one of the most commonly used data structures in Python. They're versatile, easy to work with, and essential for handling collections of data that need to change over time. You'll use lists for storing user input, collecting results from loops, managing dynamic collections, and organizing data for processing. Since lists are mutable, they're perfect when you need to add, remove, or modify items. Understanding lists thoroughly is crucial because they appear in almost every Python program, from simple scripts to complex applications.
 
 ## Creating lists
 
@@ -42,7 +44,7 @@ colors = ['red', 'green', 'blue']
 scores = [95, 87, 92, 78]
 ```
 
-### Using the list() constructor
+### Using the `list()` constructor
 
 You can also create lists using the [`list()`](../../language_reference/list) constructor:
 
@@ -57,10 +59,12 @@ The literal syntax `[]` is more common and Pythonic than `list()`.
 
 ### Lists from other sequences
 
-Convert strings, [tuples](./tuples), or other sequences into lists:
+Convert strings, [tuples](./tuples), [ranges](./ranges), or other sequences into lists:
 
 ```python
-word_list = list("hello")  # ['h', 'e', 'l', 'l', 'o']
+word_list = list("hello")           # ['h', 'e', 'l', 'l', 'o']
+tuple_list = list((1, 2, 3))        # [1, 2, 3]
+range_list = list(range(5))         # [0, 1, 2, 3, 4]
 ```
 
 ## Accessing elements
@@ -114,7 +118,7 @@ print(fruits)  # ['apple', 'grape', 'orange']
 
 ### Adding items
 
-#### append()
+#### `append()`
 
 Add a single item to the end:
 
@@ -124,7 +128,7 @@ fruits.append('orange')
 print(fruits)  # ['apple', 'banana', 'orange']
 ```
 
-#### insert()
+#### `insert()`
 
 Insert an item at a specific position:
 
@@ -134,7 +138,7 @@ fruits.insert(1, 'grape')  # Insert 'grape' at index 1
 print(fruits)  # ['apple', 'grape', 'banana']
 ```
 
-#### extend()
+#### `extend()`
 
 Add multiple items from another list:
 
@@ -155,7 +159,7 @@ print(fruits)  # ['apple', 'banana', 'orange', 'grape']
 
 ### Removing items
 
-#### remove()
+#### `remove()`
 
 Remove the first occurrence of a value:
 
@@ -165,7 +169,7 @@ fruits.remove('apple')
 print(fruits)  # ['banana', 'apple']
 ```
 
-#### pop()
+#### `pop()`
 
 Remove and return an item by index (defaults to last item):
 
@@ -180,7 +184,7 @@ print(first)   # 'apple'
 print(fruits)  # ['banana']
 ```
 
-#### del statement
+#### `del` statement
 
 Delete an item by index:
 
@@ -190,7 +194,7 @@ del fruits[1]
 print(fruits)  # ['apple', 'orange']
 ```
 
-#### clear()
+#### `clear()`
 
 Remove all items:
 
@@ -339,7 +343,7 @@ For unpacking lists with a variable number of items, see [extended unpacking wit
 
 ## Useful list methods
 
-### count()
+### `count()`
 
 Count how many times an item appears:
 
@@ -348,7 +352,7 @@ numbers = [1, 2, 2, 3, 2, 4]
 print(numbers.count(2))  # 3
 ```
 
-### index()
+### `index()`
 
 Find the index of the first occurrence:
 
@@ -357,7 +361,7 @@ fruits = ['apple', 'banana', 'orange']
 print(fruits.index('banana'))  # 1
 ```
 
-### sort()
+### `sort()`
 
 Sort the list in place (modifies the original):
 
@@ -371,7 +375,7 @@ numbers.sort(reverse=True)
 print(numbers)  # [9, 5, 4, 3, 2, 1, 1]
 ```
 
-### reverse()
+### `reverse()`
 
 Reverse the list in place:
 
@@ -381,7 +385,7 @@ numbers.reverse()
 print(numbers)  # [4, 3, 2, 1]
 ```
 
-### copy()
+### `copy()`
 
 Create a shallow copy:
 
@@ -394,7 +398,7 @@ print(copied)    # [1, 2, 3, 4]
 ```
 
 :::warning
-Assigning a list to another variable doesn't create a copy—both variables reference the same list:
+Assigning a list to another variable doesn't create a copy. Both variables reference the same list:
 
 ```python
 original = [1, 2, 3]

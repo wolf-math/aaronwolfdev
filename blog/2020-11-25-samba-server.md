@@ -5,11 +5,6 @@ authors: wolf
 tags: [linux, ubuntu]
 ---
 
-:::note
-This blog post was originally published on [dev.to](https://dev.to/wolfmath/set-up-a-samba-server-in-ubuntu-linux-quick-guide-3ci2)
-:::
-
-
 This is a quick tutorial if you want to set up a home server and have files available to anybody who has access to your wifi or home network. This home server can be _any_ computer; it doesn't need to be a dedicated machine. 
 
 All of my home computers run Linux (because I'm a nerd), so this tutorial covers how to set up Samba on Ubuntu. All the work is done in the terminal.

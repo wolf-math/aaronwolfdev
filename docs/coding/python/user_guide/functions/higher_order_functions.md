@@ -25,7 +25,7 @@ func = shout            # Store in variable
 print(func("Bob"))      # Call through variable
 ```
 
-Many built-in tools in Python—like `map`, `filter`, `sorted`, and `functools.reduce`—are higher-order functions because they accept other functions as arguments.
+Many built-in tools in Python, like `map`, `filter`, `sorted`, and `functools.reduce`, are higher-order functions because they accept other functions as arguments.
 
 ## Why this matters
 
@@ -157,7 +157,7 @@ Here, `make_multiplier` is a higher-order function because it **returns** the `m
 
 ### Closures and state
 
-The returned function remembers values from the outer scope—this is called a **closure**.
+The returned function remembers values from the outer scope. This is called a **closure**.
 
 ```python
 def make_counter():

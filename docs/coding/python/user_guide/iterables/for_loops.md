@@ -3,7 +3,7 @@ title: For loops
 sidebar_position: 5
 ---
 
-For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like [lists](./lists), [tuples](./tuples), strings, [sets](./sets), and [ranges](./ranges)—for loops work with all of them.
+For loops let you repeat code for each item in a sequence or iterable. They're one of the most powerful features in Python, allowing you to process collections of data efficiently. You've already seen sequences like [lists](./lists), [tuples](./tuples), strings, [sets](./sets), and [ranges](./ranges). Use `for loops` to work with all of them.
 
 ## What are for loops?
 
@@ -11,7 +11,7 @@ A **for loop** iterates over each item in an iterable (like a list, string, or r
 
 ## Why this matters
 
-For loops are fundamental to Python programming and essential for processing collections of data. Without loops, you'd have to write repetitive code for each item in a collection, which is impractical and error-prone. For loops let you process entire collections efficiently—whether you're transforming data, filtering items, searching for values, or performing calculations on each element. They're one of the most commonly used control flow structures, appearing in virtually every Python program that works with data. Mastering for loops, along with understanding how to iterate over different types of collections, is crucial for effective Python programming.
+For loops are fundamental to Python programming and essential for processing collections of data. Without loops, you'd have to write repetitive code for each item in a collection, which is impractical and error-prone. For loops let you process entire collections efficiently, whether you're transforming data, filtering items, searching for values, or performing calculations on each element. They're one of the most commonly used control flow structures, appearing in virtually every Python program that works with data. Mastering for loops, along with understanding how to iterate over different types of collections, is crucial for effective Python programming.
 
 ## Basic syntax
 
@@ -40,7 +40,7 @@ for fruit in fruits:
 # orange
 ```
 
-The variable name (here `fruit`) can be anything—use a descriptive name that matches what each item represents.
+The variable name (here `fruit`) can be anything. Use a descriptive name that matches what each item represents.
 
 ### Modifying lists while iterating
 
@@ -53,7 +53,12 @@ numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 2:
         numbers.remove(num)  # Dangerous!
+```
 
+**Why is this dangerous?** When you remove an item from a list during iteration, the list's internal structure changes. The iterator keeps track of positions by index, so when you remove an item, all subsequent items shift to fill the gap. This causes the iterator to skip the next item because it's already moved past that position. For example, if you remove `2` at index 1, the item that was at index 2 (`3`) moves to index 1, but the iterator has already moved past index 1, so it skips `3` entirely.
+
+
+```python
 # Better: create a new list or iterate over a copy
 numbers = [1, 2, 3, 4, 5]
 filtered = []
@@ -147,6 +152,11 @@ for coord in coordinates:
 points = [(0, 0), (1, 2), (3, 4)]
 for point in points:
     print(point)
+
+# Output:
+# (0, 0)
+# (1, 2)
+# (3, 4)
 ```
 
 ## Getting indices with enumerate()
@@ -203,6 +213,11 @@ for key in person:
 for key in person.keys():
     print(key)
 
+# Output:
+# name
+# age
+# city
+
 # Iterate over values
 for value in person.values():
     print(value)
@@ -224,7 +239,7 @@ for key, value in person.items():
 
 ## Loop control: break and continue
 
-### break
+### `break`
 
 Exit the loop immediately:
 
@@ -241,7 +256,7 @@ for num in numbers:
 # 2
 ```
 
-### continue
+### `continue`
 
 Skip to the next iteration:
 
@@ -260,7 +275,7 @@ for num in numbers:
 # 5
 ```
 
-## The else clause
+## The `else` clause
 
 A `for` loop can have an `else` clause that runs if the loop completes normally (without a `break`):
 
@@ -273,6 +288,9 @@ for num in numbers:
         break
 else:
     print("10 not found in list")
+
+# Output:
+# 10 not found in list
 ```
 
 The `else` clause is useful for search patterns:
@@ -287,6 +305,9 @@ for item in items:
         break
 else:
     print(f"{target} not found")
+
+# Output:
+# grape not found
 ```
 
 ## Nested loops
@@ -321,7 +342,7 @@ matrix = [
 
 for row in matrix:
     for value in row:
-        print(value, end=' ')
+        print(value, end=' ')  # end=' ' prints a space instead of a newline
     print()  # New line after each row
 
 # Output:
@@ -343,7 +364,10 @@ total = 0
 for num in numbers:
     total += num
 
-print(total)  # 15
+print(total)  
+
+# Output: 
+# 15
 ```
 
 ### Filtering items
@@ -358,7 +382,10 @@ for num in numbers:
     if num % 2 == 0:
         evens.append(num)
 
-print(evens)  # [2, 4, 6, 8, 10]
+print(evens)  
+
+# Output: 
+# [2, 4, 6, 8, 10]
 ```
 
 ### Finding items
@@ -373,6 +400,9 @@ for fruit in fruits:
     if fruit == target:
         print(f"Found {target} at index {fruits.index(fruit)}")
         break
+
+# Output:
+# Found banana at index 1
 ```
 
 ### Transforming items
@@ -386,7 +416,10 @@ squares = []
 for num in numbers:
     squares.append(num ** 2)
 
-print(squares)  # [1, 4, 9, 16, 25]
+print(squares)  
+
+# Output: 
+# [1, 4, 9, 16, 25]
 ```
 
 ### Counting items
@@ -401,7 +434,10 @@ for fruit in fruits:
     if fruit == 'apple':
         count += 1
 
-print(count)  # 3
+print(count)  
+
+# Output: 
+# 3
 ```
 
 ### Repeating actions
@@ -463,7 +499,7 @@ List comprehensions will be covered in more detail in the [comprehensions guide]
 - **Don't modify collections while iterating**: Create new collections instead
 - **Use `break` and `continue` judiciously**: They can make code harder to follow if overused
 - **Consider list comprehensions**: For simple transformations and filtering
-- **Use `zip()` for parallel iteration**: When you need to process multiple sequences together
+- **Use [`zip()`](../../language_reference/built-in#zip) for parallel iteration**: When you need to process multiple sequences together
 - **Keep loops simple**: If a loop gets complex, consider breaking it into functions
 
 ```python

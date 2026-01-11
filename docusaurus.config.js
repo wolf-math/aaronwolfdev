@@ -4,8 +4,8 @@ import katex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Aaron Wolf dev',
-  tagline: 'development for everyone',
+  title: 'Wolf Codes',
+  tagline: 'Turning Complexity into Clarity.',
   favicon: 'images/wolf-logo_D5.png',
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -17,7 +17,7 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Code+Pro:wght@500&display=swap'
+    'https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'
   ],
 
   plugins: ['docusaurus-plugin-sass'],
@@ -78,7 +78,7 @@ const config = {
         disableSwitch: true
       },
       navbar: {
-        title: 'Aaron Wolf dev',
+        title: 'Wolf Codes',
         logo: {
           alt: 'Wolf Logo',
           src: 'images/wolf-logo_D5.png'

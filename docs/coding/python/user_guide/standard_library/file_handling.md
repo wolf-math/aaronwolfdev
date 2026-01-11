@@ -19,13 +19,13 @@ Python provides the built-in [`open()`](../../../python/language_reference/built
 
 ## Why this matters
 
-Most real-world programs don’t live in isolation—they read and write files. Whether you’re:
+Most real-world programs don’t live in isolation, they read and write files. Whether you’re:
 - Processing logs
 - Loading configuration
 - Saving model outputs
 - Working with CSVs or JSON
 
-…you’ll need to understand how Python handles files safely and efficiently. Good file handling helps you:
+So you’ll need to understand how Python handles files safely and efficiently. Good file handling helps you:
 - Avoid data loss (by closing files properly)
 - Prevent bugs (like reading the wrong encoding)
 - Write code that behaves well across different operating systems
@@ -78,7 +78,7 @@ print(contents)
 f.close()
 ```
 
-Be careful with `read()` on very large files—it loads everything into memory.
+Be careful with `read()` on very large files because it loads everything into memory.
 
 ### Read line by line
 
@@ -91,7 +91,7 @@ for line in f:
 f.close()
 ```
 
-This is memory-efficient because it reads one line at a time.
+This is memory efficient because it reads one line at a time.
 
 ### Read specific amounts
 
@@ -127,10 +127,13 @@ f.close()
 
 ## Always closing files
 
-Forgetting to close a file can:
-- Keep file descriptors open (resource leak)
-- Prevent other programs from accessing the file
-- Delay data being written to disk (buffer not flushed)
+**Always close files when you're done with them.** Forgetting to close a file can cause serious problems:
+
+- **Memory leaks**: The file stays in memory, consuming resources. If your program opens many files without closing them, it can run out of memory.
+- **Resource leaks**: File descriptors remain open, which are limited system resources. Opening too many files without closing them can prevent your program (or other programs) from opening new files.
+- **Data loss**: Buffered data may not be written to disk until the file is closed, risking data loss if your program crashes.
+- **File locking**: Other programs may be unable to access the file while it's open.
+- **Error handling**: If an error occurs before `close()` is called, the file will remain open in memory indefinitely.
 
 You *can* call `close()` manually:
 
@@ -139,10 +142,10 @@ f = open("example.txt", "r", encoding="utf-8")
 try:
     data = f.read()
 finally:
-    f.close()
+    f.close()  # Always runs, even if an error occurs
 ```
 
-…but there’s a better way.
+This works, but it's easy to forget the `finally` block, and if an error happens before `close()`, the file stays open. There's a better way.
 
 ## Using `with` (context managers)
 

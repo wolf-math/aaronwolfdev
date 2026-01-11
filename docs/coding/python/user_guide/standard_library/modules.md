@@ -5,7 +5,7 @@ sidebar_position: 0
 
 ## What are modules?
 
-A **module** is a file containing Python code that can be imported and used in other Python programs. Think of modules as reusable libraries of code—they let you organize your code into separate files, reuse functionality across projects, and tap into Python's vast standard library and third-party packages.
+A **module** is a file containing Python code that can be imported and used in other Python programs. Think of modules as reusable libraries of code that let you organize your code into separate files, reuse functionality across projects, and tap into Python's vast standard library and third-party packages.
 
 ```python
 import math
@@ -72,7 +72,7 @@ print(sqrt(25))         # 5.0
 print(pi)               # 3.141592653589793
 ```
 
-When you import specific items, you don't need to use dot notation—they're available directly:
+When you import specific items, you don't need to use dot notation. The items available directly:
 
 ```python
 from datetime import datetime
@@ -91,7 +91,9 @@ print(sqrt(25))         # 5.0
 print(pi)               # 3.141592653589793
 ```
 
-**Why this is usually not recommended**: It pollutes your namespace and can lead to naming conflicts. If you import `sqrt` from multiple modules, the last one wins, and you might not realize which `sqrt` you're using.
+:::warning
+**This is usually not recommended**: It pollutes your namespace and can lead to naming conflicts. If you import `sqrt` from multiple modules, the last one wins, and you might not realize which `sqrt` you're using.
+:::
 
 ### Combining import styles
 
@@ -374,9 +376,7 @@ if size > MAX_SIZE:
 ## Best practices
 
 1. **Use descriptive module names**: `user_utils.py` is better than `utils.py`
-
 2. **Keep modules focused**: Each module should have a clear, single purpose
-
 3. **Document your modules**: Add docstrings at the top of module files:
 
    ```python
@@ -388,7 +388,6 @@ if size > MAX_SIZE:
    ```
 
 4. **Avoid circular imports**: Don't have module A import module B while module B imports module A
-
 5. **Use `__all__` to control exports**: Explicitly define what should be imported with `from module import *`:
 
    ```python

@@ -5,12 +5,6 @@ authors: wolf
 tags: [javascript]
 ---
 
-
-:::note
-This blog post was originally posted on [dev.to](https://dev.to/wolfmath/the-url-object-3485)
-:::
-
-
 ## Overview
 
 The URL object in JavaScript provides a way to work with and manipulate URLs easily. It’s particularly useful when you need to construct, parse, or modify URLs within your code.
